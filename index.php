@@ -32,7 +32,9 @@
 
      <!-- Bootstrap -->
      <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/font-awesome.css">
+     <link rel="stylesheet" href="css/tb-custom.css">
+     <link rel="stylesheet" href="css/fonts.css">
 
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,6 +44,31 @@
      <![endif]-->
    </head>
    <body>
+
+      <div class="menu">
+        <?php
+          include('views/menu.php');
+        ?>
+      </div>
+
+      <div class="slider">
+        <img src="images/iStock-515779948.jpg">
+        <div class="subtitle">
+          <p>UM COMPROMISSO <br>PARA A VIDA</p>
+          <a href="#">SABER MAIS</a>
+        </div>
+      </div>
+
+      <div class="conteudo">
+        <div><img src=""></div>
+        <div>
+          <p>DECUBAL<br>HIDRATAÇÃO PROFUNDA DA PELE</p>
+        </div>
+      </div>
+
+      <footer>
+        
+      </footer>
 
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
      <script src="js/jquery-3.2.0.min.js"></script>

@@ -1,0 +1,139 @@
+/*FONTS*/
+$font-book: 'gotham_book';
+$font-bold: 'gotham_bold';
+$font-medium:'gotham_medium';
+$font-light: 'gotham_light';
+$font-aws: 'FontAwesome';
+
+/* COLORS */
+$blue: #242f75;
+$green: #009e94;
+
+body{
+	font-family: $font-light;
+	color: $blue;
+}
+
+/*MENU*/
+
+.menu{
+	z-index: 8;
+	height: 110px;
+}
+.bg-faded{
+	background-color: transparent;
+}
+
+.navbar-brand{
+	width:196px;
+}
+
+.navbar .navbar-nav {
+	width: 100%;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav{
+
+	li{
+		float: none;
+		width: 150px;
+		display: inline-block;
+
+		.nav-link{
+			display: block;
+			color: $blue;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		    font-family: $font-medium;
+			font-size: 14px;
+			&:hover{
+				text-decoration:none;
+			}
+		    &:active{
+		    	border-bottom: 2px solid $green;
+		    }
+		}
+	}
+}
+
+/*.mr-auto {
+    margin-right: 80px!important;
+}*/
+
+.form-control{
+	background-color: transparent;
+	&:focus{
+		background-color: transparent;
+	}
+}
+
+form{
+	input[type=text] {
+	    width: 130px;
+	    font-family: $font-medium;
+	    font-size: 14px;
+	    color: $blue;
+  		box-shadow: none;
+  		border: none;
+  		border-bottom: 2px solid $green;
+  		
+  		&:focus {
+		  outline: none;
+		  border-bottom: 2px solid $green;
+		}
+
+	}
+	::-webkit-input-placeholder {
+		color: $blue;	
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+		color: $blue;	
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+		color: $blue;	
+	}
+	:-moz-placeholder { /* Firefox 18- */
+		color: $blue;	
+	}
+}
+
+.navbar-toggler{
+    margin: 50px;
+}
+
+/* FIM MENU*/
+
+.slider{
+	img{
+		position: relative;
+		top: -110px;
+		width: 100vw;
+		z-index: -1;
+	}
+}
+
+.subtitle p {
+	font-size: 60px;
+	font-family: $font-bold;
+	color: $blue;
+}
+
+.subtitle a{
+	text-decoration: none;
+	color: $blue;
+	font-size: 20px;
+	border-bottom: 1px solid $green;
+}
+
+@media (min-width: 768px){
+	.navbar-header{
+	    display: none;
+	}
+
+	.navbar-collapse.collapse {
+		display:block;
+	}
+
+}
