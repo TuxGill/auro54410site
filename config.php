@@ -35,7 +35,7 @@
 
     $user='root';
 		$pass='';
-		$pdo = new PDO('mysql:host=192.168.1.122;dbname=aurotivas;charset=utf8', $user, $pass);
+		$pdo = new PDO('mysql:host=192.168.1.122;dbname=aurovitas;charset=utf8', $user, $pass);
 
   } else {
 
@@ -44,7 +44,7 @@
 
     $user='root';
     $pass='';
-    $pdo = new PDO('mysql:host=192.168.1.122;dbname=aurotivas;charset=utf8', $user, $pass);
+    $pdo = new PDO('mysql:host=192.168.1.122;dbname=aurovitas;charset=utf8', $user, $pass);
 
   }
 
