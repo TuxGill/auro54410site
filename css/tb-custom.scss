@@ -114,6 +114,13 @@ form{
 	}
 }
 
+.subtitle{
+    background-color: rgba(255,255,255, 0.2);
+    position: absolute;
+    z-index: 8;
+    top: 600px;
+}
+
 .subtitle p {
 	font-size: 60px;
 	font-family: $font-bold;
