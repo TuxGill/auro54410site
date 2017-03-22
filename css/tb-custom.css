@@ -4,6 +4,10 @@ body {
   font-family: "gotham_light";
   color: #242f75; }
 
+.container {
+  width: 100%;
+  padding: 0; }
+
 /*MENU*/
 .menu {
   z-index: 8;
@@ -44,6 +48,8 @@ body {
   .form-control:focus {
     background-color: transparent; }
 
+form .form-control {
+  width: 80%; }
 form input[type=text] {
   width: 130px;
   font-family: "gotham_medium";
@@ -71,22 +77,89 @@ form :-moz-placeholder {
   margin: 50px; }
 
 /* FIM MENU*/
-.slider img {
+.slider {
   position: relative;
-  top: -110px;
-  width: 100vw;
-  z-index: -1; }
+  z-index: -1;
+  top: -110px; }
+  .slider img {
+    width: 100vw; }
+
+.subtitle {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 8;
+  /*top: 600px;*/
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+  /* IE6-9 */ }
 
 .subtitle p {
   font-size: 60px;
   font-family: "gotham_bold";
-  color: #242f75; }
+  color: #242f75;
+  margin-top: 30px; }
 
 .subtitle a {
+  font-family: "gotham_medium";
   text-decoration: none;
   color: #242f75;
   font-size: 20px;
-  border-bottom: 1px solid #009e94; }
+  border-bottom: 2px solid #009e94; }
+
+.conteudo {
+  /*   ANIMACAO LINHAS   */
+  /*	.path {
+  		stroke-dasharray: 100;
+  		animation: dash 5s linear;
+  	}
+  
+  	@keyframes dash {
+  		to {
+  	    	stroke-dashoffset: 1000;
+  	  	}
+  	}*/ }
+  .conteudo .separador {
+    font-size: 16px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    margin-left: 1rem; }
+  .conteudo .texto {
+    padding-left: 40px;
+    padding-top: 80px; }
+    .conteudo .texto .title-destaque {
+      font-family: "gotham_bold";
+      font-size: 30px;
+      padding: 0; }
+    .conteudo .texto .txt-destaque {
+      font-size: 30px; }
+  .conteudo .icon-stack {
+    color: #009e94;
+    position: relative;
+    display: inline-block;
+    width: 3em;
+    height: 5em;
+    line-height: 4em;
+    vertical-align: middle; }
+    .conteudo .icon-stack .icon-stack-1x,
+    .conteudo .icon-stack .icon-stack-3x {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      text-align: center; }
+    .conteudo .icon-stack .icon-stack-1x {
+      font-size: 3em; }
+    .conteudo .icon-stack .icon-stack-3x {
+      font-size: 3em; }
 
 @media (min-width: 768px) {
   .navbar-header {
@@ -94,5 +167,8 @@ form :-moz-placeholder {
 
   .navbar-collapse.collapse {
     display: block; } }
+@media (max-width: 768px) {
+  .conteudo .separador {
+    display: none; } }
 
 /*# sourceMappingURL=tb-custom.css.map */

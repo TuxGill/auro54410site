@@ -14,6 +14,11 @@ body{
 	color: $blue;
 }
 
+.container{
+	width: 100%;
+	padding: 0;
+}
+
 /*MENU*/
 
 .menu{
@@ -70,6 +75,10 @@ body{
 }
 
 form{
+
+	.form-control {
+		width:80%;
+	}
 	input[type=text] {
 	    width: 130px;
 	    font-family: $font-medium;
@@ -106,32 +115,100 @@ form{
 /* FIM MENU*/
 
 .slider{
+	position: relative;
+	z-index: -1;
+	top: -110px;
 	img{
-		position: relative;
-		top: -110px;
 		width: 100vw;
-		z-index: -1;
 	}
 }
 
 .subtitle{
-    background-color: rgba(255,255,255, 0.2);
     position: absolute;
+	bottom: 0;
+	height: 300px;
+	width: 100%;
+    background-color: rgba(255,255,255, 0.2);
     z-index: 8;
-    top: 600px;
+    /*top: 600px;*/
+	    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+	background: -moz-linear-gradient(left, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
 }
 
 .subtitle p {
 	font-size: 60px;
 	font-family: $font-bold;
 	color: $blue;
+	margin-top: 30px;
 }
 
 .subtitle a{
+	font-family: $font-medium;
 	text-decoration: none;
 	color: $blue;
 	font-size: 20px;
-	border-bottom: 1px solid $green;
+	border-bottom: 2px solid $green;
+}
+
+.conteudo{
+	.separador{
+		font-size: 16px;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+  		text-align: center;
+	    margin-left: 1rem;
+	}
+	.texto{
+	    padding-left: 40px;
+	    padding-top: 80px;
+
+		.title-destaque{
+			font-family: $font-bold;
+			font-size: 30px;
+			padding: 0;
+		}
+		.txt-destaque{
+			font-size: 30px;
+		}
+	}
+	/*   ANIMACAO LINHAS   */
+/*	.path {
+		stroke-dasharray: 100;
+		animation: dash 5s linear;
+	}
+
+	@keyframes dash {
+		to {
+	    	stroke-dashoffset: 1000;
+	  	}
+	}*/
+
+	.icon-stack{
+		color: $green;
+		position: relative;
+		display: inline-block;
+		width: 3em;
+		height: 5em;
+		line-height: 4em;
+		vertical-align: middle;
+
+		.icon-stack-1x,
+		.icon-stack-3x {
+		  position: absolute;
+		  left: 0;
+		  width: 100%;
+		  text-align: center;
+		}
+		.icon-stack-1x {
+		  font-size: 3em;
+		}
+		.icon-stack-3x {
+		  font-size: 3em;
+		}
+	}
 }
 
 @media (min-width: 768px){
@@ -143,4 +220,12 @@ form{
 		display:block;
 	}
 
+}
+
+@media (max-width: 768px){
+.conteudo{
+	.separador{
+		display: none;
+	}
+}
 }

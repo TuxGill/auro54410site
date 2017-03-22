@@ -44,31 +44,46 @@
      <![endif]-->
    </head>
    <body>
-
-      <div class="menu">
-        <?php
-          include('views/menu.php');
-        ?>
-      </div>
-
-      <div class="slider">
-        <img src="images/iStock-515779948.jpg">
-        <div class="subtitle">
-          <p>UM COMPROMISSO <br>PARA A VIDA</p>
-          <a href="#">SABER MAIS</a>
+   <div class="container">
+      
+        <div class="menu">
+          <?php
+            include('views/menu.php');
+          ?>
         </div>
-      </div>
 
-      <div class="conteudo">
-        <div><img src=""></div>
-        <div>
-          <p>DECUBAL<br>HIDRATAÇÃO PROFUNDA DA PELE</p>
+        <div class="slider">
+          <img src="images/iStock-515779948.jpg">
+          <div class="subtitle">
+            <p class="col-sm-6 offset-sm-1">UM COMPROMISSO <br>PARA A VIDA</p>
+            <a class="col-sm-6 offset-sm-1" href="#">SABER MAIS</a>
+          </div>
         </div>
-      </div>
 
-      <footer>
-        
-      </footer>
+        <div class="row conteudo">
+          <div class="separador"><p>DESTAQUE</p></div>
+          <div class="col-sm-4 offset-sm-2">
+            <img src="images/produtos.png">
+          </div>
+          <img src="images/line.svg">
+          <div class="col-sm-2 texto">
+            <p class="title-destaque">DECUBAL</p>
+            <p class="txt-destaque">HIDRATAÇÃO <br>PROFUNDA <br>DA PELE</p>
+          </div>
+          
+            <img src="images/line.svg">
+              <span class="icon-stack">
+                <i class="fa fa-circle-thin icon-stack-3x"></i>
+                <i class="fa fa-angle-right icon-stack-1x"></i>
+              </span>
+          
+        </div>
+
+        <footer>
+          
+        </footer>
+     
+    </div>
 
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
      <script src="js/jquery-3.2.0.min.js"></script>
