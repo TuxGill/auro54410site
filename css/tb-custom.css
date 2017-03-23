@@ -181,6 +181,67 @@ form {
     .conteudo .icon-stack .icon-stack-3x {
       font-size: 3em; }
 
+/*   PRODUTOS  */
+.txt-intro {
+  color: #787878;
+  font-family: "gotham_medium";
+  font-size: 16px; }
+
+.icons {
+  margin-bottom: 100px;
+  margin-top: 50px; }
+  .icons ul {
+    list-style-type: none;
+    float: left; }
+
+.header2 {
+  color: #009e94;
+  font-size: 20px;
+  font-family: "gotham_bold";
+  margin-bottom: 50px; }
+
+.decubal {
+  margin-bottom: 50px;
+  margin-top: 50px; }
+  .decubal .imagem img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    .decubal .imagem img:hover {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+
+.beacita {
+  margin-bottom: 50px;
+  margin-top: 50px; }
+  .beacita .imagem img {
+    width: 458px;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    .beacita .imagem img:hover {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+
+.ferlidona {
+  margin-bottom: 50px;
+  margin-top: 50px; }
+  .ferlidona .imagem img {
+    width: 458px;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    .ferlidona .imagem img:hover {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+
+/*   FIM PRODUTOS  */
 /* FOOTER */
 .separador {
   font-size: 16px;
@@ -206,6 +267,7 @@ footer {
   footer li p {
     font-family: "gotham_medium"; }
 
+/*   FIM FOOTER   */
 @media (min-width: 768px) {
   .navbar-header {
     display: none; }

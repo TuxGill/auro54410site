@@ -9,7 +9,7 @@
 <div class="row conteudo">
   <div class="separador"><p>DESTAQUE</p></div>
   <div class="col-sm-4 offset-sm-2">
-    <img src="images/produtos.png">
+    <img src="images/destaque.png">
   </div>
   <div class="line">
     <img src="images/line.svg">

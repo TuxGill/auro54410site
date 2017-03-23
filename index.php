@@ -54,12 +54,16 @@
         </div>
         <?php
 
-        $route = explode('/',$_GET['area']);
-         $routeID = explode('/',$_GET['ID']);
-         print_r($route);
-         print_r($routeID); 
+        // $route = explode('/',$_GET['area']);
+        // $routeID = explode('/',$_GET['ID']);
+        // print_r($route);
+        // print_r($routeID); 
          ?>
-        <?php include('views/home.php')?>
+        <?php
+        //include('views/home.php');
+        include('components/content/view/list-news.php');
+
+         ?>
 
         <footer>
             <?php include('views/footer.php'); ?>
