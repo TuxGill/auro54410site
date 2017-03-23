@@ -186,7 +186,13 @@ form{
 	}
 
 	.seta{
-	    padding-top: 168px;
+		width: 67px;
+		height:67px;
+	    margin-top: 168px;
+	    background-image: url(../images/seta.png);
+	    &:hover{
+	    	background-image: url(../images/seta-hover.png);
+	    }
 	}
 	/*   ANIMACAO LINHAS   */
 /*	.path {

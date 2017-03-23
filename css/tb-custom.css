@@ -152,7 +152,12 @@ form :-moz-placeholder {
   .conteudo .line {
     padding-top: 190px; }
   .conteudo .seta {
-    padding-top: 168px; }
+    width: 67px;
+    height: 67px;
+    margin-top: 168px;
+    background-image: url(../images/seta.png); }
+    .conteudo .seta:hover {
+      background-image: url(../images/seta-hover.png); }
   .conteudo .icon-stack {
     color: #009e94;
     position: relative;

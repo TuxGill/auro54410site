@@ -81,7 +81,7 @@
                 <i class="fa fa-angle-right icon-stack-1x"></i>
               </span> -->
           <div class="seta">
-            <img src="images/seta.png">
+            <!-- <img src="images/seta.png"> -->
           </div>
         </div>
 
