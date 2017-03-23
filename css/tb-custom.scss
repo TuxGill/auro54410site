@@ -321,6 +321,27 @@ form{
 
 /*   FIM PRODUTOS  */
 
+/*  NOTICIAS */
+.conteudo-news{
+	.textos{
+		h2{
+			color: $green;
+			font-family: $font-bold;
+			font-size: 20px;
+		}
+		h3{
+			font-family: $font-medium;
+			color: $green;
+			font-size: 20px;
+		}
+		p{
+			font-family: $font-light;
+			color: $grey;
+		}
+	}
+}
+/*  FIM NOTICIAS */
+
 /* FOOTER */
 
 .separador{

@@ -242,6 +242,20 @@ form {
       transform: scale(1.1); }
 
 /*   FIM PRODUTOS  */
+/*  NOTICIAS */
+.conteudo-news .textos h2 {
+  color: #009e94;
+  font-family: "gotham_bold";
+  font-size: 20px; }
+.conteudo-news .textos h3 {
+  font-family: "gotham_medium";
+  color: #009e94;
+  font-size: 20px; }
+.conteudo-news .textos p {
+  font-family: "gotham_light";
+  color: #787878; }
+
+/*  FIM NOTICIAS */
 /* FOOTER */
 .separador {
   font-size: 16px;
