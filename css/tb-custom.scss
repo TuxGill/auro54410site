@@ -30,12 +30,15 @@ body{
 }
 
 .navbar-brand{
-	width:196px;
+	img{
+	    margin-left: 20px;
+    	width: 150px;
+	}
 }
 
 .navbar .navbar-nav {
 	width: 100%;
-	padding: 0 20%;
+    padding: 0 10% 0 20%;
     text-align: center;
 }
 
@@ -78,6 +81,7 @@ body{
 }
 
 form{
+    width: 300px;
 
 	.form-control {
 		width:80%;
@@ -157,6 +161,7 @@ form{
 }
 
 .conteudo{
+	    padding-bottom: 100px;
 	.separador{
 		font-size: 16px;
 		writing-mode: vertical-rl;
@@ -230,6 +235,44 @@ form{
 		  font-size: 3em;
 		}
 	}	/*    FIM ICON FONTAWESOME SETA    */
+}
+
+/* FOOTER */
+
+.separador{
+	font-size: 16px;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	text-align: center;
+    margin-left: 1rem;
+    p{
+    	color: #ffffff;
+    }
+}
+
+footer{
+	position: relative;
+	.geral{
+		position: absolute;
+    	width: 100%;
+    	margin-top: 100px;
+	}
+
+	h2{
+		margin-left: 56px;
+	}
+
+	.linha-separador{
+		border-bottom: 2px solid #ffffff;
+	    width: 80%;
+	    margin: 20px 0px 40px 0;
+	}
+
+	li{
+		p{
+			font-family: $font-medium;
+		}
+	}
 }
 
 @media (min-width: 768px){
