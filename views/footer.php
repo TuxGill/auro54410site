@@ -3,7 +3,7 @@
         <div class="row">
               <ul class="col-xs-12 col-sm-6">
                   <li><h2>dados gerais</h2></li>
-                  <li>
+                  <li class="info-item">
                       <div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
                       <div class="info">
                         <ul>
@@ -15,7 +15,8 @@
                       </div>
                   </li>
 
-                  <li>
+                  <li class="info-item">
+
                       <div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
                       <div class="info">
                         <ul>
@@ -25,7 +26,8 @@
                       </div>
                   </li>
 
-                  <li>
+                  <li class="info-item">
+
                       <div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
                       <div class="info">
                         <ul>
@@ -34,7 +36,8 @@
                       </div>
                   </li>
 
-                  <li>
+                  <li class="info-item">
+
                       <div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
                       <div class="info">
                         <ul>
@@ -43,7 +46,8 @@
                       </div>
                   </li>
 
-                  <li>
+                  <li class="info-item">
+
                       <div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
                       <div class="info">
                         <ul>

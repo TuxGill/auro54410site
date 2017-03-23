@@ -3,7 +3,8 @@ footer {
   background-size: cover;
   width: 100%;
   height: 300px;
-  color: #fff; }
+  color: #fff;
+  font-size: 15px; }
   footer h2 {
     text-transform: capitalize;
     font-size: 15px;
@@ -15,15 +16,24 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%; }
+    width: 100%;
+    float: left; }
+    footer li div {
+      float: left; }
+    footer li div:first-child {
+      width: 10%; }
+    footer li div:nth-child(2) {
+      width: 90%; }
   footer .organizer {
-    height: 100px;
-    background: red; }
+    /*  height: 100px;*/
+    /*  background: red;*/ }
   footer ul:first-child {
     /*  background: yellow;*/ }
   footer ul:nth-child(2) {
     background: blue; }
   footer .icon, footer .info {
     float: left; }
+  footer .info-item {
+    margin-bottom: 20px; }
 
 /*# sourceMappingURL=ho-custom.css.map */
