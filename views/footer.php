@@ -11,11 +11,44 @@
                             <li>Parque Suécia, Ed4, 2º piso</li>
                             <li>2764-038 Carnaxide</li>
                             <li>Portugal</li>
-
-
                         </ul>
+                      </div>
+                  </li>
 
+                  <li>
+                      <div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+                      <div class="info">
+                        <ul>
+                            <li>Email Geral</li>
+                            <li>geral@aurovitas.pr</li>
+                        </ul>
+                      </div>
+                  </li>
 
+                  <li>
+                      <div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+                      <div class="info">
+                        <ul>
+                            <li>+351 217 220 650</li>
+                        </ul>
+                      </div>
+                  </li>
+
+                  <li>
+                      <div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+                      <div class="info">
+                        <ul>
+                            <li>+351 217 272 744</li>
+                        </ul>
+                      </div>
+                  </li>
+
+                  <li>
+                      <div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+                      <div class="info">
+                        <ul>
+                            <li>Aurovitas Portugal</li>
+                        </ul>
                       </div>
                   </li>
 

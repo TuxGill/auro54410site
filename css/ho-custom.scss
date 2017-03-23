@@ -3,11 +3,23 @@ footer {
   background-size: cover;
   width:100%;
   height: 300px;
+  color: #fff;
+
+  h2{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'gotham_bold';
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
 
   li{
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   .organizer{
@@ -16,10 +28,14 @@ footer {
   }
 
   ul:first-child{
-    background: yellow;
+  /*  background: yellow;*/
   }
 
   ul:nth-child(2){
     background: blue;
+  }
+
+  .icon, .info{
+    float: left;
   }
 }

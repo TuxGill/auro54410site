@@ -2,17 +2,28 @@ footer {
   background: url("../images/bg-footer.png") no-repeat top center;
   background-size: cover;
   width: 100%;
-  height: 300px; }
+  height: 300px;
+  color: #fff; }
+  footer h2 {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'gotham_bold'; }
+  footer ul {
+    margin: 0;
+    padding: 0; }
   footer li {
     list-style: none;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
   footer .organizer {
     height: 100px;
     background: red; }
   footer ul:first-child {
-    background: yellow; }
+    /*  background: yellow;*/ }
   footer ul:nth-child(2) {
     background: blue; }
+  footer .icon, footer .info {
+    float: left; }
 
 /*# sourceMappingURL=ho-custom.css.map */
