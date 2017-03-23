@@ -1,2 +1,10 @@
 AddType image/svg+xml svg svgz
 AddEncoding gzip svgz
+
+RewriteEngine On
+Options -Indexes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?area=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?area=$1&id=$1 [L,QSA]
