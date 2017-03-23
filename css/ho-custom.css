@@ -1,0 +1,18 @@
+footer {
+  background: url("../images/bg-footer.png") no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 300px; }
+  footer li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  footer .organizer {
+    height: 100px;
+    background: red; }
+  footer ul:first-child {
+    background: yellow; }
+  footer ul:nth-child(2) {
+    background: blue; }
+
+/*# sourceMappingURL=ho-custom.css.map */

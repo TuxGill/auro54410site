@@ -34,6 +34,7 @@
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/font-awesome.css">
      <link rel="stylesheet" href="css/tb-custom.css">
+     <link rel="stylesheet" href="css/ho-custom.css">
      <link rel="stylesheet" href="css/fonts.css">
 
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -45,7 +46,7 @@
    </head>
    <body>
    <div class="container">
-      
+
         <div class="menu">
           <?php
             include('views/menu.php');
@@ -70,19 +71,20 @@
             <p class="title-destaque">DECUBAL</p>
             <p class="txt-destaque">HIDRATAÇÃO <br>PROFUNDA <br>DA PELE</p>
           </div>
-          
+
             <img src="images/line.svg">
               <span class="icon-stack">
                 <i class="fa fa-circle-thin icon-stack-3x"></i>
                 <i class="fa fa-angle-right icon-stack-1x"></i>
               </span>
-          
+
         </div>
 
         <footer>
-          
+            <?php include('views/footer.php'); ?>
+
         </footer>
-     
+
     </div>
 
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
