@@ -21,6 +21,7 @@ body {
 
 .navbar .navbar-nav {
   width: 100%;
+  padding: 0 20%;
   text-align: center; }
 
 .navbar-light .navbar-nav li {
@@ -31,12 +32,14 @@ body {
     display: block;
     color: #242f75;
     text-align: center;
+    width: 150px;
     padding: 14px 16px;
     text-decoration: none;
     font-family: "gotham_medium";
     font-size: 14px; }
     .navbar-light .navbar-nav li .nav-link:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      border-bottom: 2px solid #009e94; }
     .navbar-light .navbar-nav li .nav-link:active {
       border-bottom: 2px solid #009e94; }
 
@@ -51,7 +54,7 @@ body {
 form .form-control {
   width: 80%; }
 form input[type=text] {
-  width: 130px;
+  width: 80% !important;
   font-family: "gotham_medium";
   font-size: 14px;
   color: #242f75;
@@ -126,13 +129,17 @@ form :-moz-placeholder {
   		to {
   	    	stroke-dashoffset: 1000;
   	  	}
-  	}*/ }
+  	}*/
+  /*   ICON FONTAWESOME SETA    */
+  /*    FIM ICON FONTAWESOME SETA    */ }
   .conteudo .separador {
     font-size: 16px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-align: center;
     margin-left: 1rem; }
+    .conteudo .separador p {
+      color: #242f75; }
   .conteudo .texto {
     padding-left: 40px;
     padding-top: 80px; }
@@ -142,6 +149,10 @@ form :-moz-placeholder {
       padding: 0; }
     .conteudo .texto .txt-destaque {
       font-size: 30px; }
+  .conteudo .line {
+    padding-top: 190px; }
+  .conteudo .seta {
+    padding-top: 168px; }
   .conteudo .icon-stack {
     color: #009e94;
     position: relative;

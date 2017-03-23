@@ -53,7 +53,7 @@
         </div>
 
         <div class="slider">
-          <img src="images/iStock-515779948.jpg">
+          <img src="images/homeIMG.jpg">
           <div class="subtitle">
             <p class="col-sm-6 offset-sm-1">UM COMPROMISSO <br>PARA A VIDA</p>
             <a class="col-sm-6 offset-sm-1" href="#">SABER MAIS</a>
@@ -65,18 +65,24 @@
           <div class="col-sm-4 offset-sm-2">
             <img src="images/produtos.png">
           </div>
-          <img src="images/line.svg">
+          <div class="line">
+            <img src="images/line.svg">
+          </div>
+          
           <div class="col-sm-2 texto">
             <p class="title-destaque">DECUBAL</p>
             <p class="txt-destaque">HIDRATAÇÃO <br>PROFUNDA <br>DA PELE</p>
           </div>
-          
+          <div class="line">
             <img src="images/line.svg">
-              <span class="icon-stack">
+          </div>
+             <!--  <span class="icon-stack">
                 <i class="fa fa-circle-thin icon-stack-3x"></i>
                 <i class="fa fa-angle-right icon-stack-1x"></i>
-              </span>
-          
+              </span> -->
+          <div class="seta">
+            <img src="images/seta.png">
+          </div>
         </div>
 
         <footer>
