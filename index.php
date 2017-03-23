@@ -74,11 +74,8 @@
             <p class="title-destaque">DECUBAL</p>
             <p class="txt-destaque">HIDRATAÇÃO <br>PROFUNDA <br>DA PELE</p>
           </div>
-<<<<<<< HEAD
-          <div class="line">
-=======
 
->>>>>>> origin/master
+          <div class="line">
             <img src="images/line.svg">
           </div>
              <!--  <span class="icon-stack">
@@ -89,10 +86,9 @@
           <div class="seta">
             <!-- <img src="images/seta.png"> -->
           </div>
-=======
-              </span>
 
->>>>>>> origin/master
+
+
         </div>
 
         <footer>
