@@ -144,15 +144,26 @@ form {
     margin-left: 1rem; }
     .conteudo .separador p {
       color: #242f75; }
+  .conteudo .destaque img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    .conteudo .destaque img:hover {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
   .conteudo .texto {
     padding-left: 40px;
     padding-top: 80px; }
     .conteudo .texto .title-destaque {
       font-family: "gotham_bold";
       font-size: 30px;
-      padding: 0; }
+      padding: 0;
+      color: #242f75; }
     .conteudo .texto .txt-destaque {
-      font-size: 30px; }
+      font-size: 30px;
+      color: #242f75; }
   .conteudo .line {
     padding-top: 190px; }
   .conteudo .seta {
@@ -243,19 +254,60 @@ form {
 
 /*   FIM PRODUTOS  */
 /*  NOTICIAS */
-.conteudo-news .textos h2 {
+.conteudo-news .line {
+  padding-top: 245px; }
+.conteudo-news .seta {
+  margin-top: 222px; }
+.conteudo-news .imagens img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .conteudo-news .imagens img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+.conteudo-news .textos {
+  padding-top: 100px; }
+  .conteudo-news .textos h2 {
+    color: #009e94;
+    font-family: "gotham_bold";
+    font-size: 20px; }
+  .conteudo-news .textos h3 {
+    font-family: "gotham_medium";
+    color: #009e94;
+    font-size: 20px; }
+  .conteudo-news .textos p {
+    font-family: "gotham_light";
+    color: #787878; }
+
+.conteudo .btn {
+  width: 70px;
+  height: 70px;
+  margin-top: 168px;
+  background-image: url(../images/load.png);
+  background-repeat: no-repeat; }
+  .conteudo .btn:hover {
+    background-image: url(../images/load_hover.png); }
+
+/*  FIM NOTICIAS */
+/*  NOTICIAS - DETALHE  */
+.conteudo i {
+  float: right;
+  color: #787878; }
+.conteudo h2 {
   color: #009e94;
   font-family: "gotham_bold";
   font-size: 20px; }
-.conteudo-news .textos h3 {
+.conteudo h3 {
   font-family: "gotham_medium";
   color: #009e94;
   font-size: 20px; }
-.conteudo-news .textos p {
+.conteudo p {
   font-family: "gotham_light";
   color: #787878; }
 
-/*  FIM NOTICIAS */
+/*  FIM NOTICIAS - DETALHE  */
 /* FOOTER */
 .separador {
   font-size: 16px;

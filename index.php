@@ -36,6 +36,7 @@
      <link rel="stylesheet" href="css/tb-custom.css">
      <link rel="stylesheet" href="css/ho-custom.css">
      <link rel="stylesheet" href="css/fonts.css">
+     <link rel="stylesheet" href="css/responsive.css">
 
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,8 +61,10 @@
         // print_r($routeID); 
          ?>
         <?php
-        //include('views/home.php');
-        include('components/content/view/list-news.php');
+        include('views/home.php');
+        // include('components/products/view/list-products.php');
+        //include('components/content/view/list-news.php');
+        //include('components/content/view/detail-news.php');
 
          ?>
 

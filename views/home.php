@@ -8,8 +8,8 @@
 
 <div class="row conteudo">
   <div class="separador"><p>DESTAQUE</p></div>
-  <div class="col-sm-4 offset-sm-2">
-    <img src="images/destaque.png">
+  <div class="col-sm-4 offset-sm-2 destaque">
+    <img src="images/decubal.png">
   </div>
   <div class="line">
     <img src="images/line.svg">

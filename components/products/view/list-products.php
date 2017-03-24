@@ -6,6 +6,8 @@
 </div>
 
 <div class="row conteudo">
+<div class="separador"><p>PRODUTOS</p></div>
+
 	<div class="col-sm-8 offset-sm-2 txt-intro">
 		<p>
 			A Aurovitas comercializa medicamentos genéricos, medicamentos de marca e medicamentos 
@@ -37,7 +39,7 @@
 
 	<div class="row col-sm-8 offset-sm-2 decubal">
 		 <div class="col-sm-5 imagem">
-		    <img src="images/destaque.png">
+		    <img src="images/decubal.png">
 		  </div>
 		  <div class="line">
 		    <img src="images/line.svg">
