@@ -18,7 +18,7 @@
 </div>
 
 <div class="row conteudo col-sm-12">
-  <div class="separador col-sm-1"><p>TESTE DECUBAL</p></div>
+  <div class="separador col-sm-1"><p>DECUBAL</p></div>
 
 	<div class="col-sm-8 offset-sm-1 txt-intro">
     <img class="logoProd" src="images/logo_decubal.png" alt="">
