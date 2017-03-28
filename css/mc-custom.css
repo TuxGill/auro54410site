@@ -1,3 +1,8 @@
+/*FONTS*/
+/* COLORS */
+/*****************************************************
+                  Detalhe Produto
+*****************************************************/
 .slider .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -11,13 +16,33 @@
     width: 100%;
     height: 100%; }
 
-.conteudo .logoProd {
+.conteudoProd .logoProd {
   margin-bottom: 65px; }
-.conteudo .gamaProd {
+.conteudoProd .gamaProd {
   margin-top: 130px;
   margin-bottom: 100px;
   text-align: center; }
-  .conteudo .gamaProd img {
+  .conteudoProd .gamaProd img {
     max-width: 90%; }
+.conteudoProd .linksprod {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #787878; }
+  .conteudoProd .linksprod p {
+    font-family: "gotham_bold";
+    margin-bottom: 30px; }
+  .conteudoProd .linksprod div {
+    text-align: center; }
+    .conteudoProd .linksprod div a {
+      color: #787878;
+      text-decoration: none; }
+      .conteudoProd .linksprod div a:first-child {
+        margin-right: 4.5%; }
+    .conteudoProd .linksprod div i {
+      float: none;
+      font-size: 35px;
+      color: #009e94;
+      padding-right: 20px; }
 
 /*# sourceMappingURL=mc-custom.css.map */
