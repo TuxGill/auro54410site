@@ -1,5 +1,5 @@
 <?php
-  include('config.php');
+ include('config.php');
  ?>
 
  <!DOCTYPE html>
@@ -81,7 +81,6 @@
         // include('components/content/view/detail-news.php');
 
          ?>
-
 
         <footer>
             <?php include('views/footer.php'); ?>

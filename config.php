@@ -18,13 +18,15 @@
   define('OG_DESCRIPTION','');
   define('FAVICON','');
 
+
+
   /**/
   define('CPY_RGHT','2017 Aurovitas. Todos os direitos reservados');
 
   /**/
 
   if(!PRODUCTION){
-    define('DIRFOLDER','/aurovitas/auro54410site');
+    define('DIRFOLDER','/auro54410site');
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );
     error_reporting(1);
 	  ini_set('error_reporting', E_ALL);
