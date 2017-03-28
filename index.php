@@ -31,11 +31,20 @@
     -->
 
      <!-- Bootstrap -->
+<<<<<<< HEAD
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/bootstrap.min.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/font-awesome.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/tb-custom.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/ho-custom.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/fonts.css">
+=======
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.css">
+     <link rel="stylesheet" href="css/tb-custom.css">
+     <link rel="stylesheet" href="css/ho-custom.css">
+     <link rel="stylesheet" href="css/fonts.css">
+     <link rel="stylesheet" href="css/responsive.css">
+>>>>>>> origin/master
 
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,6 +63,7 @@
         </div>
         <?php
 
+<<<<<<< HEAD
         $route = explode('/',$_GET['area']);
          $routeID = explode('/',$_GET['id']);
          /*print_r($route);
@@ -64,6 +74,20 @@
         // echo $id;
          ?>
         <?php include('views/home.php'); ?>
+=======
+        // $route = explode('/',$_GET['area']);
+        // $routeID = explode('/',$_GET['ID']);
+        // print_r($route);
+        // print_r($routeID); 
+         ?>
+        <?php
+        include('views/home.php');
+        // include('components/products/view/list-products.php');
+        //include('components/content/view/list-news.php');
+        //include('components/content/view/detail-news.php');
+
+         ?>
+>>>>>>> origin/master
 
         <footer>
             <?php include('views/footer.php'); ?>

@@ -8,8 +8,13 @@
 
 <div class="row conteudo">
   <div class="separador"><p>DESTAQUE</p></div>
+<<<<<<< HEAD
   <div class="col-sm-4 offset-sm-2">
     <img src="<?php echo BASE_URL; ?>/images/produtos.png">
+=======
+  <div class="col-sm-4 offset-sm-2 destaque">
+    <img src="images/decubal.png">
+>>>>>>> origin/master
   </div>
   <div class="line">
     <img src="<?php echo BASE_URL; ?>/images/line.svg">
