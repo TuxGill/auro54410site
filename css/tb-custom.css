@@ -2,7 +2,8 @@
 /* COLORS */
 body {
   font-family: "gotham_light";
-  color: #242f75; }
+  color: #242f75;
+  letter-spacing: 1.5px; }
 
 .container {
   width: 100%;
