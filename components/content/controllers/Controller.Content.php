@@ -1,5 +1,5 @@
 <?php
-  /*TESTE 2 MARIA */
+  /*TESTE 2 MARIA ola */
   include($_SERVER['DOCUMENT_ROOT'].DIRFOLDER.'/components/content/models/Class.Content.php');
 
   function getAllContents($pdo){
