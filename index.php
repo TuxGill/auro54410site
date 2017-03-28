@@ -35,6 +35,7 @@
      <link rel="stylesheet" href="css/font-awesome.css">
      <link rel="stylesheet" href="css/tb-custom.css">
      <link rel="stylesheet" href="css/ho-custom.css">
+     <link rel="stylesheet" href="css/mc-custom.css">
      <link rel="stylesheet" href="css/fonts.css">
      <link rel="stylesheet" href="css/responsive.css">
 
@@ -58,13 +59,15 @@
         // $route = explode('/',$_GET['area']);
         // $routeID = explode('/',$_GET['ID']);
         // print_r($route);
-        // print_r($routeID); 
+        // print_r($routeID);
          ?>
         <?php
-        include('views/home.php');
+        //include('views/home.php');
         // include('components/products/view/list-products.php');
+        include('components/products/view/detail-products.php');
         //include('components/content/view/list-news.php');
         //include('components/content/view/detail-news.php');
+
 
          ?>
 
