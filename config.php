@@ -1,6 +1,7 @@
 <?php
 
   /* CONSTANS */
+  /*TESTE MARIA*/
 
   define('PRODUCTION',false);
   define('SITE_TITLE','Aurovitas');
