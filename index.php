@@ -1,6 +1,6 @@
-<!-- <?php
-  // include('config.php');
- ?> -->
+<?php
+  include('config.php');
+ ?>
 
  <!DOCTYPE html>
  <html lang="en">
@@ -31,12 +31,13 @@
     -->
 
      <!-- Bootstrap -->
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.css">
-     <link rel="stylesheet" href="css/tb-custom.css">
-     <link rel="stylesheet" href="css/ho-custom.css">
-     <link rel="stylesheet" href="css/fonts.css">
-     <link rel="stylesheet" href="css/responsive.css">
+
+     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/bootstrap.min.css">
+     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/font-awesome.css">
+     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/tb-custom.css">
+     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/ho-custom.css">
+     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/fonts.css">
+
 
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,10 +56,23 @@
         </div>
         <?php
 
+        /*
+        $route = explode('/',$_GET['area']);
+         $routeID = explode('/',$_GET['id']);
+         /*print_r($route);
+         print_r($routeID);
+
+         $area= $_GET['area'];
+         $id= $_GET['id'];
+        // echo $id;
+         ?>
+        <?php include('views/home.php'); ?>
+=======
         // $route = explode('/',$_GET['area']);
         // $routeID = explode('/',$_GET['ID']);
         // print_r($route);
         // print_r($routeID); 
+        */
          ?>
         <?php
         include('views/home.php');
@@ -68,6 +82,7 @@
 
          ?>
 
+
         <footer>
             <?php include('views/footer.php'); ?>
 
@@ -76,8 +91,8 @@
     </div>
 
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-     <script src="js/jquery-3.2.0.min.js"></script>
+     <script src="<?php echo BASE_URL; ?>/js/jquery-3.2.0.min.js"></script>
      <!-- Include all compiled plugins (below), or include individual files as needed -->
-     <script src="js/bootstrap.min.js"></script>
+     <script src="<?php echo BASE_URL; ?>/js/bootstrap.min.js"></script>
    </body>
  </html>
