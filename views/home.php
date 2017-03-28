@@ -1,5 +1,5 @@
 <div class="slider">
-  <img src="images/homeIMG.jpg">
+  <img src="<?php echo BASE_URL; ?>/images/homeIMG.jpg">
   <div class="subtitle">
     <p class="col-sm-6 offset-sm-1">UM COMPROMISSO <br>PARA A VIDA</p>
     <a class="col-sm-6 offset-sm-1" href="#">SABER MAIS</a>
@@ -9,10 +9,10 @@
 <div class="row conteudo">
   <div class="separador"><p>DESTAQUE</p></div>
   <div class="col-sm-4 offset-sm-2">
-    <img src="images/produtos.png">
+    <img src="<?php echo BASE_URL; ?>/images/produtos.png">
   </div>
   <div class="line">
-    <img src="images/line.svg">
+    <img src="<?php echo BASE_URL; ?>/images/line.svg">
   </div>
 
   <div class="col-sm-2 texto">
@@ -21,7 +21,7 @@
   </div>
 
   <div class="line">
-    <img src="images/line.svg">
+    <img src="<?php echo BASE_URL; ?>/images/line.svg">
   </div>
      <!--  <span class="icon-stack">
         <i class="fa fa-circle-thin icon-stack-3x"></i>
