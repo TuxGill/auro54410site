@@ -5,10 +5,10 @@
   </div>
 </div>
 
-<div class="row conteudo">
-<div class="separador"><p>PRODUTOS</p></div>
+<div class="row conteudo col-sm-12">
+<div class="separador col-sm-1"><p>PRODUTOS</p></div>
 
-	<div class="col-sm-8 offset-sm-2 txt-intro">
+	<div class="col-sm-8 offset-sm-1 txt-intro">
 		<p>
 			A Aurovitas comercializa medicamentos genéricos, medicamentos de marca e medicamentos 
 			não sujeitos a receita médica, abrangendo cerca de 22 áreas terapêuticas.

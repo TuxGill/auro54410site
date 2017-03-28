@@ -82,19 +82,21 @@ body{
 }
 
 form{
-    width: 300px;
+    width: 220px;
+    margin-right: 100px;
 
 	.form-control {
 		width:80%;
 	}
 	input[type=text] {
-	    /*width: 80% !important;*/
+	    width: 80% !important;
 	    font-family: $font-medium;
 	    font-size: 14px;
 	    color: $blue;
   		box-shadow: none;
   		border: none;
   		border-bottom: 2px solid $green;
+
   		
   		&:focus {
 		  outline: none;
@@ -212,6 +214,7 @@ form{
 		height:67px;
 	    margin-top: 168px;
 	    background-image: url(../images/seta.png);
+	    background-repeat: no-repeat;
 	    &:hover{
 	    	background-image: url(../images/seta-hover.png);
 	    }
@@ -258,9 +261,11 @@ form{
 /*   PRODUTOS  */
 
 .txt-intro{
-	color: $grey;
-	font-family: $font-medium;
-	font-size: 16px;
+	p{
+		color: $grey;
+		font-family: $font-medium!important;
+		font-size: 16px;
+	}
 }
 
 .icons{
@@ -340,13 +345,14 @@ form{
 /*  NOTICIAS */
 .conteudo-news{
 	.line{
-	    padding-top: 245px;
+	    padding-top: 280px;
 	}
 	.seta{
-		margin-top: 222px;
+		margin-top: 258px;
 	}
 
 	.imagens{
+		padding-top: 140px;
 		img{
 			max-width: 100%;
 		    -moz-transition: all 0.3s;

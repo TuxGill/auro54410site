@@ -6,12 +6,12 @@
   </div>
 </div>
 
-<div class="row conteudo">
-  <div class="separador"><p>DESTAQUE</p></div>
-  <div class="col-sm-4 offset-sm-2 destaque">
+<div class="row conteudo col-sm-12">
+  <div class="separador col-sm-1"><p>DESTAQUE</p></div>
+  <div class="col-sm-4 offset-sm-1 destaque">
     <img src="images/decubal.png">
   </div>
-  <div class="line">
+  <div class="line col-sm-1">
     <img src="images/line.svg">
   </div>
 
@@ -20,7 +20,7 @@
     <p class="txt-destaque">HIDRATAÇÃO <br>PROFUNDA <br>DA PELE</p>
   </div>
 
-  <div class="line">
+  <div class="line col-sm-1">
     <img src="images/line.svg">
   </div>
      <!--  <span class="icon-stack">
@@ -28,7 +28,7 @@
         <i class="fa fa-angle-right icon-stack-1x"></i>
 <<<<<<< HEAD
       </span> -->
-  <div class="seta">
+  <div class="seta col-sm-1">
     <!-- <img src="images/seta.png"> -->
   </div>
 

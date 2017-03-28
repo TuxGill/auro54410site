@@ -63,8 +63,8 @@
         <?php
         include('views/home.php');
         // include('components/products/view/list-products.php');
-        //include('components/content/view/list-news.php');
-        //include('components/content/view/detail-news.php');
+        // include('components/content/view/list-news.php');
+        // include('components/content/view/detail-news.php');
 
          ?>
 

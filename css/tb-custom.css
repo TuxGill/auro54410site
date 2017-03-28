@@ -53,11 +53,12 @@ body {
     background-color: transparent; }
 
 form {
-  width: 300px; }
+  width: 220px;
+  margin-right: 100px; }
   form .form-control {
     width: 80%; }
   form input[type=text] {
-    /*width: 80% !important;*/
+    width: 80% !important;
     font-family: "gotham_medium";
     font-size: 14px;
     color: #242f75;
@@ -170,7 +171,8 @@ form {
     width: 67px;
     height: 67px;
     margin-top: 168px;
-    background-image: url(../images/seta.png); }
+    background-image: url(../images/seta.png);
+    background-repeat: no-repeat; }
     .conteudo .seta:hover {
       background-image: url(../images/seta-hover.png); }
   .conteudo .icon-stack {
@@ -193,9 +195,9 @@ form {
       font-size: 3em; }
 
 /*   PRODUTOS  */
-.txt-intro {
+.txt-intro p {
   color: #787878;
-  font-family: "gotham_medium";
+  font-family: "gotham_medium" !important;
   font-size: 16px; }
 
 .icons {
@@ -255,18 +257,20 @@ form {
 /*   FIM PRODUTOS  */
 /*  NOTICIAS */
 .conteudo-news .line {
-  padding-top: 245px; }
+  padding-top: 280px; }
 .conteudo-news .seta {
-  margin-top: 222px; }
-.conteudo-news .imagens img {
-  max-width: 100%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
-  .conteudo-news .imagens img:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
+  margin-top: 258px; }
+.conteudo-news .imagens {
+  padding-top: 140px; }
+  .conteudo-news .imagens img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    .conteudo-news .imagens img:hover {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
 .conteudo-news .textos {
   padding-top: 100px; }
   .conteudo-news .textos h2 {
