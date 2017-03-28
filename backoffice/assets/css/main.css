@@ -1,0 +1,1043 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+
+
+COR DECOMED:
+ #7fbbb7
+
+
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b4dfaa;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b4dfaa;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/**************************************************
+    General
+****************************************************/
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+#main{
+    margin:0 auto;
+    padding: 0;
+    width: 950px;
+    height:100%;
+}
+
+label[for='layout'].error{
+    color:red;
+    text-align: right;
+    font-size: 10px;
+    width: 50px;
+}
+
+label.error{
+    color:red;
+    text-align: right;
+    font-size: 10px;
+    width: 385px;
+}
+
+/**************************************************
+    Page Header
+****************************************************/
+
+header{
+    border-bottom-style:solid;
+    border-bottom-color:#7fbbb7;
+    border-bottom-height: 30px;
+    height:100px;
+    margin-bottom: 5px;
+}
+
+header img{
+    margin:10px;
+    margin-top:30px;
+    margin-left:40px;
+    width:100px;
+}
+
+header div{
+    margin-top:40px;
+    float:right;
+    width:300px;
+    margin-right:20px;
+}
+
+header div p{
+    margin:0;
+    padding:0;
+    color:#53565a;
+    text-align: left;
+}
+
+header div p.logout{
+    margin-left: 70px;
+}
+
+header div p.logout:hover{
+    color: red;
+}
+
+header div p.logout a{
+    text-decoration: none;
+    color:#53565a;
+}
+
+header div p span{
+    color:#7fbbb7;
+    font-weight: bold;  
+
+}
+
+header .userIcon{
+    float:left;
+    margin-top:0;
+    width:20px;
+    height:20px;
+}
+
+nav{
+    float: left;
+    width: 30%;
+    margin:0;
+    padding: 0;
+    margin-left: -40px;
+}
+
+nav a{
+    color:#727272;
+}
+nav a:active{
+    color:white;
+}
+
+/**************************************************
+    Page Menu
+****************************************************/
+
+/* Items Principais do Menu */
+ul.navMenu div.tableHeader{
+    margin: 0;
+    padding: 8px; 
+    background-color: #999999;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: thin;
+    border-bottom-color: white;
+    border-bottom-style: groove;
+}
+
+ul.navMenu > li > div.tableHeader > .label { 
+    background: no-repeat; 
+}
+
+ul.navMenu > li > a > div.tableHeader > .label { 
+    color:white;
+}
+
+ul.navMenu > li > div.tableHeader > .arrow {
+     display: block; 
+     width: 16px; 
+     height: 16px; 
+     background: no-repeat center; 
+     float: right; 
+ }
+
+ul.navMenu > li > div.tableHeader > .arrow.up {
+    background-image: url(../img/arrowUp.png); 
+}
+
+ul.navMenu > li > div.tableHeader > .arrow.down {
+     background-image: url(../img/arrowDown.png); 
+ }
+
+
+/* SubMenu */
+ul.navMenu .subMenu{ 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navMenu .subMenu li { 
+    background-color: #ececec; 
+    padding: 8px; 
+    padding-left: 10px; 
+    border-bottom: 1px solid #dcdcdc; 
+    border-top: 1px solid #fff; 
+    color: #727272; 
+}
+
+ul.navMenu > li ul li:last-child { 
+    border-bottom: none; 
+}
+
+ul.navMenu > li ul li:hover
+{
+    background: #e7e7e7; 
+    cursor: pointer;
+}
+ul.navMenu > li ul li:active
+{
+    background: #7fbbb7; 
+    color: white;
+    cursor: pointer;
+}
+
+/* Sub Sub Menu*/
+ul.navMenu > li> ul > li.sub1 > div > .arrow , ul.navMenu > li> ul > li.sub2 > div > .arrow, ul.navMenu > li> ul > li.sub4 > div > .arrow, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub3 > div > .arrow, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub5 > div > .arrow, ul.navMenu > li> ul > li.sub6 > div > .arrow, ul.navMenu > li> ul > li.sub7 > div > .arrow, ul.navMenu > li> ul > li.sub8 > div > .arrow{
+     display: block; 
+     width: 16px; 
+     height: 16px; 
+     background: no-repeat center; 
+     float: right; 
+ }
+
+ul.navMenu > li> ul > li.sub1 > div> .arrow.up, ul.navMenu > li> ul > li.sub2 > div> .arrow.up, ul.navMenu > li> ul > li.sub4 > div> .arrow.up, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub3 > div > .arrow.up, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub5 > div > .arrow.up, ul.navMenu > li> ul > li.sub6 > div> .arrow.up, ul.navMenu > li> ul > li.sub7 > div> .arrow.up, ul.navMenu > li> ul > li.sub8 > div> .arrow.up {
+    background-image: url(../img/arrowUpDark.png); 
+}
+ul.navMenu > li> ul > li.sub1 > div> .arrow.down, ul.navMenu > li> ul > li.sub2 > div> .arrow.down, ul.navMenu > li> ul > li.sub4 > div> .arrow.down, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub3 > div > .arrow.down, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub5 > div > .arrow.down, ul.navMenu > li> ul > li.sub6 > div> .arrow.down, ul.navMenu > li> ul > li.sub7 > div> .arrow.down, ul.navMenu > li> ul > li.sub8 > div> .arrow.down{
+     background-image: url(../img/arrowDownDark.png); 
+ }
+
+ul.navMenu li > ul.subMenu > ul.extraSub1 > a >li , ul.navMenu li > ul.subMenu > ul.extraSub2 > a > li,ul.navMenu li > ul.subMenu > ul.extraSub4 > a > li, ul.navMenu > li> ul.subMenu > ul.extraSub4> ul.extraSub3 > a > li, ul.navMenu > li> ul.subMenu > ul.extraSub4> ul.extraSub5 > a > li, ul.navMenu li > ul.subMenu > ul.extraSub6 > a > li, ul.navMenu li > ul.subMenu > ul.extraSub7 > a > li, ul.navMenu li > ul.subMenu > ul.extraSub8 > a > li  { 
+    padding-left: 25px; 
+    color: #727272; 
+}
+
+.subSubLabel{
+    margin: 0;
+    padding-left:15px; 
+}
+
+.teste{
+    padding-left:35px; 
+}
+
+/**************************************************
+    Top Right Area // Area Detalhe
+****************************************************/
+.topRight{
+    position: relative;
+    float:right;
+    width: 685px;
+    height: 100%;
+    background-color: #F8F7F7;
+    margin-top: 12px;
+}
+
+.topRightHeader{
+    background-color: #7fbbb7;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.topRightHeader p{
+    height: 100%;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.topRightHeader a img{
+    position: relative;
+    float: right;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+}
+
+.caption{
+    font-style: italic;
+    font-size: 10px;
+    margin:0;
+    padding: 0;
+    margin-right:300px;
+    text-align: right;
+}
+input{
+    border: thin solid #E6E6E6;
+    height: 20px; 
+    width:250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #53565A; 
+}
+
+input[type=file]{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+input[type=checkbox]{
+    height: 15px; 
+    width:15px;
+}
+label{
+    display: inline-block;
+    color:#53565A;
+    font-weight: bold;
+    padding-right: 10px;
+    text-align: right;
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+textarea {
+    margin-bottom: 10px;
+    border: thin solid #E6E6E6;
+    width:250px;
+    height: 100px;
+    min-height: 100px;
+}
+
+select{
+    width:255px;
+    border: thin solid #E6E6E6;
+}
+
+.btnSave{
+    background: url(../img/save_ico.png) 5% 30% no-repeat;
+}
+.btnPublish{
+    background: url(../img/publish_ico.png) 5% 30% no-repeat;
+}
+.btnDelete{
+    background: url(../img/delete_ico.png) 5% 30% no-repeat;
+}
+
+.btnSave , .btnPublish, .btnDelete{
+    height: 25px;
+    width: 90px;
+    background-color: #CCCCCC;
+    padding-left: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+div.mainPreview{
+    width: 240px;
+    float: right;
+    margin-right: 10px;
+
+}
+
+#editMainPreview{
+    width: 200px;
+}
+
+
+div.preview{
+    display: block;
+    border: thin solid #E6E6E6;
+    padding: 5px;
+    margin:0 auto;
+    text-align: center;
+    background-color: white;
+}
+
+div.preview img{
+    max-width: 220px;
+    max-height: 180px;
+    position: relative;
+}
+
+#editMainPreview img{
+    max-width: 150px;
+    max-height: 230px;
+    position: relative;
+}
+
+#infoMainPreview img{
+    max-width: 220px;
+    max-height: 130px;
+    position: relative;
+}
+
+
+div.preview a{
+    color:#53565A;
+}
+
+.titlePreview{
+    color:#53565A;
+    background-color: #CCCCCC;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+}
+input.radioBtn{
+    width:12px;
+    margin-right: 10px;
+    color: red;
+
+}
+
+legend{
+    color: #53565A;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+fieldset{
+    border: 1px solid #ccc;
+    margin: 20px;
+
+}
+
+.medals{
+    width: 500px; 
+
+}
+
+fieldset.medals{
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+}
+
+.medals label{
+    width: 120px !important;
+    padding: 5px;    
+    vertical-align: middle;
+}
+
+
+.formProdutos label{
+    width: 130px;
+}
+
+
+.btProd{
+    height: 30px;
+    width: 150px;
+    margin-left: 20px;
+}
+
+.prodEdit{
+     width: 400px; 
+     float: left;"
+}
+
+#inputGroupPagina, #inputGroupPdf, #inputGroupInfo{
+    background-color: #E6E6E6;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 5px;
+}
+
+.formSim label{
+    width: 250px !important;
+}
+/**************************************************
+    Bottom Right Area // Area Lista
+****************************************************/
+
+.bottomRight{
+    position: relative;
+    float:right;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 685px;
+    height: 100%;
+    min-height: 500px;
+
+}
+
+
+/* General Table */
+table{
+    width: 100%;
+}
+
+div.bottomRight > ul{
+    list-style: none;
+
+}
+
+table td{
+    padding-left: 10px;
+    height: 25px;
+    border-right: 1px solid white; 
+}
+
+
+table td:last-child{
+    border-right:none;
+}
+
+.tableHeaderGeneral > th{
+    color: white;
+    background-color: #7fbbb7;
+    height: 25px;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.tableSubHeaderGeneral{
+     height: 15px;
+     background-color: #53565A;
+     color: white;
+     text-align: left;
+}
+
+.tableSubHeaderGeneral td{
+    padding-left: 10px;
+    border-right: 1px solid white; 
+}
+
+.tableSubHeaderGeneral td:last-child{
+    border-right:none;
+}
+
+tr > td img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    max-height: 100px;
+    padding: 5px;
+}
+
+table a{
+    color:#53565A;
+}
+
+.tableSubHeaderImg{
+    text-align: center;
+    padding-left:5px;
+    padding-right:5px;
+    margin:0;
+}
+
+/* General Row Style */
+.impar{
+    background-color: #E6E6E6;
+    color: #53565A;
+}
+
+.par{
+    color: #53565A;
+}
+
+.dragClass{
+    background-color: #7fbbb7;
+    color: white;
+}
+.dragClass a{
+    color: white;
+}
+
+/**************************************************
+    SplashHome
+****************************************************/
+
+/* Top */
+.homeBtnAreas{
+    position: relative;
+    float:left;
+    width: 145px;
+    height: 145px;
+    background-color: #F2F2F2;
+    margin: 20px;
+
+}
+
+.homeBtnAreas:hover{
+    background-color: #e7e7e7;
+
+}
+
+.homeBtnAreas img{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+.homeBtnAreas p{
+    text-align: center;
+    color: #7fbbb7;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.homeBtns{
+    width: 555px;
+    margin: 0 auto;
+}
+
+/**************************************************
+    Ficha DIM
+****************************************************/
+
+
+#fichaDim{
+    margin: 0 auto;
+    margin-right: 200px;
+    margin-left: -200px;
+
+}
+
+.topNameDim{
+    background-color: #00AEC7;
+    height: 25px;
+}
+
+.topNameDim p{
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    margin:0;
+
+}
+
+.btnOk{
+    margin: 0 auto;
+    margin-left: 60px;
+    width: 100px;
+}
+
+.btnVoltar{
+    color: #53565A;
+    font-weight:bold;
+}
+
+.titleDim{
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    margin: 0;
+    background-color: #7fbbb7;
+}
+
+.exportTmp{
+    float:right;
+}
+
+/**************************************************
+    Footer
+****************************************************/
+
+
+footer{
+    clear:both;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: #A7A8AA;
+}
+
+/**************************************************
+    Data Tables
+****************************************************/
+
+.dataTables_wrapper{
+    width:685px;
+}
+
+.dataTables_length {
+    float: left;
+    width: 350px;
+    padding-left: 15px;
+    padding-top: 20px;
+    background-color: #7fbbb7;
+    height: 35px;
+    color: white;
+
+}
+
+.dataTables_length select{
+    width: 60px;
+}
+
+.dataTables_filter{
+    float: right;
+    width: 320px;
+    padding-top: 15px;
+    background-color: #7fbbb7;
+    height: 40px;
+    color: white;
+}
+
+.dataTables_filter input{
+    margin: 0;
+}
+
+.dataTables_info{
+    float: left;
+    width: 350px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #7fbbb7;
+    height: 15px;
+    color: white;
+}
+
+.dataTables_paginate, .paging_full_numbers{
+    float: right;
+    width: 320px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #7fbbb7;
+    height: 15px;
+    color: white;
+    text-align: right;
+
+}
+
+.paginate_button{
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.paginate_active{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.last{
+    padding-right: 10px;
+}
+
+thead{
+     height: 15px;
+     background-color: #53565A;
+     color: white;
+     text-align: left;
+     padding: 10px;
+}
+
+thead th{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-right: 1px solid white; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+thead th:last-child{
+    border-right:none;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
