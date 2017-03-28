@@ -27,7 +27,7 @@
   /**/
 
   if(!PRODUCTION){
-    define('DIRFOLDER','/auro54410site');
+    define('DIRFOLDER','/auro/auro54410site');
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );
     error_reporting(1);
 	  ini_set('error_reporting', E_ALL);
