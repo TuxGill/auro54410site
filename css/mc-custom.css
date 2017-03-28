@@ -28,7 +28,8 @@
   font-size: 20px;
   text-align: center;
   letter-spacing: 1.5px;
-  color: #787878; }
+  color: #787878;
+  font-family: "gotham_medium"; }
   .conteudoProd .linksprod p {
     font-family: "gotham_bold";
     margin-bottom: 30px; }
@@ -44,5 +45,18 @@
       font-size: 35px;
       color: #009e94;
       padding-right: 20px; }
+.conteudoProd .rcmprod {
+  text-align: center;
+  font-family: "gotham_medium"; }
+  .conteudoProd .rcmprod a {
+    color: #787878;
+    text-decoration: none; }
+    .conteudoProd .rcmprod a:first-child {
+      margin-right: 4.5%; }
+  .conteudoProd .rcmprod i {
+    float: none;
+    font-size: 35px;
+    color: #009e94;
+    padding-right: 20px; }
 
 /*# sourceMappingURL=mc-custom.css.map */
