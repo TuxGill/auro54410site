@@ -37,6 +37,7 @@
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/ho-custom.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/mc-custom.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/fonts.css">
+     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/responsive.css">
 
 
 

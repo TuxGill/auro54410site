@@ -1,4 +1,4 @@
-<div class="col-sm-1 offset-sm-11"><p>VER MAPA</p></div>
+<div class="col-sm-2 offset-sm-10 vermapa"><p>VER MAPA</p></div>
 <div class="row geral">
 <div class="separador"><p>CONTACTOS</p></div>
     <div class="col-sm-8 offset-sm-2 organizer">

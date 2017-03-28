@@ -23,7 +23,6 @@ body {
 
 .navbar .navbar-nav {
   width: 100%;
-  padding: 0 10% 0 20%;
   text-align: center; }
 
 .navbar-light .navbar-nav li {
@@ -160,11 +159,11 @@ form {
     padding-top: 80px; }
     .conteudo .texto .title-destaque {
       font-family: "gotham_bold";
-      font-size: 30px;
+      font-size: 2vw;
       padding: 0;
       color: #242f75; }
     .conteudo .texto .txt-destaque {
-      font-size: 30px;
+      font-size: 2vw;
       color: #242f75; }
   .conteudo .line {
     padding-top: 190px; }
@@ -325,10 +324,13 @@ form {
 
 footer {
   position: relative; }
+  footer .vermapa {
+    padding-top: 1rem;
+    padding-left: 4rem; }
   footer .geral {
     position: absolute;
     width: 100%;
-    margin-top: 100px; }
+    margin-top: 40px; }
   footer h2 {
     margin-left: 56px; }
   footer .linha-separador {

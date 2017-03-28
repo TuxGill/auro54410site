@@ -1,5 +1,42 @@
-@media (max-width: 1250px) {
+@media (max-width: 1337px) {
+  .conteudo .line {
+    width: 10%;
+    padding-top: 170px; }
+    .conteudo .line img {
+      width: 100%; }
+  .conteudo .seta {
+    margin-top: 150px; } }
+@media (max-width: 1295px) {
   .subtitle p {
-    font-size: 50px; } }
+    font-size: 4.4vw;
+    padding-top: 25px; } }
+@media (max-width: 1150px) {
+  .subtitle {
+    height: 250px; }
+    .subtitle p {
+      padding-top: 0; }
+
+  form {
+    width: 200px;
+    margin-right: 0; }
+
+  .conteudo .line {
+    padding-top: 150px; }
+  .conteudo .seta {
+    margin-top: 128px; } }
+@media (max-width: 1135px) {
+  .navbar-toggleable-md .navbar-toggler {
+    display: block;
+    margin: 20px; }
+
+  .navbar-toggleable-md .navbar-nav {
+    /*	    -webkit-box-orient: horizontal;
+    	    -webkit-box-direction: normal;
+    	    -webkit-flex-direction: row;
+    	    -ms-flex-direction: row;
+    	    flex-direction: row;*/ }
+
+  form {
+    width: 180px; } }
 
 /*# sourceMappingURL=responsive.css.map */

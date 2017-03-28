@@ -40,7 +40,6 @@ body{
 
 .navbar .navbar-nav {
 	width: 100%;
-    padding: 0 10% 0 20%;
     text-align: center;
 }
 
@@ -196,12 +195,12 @@ form{
 
 		.title-destaque{
 			font-family: $font-bold;
-			font-size: 30px;
+			font-size: 2vw;
 			padding: 0;
 			color: $blue;
 		}
 		.txt-destaque{
-			font-size: 30px;
+			font-size: 2vw;
 			color: $blue;
 		}
 	}
@@ -438,11 +437,15 @@ form{
 }
 
 footer{
+.vermapa{
+	padding-top: 1rem;
+    padding-left: 4rem;
+}
 	position: relative;
 	.geral{
 		position: absolute;
     	width: 100%;
-    	margin-top: 100px;
+    	margin-top: 40px;
 	}
 
 	h2{

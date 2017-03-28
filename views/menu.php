@@ -39,7 +39,7 @@
   <a class="navbar-brand" href="index.php"><img src="<?php echo BASE_URL; ?>/images/logo.svg"></a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0 justify-content-center">
       <li class="nav-item">
         <a class="nav-link" href="#">A AUROVITAS</a>
       </li>
