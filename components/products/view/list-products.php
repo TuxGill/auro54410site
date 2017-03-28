@@ -37,7 +37,7 @@
 		<h2>MEDICAMENTOS NÃO SUJEITOS A RECEITA MÉDICA (MNSRM)</h2>
 	</div>
 
-	<div class="row col-sm-8 offset-sm-2 decubal">
+	<div class="row col-sm-9 offset-sm-2 decubal">
 		 <div class="col-sm-5 imagem">
 		    <img src="images/decubal.png">
 		  </div>
@@ -45,7 +45,7 @@
 		    <img src="images/line.svg">
 		  </div>
 
-		  <div class="col-sm-3 texto">
+		  <div class="col-sm-4 texto">
 		    <p class="title-destaque">DECUBAL</p>
 		    <p class="txt-destaque">HIDRATAÇÃO <br>PROFUNDA <br>DA PELE</p>
 		  </div>
@@ -59,7 +59,7 @@
 		  </div>
 	</div>
 
-	<div class="row col-sm-8 offset-sm-2 beacita">
+	<div class="row col-sm-9 offset-sm-2 beacita">
 		 <div class="col-sm-5 imagem">
 		    <img src="images/beacita.png">
 		  </div>
@@ -67,7 +67,7 @@
 		    <img src="images/line.svg">
 		  </div>
 
-		  <div class="col-sm-3 texto">
+		  <div class="col-sm-4 texto">
 		    <p class="title-destaque">BEACITA</p>
 		    <p class="txt-destaque">UMA NOVA <br>FORMA DE <br>PERDER PESO</p>
 		  </div>
@@ -80,7 +80,7 @@
 
 		  </div>
 	</div>
-	<div class="row col-sm-8 offset-sm-2 ferlidona">
+	<div class="row col-sm-9 offset-sm-2 ferlidona">
 		 <div class="col-sm-5 imagem">
 		    <img src="images/ferlidona.png">
 		  </div>
@@ -88,7 +88,7 @@
 		    <img src="images/line.svg">
 		  </div>
 
-		  <div class="col-sm-3 texto">
+		  <div class="col-sm-4 texto">
 		    <p class="title-destaque">FERLIDONA</p>
 		    <p class="txt-destaque">GAMA DE<br>TESTES DE<br>DIAGNÓSTICO<br>PARA MULHERES</p>
 		  </div>

@@ -9,7 +9,7 @@
 <div class="row conteudo col-sm-12">
 
   <div class="separador col-sm-1"><p>DESTAQUE</p></div>
-     <div class="row col-sm-8 offset-sm-1">
+     <div class="row col-sm-9 offset-sm-1">
       <div class="col-sm-5 destaque">
         <img src="<?php echo BASE_URL; ?>/images/decubal.png">
       </div>
@@ -18,7 +18,7 @@
         <img src="<?php echo BASE_URL; ?>/images/line.svg">
       </div>
 
-      <div class="col-sm-3 texto">
+      <div class="col-sm-4 texto">
         <p class="title-destaque">DECUBAL</p>
         <p class="txt-destaque">HIDRATAÇÃO <br>PROFUNDA <br>DA PELE</p>
       </div>
