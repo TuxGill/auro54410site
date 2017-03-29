@@ -16,47 +16,85 @@
     width: 100%;
     height: 100%; }
 
-.conteudoProd .logoProd {
-  margin-bottom: 65px; }
-.conteudoProd .gamaProd {
-  margin-top: 130px;
-  margin-bottom: 100px;
-  text-align: center; }
-  .conteudoProd .gamaProd img {
-    max-width: 90%; }
-.conteudoProd .linksprod {
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 1.5px;
-  color: #787878;
-  font-family: "gotham_medium"; }
-  .conteudoProd .linksprod p {
-    font-family: "gotham_bold";
-    margin-bottom: 30px; }
-  .conteudoProd .linksprod div {
+.conteudoProd {
+  /****** Decubal ******/
+  /****** Beacita ******/
+  /****** Ferlidona ******/ }
+  .conteudoProd .logoProd {
+    margin-bottom: 65px; }
+  .conteudoProd .gamaProd {
+    margin-top: 130px;
+    margin-bottom: 100px;
     text-align: center; }
-    .conteudoProd .linksprod div a {
+    .conteudoProd .gamaProd img {
+      max-width: 90%; }
+  .conteudoProd .linksprod {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #787878;
+    font-family: "gotham_medium"; }
+    .conteudoProd .linksprod p {
+      font-family: "gotham_bold";
+      margin-bottom: 30px; }
+    .conteudoProd .linksprod div {
+      text-align: center; }
+      .conteudoProd .linksprod div a {
+        color: #787878;
+        text-decoration: none; }
+        .conteudoProd .linksprod div a:first-child {
+          margin-right: 4.5%; }
+      .conteudoProd .linksprod div i {
+        float: none;
+        font-size: 35px;
+        color: #009e94;
+        padding-right: 20px; }
+  .conteudoProd .rcmprod {
+    text-align: center;
+    font-family: "gotham_medium"; }
+    .conteudoProd .rcmprod a {
       color: #787878;
       text-decoration: none; }
-      .conteudoProd .linksprod div a:first-child {
+      .conteudoProd .rcmprod a:first-child {
         margin-right: 4.5%; }
-    .conteudoProd .linksprod div i {
+    .conteudoProd .rcmprod i {
       float: none;
       font-size: 35px;
       color: #009e94;
       padding-right: 20px; }
-.conteudoProd .rcmprod {
-  text-align: center;
-  font-family: "gotham_medium"; }
-  .conteudoProd .rcmprod a {
+  .conteudoProd .gamaFerlidona .textos h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "gotham_bold";
+    letter-spacing: 1.5px; }
+  .conteudoProd .gamaFerlidona .textos h3 {
+    font-size: 20px;
+    font-family: "gotham_book";
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
     color: #787878;
-    text-decoration: none; }
-    .conteudoProd .rcmprod a:first-child {
-      margin-right: 4.5%; }
-  .conteudoProd .rcmprod i {
-    float: none;
-    font-size: 35px;
-    color: #009e94;
-    padding-right: 20px; }
+    text-align: left;
+    margin-bottom: 35px; }
+  .conteudoProd .gamaFerlidona .textos p {
+    text-align: left;
+    font-size: 16px;
+    font-family: "gotham_book";
+    letter-spacing: 1.5px;
+    line-height: 30px; }
+  .conteudoProd .gamaFerlidona .line {
+    position: relative;
+    padding-top: 0; }
+    .conteudoProd .gamaFerlidona .line img {
+      width: 100%;
+      vertical-align: middle; }
+  .conteudoProd .gamaFerlidona .docIcon {
+    align-items: center;
+    justify-content: center; }
+    .conteudoProd .gamaFerlidona .docIcon i {
+      float: none;
+      vertical-align: middle;
+      font-size: 55px;
+      color: #009e94; }
 
 /*# sourceMappingURL=mc-custom.css.map */

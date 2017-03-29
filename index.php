@@ -37,6 +37,8 @@
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/ho-custom.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/mc-custom.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/fonts.css">
+     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/equal-height-columns.css">
+
 
 
 
@@ -82,11 +84,14 @@
         <?php
         //include('views/home.php');
         // include('components/products/view/list-products.php');
-        include('components/products/view/detail-products.php');
+        // include('components/products/view/detail-products.php');
         //include('components/content/view/list-news.php');
         //include('components/content/view/detail-news.php');
         // include('components/content/view/list-news.php');
         // include('components/content/view/detail-news.php');
+
+        //include('components/products/view/detail-products-beacita.php');
+        include('components/products/view/detail-products-ferlidona.php');
          ?>
 
         <footer>

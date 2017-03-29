@@ -28,8 +28,8 @@ $grey: #787878;
       width: 100%;
       height: 100%;
     }
-  }
-}
+  }//videoWrapper
+}//slider
 
 .conteudoProd{
   .logoProd{
@@ -44,8 +44,9 @@ $grey: #787878;
     img{
       max-width: 90%;
     }
-  }
+  }//gamaProd
 
+  /****** Decubal ******/
   .linksprod{
     font-size: 20px;
     text-align: center;
@@ -78,6 +79,7 @@ $grey: #787878;
     }
   }//linksprod
 
+  /****** Beacita ******/
   .rcmprod{
     text-align: center;
     font-family: $font-medium;
@@ -96,5 +98,61 @@ $grey: #787878;
       padding-right:20px;
     }
 
-  }
-}//conteudoDecubal
+  }//rcmprod
+
+  /****** Ferlidona ******/
+  .gamaFerlidona{
+    .textos{
+      h2{
+        font-size: 34px;
+        text-transform: uppercase;
+        text-align:left;
+        font-family: $font-bold;
+        letter-spacing: 1.5px;
+      }
+
+      h3{
+        font-size: 20px;
+        font-family: $font-book;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: $grey;
+        text-align: left;
+        margin-bottom: 35px;
+      }
+
+      p{
+        text-align: left;
+        font-size: 16px;
+        font-family: $font-book;
+        letter-spacing: 1.5px;
+        line-height: 30px;
+      }
+    }
+
+    .line{
+      position: relative;
+      padding-top: 0;
+      img{
+        width: 100%;
+        vertical-align: middle;
+        // Fix p/ blur da linha
+        // padding-top: 1px;
+      }
+    }
+
+    .docIcon{
+      align-items: center;
+      justify-content: center;
+      i{
+        float: none;
+        vertical-align: middle;
+        font-size: 55px;
+        color:$green;
+
+      }
+
+    }
+  }//gamaFerlidona
+
+}//conteudoProd
