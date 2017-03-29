@@ -37,12 +37,9 @@
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/ho-custom.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/mc-custom.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/fonts.css">
-<<<<<<< HEAD
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/equal-height-columns.css">
-
-=======
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/responsive.css">
->>>>>>> master
+
 
     <script src="<?php echo BASE_URL; ?>/js/modernizr.custom.js"></script>
 
@@ -75,19 +72,19 @@
         // echo $id;
          ?>
         <?php include('views/home.php'); ?>
-=======
+
         // $route = explode('/',$_GET['area']);
         // $routeID = explode('/',$_GET['ID']);
         // print_r($route);
-<<<<<<< HEAD
+
         // print_r($routeID);
-=======
+
         // print_r($routeID);
         */
 
          ?>
         <?php
-        include('views/home.php');
+        //include('views/home.php');
         // include('components/products/view/list-products.php');
         // include('components/products/view/detail-products.php');
         //include('components/content/view/list-news.php');
