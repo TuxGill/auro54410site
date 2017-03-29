@@ -18,7 +18,7 @@
         <img src="<?php echo BASE_URL; ?>/images/line.svg">
       </div>
 
-      <div class="col-sm-4 texto">
+      <div class="col-sm-3 texto">
         <p class="title-destaque">DECUBAL</p>
         <p class="txt-destaque">HIDRATAÇÃO <br>PROFUNDA <br>DA PELE</p>
       </div>

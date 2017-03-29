@@ -1,9 +1,9 @@
-<div class="col-sm-1 offset-sm-11"><p>VER MAPA</p></div>
-<div class="row geral">
-<div class="separador"><p>CONTACTOS</p></div>
-    <div class="col-sm-8 offset-sm-2 organizer">
+<div class="col-sm-2 offset-sm-10 vermapa"><p>VER MAPA</p></div>
+<div class="row geral col-sm-12">
+<div class="col-sm-1 separador"><p>CONTACTOS</p></div>
+    <div class="col-sm-10 offset-sm-1 organizer">
         <div class="row">
-              <ul class="col-xs-12 col-sm-6">
+              <ul class="col-md-5 col-xs-12">
                   <li><h2>DADOS GERAIS</h2></li>
                   <li class="info-item">
                       <div class="icon"><i class="fa fa-home fa-2x" aria-hidden="true"></i></div>
@@ -60,7 +60,7 @@
 
 
               </ul>
-              <ul class="col-xs-12 col-sm-6">
+              <ul class="col-md-5 col-xs-12">
                 <li><h2>APOIO AO CLIENTE</h2></li>
                 <li class="info-item">
 
@@ -107,4 +107,15 @@
           </div>
         </div>
 
+</div>
+
+<div class="row rodape col-sm-12">
+  <div class="copyEsq">
+    <p>©Copyright 2016 Aurovitas</p>
+  </div>
+  <div class="copyDir">
+    <p>
+      Site map | Termos do Site | Política de privacidade
+    </p>
+  </div>
 </div>

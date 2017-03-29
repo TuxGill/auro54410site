@@ -2,7 +2,8 @@
 /* COLORS */
 body {
   font-family: "gotham_light";
-  color: #242f75; }
+  color: #242f75;
+  letter-spacing: 1.5px; }
 
 .container {
   width: 100%;
@@ -22,7 +23,6 @@ body {
 
 .navbar .navbar-nav {
   width: 100%;
-  padding: 0 10% 0 20%;
   text-align: center; }
 
 .navbar-light .navbar-nav li {
@@ -54,7 +54,7 @@ body {
 
 form {
   width: 220px;
-  margin-right: 100px; }
+  /* margin-right: 100px;*/ }
   form .form-control {
     width: 80%; }
   form input[type=text] {
@@ -82,6 +82,9 @@ form {
 
 .navbar-toggler {
   margin: 50px; }
+
+.content-scale {
+  display: none; }
 
 /* FIM MENU*/
 .slider {
@@ -159,11 +162,11 @@ form {
     padding-top: 80px; }
     .conteudo .texto .title-destaque {
       font-family: "gotham_bold";
-      font-size: 30px;
+      font-size: 2vw;
       padding: 0;
       color: #242f75; }
     .conteudo .texto .txt-destaque {
-      font-size: 30px;
+      font-size: 2vw;
       color: #242f75; }
   .conteudo .line {
     padding-top: 190px; }
@@ -318,16 +321,21 @@ form {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   text-align: center;
-  margin-left: 1rem; }
+  /*margin-left: 1rem;*/ }
   .separador p {
     color: #ffffff; }
 
 footer {
   position: relative; }
+  footer .vermapa {
+    padding-top: 1rem;
+    padding-left: 4rem; }
+  footer .organizer .icon {
+    /*margin-right: 5px;*/ }
   footer .geral {
     position: absolute;
     width: 100%;
-    margin-top: 100px; }
+    margin-top: 40px; }
   footer h2 {
     margin-left: 56px; }
   footer .linha-separador {
@@ -336,6 +344,20 @@ footer {
     margin: 20px 0px 40px 0; }
   footer li p {
     font-family: "gotham_medium"; }
+
+.rodape {
+  background: #4a4a49;
+  color: #ffffff;
+  position: absolute;
+  bottom: -75px;
+  width: 100%;
+  height: 75px;
+  padding: 30px;
+  font-size: 12px;
+  margin: 0; }
+  .rodape .copyDir {
+    position: absolute;
+    right: 0; }
 
 /*   FIM FOOTER   */
 @media (min-width: 768px) {
