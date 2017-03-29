@@ -33,8 +33,8 @@
 </nav> -->
 
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" id="trigger-overlay">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
   </button>
   <a class="navbar-brand" href="index.php"><img src="<?php echo BASE_URL; ?>/images/logo.svg"></a>
 
@@ -62,3 +62,20 @@
     </form>
   </div>
 </nav>
+
+<div class="overlay overlay-contentscale content-scale">
+  <button type="button" class="overlay-close">Close</button>
+  <nav>
+    <ul>
+      <li><a href="#">A AUROVITAS</a></li>
+      <li><a href="#">O GRUPO</a></li>
+      <li><a href="#">PRODUTOS</a></li>
+      <li><a href="#">NOTÍCIAS</a></li>
+      <li><a href="#">CONTACTOS</a></li>
+    </ul>
+     <form class="form-inline my-2 my-lg-0">
+      <i class='fa fa-search fa-2x'></i>
+        <input class="form-control mr-sm-2" type="text" placeholder="PROCURAR">
+    </form>
+  </nav>
+</div>

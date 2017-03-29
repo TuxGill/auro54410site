@@ -39,6 +39,7 @@
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/fonts.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/responsive.css">
 
+    <script src="<?php echo BASE_URL; ?>/js/modernizr.custom.js"></script>
 
 
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -81,9 +82,9 @@
 
          ?>
         <?php
-        //include('views/home.php');
+        include('views/home.php');
         // include('components/products/view/list-products.php');
-        include('components/products/view/detail-products.php');
+        // include('components/products/view/detail-products.php');
         //include('components/content/view/list-news.php');
         //include('components/content/view/detail-news.php');
         // include('components/content/view/list-news.php');
@@ -100,5 +101,9 @@
      <script src="<?php echo BASE_URL; ?>/js/jquery-3.2.0.min.js"></script>
      <!-- Include all compiled plugins (below), or include individual files as needed -->
      <script src="<?php echo BASE_URL; ?>/js/bootstrap.min.js"></script>
+     <!-- include menu responsive -->
+    <script src="<?php echo BASE_URL; ?>/js/classie.js"></script>
+    <script src="<?php echo BASE_URL; ?>/js/demo7.js"></script>
+
    </body>
  </html>

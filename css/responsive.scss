@@ -1,3 +1,8 @@
+/* COLORS */
+$blue: #242f75;
+$green: #009e94;
+$grey: #787878;
+
 
 @media (max-width: 1337px){
 	.conteudo{
@@ -12,6 +17,16 @@
 		    margin-top: 150px;
 		}
 
+	}
+
+	.rodape{
+		padding: 20px;
+	}
+
+	footer{
+		h2{
+			margin-left: 43px;
+		}
 	}
 }
 @media (max-width: 1295px){
@@ -32,7 +47,6 @@
 	}
 	form{
     width: 200px;
-    margin-right: 0;
 	}
 
 	.conteudo{
@@ -51,14 +65,220 @@
 	    margin: 20px;
 	}
 	.navbar-toggleable-md .navbar-nav {
-/*	    -webkit-box-orient: horizontal;
-	    -webkit-box-direction: normal;
-	    -webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	    flex-direction: row;*/
+			display: none;
+	        /*display: flex;*/
+		    -webkit-box-orient: vertical;
+		    -webkit-box-direction: normal;
+		    -webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		    flex-direction: column;
+		    padding-left: 0;
+		    margin-bottom: 0;
+		    list-style: none;
+	}
+	.navbar-light .navbar-toggler{
+		border-color: rgba(0,0,0,0);
 	}
 
-	form{
-		width: 180px;
+	form, .form-inline{
+		width: 100%;
+		display: none;
+	}
+
+	.navbar {
+		span, .navbar-toggler-icon{
+		    background-size: 0% 0%;
+			i{
+				color: $blue;
+			}
+		}
+	}
+
+	.slider{
+		z-index: 0;
+	}
+
+	.bg-faded{
+		z-index: 10;
+	}
+
+	footer{
+		h2{
+			font-size: 14px;
+			margin-left: 34px;
+		}
+		.organizer{
+			font-size: 13px;
+		}
+	}
+
+	/* MENU RESPONSIVE */
+
+	/* Overlay style */
+	.overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(36, 47, 117, 0.9);
+	}
+
+	/* Overlay closing cross */
+	.overlay .overlay-close {
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		overflow: hidden;
+		border: none;
+		background: url(../images/cross.png) no-repeat center center;
+		text-indent: 200%;
+		color: transparent;
+		outline: none;
+		z-index: 100;
+	}
+
+	/* Menu style */
+	.overlay nav {
+		text-align: center;
+		position: relative;
+		top: 50%;
+		height: 60%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.overlay ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 auto;
+		display: inline-block;
+		height: 100%;
+		position: relative;
+	}
+
+	.overlay ul li {
+		display: block;
+		height: 20%;
+		height: calc(60% / 5);
+		min-height: 54px;
+	}
+
+	.overlay ul li a {
+		font-size: 40px;
+		font-weight: 300;
+		display: block;
+		color: #fff;
+		-webkit-transition: color 0.2s;
+		transition: color 0.2s;
+	}
+
+	.overlay ul li a:hover,
+	.overlay ul li a:focus {
+		color: #f0f0f0;
+	}
+
+	/* Effects */
+	body {
+		background: #ddd;
+	}
+
+	.container {
+		background: #fff;
+		-webkit-transition: -webkit-transform 0.5s;
+		transition: transform 0.5s;
+	}
+
+	.container.overlay-open {
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+
+	.overlay-contentscale {
+		visibility: hidden;
+		-webkit-transform: translateY(100%);
+		transform: translateY(100%);
+		-webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+		transition: transform 0.5s, visibility 0s 0.5s;
+		z-index: 500;
+	}
+
+	.overlay-contentscale.open {
+		visibility: visible;
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+		-webkit-transition: -webkit-transform 0.5s;
+		transition: transform 0.5s;
+	}
+
+	.content-scale{
+		display: block;
+	}
+
+	@media screen and (max-height: 30.5em) {
+		.overlay nav {
+			height: 70%;
+			font-size: 34px;
+		}
+		.overlay ul li {
+			min-height: 34px;
+		}
+	}
+
+
+	/* FIM MENU RESPONSIVE */
+}
+
+@media (max-width: 1040px){
+	footer{
+		.vermapa{
+			padding-left: 0;
+		}
+	}
+}
+
+@media  (max-width: 885px){
+	footer{
+		height: 600px;
+		h2{
+			margin-left: 27px;
+		}
+		.rodape{
+			padding-top: 30px;
+
+			.copyDir{
+				right: 20px;
+			}
+		}
+		.organizer{
+			.icon{
+				margin-right: 4px;
+			}
+		}
+	}
+	footer li div:nth-child(2){
+		width: 80%;
+	}
+}
+
+@media (max-width:768px){
+	footer{
+		height: 800px;
+		.organizer{
+			.icon{
+				margin-right: 0px;
+			}
+		}
+
+		h2{
+			margin-left: 57px;
+		}
+	}
+
+	
+	footer li div:nth-child(2){
+		width: 90%;
 	}
 }
