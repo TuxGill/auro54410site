@@ -100,8 +100,95 @@
       font-size: 55px;
       color: #009e94; }
 
+/*****************************************************
+                  QuemSomos
+*****************************************************/
+.conteudoQuemSomos .txt-intro {
+  margin-bottom: 150px; }
+  .conteudoQuemSomos .txt-intro h2 {
+    text-transform: uppercase;
+    margin-top: 100px;
+    font-size: 30px;
+    margin-bottom: 30px; }
+.conteudoQuemSomos .valores {
+  margin-top: 150px; }
+  .conteudoQuemSomos .valores .prodFer {
+    margin-bottom: 110px; }
+  .conteudoQuemSomos .valores .textos {
+    align-items: center;
+    display: flex;
+    position: relative; }
+    .conteudoQuemSomos .valores .textos h2 {
+      text-transform: uppercase;
+      margin-top: 0;
+      font-size: 30px;
+      position: absolute;
+      top: 30px; }
+    .conteudoQuemSomos .valores .textos h3 {
+      font-size: 34px;
+      text-transform: uppercase;
+      text-align: left;
+      font-family: "gotham_bold";
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+      color: #4a4a49;
+      margin-top: 0; }
+    .conteudoQuemSomos .valores .textos p {
+      text-align: left;
+      font-size: 16px;
+      font-family: "gotham_book";
+      letter-spacing: 2px;
+      line-height: 30px;
+      text-transform: uppercase; }
+  .conteudoQuemSomos .valores .imagens img {
+    width: 100%; }
+  .conteudoQuemSomos .valores .line {
+    position: relative;
+    padding-top: 0;
+    margin-left: -31px; }
+    .conteudoQuemSomos .valores .line img {
+      width: 100%;
+      vertical-align: middle; }
+  .conteudoQuemSomos .valores .docIcon {
+    align-items: center;
+    justify-content: center; }
+    .conteudoQuemSomos .valores .docIcon i {
+      float: none;
+      vertical-align: middle;
+      font-size: 55px;
+      color: #009e94; }
+  .conteudoQuemSomos .valores .marginValores {
+    margin-bottom: 150px; }
+
+/******************************************************
+*******************************************************
+***********         MEDIA QUERIES               *******
+*******************************************************
+******************************************************/
+@media (max-width: 1500px) {
+  .row.conteudoProd {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0; }
+
+  .conteudoQuemSomos .valores .textos h2 {
+    top: 0; } }
+@media (max-width: 1240px) {
+  .conteudoQuemSomos .valores .textos h2 {
+    top: 0; } }
+@media (max-width: 1025px) {
+  .conteudoQuemSomos .valores .textos h2 {
+    top: -25px; } }
+@media (max-width: 869px) {
+  .conteudoQuemSomos .valores .textos h2 {
+    top: -65px; } }
 @media (max-width: 1200px) {
   .row.conteudoProd {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0; }
+
+  .row.conteudoQuemSomos {
     margin-right: 0;
     margin-left: 0;
     padding: 0; } }
@@ -109,6 +196,11 @@
   .gamaFerlidona .row .line:nth-child(2) {
     display: none; }
   .gamaFerlidona .row .imagens {
+    margin-bottom: 30px; }
+
+  .valores .row .line:nth-child(2) {
+    display: none; }
+  .valores .row .imagens {
     margin-bottom: 30px; } }
 @media (max-width: 767px) {
   .gamaFerlidona .prodFer {
@@ -119,6 +211,23 @@
     .gamaFerlidona .row .line {
       display: none; }
 
+  .valores .prodFer {
+    margin-bottom: 150px !important; }
+  .valores .row {
+    margin: 0;
+    padding: 0; }
+    .valores .row .line {
+      display: none; }
+  .valores .textos {
+    justify-content: center; }
+    .valores .textos h2 {
+      top: 0px !important;
+      text-align: center; }
+    .valores .textos h3, .valores .textos p {
+      text-align: center !important; }
+    .valores .textos div {
+      margin-top: 50px; }
+
   .linksprod a {
     display: block;
     margin-bottom: 15px; } }
@@ -127,5 +236,8 @@
     font-size: 15px; }
     .conteudoProd .linksprod p {
       margin-bottom: 15px; } }
+@media (max-width: 455px) {
+  .valores .textos div {
+    margin-top: 80px; } }
 
 /*# sourceMappingURL=mc-custom.css.map */
