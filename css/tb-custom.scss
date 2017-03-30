@@ -434,6 +434,32 @@ form{
 }
 /*  FIM NOTICIAS - DETALHE  */
 
+/* O GRUPO */
+.subtitle{
+	p{
+		font-size: 40px;
+		margin-top: 90px;
+	}
+}
+
+.conteudo-grupo{
+	p, li{
+		font-family: $font-medium;
+		color: $grey;
+	}
+	ul{
+		li{
+			color: $green;
+			em{
+				color: $green;
+				font-style: normal;
+			}
+		}
+	}
+}
+
+/* FIM O GRUPO */
+
 /* FOOTER */
 
 .separador{

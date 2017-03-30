@@ -98,7 +98,7 @@
             <ul>
 
               <li>Email farmacovigilância
-                  <a href="mailto:pharmacovigilance.portugal@aurobindo.com">pharmacovigilance.portugal@aurobindo.com</a>
+                  <a href="mailto:pharmacovigilance.portugal@aurobindo.com" style="word-wrap: break-word;">pharmacovigilance.portugal@aurobindo.com</a>
               </li>
             </ul>
                   </div>

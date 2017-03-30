@@ -318,6 +318,21 @@ form {
   color: #787878; }
 
 /*  FIM NOTICIAS - DETALHE  */
+/* O GRUPO */
+.subtitle p {
+  font-size: 40px;
+  margin-top: 90px; }
+
+.conteudo-grupo p, .conteudo-grupo li {
+  font-family: "gotham_medium";
+  color: #787878; }
+.conteudo-grupo ul li {
+  color: #009e94; }
+  .conteudo-grupo ul li em {
+    color: #009e94;
+    font-style: normal; }
+
+/* FIM O GRUPO */
 /* FOOTER */
 .separador {
   font-size: 16px;
