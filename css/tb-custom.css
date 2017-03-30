@@ -144,7 +144,9 @@ form {
     font-size: 16px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    text-align: center; }
+    text-align: center;
+    /*//MARIA: Comentei porque atrofia com classes bootstrap*/
+    /* margin-left: 1rem;*/ }
     .conteudo .separador p {
       color: #242f75; }
   .conteudo .destaque img {
@@ -339,6 +341,12 @@ footer {
     border-bottom: 2px solid #ffffff;
     width: 80%;
     margin: 20px 0px 40px 0; }
+  footer li a {
+    color: #ffffff;
+    text-decoration: none; }
+    footer li a:hover {
+      color: #242f75;
+      text-decoration: none; }
   footer li p {
     font-family: "gotham_medium"; }
 
@@ -348,7 +356,7 @@ footer {
   font-size: 12px;
   margin: 0;
   padding-bottom: 15px;
-  padding-top: 15px; }
+  padding-top: 25px; }
   .rodape .copyDir {
     text-align: right; }
 
@@ -359,7 +367,7 @@ footer {
 
   .navbar-collapse.collapse {
     display: block; } }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .conteudo .separador {
     display: none; } }
 

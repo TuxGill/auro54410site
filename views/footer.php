@@ -18,31 +18,31 @@
 
           <li class="info-item">
 
-              <div class="icon"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
+              <div class="icon"><a href="geral@aurovitas.pt"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></div>
               <div class="info">
                 <ul>
                     <li>Email Geral</li>
-                    <li><p>geral@aurovitas.pt</p></li>
+                    <li><a href="geral@aurovitas.pt">geral@aurovitas.pt</a></li>
                 </ul>
               </div>
           </li>
 
           <li class="info-item">
 
-              <div class="icon"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></div>
+              <div class="icon"><a href="tel:+351 217 220 650"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></a></div>
               <div class="info">
                 <ul>
-                    <li>+351 217 220 650</li>
+                    <li><a href="tel:+351 217 220 650">+351 217 220 650</a></li>
                 </ul>
               </div>
           </li>
 
           <li class="info-item">
 
-              <div class="icon"><i class="fa fa-fax fa-2x" aria-hidden="true"></i></div>
+              <div class="icon"><a href="tel:+351 217 272 744"><i class="fa fa-fax fa-2x" aria-hidden="true"></i></a></div>
               <div class="info">
                 <ul>
-                    <li>+351 217 272 744</li>
+                    <li><a href="tel:+351 217 272 744"">+351 217 272 744</a></li>
                 </ul>
               </div>
           </li>
@@ -67,7 +67,7 @@
           <div class="info">
             <ul>
                 <li>Email Apoio a cliente Farmácias e Armazenistas
-                  <p>apoiocliente@aurovitas.pt</p>
+                  <a href="mailto:apoiocliente@aurovitas.pt">apoiocliente@aurovitas.pt</a>
                 </li>
             </ul>
           </div>
@@ -96,7 +96,7 @@
             <ul>
 
               <li>Email farmacovigilância
-                  <p>pharmacovigilance.portugal@aurobindo.com</p>
+                  <a href="mailto:pharmacovigilance.portugal@aurobindo.com">pharmacovigilance.portugal@aurobindo.com</a>
               </li>
             </ul>
                   </div>

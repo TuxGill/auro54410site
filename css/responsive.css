@@ -8,9 +8,6 @@
   .conteudo .seta {
     margin-top: 150px; }
 
-  .rodape {
-    padding: 20px; }
-
   footer h2 {
     margin-left: 43px; } }
 @media (max-width: 1295px) {
@@ -30,7 +27,7 @@
     padding-top: 150px; }
   .conteudo .seta {
     margin-top: 128px; } }
-@media (max-width: 1135px) {
+@media (max-width: 1200px) {
   .navbar-toggleable-md .navbar-toggler {
     display: block;
     margin: 20px; }
@@ -64,12 +61,6 @@
 
   .bg-faded {
     z-index: 10; }
-
-  footer h2 {
-    font-size: 14px;
-    margin-left: 34px; }
-  footer .organizer {
-    font-size: 13px; }
 
   /* MENU RESPONSIVE */
   /* Overlay style */
@@ -161,7 +152,7 @@
 
   .content-scale {
     display: block; } }
-@media screen and (max-width: 1135px) and (max-height: 30.5em) {
+@media screen and (max-width: 1200px) and (max-height: 30.5em) {
   .overlay nav {
     height: 70%;
     font-size: 34px; }
@@ -169,6 +160,12 @@
   .overlay ul li {
     min-height: 34px; } }
 @media (max-width: 1135px) {
+  footer h2 {
+    font-size: 14px;
+    margin-left: 34px; }
+  footer .organizer {
+    font-size: 13px; }
+
   /* FIM MENU RESPONSIVE */ }
 @media (max-width: 1040px) {
   footer .vermapa {
@@ -183,12 +180,13 @@
       footer .rodape .copyDir {
         right: 20px; }
     footer .organizer .icon {
-      margin-right: 4px; }
+      margin-right: 8px; }
 
   footer li div:nth-child(2) {
     width: 80%; } }
 @media (max-width: 768px) {
   footer {
+    background-position-x: -1000px;
     height: 800px; }
     footer .organizer .icon {
       margin-right: 0px; }
