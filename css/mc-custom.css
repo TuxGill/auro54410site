@@ -17,6 +17,7 @@
     height: 100%; }
 
 .conteudoProd {
+  margin-bottom: 40px;
   /****** Decubal ******/
   /****** Beacita ******/
   /****** Ferlidona ******/ }
@@ -101,7 +102,8 @@
 
 @media (max-width: 1200px) {
   .row.conteudoProd {
-    margin: 0;
+    margin-right: 0;
+    margin-left: 0;
     padding: 0; } }
 @media (max-width: 991px) {
   .gamaFerlidona .row .line:nth-child(2) {
@@ -115,6 +117,15 @@
     margin: 0;
     padding: 0; }
     .gamaFerlidona .row .line {
-      display: none; } }
+      display: none; }
+
+  .linksprod a {
+    display: block;
+    margin-bottom: 15px; } }
+@media (max-width: 400px) {
+  .conteudoProd .linksprod {
+    font-size: 15px; }
+    .conteudoProd .linksprod p {
+      margin-bottom: 15px; } }
 
 /*# sourceMappingURL=mc-custom.css.map */

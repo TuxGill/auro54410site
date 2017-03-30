@@ -32,6 +32,7 @@ $grey: #787878;
 }//slider
 
 .conteudoProd{
+  margin-bottom: 40px;
   .logoProd{
     margin-bottom: 65px;
   }
@@ -167,7 +168,8 @@ $grey: #787878;
 
 @media (max-width: 1200px){
   .row.conteudoProd{
-    margin: 0;
+    margin-right: 0;
+    margin-left: 0;
     padding: 0;
   }
 
@@ -203,6 +205,25 @@ $grey: #787878;
         display: none;
       }
     }
+
+  }//gamaFerlidona
+
+  .linksprod{
+    a{
+      display: block;
+      margin-bottom: 15px;
+    }
   }
 
-}//media 720
+}//media 767
+
+@media (max-width: 400px){
+
+  .conteudoProd .linksprod{
+    font-size: 15px;
+    p{
+      margin-bottom: 15px;
+    }
+  }
+
+}//media 400

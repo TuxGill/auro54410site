@@ -15,7 +15,7 @@
 <div class="row conteudo conteudoProd col-sm-12">
   <div class="separador col-sm-1"><p>DECUBAL</p></div>
 
-	<div class="col-sm-8 offset-sm-1 txt-intro">
+	<div class="col-sm-12 col-lg-12 col-xl-11 txt-intro">
     <img class="logoProd" src="media/images/logo_decubal.png" alt="">
 
     <p>
@@ -40,9 +40,9 @@
       <img class="" src="media/images/decubal_gama_detail_products.png" alt="">
     </div>
 	</div>
-  <div class="col-sm-12 linksprod">
+  <div class="col-sm-12 col-lg-12 col-xl-11 offset-xl-1  linksprod">
       <p>ENTRE NO MUNDO DECUBAL</p>
-      <div>
+      <div >
         <a target="_blank" href="http://decubal.pt/">
           <i class="fa fa-desktop" aria-hidden="true"></i>
           DECUBAL.PT
