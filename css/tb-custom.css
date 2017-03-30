@@ -327,13 +327,11 @@ form {
 footer {
   position: relative; }
   footer .vermapa {
-    padding-top: 1rem;
-    padding-left: 4rem; }
+    padding-top: 10px;
+    text-align: right; }
   footer .organizer .icon {
     /*margin-right: 5px;*/ }
   footer .geral {
-    position: absolute;
-    width: 100%;
     margin-top: 40px; }
   footer h2 {
     margin-left: 56px; }
@@ -347,16 +345,12 @@ footer {
 .rodape {
   background: #4a4a49;
   color: #ffffff;
-  position: absolute;
-  bottom: -75px;
-  width: 100%;
-  height: 75px;
-  padding: 30px;
   font-size: 12px;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 15px; }
   .rodape .copyDir {
-    position: absolute;
-    right: 0; }
+    text-align: right; }
 
 /*   FIM FOOTER   */
 @media (min-width: 768px) {
