@@ -93,7 +93,7 @@ form{
 	    width: 80% !important;
 	    font-family: $font-medium;
 	    font-size: 14px;
-	    color: $blue;
+	    color: #ffffff;
   		box-shadow: none;
   		border: none;
   		border-bottom: 2px solid $green;
@@ -104,19 +104,24 @@ form{
 		  border-bottom: 2px solid $green;
 		}
 
-	}
-	::-webkit-input-placeholder {
+		::-webkit-input-placeholder {
 		color: $blue;
+		}
+		::-moz-placeholder { /* Firefox 19+ */
+			color: $blue;
+		}
+		:-ms-input-placeholder { /* IE 10+ */
+			color: $blue;
+		}
+		:-moz-placeholder { /* Firefox 18- */
+			color: $blue;
+		}
+
 	}
-	::-moz-placeholder { /* Firefox 19+ */
-		color: $blue;
+	input, textarea{
+		color: #ffffff;
 	}
-	:-ms-input-placeholder { /* IE 10+ */
-		color: $blue;
-	}
-	:-moz-placeholder { /* Firefox 18- */
-		color: $blue;
-	}
+	
 }
 
 .navbar-toggler{

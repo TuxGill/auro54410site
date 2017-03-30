@@ -58,7 +58,7 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
     	<i class='fa fa-search'></i>
-      	<input class="form-control mr-sm-2" type="text" placeholder="PROCURAR">
+      	<input class="form-control mr-sm-2" type="text" placeholder="PROCURAR" style="color: #ffffff;">
     </form>
   </div>
 </nav>
@@ -72,10 +72,11 @@
       <li><a href="#">PRODUTOS</a></li>
       <li><a href="#">NOTÍCIAS</a></li>
       <li><a href="#">CONTACTOS</a></li>
-    </ul>
-     <form class="form-inline my-2 my-lg-0">
+      <form class="form-responsive form-inline my-2 my-lg-0">
       <i class='fa fa-search fa-2x'></i>
-        <input class="form-control mr-sm-2" type="text" placeholder="PROCURAR">
+        <input class="form-control mr-sm-2" type="text" placeholder="PROCURAR" style="color: #ffffff;">
     </form>
+    </ul>
+     
   </nav>
 </div>
