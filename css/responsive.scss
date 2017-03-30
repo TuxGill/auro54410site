@@ -98,7 +98,7 @@ $grey: #787878;
 	.bg-faded{
 		z-index: 10;
 	}
-	
+
 		/* MENU RESPONSIVE */
 
 	/* Overlay style */
@@ -242,9 +242,18 @@ $grey: #787878;
 	}
 }
 
+@media (max-width: 970px){
+	footer{
+		height: 400px;
+		.geral{
+			font-size: 12px;
+		}
+	}
+}
+
 @media  (max-width: 885px){
 	footer{
-		height: 600px;
+		height: 500px;
 		h2{
 			margin-left: 27px;
 		}
@@ -266,11 +275,16 @@ $grey: #787878;
 		width: 80%;
 	}
 }
+@media (width:768px){
+	footer{
+		height: 500px !important;
+	}
+}
 
 @media (max-width:768px){
 	footer{
-		background-position-x:-1000px;
-		height: 800px;
+		background-position-x:-865px;
+		height: 700px;
 		.organizer{
 			.icon{
 				margin-right: 0px;
@@ -286,4 +300,8 @@ $grey: #787878;
 	footer li div:nth-child(2){
 		width: 90%;
 	}
+}
+
+@media(max-width:576px){
+
 }
