@@ -92,7 +92,7 @@
         // include('components/content/view/list-news.php');
         // include('components/content/view/detail-news.php');
 
-        // include('components/products/view/detail-products-beacita.php');
+        //include('components/products/view/detail-products-beacita.php');
         include('components/products/view/detail-products-ferlidona.php');
          ?>
 

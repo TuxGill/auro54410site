@@ -15,7 +15,7 @@
 <div class="row conteudo conteudoProd col-sm-12">
   <div class="separador col-sm-1"><p>BEACITA</p></div>
 
-	<div class="col-sm-8 offset-sm-1 txt-intro">
+	<div class="col-sm-12 col-lg-12 col-xl-11 txt-intro">
     <img class="logoProd" src="media/images/logo_beacita.png" alt="">
 
     <p>
@@ -25,10 +25,10 @@
 		</p>
 
     <div class="gamaProd">
-      <img class="" src="media/images/beacita_gama_detail_products.png" alt="">
+      <img src="media/images/beacita_gama_detail_products.png" alt="">
     </div>
 	</div>
-  <div class="col-sm-12 rcmprod">
+  <div class="col-sm-12 col-lg-12 col-xl-11 offset-xl-1 rcmprod">
     <a target="_blank" href="media/pdf/PDF_DE_EXEMPLO.pdf">
       <i class="fa fa-file-text" aria-hidden="true"></i>
       RCM
