@@ -1,5 +1,19 @@
-// Detalhe Produto
+/*FONTS*/
+$font-book: 'gotham_book';
+$font-bold: 'gotham_bold';
+$font-medium:'gotham_medium';
+$font-light: 'gotham_light';
+$font-aws: 'FontAwesome';
 
+/* COLORS */
+$blue: #242f75;
+$green: #009e94;
+$grey: #787878;
+
+
+/*****************************************************
+                  Detalhe Produto
+*****************************************************/
 .slider{
   .videoWrapper {
   	position: relative;
@@ -14,13 +28,10 @@
       width: 100%;
       height: 100%;
     }
+  }//videoWrapper
+}//slider
 
-
-  }
-
-}
-
-.conteudo{
+.conteudoProd{
   .logoProd{
     margin-bottom: 65px;
   }
@@ -33,6 +44,115 @@
     img{
       max-width: 90%;
     }
-  }
+  }//gamaProd
 
-}
+  /****** Decubal ******/
+  .linksprod{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color:$grey;
+    font-family: $font-medium;
+
+    p{
+      font-family: $font-bold;
+      margin-bottom: 30px;
+    }
+
+    div{
+      text-align: center;
+
+      a{
+        color: $grey;
+        text-decoration: none;
+        &:first-child{
+          margin-right:4.5%;
+        }
+      }
+
+      i{
+        float: none;
+        font-size: 35px;
+        color:$green;
+        padding-right:20px;
+      }
+    }
+  }//linksprod
+
+  /****** Beacita ******/
+  .rcmprod{
+    text-align: center;
+    font-family: $font-medium;
+    a{
+      color: $grey;
+      text-decoration: none;
+      &:first-child{
+        margin-right:4.5%;
+      }
+    }
+
+    i{
+      float: none;
+      font-size: 35px;
+      color:$green;
+      padding-right:20px;
+    }
+
+  }//rcmprod
+
+  /****** Ferlidona ******/
+  .gamaFerlidona{
+    .textos{
+      h2{
+        font-size: 34px;
+        text-transform: uppercase;
+        text-align:left;
+        font-family: $font-bold;
+        letter-spacing: 1.5px;
+      }
+
+      h3{
+        font-size: 20px;
+        font-family: $font-book;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: $grey;
+        text-align: left;
+        margin-bottom: 35px;
+      }
+
+      p{
+        text-align: left;
+        font-size: 16px;
+        font-family: $font-book;
+        letter-spacing: 1.5px;
+        line-height: 30px;
+      }
+    }
+
+    .line{
+      position: relative;
+      padding-top: 0;
+      img{
+        width: 100%;
+        vertical-align: middle;
+        // Fix p/ blur da linha
+        // padding-top: 1px;
+      }
+    }
+
+    .docIcon{
+      align-items: center;
+      justify-content: center;
+      i{
+        float: none;
+        vertical-align: middle;
+        font-size: 55px;
+        color:$green;
+
+      }
+
+    }
+  }//gamaFerlidona
+
+}//conteudoProd

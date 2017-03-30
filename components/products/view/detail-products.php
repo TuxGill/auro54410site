@@ -1,32 +1,26 @@
 <div class="slider">
   <div class="videoWrapper">
     <!-- TODO: BACKOFFICE - SE FOR YOUTUBE -->
-    <iframe id="ytplayer" type="text/html" width="1920" height="1080"
+    <!-- <iframe id="ytplayer" type="text/html" width="1920" height="1080"
     src="https://www.youtube.com/embed/1Hl5GIN8NRE"
-    frameborder="0"></iframe>
+    frameborder="0"></iframe> -->
 
     <!-- TODO: BACKOFFICE - SE FOR MEDIA -->
-    <!-- <video src="media/decubalWeb.mp4" autoplay loop poster="posterimage.jpg"> -->
-
+    <video src="media/videos/decubalWeb.mp4" autoplay loop poster="media/images/poster_video_decubal.jpg">
     </video>
   </div>
-
-  <!-- <img src="images/produtos.jpg">
-  <div class="subtitle">
-    <p class="col-sm-6 offset-sm-1">OS NOSSOS <br>PRODUTOS</p>
-  </div> -->
 </div>
 
-<div class="row conteudo col-sm-12">
-
+<<<<<<< HEAD
+<!-- DECUBAL -->
+<div class="row conteudo conteudoProd col-sm-12">
   <div class="separador col-sm-1"><p>DECUBAL</p></div>
 
-
 	<div class="col-sm-8 offset-sm-1 txt-intro">
-    <img class="logoProd" src="images/logo_decubal.png" alt="">
+    <img class="logoProd" src="media/images/logo_decubal.png" alt="">
 
     <p>
-			De origens nórdicas, todos os produtos Decubal são desenvolvidos em estreita parceria
+			De origem nórdica, todos os produtos Decubal são desenvolvidos em estreita parceria
       com Dermatologistas e Enfermeiros e sujeitos a testes num painel de voluntários saudáveis,
       garantindo uma produção segundo os mais altos padrões de exigência da indústria farmacêutica.
       Os produtos Decubal são altamente eficazes e bem tolerados, mas simultaneamente agradáveis,
@@ -44,18 +38,21 @@
 		</p>
 
     <div class="gamaProd">
-      <img class="" src="images/decubal_gama_detail_products.png" alt="">
+      <img class="" src="media/images/decubal_gama_detail_products.png" alt="">
     </div>
 	</div>
+  <div class="col-sm-12 linksprod">
+      <p>ENTRE NO MUNDO DECUBAL</p>
+      <div>
+        <a target="_blank" href="http://decubal.pt/">
+          <i class="fa fa-desktop" aria-hidden="true"></i>
+          DECUBAL.PT
+        </a>
 
-  <!-- <div class="col-sm-8 offset-sm-2 gamaProd">
-    <img class="" src="images/decubal_gama_detail_products.png" alt="">
-  </div> -->
-
-
-
-
-
-
-
+        <a target="_blank"  href="https://www.facebook.com/decubalportugal">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          DECUBALPORTUGAL
+        </a>
+      </div>
+  </div>
 </div>
