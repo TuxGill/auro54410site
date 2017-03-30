@@ -12,7 +12,9 @@
     $products=[];
 
     foreach ($rows as $row) {
-      $c= new Content($row['id_product'], $row['fk_id_product_category'],  $row['title_product'],$row['slug_product'],  $row['intro_product'],$row['text_product'],$row['url_img_product'],$row['url_yt_product'],  $row['order_product'], $row['act_product'],  $row['del_product'],$row['ts_product']);
+      $c= new Content($row['id_product'], $row['fk_id_product_category'],  $row['title_product'],$row['slug_product'],
+       $row['intro_product'],$row['text_product'],$row['url_img_product'],
+      $row['url_video_product'], $row['pdf_product'],  $row['link1_product'], $row['link2_product'],  $row['order_product'], $row['act_product'],  $row['del_product'],$row['ts_product']);
 
       array_push($products, $c);
     }
@@ -32,7 +34,7 @@
     $products=[];
 
     foreach ($rows as $row) {
-      $c= new Content($row['id_product'], $row['fk_id_category'],  $row['title_product'],$row['slug_product'],  $row['intro_product'],$row['text_product'],$row['url_img_product'],$row['url_yt_product'],  $row['order_product'], $row['act_product'],  $row['del_product'],$row['ts_product']);
+      $c= new Content($row['id_product'], $row['fk_id_category'],  $row['title_product'],$row['slug_product'],  $row['intro_product'],$row['text_product'],$row['url_img_product'],$row['url_video_product'], $row['pdf_product'],  $row['link1_product'], $row['link2_product'],  $row['order_product'], $row['act_product'],  $row['del_product'],$row['ts_product']);
 
       array_push($products, $c);
     }
@@ -50,7 +52,7 @@
     $contents=[];
 
     foreach ($rows as $row) {
-      $c= new Content($row['id_product'], $row['fk_id_category'],  $row['title_product'],$row['slug_product'],  $row['intro_product'],$row['text_product'],$row['url_img_product'],$row['url_yt_product'],  $row['order_product'], $row['act_product'],  $row['del_product'],$row['ts_product']);
+      $c= new Content($row['id_product'], $row['fk_id_category'],  $row['title_product'],$row['slug_product'],  $row['intro_product'],$row['text_product'],$row['url_img_product'],$row['url_video_product'], $row['pdf_product'],  $row['link1_product'], $row['link2_product'],  $row['order_product'], $row['act_product'],  $row['del_product'],$row['ts_product']);
 
       array_push($products, $c);
     }

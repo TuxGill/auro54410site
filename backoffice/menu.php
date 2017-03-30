@@ -50,12 +50,12 @@
                   $cats=getAllProductCategories($pdo);
 
                   for($i=0;$i<count($cats);$i++){ ?>
-               <a href="home.php?area=categories&id=<?php echo $cats[$i]->getId();?>">
+               <a href="home.php?area=productcategory&id=<?php echo $cats[$i]->getId();?>">
                   <li><?php echo $cats[$i]->getTitle(); ?></li>
                </a>
                <?php } ?>
             </ul>
-            <a href="home.php?area=produtos">
+            <a href="home.php?area=product">
                <li>Gerir Produtos</li>
             </a>
          </ul>

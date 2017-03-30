@@ -8,7 +8,7 @@
 	} else {
 		$action ='edit';
 
-		$id=$conn->real_escape_string($_GET['id']);
+		//$id=$conn->real_escape_string($_GET['id']);
 		$detailInfo= getContentById($pdo, $id);
 		$detail=$detailInfo[0];		//$detailInfo = $detail->fetch_assoc();
 	}

@@ -5,10 +5,13 @@
 
 	if (!isset($_GET['id']) || $_GET['id']=='') {
 		$action ='new';
+		$id='';
 	} else {
 		$action ='edit';
+		$id=$_GET['id'];
 
-		$id=$conn->real_escape_string($_GET['id']);
+
+		//$id=$conn->real_escape_string($_GET['id']);
 		$detailInfo= getContentById($pdo, $id);
 		$detail=$detailInfo[0];		//$detailInfo = $detail->fetch_assoc();
 	}
@@ -19,30 +22,36 @@
 	<!--Header-->
 	<div class="topRightHeader">
 		<a href="<?php echo LIVE_SITE_ADMIN."/home.php?area=newcontent>" ?>" <img src='assets/img/add.png' alt='Add'/></a>
-		<p>Gerir Artigos </p>
+		<p>Gerir Produtos </p>
 	</div>
 
 	<!--Inputs/Form-->
-	<form method="post" action="../modules/modContent/subContent.php" class="formCont" enctype="multipart/form-data">
+	<form method="post" action="../components/products/views/admin/submit.product.php" class="formCont" enctype="multipart/form-data">
 		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
-		<input type="hidden" name="id" value="<?php echo $idCat['id_category'] ?>"/>
-		<input type="hidden" name="id_item" value="<?php echo $_GET['id'] ?>"/>
-		<input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/>
+		<input type="hidden" name="id_item" value="<?php echo $id; ?>"/>
 
 		<label>Título</label>
-		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>">
+		<input type="text" name="title" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>">
 		<br/>
 
-		<label>Imagem de Cabeçalho</label>
-		<input type="file" name="img_head" >
+		<label>Imagem de Topo</label>
+		<input type="file" name="topo" >
+		<br/>
+
+		<label>Logo</label>
+		<input type="file" name="logo" >
 		<br/>
 
 		<label>Intro</label>
-		<input type="text" name="textContent1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>">
+		<input type="text" name="intro" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>">
 		<br/>
 
 		<label>Texto Longo</label>
-		<textarea name="longTextContent"  id="conteudo" ><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
+		<textarea name="text" ><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
+		<br/>
+
+		<label>PDF</label>
+		<input type="file" name="pdf" >
 		<br/>
 
 		<label>Video</label>
@@ -62,7 +71,7 @@
 
 		?>
 		<label>Categoria</label>
-		<select name="linhaCaixa">
+		<select name="category">
 			<option selected disabled>Escolha uma Categoria...</option>
 			<?php
 				for ($i=0;$i<count($catContents);$i++){ ?>
@@ -75,13 +84,17 @@
 		</select>
 		<br/>
 
+		<label>Ordem</label>
+		<input type="text" name="order" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getOrder()) : '' ; ?>">
+		<br/>
+
 		<!--Botões-->
 		<label>Publicar</label>
-		<input type="checkbox" name="actContent" <?php echo ($action=='edit' && $detail[0]->getAct()==1 )? 'checked':'' ?> >
+		<input type="checkbox" name="act" <?php echo ($action=='edit' && $detail[0]->getAct()==1 )? 'checked':'' ?> >
 		<br/>
 
 		<input type="submit" name="save" class="btnSave" value="Gravar">
-		<input type="button" name="delete" class="btnDelete" value="Apagar" onclick="deleteContent(<?php echo "'".$slug."'";?>,<?php echo $id ?>)" >
+		<input type="button" name="delete" class="btnDelete" value="Apagar" onclick="deleteContent(<?php echo $id ?>)" >
 	</form>
 </div>
 
