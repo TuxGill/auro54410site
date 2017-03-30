@@ -1,12 +1,12 @@
 <div class="slider">
   <img src="<?php echo BASE_URL; ?>/images/homeIMG.jpg">
   <div class="subtitle">
-    <p class="col-sm-6 offset-sm-1">UM COMPROMISSO <br>PARA A VIDA</p>
-    <a class="col-sm-6 offset-sm-1" href="#">SABER MAIS</a>
+    <p class="col-sm-6 offset-sm-1 col-8 offset-1">UM COMPROMISSO <br>PARA A VIDA</p>
+    <a class="col-sm-6 offset-sm-1 col-6 offset-1" href="#">SABER MAIS</a>
   </div>
 </div>
 
-<div class="row conteudo col-sm-12">
+<div class="row conteudo col-sm-12 col-12">
 
   <div class="separador col-sm-1"><p>DESTAQUE</p></div>
      <div class="row col-sm-9 offset-sm-1">
