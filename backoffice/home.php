@@ -2,7 +2,7 @@
     include('../config.php');
     ini_set( "display_errors", 1);
 
-    /*********Dados da Sessão************/
+    /*********Dados da Sessão**hjgghjghjghjgh**********/
     /********* TODO: DESCOMENTAR O CODIGO QUANDO SE ACABAR O BACKOFFICE************/
     session_start();
 
