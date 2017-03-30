@@ -9,6 +9,7 @@ $font-aws: 'FontAwesome';
 $blue: #242f75;
 $green: #009e94;
 $grey: #787878;
+$dark_gray:#4a4a49;
 
 
 /*****************************************************
@@ -162,8 +163,138 @@ $grey: #787878;
 }//conteudoProd
 
 
+/*****************************************************
+                  QuemSomos
+*****************************************************/
+
+.conteudoQuemSomos{
+    .txt-intro{
+      margin-bottom: 150px;
+      h2{
+        text-transform: uppercase;
+        margin-top: 100px;
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+    }//txt-intro
+
+    .valores{
+      margin-top: 150px;
+      .prodFer{
+        margin-bottom: 110px;
+      }
+      .textos{
+        align-items: center;
+        display: flex;
+        position: relative;
+        h2{
+          text-transform: uppercase;
+          margin-top: 0;
+          font-size: 30px;
+          position: absolute;
+          top:30px;
+        }
+
+        h3{
+          font-size: 34px;
+          text-transform: uppercase;
+          text-align:left;
+          font-family: $font-bold;
+          letter-spacing: 1.5px;
+          margin-bottom: 20px;
+          color:$dark_gray;
+          margin-top:0;
+        }
+
+        p{
+          text-align: left;
+          font-size: 16px;
+          font-family: $font-book;
+          letter-spacing: 2px;
+          line-height: 30px;
+          text-transform: uppercase;
+        }
+      }
+
+      .imagens{
+        img{
+          width: 100%;
+        }
+      }
+
+      .line{
+        position: relative;
+        padding-top: 0;
+        margin-left: -31px;
+        img{
+          width: 100%;
+          vertical-align: middle;
+        }
+      }
+
+      .docIcon{
+        align-items: center;
+        justify-content: center;
+        i{
+          float: none;
+          vertical-align: middle;
+          font-size: 55px;
+          color:$green;
+
+        }
+
+      }
+
+      .marginValores{
+        margin-bottom:150px;
+      }
+    }//gamaFerlidona
+}//conteudoQuemSomos
+
+/******************************************************
+*******************************************************
+***********         MEDIA QUERIES               *******
+*******************************************************
+******************************************************/
+@media (max-width: 1500px){
+  .row.conteudoProd{
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .conteudoQuemSomos .valores .textos{
+    h2{
+      top:0;
+    }
+  }
 
 
+}//media 1500
+
+@media (max-width: 1240px){
+  .conteudoQuemSomos .valores .textos{
+    h2{
+      top:0;
+    }
+  }
+}//media 1240
+
+@media (max-width: 1025px){
+  .conteudoQuemSomos .valores .textos{
+    h2{
+      top:-25px;
+    }
+  }
+}//media 1025
+
+@media (max-width: 869px){
+  .conteudoQuemSomos .valores .textos{
+    h2{
+      top:-65px;
+    }
+  }
+}//media 869
 
 
 @media (max-width: 1200px){
@@ -172,6 +303,12 @@ $grey: #787878;
     margin-left: 0;
     padding: 0;
   }
+  .row.conteudoQuemSomos{
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+
 
 }//media 1200
 
@@ -191,6 +328,21 @@ $grey: #787878;
     }
   }
 
+  .valores{
+    .row{
+      .line:nth-child(2){
+        display: none;
+      }
+
+      .imagens{
+        margin-bottom: 30px;
+      }
+      .textos{
+          //margin-bottom: 30px;
+      }
+    }
+  }//valores
+
 }//media 960
 
 @media (max-width: 767px){
@@ -208,12 +360,40 @@ $grey: #787878;
 
   }//gamaFerlidona
 
+  .valores{
+    .prodFer{
+      margin-bottom: 150px !important;
+    }
+    .row{
+      margin: 0;
+      padding: 0;
+      .line{
+        display: none;
+      }
+    }
+     .textos{
+      justify-content: center;
+      h2{
+        top:0px !important;
+        text-align: center;
+      }
+      h3, p{
+        text-align: center !important;
+      }
+      div{
+        margin-top: 50px;
+      }
+    }
+  }//valores
+
   .linksprod{
     a{
       display: block;
       margin-bottom: 15px;
     }
   }
+
+
 
 }//media 767
 
@@ -227,3 +407,13 @@ $grey: #787878;
   }
 
 }//media 400
+
+@media (max-width: 455px){
+
+  .valores .textos{
+   div{
+     margin-top: 80px;
+   }
+  }
+
+}//media 455
