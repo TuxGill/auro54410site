@@ -370,10 +370,16 @@ $font-aws: 'FontAwesome';
 			}
 		}
 	}
+
+	footer{
+		h2 {
+		    margin-left: 43px;
+		}
+	}
 }
 
 @media (max-width: 495px){
-	.fa-2x {
+	.fa-bars {
     	font-size: 1.2em;
 	}
 
@@ -392,6 +398,12 @@ $font-aws: 'FontAwesome';
 			}
 		}
 	}
+
+	footer{
+		h2 {
+		    margin-left: 36px;
+		}
+	}
 }
 
 @media (max-width: 400px){
@@ -406,10 +418,25 @@ $font-aws: 'FontAwesome';
 	}
 
 	footer{
-		height: 705px;
+		height: 750px;
+	    background-position-x: -965px;
+	    h2 {
+		    margin-left: 27px;
+		}
 	}
 }
 
 @media(max-width: 382px){
+	footer{
+		.fa-2x {
+    		font-size: 1.2em;
+		}
+	}
+}
 
+@media (max-width: 357px){
+	footer{
+		height: 820px;
+		background-position-x: -1136px;
+	}
 }
