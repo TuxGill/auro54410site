@@ -444,8 +444,9 @@ form{
 
 footer{
 .vermapa{
-	padding-top: 1rem;
-    padding-left: 4rem;
+	padding-top: 10px;
+  //   padding-left: 4rem;
+  text-align: right;
 }
 
 .organizer{
@@ -455,8 +456,8 @@ footer{
 }
 	position: relative;
 	.geral{
-		position: absolute;
-    	width: 100%;
+		// position: absolute;
+    // 	width: 100%;
     	margin-top: 40px;
 	}
 
@@ -478,18 +479,14 @@ footer{
 }
 
 .rodape{
-	background: $darkGrey;
-	color: #ffffff;
-	position: absolute;
-    bottom: -75px;
-    width: 100%;
-    height: 75px;
-    padding: 30px;
+		background: $darkGrey;
+		color: #ffffff;
     font-size: 12px;
     margin: 0;
+		padding-bottom: 15px;
+		padding-top: 15px;
     .copyDir{
-	    position: absolute;
-    	right: 0;
+			text-align: right;
     }
 }
 
