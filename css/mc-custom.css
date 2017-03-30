@@ -62,6 +62,8 @@
       font-size: 35px;
       color: #009e94;
       padding-right: 20px; }
+  .conteudoProd .gamaFerlidona .prodFer {
+    margin-bottom: 110px; }
   .conteudoProd .gamaFerlidona .textos h2 {
     font-size: 34px;
     text-transform: uppercase;
@@ -96,5 +98,23 @@
       vertical-align: middle;
       font-size: 55px;
       color: #009e94; }
+
+@media (max-width: 1200px) {
+  .row.conteudoProd {
+    margin: 0;
+    padding: 0; } }
+@media (max-width: 991px) {
+  .gamaFerlidona .row .line:nth-child(2) {
+    display: none; }
+  .gamaFerlidona .row .imagens {
+    margin-bottom: 30px; } }
+@media (max-width: 767px) {
+  .gamaFerlidona .prodFer {
+    margin-bottom: 150px !important; }
+  .gamaFerlidona .row {
+    margin: 0;
+    padding: 0; }
+    .gamaFerlidona .row .line {
+      display: none; } }
 
 /*# sourceMappingURL=mc-custom.css.map */

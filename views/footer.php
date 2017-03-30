@@ -18,6 +18,7 @@
 
           <li class="info-item">
 
+
               <div class="icon"><a href="geral@aurovitas.pt"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></div>
               <div class="info">
                 <ul>
@@ -67,6 +68,7 @@
           <div class="info">
             <ul>
                 <li>Email Apoio a cliente Farmácias e Armazenistas
+
                   <a href="mailto:apoiocliente@aurovitas.pt">apoiocliente@aurovitas.pt</a>
                 </li>
             </ul>
