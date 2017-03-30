@@ -19,9 +19,6 @@ $grey: #787878;
 
 	}
 
-	.rodape{
-		padding: 20px;
-	}
 
 	footer{
 		h2{
@@ -59,8 +56,8 @@ $grey: #787878;
 	}
 }
 
-@media (max-width: 1135px){
-	.navbar-toggleable-md .navbar-toggler {
+@media (max-width: 1200px){
+		.navbar-toggleable-md .navbar-toggler {
     	display: block;
 	    margin: 20px;
 	}
@@ -101,18 +98,8 @@ $grey: #787878;
 	.bg-faded{
 		z-index: 10;
 	}
-
-	footer{
-		h2{
-			font-size: 14px;
-			margin-left: 34px;
-		}
-		.organizer{
-			font-size: 13px;
-		}
-	}
-
-	/* MENU RESPONSIVE */
+	
+		/* MENU RESPONSIVE */
 
 	/* Overlay style */
 	.overlay {
@@ -226,6 +213,22 @@ $grey: #787878;
 			min-height: 34px;
 		}
 	}
+}
+
+@media (max-width: 1135px){
+
+
+	footer{
+		h2{
+			font-size: 14px;
+			margin-left: 34px;
+		}
+		.organizer{
+			font-size: 13px;
+		}
+	}
+
+
 
 
 	/* FIM MENU RESPONSIVE */
@@ -254,9 +257,10 @@ $grey: #787878;
 		}
 		.organizer{
 			.icon{
-				margin-right: 4px;
+				margin-right: 8px;
 			}
 		}
+
 	}
 	footer li div:nth-child(2){
 		width: 80%;
@@ -265,6 +269,7 @@ $grey: #787878;
 
 @media (max-width:768px){
 	footer{
+		background-position-x:-1000px;
 		height: 800px;
 		.organizer{
 			.icon{

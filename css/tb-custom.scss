@@ -175,8 +175,8 @@ form{
 		writing-mode: vertical-rl;
 		transform: rotate(180deg);
   		text-align: center;
-			//MARIA: Comentei porque atrofia com classes bootstrap
-	    // margin-left: 1rem;
+			/*//MARIA: Comentei porque atrofia com classes bootstrap*/
+	    /* margin-left: 1rem;*/
 	    p{
 	    	color: $blue;
 	    }
@@ -443,21 +443,18 @@ form{
 }
 
 footer{
-.vermapa{
-	padding-top: 10px;
-  //   padding-left: 4rem;
-  text-align: right;
-}
-
-.organizer{
-	.icon{
-		/*margin-right: 5px;*/
+	.vermapa{
+		padding-top: 10px;
+		text-align: right;
 	}
-}
+
+	.organizer{
+		.icon{
+			/*margin-right: 5px;*/
+		}
+	}
 	position: relative;
 	.geral{
-		// position: absolute;
-    // 	width: 100%;
     	margin-top: 40px;
 	}
 
@@ -472,6 +469,14 @@ footer{
 	}
 
 	li{
+		a{
+			color: #ffffff;
+			text-decoration: none;
+			&:hover{
+				color:$blue;
+				text-decoration: none;
+			}
+		}
 		p{
 			font-family: $font-medium;
 		}
@@ -479,14 +484,14 @@ footer{
 }
 
 .rodape{
-		background: $darkGrey;
-		color: #ffffff;
+	background: $darkGrey;
+	color: #ffffff;
     font-size: 12px;
     margin: 0;
-		padding-bottom: 15px;
-		padding-top: 15px;
+	padding-bottom: 15px;
+	padding-top: 25px;
     .copyDir{
-			text-align: right;
+		text-align: right;
     }
 }
 
@@ -503,7 +508,7 @@ footer{
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 1200px){
 .conteudo{
 	.separador{
 		display: none;
