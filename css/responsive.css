@@ -170,9 +170,14 @@
 @media (max-width: 1040px) {
   footer .vermapa {
     padding-left: 0; } }
+@media (max-width: 970px) {
+  footer {
+    height: 400px; }
+    footer .geral {
+      font-size: 12px; } }
 @media (max-width: 885px) {
   footer {
-    height: 600px; }
+    height: 500px; }
     footer h2 {
       margin-left: 27px; }
     footer .rodape {
@@ -184,10 +189,13 @@
 
   footer li div:nth-child(2) {
     width: 80%; } }
+@media (width: 768px) {
+  footer {
+    height: 500px !important; } }
 @media (max-width: 768px) {
   footer {
-    background-position-x: -1000px;
-    height: 800px; }
+    background-position-x: -865px;
+    height: 700px; }
     footer .organizer .icon {
       margin-right: 0px; }
     footer h2 {

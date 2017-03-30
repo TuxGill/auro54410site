@@ -334,7 +334,8 @@ footer {
   footer .organizer .icon {
     /*margin-right: 5px;*/ }
   footer .geral {
-    margin-top: 40px; }
+    /*margin-top: 40px;*/
+    margin: 40px 0 0 0; }
   footer h2 {
     margin-left: 56px; }
   footer .linha-separador {
@@ -369,6 +370,9 @@ footer {
     display: block; } }
 @media (max-width: 1200px) {
   .conteudo .separador {
+    display: none; }
+
+  .separador {
     display: none; } }
 
 /*# sourceMappingURL=tb-custom.css.map */

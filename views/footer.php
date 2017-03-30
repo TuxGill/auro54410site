@@ -1,8 +1,8 @@
-<div class="col-sm-12 vermapa"><p>VER MAPA</p></div>
-<div class="row geral col-sm-12">
-    <div class="col-sm-1 separador"><p>CONTACTOS</p></div>
-    <div class="col-sm-11 row clearfix">
-      <ul class="col-md-6 col-xs-12 clearfix">
+<div class="col-sm-12 col-12 vermapa"><p>VER MAPA</p></div>
+<div class="row geral col-sm-12 col-12">
+    <div class="col-sm-1 col-1 separador"><p>CONTACTOS</p></div>
+    <div class="col-sm-11 col-11 row clearfix">
+      <ul class="col-md-6 col-12 clearfix">
           <li><h2>DADOS GERAIS</h2></li>
           <li class="info-item">
               <div class="icon"><i class="fa fa-home fa-2x" aria-hidden="true"></i></div>
@@ -50,21 +50,21 @@
 
           <li class="info-item">
 
-              <div class="icon"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></div>
+              <div class="icon"><a href="https://www.linkedin.com/company/aurovitas-portugal"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></div>
               <div class="info">
                 <ul>
-                    <li>Aurovitas Portugal</li>
+                    <li><a href="https://www.linkedin.com/company/aurovitas-portugal">Aurovitas Portugal</a></li>
                 </ul>
               </div>
           </li>
 
 
       </ul>
-      <ul class="col-md-6 col-xs-12 clearfix">
+      <ul class="col-md-6 col-12 clearfix">
         <li><h2>APOIO AO CLIENTE</h2></li>
         <li class="info-item">
 
-          <div class="icon"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
+          <div class="icon"><a href="mailto:apoiocliente@aurovitas.pt"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></div>
           <div class="info">
             <ul>
                 <li>Email Apoio a cliente Farmácias e Armazenistas
@@ -93,7 +93,7 @@
         </li>
         <li class="info-item">
 
-          <div class="icon"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
+          <div class="icon"><a href="mailto:pharmacovigilance.portugal@aurobindo.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></div>
           <div class="info">
             <ul>
 

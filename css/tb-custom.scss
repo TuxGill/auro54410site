@@ -455,7 +455,8 @@ footer{
 	}
 	position: relative;
 	.geral{
-    	margin-top: 40px;
+    	/*margin-top: 40px;*/
+    	margin: 40px 0 0 0;
 	}
 
 	h2{
@@ -514,4 +515,7 @@ footer{
 		display: none;
 	}
 }
+.separador{
+		display: none;
+	}
 }
