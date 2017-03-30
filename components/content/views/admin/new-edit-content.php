@@ -33,28 +33,16 @@
 		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>">
 		<br/>
 
-		<label>Imagem de Cabeçalho</label>
-		<input type="file" name="img_head" >
+		<label>Texto 1</label>
+		<input type="text" name="textContent1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>">
 		<br/>
 
-		<label>Intro</label>
-		<input type="text" name="textContent1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>">
+		<label>Texto 2</label>
+		<input type="text" name="textContent2" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext2()) : '' ; ?>">
 		<br/>
 
 		<label>Texto Longo</label>
 		<textarea name="longTextContent"  id="conteudo" ><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
-		<br/>
-
-		<label>Video</label>
-		<input type="file" name="video" >
-		<br/>
-
-		<label>URL</label>
-		<input type="text" name="link1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLink1()) : '' ; ?>">
-		<br/>
-
-		<label>FB</label>
-		<input type="text" name="link2" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLink2()) : '' ; ?>">
 		<br/>
 
 		<?php

@@ -111,15 +111,9 @@
                     case ('home'): include ('splashHome.php'); break;
                     case ('newcontentcategory') : include ('../components/content/views/admin/new-edit-content-category.php'); break;
                     case ('contentcategory') : include ('../components/content/views/admin/new-edit-content-category.php'); break;
-
                     case ('newcontent') : include ('../components/content/views/admin/new-edit-content.php'); break;
                     case ('content') : include ('../components/content/views/admin/new-edit-content.php'); break;
-
                     case ('newproductcategory') : include ('../components/products/views/admin/new-edit-product-category.php'); break;
-                    case ('productcategory') : include ('../components/products/views/admin/new-edit-product-category.php'); break;
-
-                    case ('newproduct') : include ('../components/products/views/admin/new-edit-product.php'); break;
-                    case ('product') : include ('../components/products/views/admin/new-edit-product.php'); break;
 
                 }
 
