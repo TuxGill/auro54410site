@@ -4,16 +4,16 @@
     <p class="col-sm-6 offset-sm-1">LOREM<br>IPSUM</p>
   </div>
 </div>
-<div class="col-sm-8 offset-sm-2 conteudo">
-	<div><i class="fa fa-share-alt fa-lg"></i></div>
-	<h2>OUTUBRO 27, 2016</h2>
-		<br>
-		<h3>
+<div class="col-sm-12 conteudo">
+	<div class="col-sm-1 offset-sm-9 icon-news-link"><i class="fa fa-share-alt fa-lg"></i></div>
+	<h2 class="col-sm-8 offset-sm-2">OUTUBRO 27, 2016</h2>
+		
+		<h3 class="col-sm-8 offset-sm-2">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum diam vitae
 			nibh eleifend, et dictum est venenatis. Proin dignissim eu mauris nec egestas.
 		</h3>
-		<br>
-		<p>
+		
+		<p class="col-sm-8 offset-sm-2">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum diam vitae nibh eleifend, et dictum est venenatis. Proin dignissim eu mauris nec egestas. Sed imperdiet eget lectus quis interdum. Curabitur nisl massa, semper a efficitur sed, efficitur varius diam. Morbi posuere nisl at tortor efficitur vehicula. Etiam mauris nunc, lacinia id libero quis, tempor malesuada libero. Praesent id orci gravida, luctus dolor et, mollis orci. Mauris blandit turpis non sem aliquet semper.
 			<br>
 			<br>

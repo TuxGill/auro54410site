@@ -321,17 +321,21 @@ form {
 
 /*  FIM NOTICIAS */
 /*  NOTICIAS - DETALHE  */
-.conteudo i {
-  float: right;
-  color: #787878; }
+.conteudo .icon-news-link {
+  text-align: right; }
+  .conteudo .icon-news-link i {
+    /*float: right;*/
+    color: #787878; }
 .conteudo h2 {
   color: #009e94;
   font-family: "gotham_bold";
-  font-size: 20px; }
+  font-size: 20px;
+  margin-bottom: 60px; }
 .conteudo h3 {
   font-family: "gotham_medium";
   color: #009e94;
-  font-size: 20px; }
+  font-size: 20px;
+  margin-bottom: 40px; }
 .conteudo p {
   font-family: "gotham_light";
   color: #787878; }

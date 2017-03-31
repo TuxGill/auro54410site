@@ -437,19 +437,24 @@ form{
 
 /*  NOTICIAS - DETALHE  */
 .conteudo{
-	i{
-		float: right;
+	.icon-news-link{
+		text-align: right;
+		i{
+		/*float: right;*/
 		color: $grey;
+		}
 	}
 	h2{
 			color: $green;
 			font-family: $font-bold;
 			font-size: 20px;
+		    margin-bottom: 60px;
 	}
 	h3{
 		font-family: $font-medium;
 		color: $green;
 		font-size: 20px;
+	    margin-bottom: 40px;
 	}
 	p{
 		font-family: $font-light;

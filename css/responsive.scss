@@ -363,7 +363,14 @@ $font-aws: 'FontAwesome';
     			height: 48px;
     			.icon-stack-1x{
     				font-size: 3em;
+				    bottom: 1px;
+    				left: 3px !important;
     			}
+			}
+		}
+		.decubal, .ferlidona, .beacita{
+			.texto{
+				padding-left: 40px;
 			}
 		}
 	}
@@ -394,6 +401,10 @@ $font-aws: 'FontAwesome';
 			height: 150px;
 		}
 	}
+}
+
+@media(width: 576px){
+
 }
 
 @media(max-width:576px){
@@ -472,6 +483,14 @@ $font-aws: 'FontAwesome';
 	.slider{
 		.subtitle{
 			height: 80px;
+		}
+	}
+
+	.conteudo{
+		.icons{
+			img{
+				width: 70%;
+			}
 		}
 	}
 

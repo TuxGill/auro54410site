@@ -38,7 +38,7 @@
 	</div>
 
 	<div class="row col-sm-9 offset-sm-2 decubal">
-		 <div class="col-sm-5 imagem">
+		 <div class="col-sm-5 col-12 imagem">
 		    <img src="images/decubal.png">
 		  </div>
 		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 first line row-eq-height">
@@ -63,7 +63,6 @@
 	        </a>  	
 		  </div>
 	</div>
-
 	<div class="row col-sm-9 offset-sm-2 beacita">
 		 <div class="col-sm-5 imagem">
 		    <img src="images/beacita.png">
