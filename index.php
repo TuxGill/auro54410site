@@ -96,6 +96,7 @@
         //include('components/products/view/detail-products-ferlidona.php');
         include('components/content/view/who-we-are.php');
 
+
          ?>
 
         <footer>

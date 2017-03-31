@@ -144,8 +144,7 @@
     width: 100%; }
   .conteudoQuemSomos .valores .line {
     position: relative;
-    padding-top: 0;
-    margin-left: -31px; }
+    padding-top: 0; }
     .conteudoQuemSomos .valores .line img {
       width: 100%;
       vertical-align: middle; }
@@ -159,6 +158,54 @@
       color: #009e94; }
   .conteudoQuemSomos .valores .marginValores {
     margin-bottom: 150px; }
+
+/*****************************************************
+                  list news
+*****************************************************/
+.conteudo-news .noticias .row {
+  margin-bottom: 85px; }
+.conteudo-news .line {
+  position: relative;
+  padding-top: 0; }
+.conteudo-news .textos {
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .conteudo-news .textos h2 {
+    margin-bottom: 35px; }
+  .conteudo-news .textos h3 {
+    margin-bottom: 35px; }
+.conteudo-news .imagens {
+  padding-top: 0;
+  z-index: 2; }
+.conteudo-news .seta {
+  margin-top: 0;
+  align-items: center;
+  justify-content: center; }
+  .conteudo-news .seta i {
+    float: none;
+    vertical-align: middle;
+    font-size: 55px;
+    color: #009e94; }
+
+.btnMais .icon-stack {
+  border: 1px solid #009e94;
+  border-radius: 100px;
+  width: 68px;
+  height: 68px; }
+  .btnMais .icon-stack:hover {
+    background-color: #009e94; }
+  .btnMais .icon-stack i {
+    color: #009e94;
+    bottom: 6px;
+    left: 14px !important;
+    position: absolute;
+    font-size: 3em; }
+    .btnMais .icon-stack i:hover {
+      color: #ffffff; }
+.btnMais .centerBtn {
+  text-align: center; }
 
 /******************************************************
 *******************************************************
@@ -201,6 +248,11 @@
   .valores .row .line:nth-child(2) {
     display: none; }
   .valores .row .imagens {
+    margin-bottom: 30px; }
+
+  .conteudo-news .noticias .line:nth-child(2) {
+    display: none; }
+  .conteudo-news .noticias .imagens {
     margin-bottom: 30px; } }
 @media (max-width: 767px) {
   .gamaFerlidona .prodFer {
@@ -227,6 +279,18 @@
       text-align: center !important; }
     .valores .textos div {
       margin-top: 50px; }
+
+  .conteudo-news .noticias .line {
+    display: none; }
+  .conteudo-news .noticias .textos {
+    justify-content: center; }
+    .conteudo-news .noticias .textos h2 {
+      top: 0px !important;
+      text-align: center; }
+    .conteudo-news .noticias .textos h3, .conteudo-news .noticias .textos p {
+      text-align: center !important; }
+    .conteudo-news .noticias .textos div {
+      margin-top: 20px; }
 
   .linksprod a {
     display: block;
