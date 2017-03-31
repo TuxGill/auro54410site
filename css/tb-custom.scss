@@ -139,7 +139,7 @@ form{
 	z-index: -1;
 	top: -110px;
 	img{
-		width: 100vw;
+		width: 100%;
 	}
 }
 
@@ -159,10 +159,10 @@ form{
 }
 
 .subtitle p {
-	font-size: 60px;
+	font-size: 40px;
 	font-family: $font-bold;
 	color: $blue;
-	margin-top: 30px;
+	margin-top: 90px;
 }
 
 .subtitle a{
@@ -175,6 +175,7 @@ form{
 
 .conteudo{
     padding-bottom: 100px;
+    margin: 0;
 	.separador{
 		font-size: 16px;
 		writing-mode: vertical-rl;
@@ -202,7 +203,7 @@ form{
 	}
 	.texto{
 	    padding-left: 40px;
-	    padding-top: 80px;
+	    padding-top: 20px;
 
 		.title-destaque{
 			font-family: $font-bold;
@@ -217,17 +218,37 @@ form{
 	}
 
 	.line{
-	    padding-top: 190px;
+	   	position: relative;
+    	padding-top: 0;
+	    	img{
+	        width: 100%;
+	        vertical-align: middle;
+	       /* // Fix p/ blur da linha*/
+	      }
 	}
 
 	.seta{
 		width: 67px;
 		height:67px;
-	    margin-top: 168px;
-	    background-image: url(../images/seta.png);
-	    background-repeat: no-repeat;
+	    margin-top: 132px;
+        align-items: center;
+    	justify-content: center;
+	   /* background-image: url(../images/seta.png);
+	    background-repeat: no-repeat;*/
 	    &:hover{
-	    	background-image: url(../images/seta-hover.png);
+	    	/*background-image: url(../images/seta-hover.png);*/
+	    }
+
+	    span{
+	    	border: 1px solid $green;
+	    	border-radius: 100px;
+	    	width: 48px;
+	    	height: 48px;
+	    	i{
+	    		color: $green;
+    		    bottom: 1px;
+    			left: 3px;
+	    	}
 	    }
 	}
 	/*   ANIMACAO LINHAS   */
@@ -448,6 +469,7 @@ form{
 		color: $grey;
 	}
 	ul{
+	    padding-left: 15px;
 		li{
 			color: $green;
 			em{
@@ -537,6 +559,7 @@ footer{
 	.navbar-collapse.collapse {
 		display:block;
 	}
+
 
 }
 

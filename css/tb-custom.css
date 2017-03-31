@@ -94,7 +94,7 @@ form {
   z-index: -1;
   top: -110px; }
   .slider img {
-    width: 100vw; }
+    width: 100%; }
 
 .subtitle {
   position: absolute;
@@ -115,10 +115,10 @@ form {
   /* IE6-9 */ }
 
 .subtitle p {
-  font-size: 60px;
+  font-size: 40px;
   font-family: "gotham_bold";
   color: #242f75;
-  margin-top: 30px; }
+  margin-top: 90px; }
 
 .subtitle a {
   font-family: "gotham_medium";
@@ -129,6 +129,7 @@ form {
 
 .conteudo {
   padding-bottom: 100px;
+  margin: 0;
   /*   ANIMACAO LINHAS   */
   /*	.path {
   		stroke-dasharray: 100;
@@ -162,7 +163,7 @@ form {
       transform: scale(1.1); }
   .conteudo .texto {
     padding-left: 40px;
-    padding-top: 80px; }
+    padding-top: 20px; }
     .conteudo .texto .title-destaque {
       font-family: "gotham_bold";
       font-size: 2vw;
@@ -172,15 +173,31 @@ form {
       font-size: 2vw;
       color: #242f75; }
   .conteudo .line {
-    padding-top: 190px; }
+    position: relative;
+    padding-top: 0; }
+    .conteudo .line img {
+      width: 100%;
+      vertical-align: middle;
+      /* // Fix p/ blur da linha*/ }
   .conteudo .seta {
     width: 67px;
     height: 67px;
-    margin-top: 168px;
-    background-image: url(../images/seta.png);
-    background-repeat: no-repeat; }
+    margin-top: 132px;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(../images/seta.png);
+     background-repeat: no-repeat;*/ }
     .conteudo .seta:hover {
-      background-image: url(../images/seta-hover.png); }
+      /*background-image: url(../images/seta-hover.png);*/ }
+    .conteudo .seta span {
+      border: 1px solid #009e94;
+      border-radius: 100px;
+      width: 48px;
+      height: 48px; }
+      .conteudo .seta span i {
+        color: #009e94;
+        bottom: 1px;
+        left: 3px; }
   .conteudo .icon-stack {
     color: #009e94;
     position: relative;
@@ -326,11 +343,13 @@ form {
 .conteudo-grupo p, .conteudo-grupo li {
   font-family: "gotham_medium";
   color: #787878; }
-.conteudo-grupo ul li {
-  color: #009e94; }
-  .conteudo-grupo ul li em {
-    color: #009e94;
-    font-style: normal; }
+.conteudo-grupo ul {
+  padding-left: 15px; }
+  .conteudo-grupo ul li {
+    color: #009e94; }
+    .conteudo-grupo ul li em {
+      color: #009e94;
+      font-style: normal; }
 
 /* FIM O GRUPO */
 /* FOOTER */
