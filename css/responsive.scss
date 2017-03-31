@@ -10,18 +10,41 @@ $font-medium:'gotham_medium';
 $font-light: 'gotham_light';
 $font-aws: 'FontAwesome';
 
+@media(max-width: 1600px){
+	.conteudo{
+		.seta{
+			margin-top:125px;
+		}
+	}
+}
+
+@media(max-width: 1500px){
+	.conteudo{
+		.seta{
+			margin-top:115px;
+		}
+	}
+}
+
+@media(max-width: 1400px){
+	.conteudo{
+		.seta{
+			margin-top:103px;
+		}
+	}
+}
 
 @media (max-width: 1337px){
 	.conteudo{
 		.line{
-			width: 10%;
-			padding-top: 170px;
+			/*width: 10%;
+			padding-top: 170px;*/
 			img{
 				width: 100%;
 			}
 		}
 		.seta{
-		    margin-top: 150px;
+		    margin-top: 97px;
 		}
 
 	}
@@ -36,8 +59,15 @@ $font-aws: 'FontAwesome';
 @media (max-width: 1295px){
 	.subtitle{
 		p {
-		font-size: 4.4vw;
+		font-size: 3.4vw;
 	    padding-top: 25px;
+        margin-top: 50px;
+		}
+	}
+
+	.conteudo{
+		.seta{
+			margin-top: 91px;
 		}
 	}
 }
@@ -95,10 +125,19 @@ $font-aws: 'FontAwesome';
 
 	.slider{
 		z-index: 0;
+		p{
+			margin-top: 70px;
+		}
 	}
 
 	.bg-faded{
 		z-index: 10;
+	}
+
+	.conteudo{
+		.seta{
+			margin-top:80px;
+		}
 	}
 
 		/* MENU RESPONSIVE */
@@ -230,10 +269,10 @@ $font-aws: 'FontAwesome';
 
 	.conteudo{
 		.line{
-			padding-top: 150px;
+			/*padding-top: 150px;*/
 		}
 		.seta{
-			margin-top: 128px;
+			margin-top: 75px;
 		}
 	}
 }
@@ -258,6 +297,18 @@ $font-aws: 'FontAwesome';
 }
 
 @media (max-width: 1040px){
+	.slider{
+		p{
+			margin-top: 70px;
+		}
+	}
+
+	.conteudo{
+		.seta{
+			margin-top: 64px;
+		}
+	}
+
 	footer{
 		.vermapa{
 			padding-left: 0;
@@ -270,10 +321,19 @@ $font-aws: 'FontAwesome';
 		.subtitle{
 			height: 200px;
 			p{
-				font-size: 3.4vw;	
+				font-size: 3.4vw;
+			    margin-top: 50px;	
 			}
 		}
 	}
+
+	.conteudo{
+		.seta{
+			margin-top: 55px;
+		    background-size: 90%;
+		}
+	}
+
 	footer{
 		height: 400px;
 		.geral{
@@ -328,6 +388,18 @@ $font-aws: 'FontAwesome';
 		}
 	}
 
+	.conteudo{
+		.texto{
+		    padding-left: 80px;
+		}
+		.first{
+			display: none;
+		}
+		.seta{
+			margin-top:61px;
+		}
+	}
+
 	footer{
 		background-position-x:-865px;
 		height: 700px;
@@ -368,6 +440,24 @@ $font-aws: 'FontAwesome';
 			a{
 				font-size: 13px;
 			}
+		}
+	}
+
+	.conteudo{
+		.second, .seta{
+			display: none;
+		}
+
+		.texto{
+			p{
+				font-size: 30px !important;
+			}
+		}
+	}
+
+	.conteudo-grupo{
+		p{
+			font-size: 14px;
 		}
 	}
 
