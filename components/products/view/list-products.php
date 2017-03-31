@@ -6,9 +6,9 @@
 </div>
 
 <div class="row conteudo col-sm-12">
-<div class="separador col-sm-1"><p>PRODUTOS</p></div>
+	<div class="separador col-sm-1"><p>PRODUTOS</p></div>
 
-	<div class="col-sm-8 offset-sm-1 txt-intro">
+	<div class="col-sm-10 offset-sm-1 col-md-8 txt-intro">
 		<p>
 			A Aurovitas comercializa medicamentos genéricos, medicamentos de marca e medicamentos 
 			não sujeitos a receita médica, abrangendo cerca de 22 áreas terapêuticas.
@@ -16,7 +16,7 @@
 			de apresentação. Estas são algumas das áreas em que nos distinguimos:
 		</p>
 	</div>
-	<div class="col-sm-8 offset-sm-2 icons">
+	<div class="col-sm-8 offset-sm-1 offset-md-2 icons">
 		<ul>
 			<li><img src="images/antibioticos.png"></li>
 			<li><img src="images/sistema_nervoso_central.png"></li>
@@ -41,7 +41,7 @@
 		 <div class="col-sm-5 imagem">
 		    <img src="images/decubal.png">
 		  </div>
-		  <div class="line">
+		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 first line row-eq-height">
 		    <img src="images/line.svg">
 		  </div>
 
@@ -50,12 +50,17 @@
 		    <p class="txt-destaque">HIDRATAÇÃO <br>PROFUNDA <br>DA PELE</p>
 		  </div>
 
-		  <div class="line">
+		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 second line row-eq-height">
 		    <img src="images/line.svg">
 		  </div>
 
-		  <div class="seta">
-
+		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 seta row-eq-height">
+			<a target="_blank" href="#">
+	          <span class="icon-stack">
+	           <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
+	            <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
+	          </span>
+	        </a>  	
 		  </div>
 	</div>
 
@@ -63,7 +68,7 @@
 		 <div class="col-sm-5 imagem">
 		    <img src="images/beacita.png">
 		  </div>
-		  <div class="line">
+		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 first line row-eq-height">
 		    <img src="images/line.svg">
 		  </div>
 
@@ -72,19 +77,24 @@
 		    <p class="txt-destaque">UMA NOVA <br>FORMA DE <br>PERDER PESO</p>
 		  </div>
 
-		  <div class="line">
+		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 second line row-eq-height">
 		    <img src="images/line.svg">
 		  </div>
 
-		  <div class="seta">
-
+		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 seta row-eq-height">
+			<a target="_blank" href="#">
+	          <span class="icon-stack">
+	           <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
+	            <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
+	          </span>
+	        </a>  	
 		  </div>
 	</div>
 	<div class="row col-sm-9 offset-sm-2 ferlidona">
 		 <div class="col-sm-5 imagem">
 		    <img src="images/ferlidona.png">
 		  </div>
-		  <div class="line">
+		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 first line row-eq-height">
 		    <img src="images/line.svg">
 		  </div>
 
@@ -93,12 +103,17 @@
 		    <p class="txt-destaque">GAMA DE<br>TESTES DE<br>DIAGNÓSTICO<br>PARA MULHERES</p>
 		  </div>
 
-		  <div class="line">
+		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 second line row-eq-height">
 		    <img src="images/line.svg">
 		  </div>
 
-		  <div class="seta">
-
+		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 seta row-eq-height">
+			<a target="_blank" href="#">
+	          <span class="icon-stack">
+	           <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
+	            <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
+	          </span>
+	        </a>  	
 		  </div>
 	</div>
 </div>

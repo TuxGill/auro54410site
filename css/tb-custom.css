@@ -180,9 +180,6 @@ form {
       vertical-align: middle;
       /* // Fix p/ blur da linha*/ }
   .conteudo .seta {
-    width: 67px;
-    height: 67px;
-    margin-top: 132px;
     align-items: center;
     justify-content: center;
     /* background-image: url(../images/seta.png);
@@ -192,12 +189,16 @@ form {
     .conteudo .seta span {
       border: 1px solid #009e94;
       border-radius: 100px;
-      width: 48px;
-      height: 48px; }
+      width: 68px;
+      height: 68px; }
+      .conteudo .seta span:hover {
+        background-color: #009e94; }
       .conteudo .seta span i {
         color: #009e94;
-        bottom: 1px;
-        left: 3px; }
+        bottom: 3px;
+        left: 2px !important; }
+        .conteudo .seta span i:hover {
+          color: #ffffff; }
   .conteudo .icon-stack {
     color: #009e94;
     position: relative;
@@ -205,7 +206,10 @@ form {
     width: 3em;
     height: 5em;
     line-height: 4em;
-    vertical-align: middle; }
+    vertical-align: middle;
+    /*.icon-stack-3x {
+      font-size: 3em;
+    }*/ }
     .conteudo .icon-stack .icon-stack-1x,
     .conteudo .icon-stack .icon-stack-3x {
       position: absolute;
@@ -213,9 +217,7 @@ form {
       width: 100%;
       text-align: center; }
     .conteudo .icon-stack .icon-stack-1x {
-      font-size: 3em; }
-    .conteudo .icon-stack .icon-stack-3x {
-      font-size: 3em; }
+      font-size: 4em; }
 
 /*   PRODUTOS  */
 .txt-intro p {

@@ -1,22 +1,11 @@
 /* COLORS */
 /*FONTS*/
-@media (max-width: 1600px) {
-  .conteudo .seta {
-    margin-top: 125px; } }
-@media (max-width: 1500px) {
-  .conteudo .seta {
-    margin-top: 115px; } }
-@media (max-width: 1400px) {
-  .conteudo .seta {
-    margin-top: 103px; } }
 @media (max-width: 1337px) {
   .conteudo .line {
     /*width: 10%;
     padding-top: 170px;*/ }
     .conteudo .line img {
       width: 100%; }
-  .conteudo .seta {
-    margin-top: 97px; }
 
   footer h2 {
     margin-left: 43px; } }
@@ -24,10 +13,7 @@
   .subtitle p {
     font-size: 3.4vw;
     padding-top: 25px;
-    margin-top: 50px; }
-
-  .conteudo .seta {
-    margin-top: 91px; } }
+    margin-top: 50px; } }
 @media (max-width: 1200px) {
   .navbar-toggleable-md .navbar-toggler {
     display: block;
@@ -77,9 +63,11 @@
   .bg-faded {
     z-index: 10; }
 
-  .conteudo .seta {
-    margin-top: 80px; }
-
+  /*.conteudo{
+  	.seta{
+  		margin-top:80px;
+  	}
+  }*/
   /* MENU RESPONSIVE */
   /* Overlay style */
   .overlay {
@@ -186,10 +174,12 @@
   form {
     width: 200px; }
 
-  .conteudo .line {
-    /*padding-top: 150px;*/ }
-  .conteudo .seta {
-    margin-top: 75px; } }
+  .conteudo {
+    /*.seta{
+    	margin-top: 75px;
+    }*/ }
+    .conteudo .line {
+      /*padding-top: 150px;*/ } }
 @media (max-width: 1135px) {
   footer h2 {
     font-size: 14px;
@@ -202,8 +192,10 @@
   .slider p {
     margin-top: 70px; }
 
-  .conteudo .seta {
-    margin-top: 64px; }
+  .conteudo {
+    /*.seta{
+    	margin-top: 64px;
+    }*/ }
 
   footer .vermapa {
     padding-left: 0; } }
@@ -213,10 +205,6 @@
     .slider .subtitle p {
       font-size: 3.4vw;
       margin-top: 50px; }
-
-  .conteudo .seta {
-    margin-top: 55px;
-    background-size: 90%; }
 
   footer {
     height: 400px; }
@@ -252,8 +240,11 @@
     padding-left: 80px; }
   .conteudo .first {
     display: none; }
-  .conteudo .seta {
-    margin-top: 61px; }
+  .conteudo .seta span {
+    width: 48px;
+    height: 48px; }
+    .conteudo .seta span .icon-stack-1x {
+      font-size: 3em; }
 
   footer {
     background-position-x: -865px;

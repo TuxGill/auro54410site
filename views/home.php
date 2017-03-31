@@ -9,7 +9,7 @@
 <div class="row conteudo col-sm-12 col-12">
 
   <div class="separador col-sm-1"><p>DESTAQUE</p></div>
-     <div class="row col-sm-11 col-lg-11 offset-sm-1 col-xl-11">
+     <div class="row col-sm-11 col-lg-11 offset-sm-1 col-xl-10">
       <div class="col-12 col-sm-5 col-md-4 col-lg-4 col-xl-4 destaque">
         <img src="<?php echo BASE_URL; ?>/images/decubal.png">
       </div>

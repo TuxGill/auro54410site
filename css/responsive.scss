@@ -10,29 +10,6 @@ $font-medium:'gotham_medium';
 $font-light: 'gotham_light';
 $font-aws: 'FontAwesome';
 
-@media(max-width: 1600px){
-	.conteudo{
-		.seta{
-			margin-top:125px;
-		}
-	}
-}
-
-@media(max-width: 1500px){
-	.conteudo{
-		.seta{
-			margin-top:115px;
-		}
-	}
-}
-
-@media(max-width: 1400px){
-	.conteudo{
-		.seta{
-			margin-top:103px;
-		}
-	}
-}
 
 @media (max-width: 1337px){
 	.conteudo{
@@ -42,9 +19,6 @@ $font-aws: 'FontAwesome';
 			img{
 				width: 100%;
 			}
-		}
-		.seta{
-		    margin-top: 97px;
 		}
 
 	}
@@ -65,11 +39,6 @@ $font-aws: 'FontAwesome';
 		}
 	}
 
-	.conteudo{
-		.seta{
-			margin-top: 91px;
-		}
-	}
 }
 
 @media (max-width: 1200px){
@@ -134,11 +103,11 @@ $font-aws: 'FontAwesome';
 		z-index: 10;
 	}
 
-	.conteudo{
+	/*.conteudo{
 		.seta{
 			margin-top:80px;
 		}
-	}
+	}*/
 
 		/* MENU RESPONSIVE */
 
@@ -271,9 +240,9 @@ $font-aws: 'FontAwesome';
 		.line{
 			/*padding-top: 150px;*/
 		}
-		.seta{
+		/*.seta{
 			margin-top: 75px;
-		}
+		}*/
 	}
 }
 
@@ -304,9 +273,9 @@ $font-aws: 'FontAwesome';
 	}
 
 	.conteudo{
-		.seta{
+		/*.seta{
 			margin-top: 64px;
-		}
+		}*/
 	}
 
 	footer{
@@ -324,13 +293,6 @@ $font-aws: 'FontAwesome';
 				font-size: 3.4vw;
 			    margin-top: 50px;	
 			}
-		}
-	}
-
-	.conteudo{
-		.seta{
-			margin-top: 55px;
-		    background-size: 90%;
 		}
 	}
 
@@ -396,7 +358,13 @@ $font-aws: 'FontAwesome';
 			display: none;
 		}
 		.seta{
-			margin-top:61px;
+			span{
+			    width: 48px;
+    			height: 48px;
+    			.icon-stack-1x{
+    				font-size: 3em;
+    			}
+			}
 		}
 	}
 
