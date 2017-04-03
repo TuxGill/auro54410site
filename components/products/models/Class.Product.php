@@ -73,9 +73,9 @@
     function setTs($val){  $this->ts=$val; }
 
     function save($pdo){
-   $sql="insert into products(fk_id_category, title_product, slug_product,logo_product, intro_product, text_product, url_img_product, pdf_product, url_video_product, link1_product, link2_product, act_product)
-   values(".$this->category.",'".$this->title."',".$this->slug.",".$this->logo.", ".$this->intro.",".$this->text.",".$this->url_img.",".$this->pdf.".".$this->url_video." ,".$this->link1.",".$this->link2.")"
- }
+      $sql="insert into products(fk_id_category, title_product, slug_product,logo_product, intro_product, text_product, url_img_product, pdf_product, url_video_product, link1_product, link2_product, act_product)
+      values(".$this->category.",'".$this->title."',".$this->slug.",".$this->logo.", ".$this->intro.",".$this->text.",".$this->url_img.",".$this->pdf.",".$this->url_video.",".$this->link1.",".$this->link2.")";
+    }
 
 
   }
