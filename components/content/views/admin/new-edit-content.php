@@ -33,7 +33,7 @@
 			$catContents=getAllContentCategories($pdo);
 		?>
 		<label>Categoria</label>
-		<select name="linhaCaixa">
+		<select name="categoryContent">
 			<option selected disabled>Escolha uma Categoria...</option>
 			<?php
 				for ($i=0;$i<count($catContents);$i++){ ?>
@@ -59,7 +59,7 @@
 		<br/>
 
 		<label>Imagem</label>
-		<input type="file" name="imagem" required>
+		<input type="file" name="imageContent" required>
 		<br/>
 
 		<label>Ordem</label>
