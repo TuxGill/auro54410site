@@ -30,19 +30,19 @@
 		<input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/>
 
 		<label>Título</label>
-		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>">
+		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>" required>
 		<br/>
 
 		<label>Imagem de Cabeçalho</label>
-		<input type="file" name="img_head" >
+		<input type="file" name="img_head" required>
 		<br/>
 
 		<label>Intro</label>
-		<input type="text" name="textContent1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>">
+		<input type="text" name="textContent1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>" required>
 		<br/>
 
 		<label>Texto Longo</label>
-		<textarea name="longTextContent"  id="conteudo" ><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
+		<textarea name="longTextContent"  id="conteudo" required><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
 		<br/>
 
 		<label>Video</label>
@@ -50,11 +50,11 @@
 		<br/>
 
 		<label>URL</label>
-		<input type="text" name="link1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLink1()) : '' ; ?>">
+		<input type="text" name="link1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLink1()) : '' ; ?>" required>
 		<br/>
 
 		<label>FB</label>
-		<input type="text" name="link2" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLink2()) : '' ; ?>">
+		<input type="text" name="link2" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLink2()) : '' ; ?>" required>
 		<br/>
 
 		<?php
@@ -63,11 +63,11 @@
 		?>
 		<label>Categoria</label>
 		<select name="linhaCaixa">
-			<option selected disabled>Escolha uma Categoria...</option>
+			<option selected disabled required>Escolha uma Categoria...</option>
 			<?php
 				for ($i=0;$i<count($catContents);$i++){ ?>
 
-					<option value="<?php echo $catContents[$i]->getId(); ?>"><?php  echo $catContents[$i]->getTitle(); ?></option>
+					<option value="<?php echo $catContents[$i]->getId(); ?>" required><?php  echo $catContents[$i]->getTitle(); ?></option>
 
 				<?php } ?>
 
