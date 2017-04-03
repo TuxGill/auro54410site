@@ -16,13 +16,13 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 		$detail=$detailInfo;
 
 	 }
-
+// .$slug
 
 ?>
 <div class="topRight" id="areaDetalhe">
 	<!--Header-->
 	<div class="topRightHeader">
-		<a href="<?php echo LIVE_SITE_ADMIN."/home.php?area=".$slug ?>"><img src="assets/img/add.png" alt="Add"/></a>
+		<a href="<?php echo BASE_URL."/backoffice/home.php?area=newcontentcategory" ?>"><img src="assets/img/add.png" alt="Add"/></a>
 		<p>Gerir Categorias de Conteúdo</p>
 	</div>
 	<?php
@@ -60,24 +60,24 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 		<br/>
 
 		<label>Título</label>
-		<input type="text" name="titleContentCat" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>">
+		<input type="text" name="titleContentCat" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>" required>
 		<br/>
 
 		<label>Texto 1</label>
-		<input type="text" name="text1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getIntro()) : '' ; ?>">
+		<input type="text" name="text1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getIntro()) : '' ; ?>" required>
 		<br/>
 
 		<label>Texto Longo</label>
-		<textarea name="longText"><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
+		<textarea name="longText" required><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
 		<br/>
 
 		<label>Thumb</label>
-		<input type="file" name="imgThumb" accept="image/png, image/jpeg">
+		<input type="file" name="imgThumb" accept="image/png, image/jpeg" required>
 		<p class="caption">Formatos suportados: .png, .jpg</p>
 		<br/>
 
 		<label>Ordem</label>
-		<input type="number" name="orderCat" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getOrder()) : '' ; ?>">
+		<input type="number" name="orderCat" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getOrder()) : '' ; ?>" required>
 		<br/>
 
 		<!--Botões-->
