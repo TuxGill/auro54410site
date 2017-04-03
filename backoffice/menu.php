@@ -7,7 +7,7 @@
             <!--DECOMED-->
             <li class="sub8">
                <div>
-                  <span class="label">Categoria de Artigos</span>
+                  <span class="label">Categoria de Conteúdo</span>
                   <span class="arrow down"></span>
                </div>
             </li>
@@ -21,12 +21,12 @@
 
                   for($i=0;$i<count($cats);$i++){ ?>
                <a href="home.php?area=contentcategory&id=<?php echo $cats[$i]->getId();?>">
-                  <li><?php echo $cats[$i]->getTitle(); ?></li>
+                  <li>Categoria <?php echo $cats[$i]->getTitle(); ?></li>
                </a>
                <?php } ?>
             </ul>
             <a href="home.php?area=newcontent">
-               <li>Gerir Noticias</li>
+               <li>Gerir Conteúdo</li>
             </a>
          </ul>
       </li>
