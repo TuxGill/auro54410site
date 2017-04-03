@@ -19,35 +19,18 @@
 	<!--Header-->
 	<div class="topRightHeader">
 		<a href="<?php echo LIVE_SITE_ADMIN."/home.php?area=newcontent>" ?>" <img src='assets/img/add.png' alt='Add'/></a>
-		<p>Gerir Artigos </p>
+		<p>Gerir Conteúdo</p>
 	</div>
 
 	<!--Inputs/Form-->
-	<form method="post" action="../modules/modContent/subContent.php" class="formCont" enctype="multipart/form-data">
+	<form method="post" action="../components/content/views/admin/submit.content.php" class="formCont" enctype="multipart/form-data">
 		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
-		<input type="hidden" name="id" value="<?php echo $idCat['id_category'] ?>"/>
 		<input type="hidden" name="id_item" value="<?php echo $_GET['id'] ?>"/>
-		<input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/>
-
-		<label>Título</label>
-		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>">
-		<br/>
-
-		<label>Texto 1</label>
-		<input type="text" name="textContent1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>">
-		<br/>
-
-		<label>Texto 2</label>
-		<input type="text" name="textContent2" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext2()) : '' ; ?>">
-		<br/>
-
-		<label>Texto Longo</label>
-		<textarea name="longTextContent"  id="conteudo" ><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
-		<br/>
+		<!-- <input type="hidden" name="id" value="<?php echo $idCat['id_category'] ?>"/> -->
+		<!-- <input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/> -->
 
 		<?php
 			$catContents=getAllContentCategories($pdo);
-
 		?>
 		<label>Categoria</label>
 		<select name="linhaCaixa">
@@ -61,6 +44,26 @@
 
 			?>
 		</select>
+		<br/>
+
+		<label>Título</label>
+		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>">
+		<br/>
+
+		<label>Intro</label>
+		<input type="text" name="introContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>">
+		<br/>
+
+		<label>Texto</label>
+		<input type="text" name="textContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext2()) : '' ; ?>">
+		<br/>
+
+		<label>Imagem</label>
+		<input type="file" name="imagem" >
+		<br/>
+
+		<label>Ordem</label>
+		<input type="text" name="orderContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getOrder()) : '' ; ?>">
 		<br/>
 
 		<!--Botões-->
