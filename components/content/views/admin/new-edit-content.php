@@ -47,23 +47,23 @@
 		<br/>
 
 		<label>Título</label>
-		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>">
+		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>" required>
 		<br/>
 
 		<label>Intro</label>
-		<input type="text" name="introContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>">
+		<input type="text" name="introContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>" required>
 		<br/>
 
 		<label>Texto</label>
-		<input type="text" name="textContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext2()) : '' ; ?>">
+		<input type="text" name="textContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext2()) : '' ; ?>" required>
 		<br/>
 
 		<label>Imagem</label>
-		<input type="file" name="imagem" >
+		<input type="file" name="imagem" required>
 		<br/>
 
 		<label>Ordem</label>
-		<input type="text" name="orderContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getOrder()) : '' ; ?>">
+		<input type="number" name="orderContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getOrder()) : '' ; ?>" required>
 		<br/>
 
 		<!--Botões-->
