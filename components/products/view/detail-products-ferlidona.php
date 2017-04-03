@@ -49,7 +49,7 @@
   			    <img src="images/line.svg">
   			</div>
   			<div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 docIcon row-eq-height">
-            <a target="_blank" href="media/pdf/PDF_DE_EXEMPLO.pdf">
+            <a target="_blank" href="media/pdf/FerlidonaUrinaryInfectionHealthCareT.pdf">
               <i class="fa fa-file-text" aria-hidden="true"></i>
             </a>
         </div>
@@ -82,7 +82,7 @@
   			    <img src="images/line.svg">
   			</div>
   			<div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 docIcon row-eq-height">
-            <a target="_blank" href="media/pdf/PDF_DE_EXEMPLO.pdf">
+            <a target="_blank" href="media/pdf/FerlidonaOvulationTestPILPortuga.pdf">
               <i class="fa fa-file-text" aria-hidden="true"></i>
             </a>
         </div>
@@ -110,7 +110,7 @@
   			    <img src="images/line.svg">
   			</div>
   			<div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 docIcon row-eq-height">
-            <a target="_blank" href="media/pdf/PDF_DE_EXEMPLO.pdf">
+            <a target="_blank" href="media/pdf/FerlidonaPregnancytestPORTUGAL_01_PR.PDF">
               <i class="fa fa-file-text" aria-hidden="true"></i>
             </a>
         </div>

@@ -10,9 +10,9 @@
 
 	<div class="col-sm-10 offset-sm-1 col-md-8 txt-intro">
 		<p>
-			A Aurovitas comercializa medicamentos genéricos, medicamentos de marca e medicamentos 
+			A Aurovitas comercializa medicamentos genéricos, medicamentos de marca e medicamentos
 			não sujeitos a receita médica, abrangendo cerca de 22 áreas terapêuticas.
-			<br>Temos um portefólio de mais de 120 produtos, a que correspondem cerca de 400 formas 
+			<br>Temos um portefólio de mais de 120 produtos, a que correspondem cerca de 400 formas
 			de apresentação. Estas são algumas das áreas em que nos distinguimos:
 		</p>
 	</div>
@@ -55,12 +55,12 @@
 		  </div>
 
 		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 seta row-eq-height">
-			<a target="_blank" href="#">
+			<a href="<?php echo BASE_URL; ?>/detalhe-produto">
 	          <span class="icon-stack">
 	           <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
 	            <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
 	          </span>
-	        </a>  	
+	        </a>
 		  </div>
 	</div>
 	<div class="row col-sm-9 offset-sm-2 beacita">
@@ -81,12 +81,13 @@
 		  </div>
 
 		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 seta row-eq-height">
-			<a target="_blank" href="#">
+        <a href="<?php echo BASE_URL; ?>/detalhe-produto-beacita">
+
 	          <span class="icon-stack">
 	           <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
 	            <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
 	          </span>
-	        </a>  	
+	        </a>
 		  </div>
 	</div>
 	<div class="row col-sm-9 offset-sm-2 ferlidona">
@@ -107,12 +108,13 @@
 		  </div>
 
 		  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 seta row-eq-height">
-			<a target="_blank" href="#">
+        <a href="<?php echo BASE_URL; ?>/detalhe-produto-ferlidona">
+
 	          <span class="icon-stack">
 	           <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
 	            <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
 	          </span>
-	        </a>  	
+	        </a>
 		  </div>
 	</div>
 </div>

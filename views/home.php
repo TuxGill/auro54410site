@@ -2,7 +2,7 @@
   <img src="<?php echo BASE_URL; ?>/images/homeIMG.jpg">
   <div class="subtitle">
     <p class="col-sm-6 offset-sm-1 col-8 offset-1">UM COMPROMISSO <br>PARA A VIDA</p>
-    <a class="col-sm-6 offset-sm-1 col-6 offset-1" href="#">SABER MAIS</a>
+    <a class="col-sm-6 offset-sm-1 col-6 offset-1" href="<?php echo BASE_URL; ?>/content/a-aurovitas">SABER MAIS</a>
   </div>
 </div>
 
@@ -27,9 +27,9 @@
       <div class="col-0 col-sm-1 col-lg-1 col-xl-1 second line row-eq-height">
         <img src="<?php echo BASE_URL; ?>/images/line.svg">
       </div>
-          
+
       <div class="col-0 col-sm-1 col-lg-1 col-xl-1 seta row-eq-height">
-        <a target="_blank" href="#">
+        <a href="<?php echo BASE_URL; ?>/detalhe-produto">
           <span class="icon-stack">
            <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
             <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>

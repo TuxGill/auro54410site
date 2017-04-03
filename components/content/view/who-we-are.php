@@ -37,10 +37,10 @@
       <!-- valor 1 -->
       <div class="row col-sm-12 marginValores">
         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 imagens">
-          <img src="media/images/quemsomos-valores-1.jpg">
+          <img src="<?php echo BASE_URL; ?>/media/images/quemsomos-valores-1.jpg">
         </div>
         <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
-            <img src="images/line.svg">
+            <img src="<?php echo BASE_URL; ?>/images/line.svg">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5 textos">
           <h2>OS NOSSOS VALORES</h2>
@@ -54,7 +54,7 @@
           </div>
         </div>
          <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
-            <img src="images/line.svg">
+            <img src="<?php echo BASE_URL; ?>/images/line.svg">
         </div>
         <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 docIcon row-eq-height">
             <i class="fa fa-check" aria-hidden="true"></i>
@@ -65,10 +65,10 @@
       <!-- valor 2 -->
       <div class="row col-sm-12 marginValores">
         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 imagens">
-          <img src="media/images/quemsomos-valores-3.jpg">
+          <img src="<?php echo BASE_URL; ?>/media/images/quemsomos-valores-3.jpg">
         </div>
         <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
-            <img src="images/line.svg">
+            <img src="<?php echo BASE_URL; ?>/images/line.svg">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5 textos">
           <div>
@@ -83,7 +83,7 @@
           </div>
         </div>
          <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
-            <img src="images/line.svg">
+            <img src="<?php echo BASE_URL; ?>/images/line.svg">
         </div>
         <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 docIcon row-eq-height">
             <i class="fa fa-check" aria-hidden="true"></i>
@@ -94,10 +94,10 @@
       <!-- valor 3 -->
       <div class="row col-sm-12 marginValores">
         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 imagens">
-          <img src="media/images/quemsomos-valores-2.jpg">
+          <img src="<?php echo BASE_URL; ?>/media/images/quemsomos-valores-2.jpg">
         </div>
         <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
-            <img src="images/line.svg">
+            <img src="<?php echo BASE_URL; ?>/images/line.svg">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5 textos">
           <div>
@@ -110,7 +110,7 @@
           </div>
         </div>
          <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
-            <img src="images/line.svg">
+            <img src="<?php echo BASE_URL; ?>/images/line.svg">
         </div>
         <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 docIcon row-eq-height">
             <i class="fa fa-check" aria-hidden="true"></i>

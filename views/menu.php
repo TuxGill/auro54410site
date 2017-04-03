@@ -36,24 +36,24 @@
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" id="trigger-overlay">
     <span class="navbar-toggler-icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
   </button>
-  <a class="navbar-brand" href="index.php"><img src="<?php echo BASE_URL; ?>/images/logo.svg"></a>
+  <a class="navbar-brand" href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>/images/logo.svg"></a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-md-0 justify-content-center">
       <li class="nav-item">
-        <a class="nav-link" href="#">A AUROVITAS</a>
+        <a class="nav-link" href="<?php echo BASE_URL; ?>/content/a-aurovitas">A AUROVITAS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">O GRUPO</a>
+        <a class="nav-link" href="<?php echo BASE_URL; ?>/content/grupo">O GRUPO</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">PRODUTOS</a>
+        <a class="nav-link" href="<?php echo BASE_URL; ?>/produtos">PRODUTOS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">NOTÍCIAS</a>
+        <a class="nav-link" href="<?php echo BASE_URL; ?>/lista-noticias">NOTÍCIAS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">CONTACTOS</a>
+        <a class="nav-link" href="#info-contactos">CONTACTOS</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -77,6 +77,6 @@
         <input class="form-control mr-sm-2" type="text" placeholder="PROCURAR" style="color: #ffffff;">
     </form>
     </ul>
-     
+
   </nav>
 </div>

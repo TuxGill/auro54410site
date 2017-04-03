@@ -29,7 +29,7 @@
     </div>
 	</div>
   <div class="col-sm-12 col-lg-12 col-xl-11 offset-xl-1 rcmprod">
-    <a target="_blank" href="media/pdf/PDF_DE_EXEMPLO.pdf">
+    <a target="_blank" href="media/pdf/RCM_Beacita_60mg.pdf">
       <i class="fa fa-file-text" aria-hidden="true"></i>
       RCM
     </a>

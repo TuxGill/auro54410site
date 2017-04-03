@@ -41,7 +41,7 @@
                 <img src="images/line.svg">
             </div>
             <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 seta row-eq-height">
-              <a target="_blank" href="#">
+              <a href="<?php echo BASE_URL; ?>/detalhe-noticia">
                 <span class="icon-stack">
                  <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
                   <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
@@ -83,7 +83,8 @@
               <img src="images/line.svg">
           </div>
           <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 seta row-eq-height">
-            <a target="_blank" href="#">
+            <a href="<?php echo BASE_URL; ?>/detalhe-noticia">
+
               <span class="icon-stack">
                <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
                 <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>

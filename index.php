@@ -59,31 +59,61 @@
             include('views/menu.php');
           ?>
         </div>
+
+
+
+
         <?php
 
-        /*
-        $route = explode('/',$_GET['area']);
-         $routeID = explode('/',$_GET['id']);
-         /*print_r($route);
-         print_r($routeID);
+        if(isset($_GET['area']) && $_GET['area']!=''){
+           $area=$_GET['area'];
 
-         $area= $_GET['area'];
-         $id= $_GET['id'];
-        // echo $id;
-         ?>
-        <?php include('views/home.php'); ?>
+           /**/
+           $route = explode('/',$_GET['area']);
 
-        // $route = explode('/',$_GET['area']);
-        // $routeID = explode('/',$_GET['ID']);
-        // print_r($route);
+           //print_r($route);
+           //print_r($routeID);
 
-        // print_r($routeID);
+           //$area= $_GET['area'];
+           //$id= $_GET['id'];
+          //echo $id;
+          //$route = explode('/',$_GET['area']);
+          //$routeID = explode('/',$_GET['ID']);
+          /*print_r($route);*/
 
-        // print_r($routeID);
-        */
+          $area=$route[0];
 
-         ?>
-        <?php
+          if (isset($_GET['id'])){
+             $routeID = explode('/',$_GET['id']);
+                    $id=$routeID[0];
+          }
+
+
+
+     } else {
+           $area='home';
+        }
+
+        switch ($area) {
+           case 'home' : { include('views/home.php'); } break;
+           case 'content' : {
+
+             switch($id){
+               case 'a-aurovitas': { include('components/content/view/who-we-are.php');  } break;
+               case 'grupo': { include('components/content/view/grupo.php');  } break;
+
+             }
+          } break;
+          // case 'content' : { include('components/content/view/who-we-are.php'); } break;
+
+          case 'produtos' : { include('components/products/view/list-products.php'); }break;
+          case 'detalhe-produto' : { include('components/products/view/detail-products.php'); }break;
+          case 'detalhe-produto-beacita' : { include('components/products/view/detail-products-beacita.php'); }break;
+          case 'detalhe-produto-ferlidona' : { include('components/products/view/detail-products-ferlidona.php'); }break;
+          case 'lista-noticias': { include('components/content/view/list-news.php'); } break;
+          case 'detalhe-noticia': { include('components/content/view/detail-news.php'); } break;
+
+        }
         //include('views/home.php');
         // include('components/products/view/list-products.php');
         // include('components/products/view/detail-products.php');
@@ -94,7 +124,7 @@
 
         //include('components/products/view/detail-products-beacita.php');
         //include('components/products/view/detail-products-ferlidona.php');
-        include('components/content/view/who-we-are.php');
+
 
 
          ?>
