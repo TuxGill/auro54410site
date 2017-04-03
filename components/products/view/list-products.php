@@ -8,15 +8,14 @@
 <div class="row conteudo col-sm-12">
 	<div class="separador col-sm-1"><p>PRODUTOS</p></div>
 
-	<div class="col-sm-10 offset-sm-1 col-md-8 txt-intro">
+	<div class="row col-sm-9 offset-sm-1 txt-intro">
 		<p>
 			A Aurovitas comercializa medicamentos genéricos, medicamentos de marca e medicamentos
 			não sujeitos a receita médica, abrangendo cerca de 22 áreas terapêuticas.
 			<br>Temos um portefólio de mais de 120 produtos, a que correspondem cerca de 400 formas
 			de apresentação. Estas são algumas das áreas em que nos distinguimos:
 		</p>
-	</div>
-	<div class="col-sm-8 offset-sm-1 offset-md-2 icons">
+		<div class="icons">
 		<ul>
 			<li><img src="images/antibioticos.png"></li>
 			<li><img src="images/sistema_nervoso_central.png"></li>
@@ -33,11 +32,10 @@
 			<li><img src="images/sangue_e_orgaos.png"></li>
 		</ul>
 	</div>
-	<div class="col-sm-8 offset-sm-2 header2">
+	<div class="header2">
 		<h2>MEDICAMENTOS NÃO SUJEITOS A RECEITA MÉDICA (MNSRM)</h2>
 	</div>
-
-	<div class="row col-sm-9 offset-sm-2 decubal">
+	<div class="row decubal">
 		 <div class="col-sm-5 col-12 imagem">
 		    <img src="images/decubal.png">
 		  </div>
@@ -63,7 +61,7 @@
 	        </a>
 		  </div>
 	</div>
-	<div class="row col-sm-9 offset-sm-2 beacita">
+	<div class="row beacita">
 		 <div class="col-sm-5 imagem">
 		    <img src="images/beacita.png">
 		  </div>
@@ -90,7 +88,7 @@
 	        </a>
 		  </div>
 	</div>
-	<div class="row col-sm-9 offset-sm-2 ferlidona">
+	<div class="row ferlidona">
 		 <div class="col-sm-5 imagem">
 		    <img src="images/ferlidona.png">
 		  </div>
@@ -118,3 +116,4 @@
 		  </div>
 	</div>
 </div>
+

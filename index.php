@@ -114,21 +114,9 @@
           case 'detalhe-noticia': { include('components/content/view/detail-news.php'); } break;
 
         }
-        //include('views/home.php');
-        // include('components/products/view/list-products.php');
-        // include('components/products/view/detail-products.php');
-        //include('components/content/view/list-news.php');
-        //include('components/content/view/detail-news.php');
-        // include('components/content/view/list-news.php');
-        // include('components/content/view/detail-news.php');
-
-        //include('components/products/view/detail-products-beacita.php');
-        //include('components/products/view/detail-products-ferlidona.php');
-
-
 
          ?>
-
+       
         <footer>
             <?php include('views/footer.php'); ?>
         </footer>

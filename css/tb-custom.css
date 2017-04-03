@@ -171,7 +171,8 @@ form {
       color: #242f75; }
     .conteudo .texto .txt-destaque {
       font-size: 2vw;
-      color: #242f75; }
+      color: #242f75;
+      font-family: "gotham_light" !important; }
   .conteudo .line {
     position: relative;
     padding-top: 0; }
