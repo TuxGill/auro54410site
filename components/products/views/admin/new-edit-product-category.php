@@ -62,8 +62,8 @@
 
 		?>
 		<label>Categoria</label>
-		<select name="linhaCaixa">
-			<option selected disabled required>Escolha uma Categoria...</option>
+		<select required name="linhaCaixa">
+			<option class="placeholder" selected disabled value="">Escolha uma Categoria...</option>
 			<?php
 				for ($i=0;$i<count($catContents);$i++){ ?>
 
