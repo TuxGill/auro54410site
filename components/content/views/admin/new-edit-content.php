@@ -33,6 +33,7 @@
 			$catContents=getAllContentCategories($pdo);
 		?>
 		<label>Categoria</label>
+
 		<select required name="linhaCaixa">
 			<option  class="placeholder" selected disabled value="">Escolha uma Categoria...</option>
 			<?php
@@ -59,7 +60,7 @@
 		<br/>
 
 		<label>Imagem</label>
-		<input type="file" name="imagem" required>
+		<input type="file" name="imageContent" required>
 		<br/>
 
 		<label>Ordem</label>

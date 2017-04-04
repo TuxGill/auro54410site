@@ -14,7 +14,7 @@
     private $del;
     private $ts;
 
-    private function __construct($id, $category, $title, $slug ,$intro, $text, $url_img, $url_yt ,$order, $act, $del, $ts){
+     function __construct($id, $category, $title, $slug ,$intro, $text, $url_img, $url_yt ,$order, $act, $del, $ts){
       $this->id = $id;
       $this->category = $category;
       $this->title = $title;
@@ -58,5 +58,31 @@
     function setDel($val){  $this->del=$val; }
     function setTs($val){  $this->ts=$val; }
 
+
+    function save($pdo){
+      $sql="insert into content(
+        fk_id_content_category,
+        title_content,
+        slug_content,
+        intro_content,
+        text_content,
+        url_img_content,
+        url_yt_content,
+        order_content,
+        act_content)
+      values(".$this->category.",
+       '".$this->title."',
+       '".$this->slug."',
+       '".$this->intro."',
+       '".$this->text."' ,
+       '".$this->url_img."',
+       '".$this->url_yt."',
+       '".$this->order."',
+       '".$this->act."')";
+
+       echo $sql;
+   }
+
   }
- ?>
+
+?>
