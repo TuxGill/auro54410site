@@ -115,6 +115,8 @@
                     case ('newcontent') : include ('../components/content/views/admin/new-edit-content.php'); break;
                     case ('content') : include ('../components/content/views/admin/new-edit-content.php'); break;
                     case ('newproductcategory') : include ('../components/products/views/admin/new-edit-product-category.php'); break;
+                    case ('newproduct') : include ('../components/products/views/admin/new-edit-product.php'); break;
+                    case ('contact') : include ('../components/contacts/views/admin/new-edit-contact.php'); break;
 
                 }
 
