@@ -109,7 +109,7 @@
             /*SWITCH GERAL ESTÁTICO */
                 switch($area){
                     case ('home'): include ('splashHome.php'); break;
-                    case ('newcontentcategory') : include ('../components/content/views/admin/new-edit-content-category.php'); break;
+                    case ('editcontentcategory') : include ('../components/content/views/admin/new-edit-content-category.php'); break;
                     case ('contentcategory') : include ('../components/content/views/admin/new-edit-content-category.php'); break;
                     case ('newcontent') : include ('../components/content/views/admin/new-edit-content.php'); break;
                     case ('content') : include ('../components/content/views/admin/new-edit-content.php'); break;

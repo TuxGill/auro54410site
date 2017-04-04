@@ -80,7 +80,10 @@
        '".$this->order."',
        '".$this->act."')";
 
-       echo $sql;
+     //echo $sql;
+
+     $query = $pdo->prepare($sql);
+     $query->execute();
    }
 
   }

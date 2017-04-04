@@ -1,6 +1,6 @@
 <?php
   include('../../../../config.php');
-  echo "OLA";
+
 // Main
   $action=$_POST['action'];
   $id=$_POST['id_item'];
@@ -11,9 +11,13 @@
   $intro=$_POST['introContent'];
   $text=$_POST['textContent'];
 
-
-  $act=$_POST['actContent'];
   $order=$_POST['orderContent'];
+  // act
+  if(isset($_POST['actContent']) && $_POST['actContent'] == 'on' ){
+    $act=1;
+  }else{
+    $act=0;
+  }
 
   $slug=slugify($title);
 
@@ -27,8 +31,13 @@
 
 
   // /* CRIAR OBJECTO*/
-  $content = new Content(null, $cat, $title, $slug ,$intro, $text, $finalFileImg, null ,$order, $act, null, null);
+  $content = new Content(null, $cat, $title, $slug ,$intro, $text, $fileImg, null ,$order, $act, null, null);
   //print_r($content);
   $content->save($pdo);
 
 ?>
+
+<!-- Encaminha para a página do backoffice de novo conteudo  -->
+<script type="text/javascript">
+  document.location.href = BASE_URL_BACKOFFICE.'/home.php?area=newcontent'
+</script>

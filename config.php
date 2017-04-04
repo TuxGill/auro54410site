@@ -1,5 +1,5 @@
 <?php
-
+  include('util.php');
   /* CONSTANS */
   /*TESTE MARIA*/
 
@@ -27,8 +27,10 @@
   /* OLA */
 
   if(!PRODUCTION){
-    define('DIRFOLDER','/auro54410site');
+    define('DIRFOLDER','/auro/auro54410site');
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );
+    define('BASE_URL_BACKOFFICE', BASE_URL."/backoffice" );
+    
     error_reporting(1);
 	  ini_set('error_reporting', E_ALL);
 
@@ -39,6 +41,7 @@
   } else {
     define('DIRFOLDER','/aurovitas/auro54410site');
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].  define('DIRFOLDER','/aurovitas/auro54410site'));
+    define('BASE_URL_BACKOFFICE', BASE_URL."/backoffice" );
     error_reporting(1);
 	  ini_set('error_reporting', E_ALL);
 

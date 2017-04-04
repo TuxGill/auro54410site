@@ -50,34 +50,34 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 
 
 	<!--Inputs/Form-->
-	<form method="post" action="../modules/modContent/subContentCategory.php" class="formCont" enctype="multipart/form-data">
+	<form method="post" action="../components/content/views/admin/submit.contentCategory.php" class="formCont" enctype="multipart/form-data">
 		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
-		<input type="hidden" name="id" value="<?php echo $idCat['id_category'] ?>"/>
+		<!-- <input type="hidden" name="id" value="<?php echo $idCat['id_category'] ?>"/> -->
 		<input type="hidden" name="id_item" value="<?php echo $_GET['id'] ?>"/>
-		<input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/>
+		<!-- <input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/> -->
 
 
+		<br/>
+
+		<label>Nome</label>
+		<input type="text" name="titleContentCat" value="<?php echo ($action=='edit')? ($detail[0]->getTitle()) : '' ; ?>" required>
 		<br/>
 
 		<label>Título</label>
-		<input type="text" name="titleContentCat" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>" required>
+		<input type="text" name="text1" value="<?php echo ($action=='edit')? ($detail[0]->getIntro()) : '' ; ?>" required>
 		<br/>
 
-		<label>Texto 1</label>
-		<input type="text" name="text1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getIntro()) : '' ; ?>" required>
+		<label>Texto</label>
+		<textarea name="longText" required><?php echo ($action=='edit')? ($detail[0]->getText()) : '' ; ?></textarea>
 		<br/>
 
-		<label>Texto Longo</label>
-		<textarea name="longText" required><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
-		<br/>
-
-		<label>Thumb</label>
+		<label>Imagem Topo</label>
 		<input type="file" name="imgThumb" accept="image/png, image/jpeg" required>
 		<p class="caption">Formatos suportados: .png, .jpg</p>
 		<br/>
 
 		<label>Ordem</label>
-		<input type="number" name="orderCat" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getOrder()) : '' ; ?>" required>
+		<input type="number" name="orderCat" value="<?php echo ($action=='edit')? ($detail[0]->getOrder()) : '' ; ?>" required>
 		<br/>
 
 		<!--Botões-->
@@ -116,7 +116,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 					}
 				?>
 					<tr class="<?php echo $class; ?>">
-						<td><a href="home.php?area=contentcategory&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle()); ?></a></td>
+						<td><a href="home.php?area=contentcategory&id=<?php echo $collection[$i]->getId(); ?>"><?php echo ($collection[$i]->getTitle()); ?></a></td>
 
 						<td><a href="JavaScript:void(0);"><img src="assets/img/delete_ico.png" alt="Apagar" onclick="deleteContentCategory(<?php echo $collection[$i]->getId(); ?>)"></a></td>
 						<td><a href="home.php?area=contentcategory&id=<?php echo $collection[$i]->getId(); ?>"><img src="assets/img/edit_ico.png" alt="Editar"></a></td>

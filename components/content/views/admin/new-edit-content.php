@@ -8,8 +8,9 @@
 	} else {
 		$action ='edit';
 
-		$id=$conn->real_escape_string($_GET['id']);
+		$id=$_GET['id'];
 		$detailInfo= getContentById($pdo, $id);
+		//print_r($detailInfo);
 		$detail=$detailInfo[0];		//$detailInfo = $detail->fetch_assoc();
 	}
 ?>
@@ -47,15 +48,15 @@
 		<br/>
 
 		<label>Título</label>
-		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>" required>
+		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? ($detail->getTitle()) : '' ; ?>" required>
 		<br/>
 
 		<label>Intro</label>
-		<input type="text" name="introContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>" required>
+		<input type="text" name="introContent" value="<?php echo ($action=='edit')? ($detail->getIntro()) : '' ; ?>" required>
 		<br/>
 
 		<label>Texto</label>
-		<input type="text" name="textContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext2()) : '' ; ?>" required>
+		<input type="text" name="textContent" value="<?php echo ($action=='edit')? ($detail->getText()) : '' ; ?>" required>
 		<br/>
 
 		<label>Imagem</label>
@@ -63,12 +64,12 @@
 		<br/>
 
 		<label>Ordem</label>
-		<input type="number" name="orderContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getOrder()) : '' ; ?>" required>
+		<input type="number" name="orderContent" value="<?php echo ($action=='edit')? ($detail->getOrder()) : '' ; ?>" required>
 		<br/>
 
 		<!--Botões-->
 		<label>Publicar</label>
-		<input type="checkbox" name="actContent" <?php echo ($action=='edit' && $detail[0]->getAct()==1 )? 'checked':'' ?> >
+		<input type="checkbox" name="actContent" <?php echo ($action=='edit' && $detail->getAct()==1 )? 'checked':'' ?> >
 		<br/>
 
 		<input type="submit" name="save" class="btnSave" value="Gravar">
@@ -87,7 +88,7 @@
 	//$resPC=getAllContents($conn, $idCat['id_content_category']);
 
 
-		$collection = getAllContents($pdo);
+		$collection = getAllContentsBO($pdo);
 
 
 	?>
@@ -111,9 +112,9 @@
 				?>
 				<tr class="<?php echo $class; ?>">
 					<td><a href="home.php?area=<?php echo $slug; ?>&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle() ); ?></a></td>
-					<td><?php echo utf8_encode($collection[$i]->getPretext1()); ?></td>
+					<td><?php echo ($collection[$i]->getText()); ?></td>
 					<td><a href="JavaScript:void(0);"><img src="assets/img/delete_ico.png" alt="Apagar" onclick="deleteContent(<?php echo "'".$slug."'";?>, <?php echo $collection[$i]->getId();?>)"></a></td>
-					<td><a href="home.php?area=<?php echo $slug; ?>&id=<?php echo $collection[$i]->getId(); ?>"><img src="assets/img/edit_ico.png" alt="Editar"></a></td>
+					<td><a href="home.php?area=newcontent&id=<?php echo $collection[$i]->getId(); ?>"><img src="assets/img/edit_ico.png" alt="Editar"></a></td>
 
 					<td>
 						<a href="JavaScript:void(0);">
