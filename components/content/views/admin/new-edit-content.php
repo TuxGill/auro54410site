@@ -18,7 +18,7 @@
 <div class="topRight" id="areaDetalhe">
 	<!--Header-->
 	<div class="topRightHeader">
-		<a href="<?php echo LIVE_SITE_ADMIN."/home.php?area=newcontent>" ?>" <img src='assets/img/add.png' alt='Add'/></a>
+		<a href="<?php echo BASE_URL."/backoffice/home.php?area=newcontent" ?>"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
 		<p>Gerir Conteúdo</p>
 	</div>
 
@@ -33,8 +33,9 @@
 			$catContents=getAllContentCategories($pdo);
 		?>
 		<label>Categoria</label>
-		<select name="categoryContent">
-			<option selected disabled>Escolha uma Categoria...</option>
+
+		<select required name="linhaCaixa">
+			<option  class="placeholder" selected disabled value="">Escolha uma Categoria...</option>
 			<?php
 				for ($i=0;$i<count($catContents);$i++){ ?>
 
@@ -112,15 +113,21 @@
 				<tr class="<?php echo $class; ?>">
 					<td><a href="home.php?area=<?php echo $slug; ?>&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle() ); ?></a></td>
 					<td><?php echo utf8_encode($collection[$i]->getPretext1()); ?></td>
-					<td><a href="JavaScript:void(0);"><img src="assets/img/delete_ico.png" alt="Apagar" onclick="deleteContent(<?php echo "'".$slug."'";?>, <?php echo $collection[$i]->getId();?>)"></a></td>
-					<td><a href="home.php?area=<?php echo $slug; ?>&id=<?php echo $collection[$i]->getId(); ?>"><img src="assets/img/edit_ico.png" alt="Editar"></a></td>
-
+					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContent(<?php echo "'".$slug."'";?>, <?php echo $collection[$i]->getId();?>)"></i></a></td>
+					<td><a href="home.php?area=<?php echo $slug; ?>&id=<?php echo $collection[$i]->getId(); ?>">
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-circle fa-stack-2x"></i>
+							  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+							</span> 
+						</a></td>
 					<td>
 						<a href="JavaScript:void(0);">
 						<?php if($collection[$i]->getAct()==1) { ?>
-								<img src="assets/img/publish_ico.png" alt="Publicar" onClick="pubContent(<?php echo "'".$slug."'";?>,0,<?php echo $collection[$i]->getId();?>)">
+									<i class="fa fa-check-circle" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,0,<?php echo $collection[$i]->getId();?>)"></i>
+									
 							<?php } else { ?>
-									<img src="assets/img/delete_ico.png" alt="Publicar" onClick="pubContent(<?php echo "'".$slug."'";?>,1,<?php echo $collection[$i]->getId(); ?>)">
+									<i class="fa fa-times-circle" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,1,<?php echo $collection[$i]->getId(); ?>)"></i>
+								
 							<?php } ?>
 						</a>
 					</td>
@@ -132,3 +139,4 @@
 
 	</table>
 </div>
+

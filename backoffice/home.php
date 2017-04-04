@@ -45,6 +45,7 @@
             <!-- Css -->
             <link rel="stylesheet" href="assets/css/normalize.css">
             <link rel="stylesheet" href="assets/css/main.css">
+            <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/font-awesome.css">
 
             <!-- JQuery and Js Files -->
             <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
