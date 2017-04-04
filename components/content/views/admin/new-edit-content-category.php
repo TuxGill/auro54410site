@@ -22,7 +22,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 <div class="topRight" id="areaDetalhe">
 	<!--Header-->
 	<div class="topRightHeader">
-		<a href="<?php echo BASE_URL."/backoffice/home.php?area=newcontentcategory" ?>"><img src="assets/img/add.png" alt="Add"/></a>
+		<a href="<?php echo BASE_URL."/backoffice/home.php?area=newcontentcategory" ?>"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
 		<p>Gerir Categorias de Conteúdo</p>
 	</div>
 	<?php
@@ -118,14 +118,19 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 					<tr class="<?php echo $class; ?>">
 						<td><a href="home.php?area=contentcategory&id=<?php echo $collection[$i]->getId(); ?>"><?php echo ($collection[$i]->getTitle()); ?></a></td>
 
-						<td><a href="JavaScript:void(0);"><img src="assets/img/delete_ico.png" alt="Apagar" onclick="deleteContentCategory(<?php echo $collection[$i]->getId(); ?>)"></a></td>
-						<td><a href="home.php?area=contentcategory&id=<?php echo $collection[$i]->getId(); ?>"><img src="assets/img/edit_ico.png" alt="Editar"></a></td>
+						<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContentCategory(<?php echo $collection[$i]->getId(); ?>)"></i></a></td>
+						<td><a href="home.php?area=contentcategory&id=<?php echo $collection[$i]->getId(); ?>">
+								<span class="fa-stack fa-lg">
+								  <i class="fa fa-circle fa-stack-2x"></i>
+								  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+								</span> 
+							</a></td>
 						<td>
 							<a href="JavaScript:void(0);">
 							<?php if($collection[$i]->getAct()==1){?>
-									<img src="assets/img/publish_ico.png" alt="Publicar" onClick="pubContentCategory(<?php echo "'".$slug."'";?>,0,<?php echo $collection[$i]->getId(); ?>)">
+									<i class="fa fa-check-circle fa-2x" aria-hidden="true" onClick="pubContentCategory(<?php echo "'".$slug."'";?>,0,<?php echo $collection[$i]->getId(); ?>)"></i>
 								<?php } else { ?>
-										<img src="assets/img/delete_ico.png" alt="Publicar" onClick="pubContentCategory(<?php echo "'".$slug."'";?>,1,<?php echo $collection[$i]->getId(); ?>)">
+										<i class="fa fa-times-circle fa-2x" aria-hidden="true" onClick="pubContentCategory(<?php echo "'".$slug."'";?>,1,<?php echo $collection[$i]->getId(); ?>)"></i>
 								<?php } ?>
 							</a>
 						</td>
