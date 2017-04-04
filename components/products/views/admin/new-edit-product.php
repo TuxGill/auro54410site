@@ -144,9 +144,9 @@
 					<td>
 						<a href="JavaScript:void(0);">
 						<?php if($collection[$i]->getAct()==1) { ?>
-								<i class="fa fa-check-circle" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,0,<?php echo $collection[$i]->getId();?>)"></i>
+								<i class="fa fa-check-circle fa-2x" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,0,<?php echo $collection[$i]->getId();?>)"></i>
 							<?php } else { ?>
-									<i class="fa fa-times-circle" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,1,<?php echo $collection[$i]->getId(); ?>)"></i>
+									<i class="fa fa-times-circle fa-2x" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,1,<?php echo $collection[$i]->getId(); ?>)"></i>
 							<?php } ?>
 						</a>
 					</td>
