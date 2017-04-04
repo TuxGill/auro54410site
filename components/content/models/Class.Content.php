@@ -84,6 +84,7 @@
 
      $query = $pdo->prepare($sql);
      $query->execute();
+
    }
 
   }
