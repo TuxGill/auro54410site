@@ -25,12 +25,17 @@
   define('CPY_RGHT','2017 Aurovitas. Todos os direitos reservados');
 
   /* OLA */
+  /* FOLDERS WITH CONTENT*/
+  define('MEDIA_IMAGES','/media/images/');
+  define('MEDIA_PDF','/media/pdf/');
+  define('MEDIA_VIDEOS','/media/videos/');
+
 
   if(!PRODUCTION){
     define('DIRFOLDER','/auro/auro54410site');
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );
     define('BASE_URL_BACKOFFICE', BASE_URL."/backoffice" );
-    
+
     error_reporting(1);
 	  ini_set('error_reporting', E_ALL);
 

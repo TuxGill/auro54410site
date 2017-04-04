@@ -15,6 +15,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 	 	$detailInfo= getContentCategoriesById($pdo, $_GET['id']);
 		$detail=$detailInfo;
 
+
 	 }
 // .$slug
 
@@ -22,7 +23,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 <div class="topRight" id="areaDetalhe">
 	<!--Header-->
 	<div class="topRightHeader">
-		<a href="<?php echo BASE_URL."/backoffice/home.php?area=newcontentcategory" ?>"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+		<a href="<?php echo BASE_URL."/backoffice/home.php?area=editcontentcategory" ?>"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
 		<p>Gerir Categorias de Conteúdo</p>
 	</div>
 	<?php
@@ -34,7 +35,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 			?>
 				<p class="titlePreview">Thumb</p>
 				<div class="preview">
-					<a target="_blank" href="<?php echo LIVE_SITE.MEDIA_CONTENT_CATEGORY_FOLDER.$detail[0]->getUrlImg() ?>"><img src="<?php echo LIVE_SITE.MEDIA_CONTENT_CATEGORY_FOLDER.$detail[0]->getUrlImg() ?>"  alt="Imagem"/></a>
+					<a target="_blank" href="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getUrlImg() ?>"><img src="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getUrlImg() ?>"  alt="Imagem"/></a>
 				</div>
 				<br/>
 			<?php
@@ -42,7 +43,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 			?>
 		</div>
 	<?php
-		}
+}
 
 	$collection = getAllContentCategories($pdo);
 
@@ -72,13 +73,10 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 		<br/>
 
 		<label>Imagem Topo</label>
-		<input type="file" name="imgThumb" accept="image/png, image/jpeg" required>
+		<input type="file" name="imgThumb" accept="image/png, image/jpeg" >
 		<p class="caption">Formatos suportados: .png, .jpg</p>
 		<br/>
 
-		<label>Ordem</label>
-		<input type="number" name="orderCat" value="<?php echo ($action=='edit')? ($detail[0]->getOrder()) : '' ; ?>" required>
-		<br/>
 
 		<!--Botões-->
 		<label>Publicar</label>
@@ -123,7 +121,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 								<span class="fa-stack fa-lg">
 								  <i class="fa fa-circle fa-stack-2x"></i>
 								  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-								</span> 
+								</span>
 							</a></td>
 						<td>
 							<a href="JavaScript:void(0);">
