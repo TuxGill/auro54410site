@@ -5,28 +5,17 @@
       <li>
          <ul class="subMenu">
             <!--DECOMED-->
-            <li class="sub8">
-               <div>
-                  <span class="label">Categoria de Conteúdo</span>
-                  <span class="arrow down"></span>
-               </div>
-            </li>
-            <ul class="subMenu extraSub8">
-               <a href="home.php?area=newcontentcategory">
-                  <li>Nova Categoria</li>
-               </a>
-               <?php
-                  /*VAI BUSCAR TODAS AS CATEGORIAS EM BO */
-                  $cats=getAllContentCategories($pdo);
-
-                  for($i=0;$i<count($cats);$i++){ ?>
-               <a href="home.php?area=contentcategory&id=<?php echo $cats[$i]->getId();?>">
-                  <li>Categoria <?php echo $cats[$i]->getTitle(); ?></li>
-               </a>
-               <?php } ?>
-            </ul>
+            <a href="home.php?area=editcontentcategory">
+               <li>Editar Categorias Conteúdo</li>
+            </a>
             <a href="home.php?area=newcontent">
-               <li>Gerir Conteúdo</li>
+               <li>A Aurovitas</li>
+            </a>
+            <a href="home.php?area=newcontent">
+               <li>O Grupo</li>
+            </a>
+            <a href="home.php?area=newcontent">
+               <li>Notícias</li>
             </a>
          </ul>
       </li>
