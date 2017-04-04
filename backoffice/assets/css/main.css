@@ -646,6 +646,34 @@ table a{
     color: white;
 }
 
+.fa-times-circle, .fa-check-circle, .fa-stack{
+    display: block !important;
+    max-height: 100px;
+    padding: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fa-times-circle{
+    color: red;
+}
+.fa-check-circle{
+    color: green;
+}
+.fa-stack{
+    font-size: 12px!important;
+    color: #F3AE10;
+}
+
+.fa-plus-circle{
+    position: relative;
+    float: right;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    color: white;
+}
+
 /**************************************************
     SplashHome
 ****************************************************/
