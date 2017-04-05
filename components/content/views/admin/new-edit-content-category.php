@@ -61,30 +61,30 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 		<br/>
 
 		<label>Nome</label>
-		<input type="text" name="titleContentCat" value="<?php echo ($action=='edit')? ($detail[0]->getTitle()) : '' ; ?>" required>
+		<input type="text" name="titleContentCat" value="<?php echo ($action=='edit')? ($detail[0]->getTitle()) : '' ; ?>" required <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 		<br/>
 
 		<label>Título</label>
-		<input type="text" name="text1" value="<?php echo ($action=='edit')? ($detail[0]->getIntro()) : '' ; ?>" required>
+		<input type="text" name="text1" value="<?php echo ($action=='edit')? ($detail[0]->getIntro()) : '' ; ?>" required <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 		<br/>
 
 		<label>Texto</label>
-		<textarea name="longText" required><?php echo ($action=='edit')? ($detail[0]->getText()) : '' ; ?></textarea>
+		<textarea name="longText" required <?php echo ($action=='new')? 'disabled' : '' ; ?>><?php echo ($action=='edit')? ($detail[0]->getText()) : '' ; ?></textarea>
 		<br/>
 
 		<label>Imagem Topo</label>
-		<input type="file" name="imgThumb" accept="image/png, image/jpeg" >
+		<input type="file" name="imgThumb" accept="image/png, image/jpeg"  <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 		<p class="caption">Formatos suportados: .png, .jpg</p>
 		<br/>
 
 
 		<!--Botões-->
 		<label>Publicar</label>
-		<input type="checkbox" name="actContentCat" <?php echo ($action=='edit' && $detail[0]->getAct()==1 )? 'checked':'' ?> >
+		<input type="checkbox" name="actContentCat" <?php echo ($action=='edit' && $detail[0]->getAct()==1 )? 'checked':'' ?>  <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 		<br/>
 
-		<input type="submit" name="save" class="btnSave" value="Gravar">
-		<input type="button" name="delete" class="btnDelete" value="Apagar" onclick="deleteContentCategory(<?php echo $id ?>)" >
+		<input type="submit" name="save" class="btnSave" value="Gravar" <?php echo ($action=='new')? 'disabled' : '' ; ?>>
+		<input type="button" name="delete" class="btnDelete" value="Apagar" onclick="deleteContentCategory(<?php echo $id ?>)" <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 	</form>
 </div>
 

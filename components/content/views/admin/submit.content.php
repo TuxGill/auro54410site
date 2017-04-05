@@ -46,6 +46,5 @@
 
 <!-- Encaminha para a página do backoffice de novo conteudo  -->
 <script type="text/javascript">
-  document.location.href = BASE_URL_BACKOFFICE.'/home.php?area=newcontent'
+  window.location.href = "<?php echo BASE_URL_BACKOFFICE.'/home.php?area=newcontent'; ?>"
 </script>
-

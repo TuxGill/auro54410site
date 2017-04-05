@@ -60,5 +60,5 @@
 ?>
 <script type="text/javascript">
   //document.location.href = BASE_URL_BACKOFFICE.'/home.php?area=contentcategory';
-  window.location.href = <?php echo BASE_URL_BACKOFFICE.'/home.php?area=contentcategory'; ?>
+  window.location.href = "<?php echo BASE_URL_BACKOFFICE.'/home.php?area=contentcategory'; ?>"
 </script>
