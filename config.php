@@ -32,7 +32,7 @@
 
 
   if(!PRODUCTION){
-    define('DIRFOLDER','/auro/auro54410site');
+    define('DIRFOLDER','/auro54410site');
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );
     define('BASE_URL_BACKOFFICE', BASE_URL."/backoffice" );
 
@@ -62,6 +62,7 @@
   include('components/products/controllers/Controller.Product.php');
   include('components/products/controllers/Controller.ProductCategory.php');
   include('components/images/controllers/Controller.Image.php');
+  include('components/contacts/controllers/Controller.Contact.php');
 
 
 
