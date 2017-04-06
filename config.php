@@ -62,6 +62,7 @@
   include('components/products/controllers/Controller.Product.php');
   include('components/products/controllers/Controller.ProductCategory.php');
   include('components/images/controllers/Controller.Image.php');
+  include('components/contacts/controllers/Controller.Contact.php');
 
 
 

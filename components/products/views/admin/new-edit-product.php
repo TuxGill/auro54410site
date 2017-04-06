@@ -12,8 +12,9 @@
 
 
 		//$id=$conn->real_escape_string($_GET['id']);
-		$detailInfo= getContentById($pdo, $id);
-		$detail=$detailInfo[0];		//$detailInfo = $detail->fetch_assoc();
+		$detail= getProductById($pdo, $id);
+		print_r($detail);
+		//$detail=$detailInfo[0];		//$detailInfo = $detail->fetch_assoc();
 	}
 ?>
 
@@ -21,7 +22,7 @@
 <div class="topRight" id="areaDetalhe">
 	<!--Header-->
 	<div class="topRightHeader">
-		<a href="<?php echo BASE_URL."/backoffice/home.php?area=produtos" ?>"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+		<a href="<?php echo BASE_URL."/backoffice/home.php?area=newproduct" ?>"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
 		<p>Gerir Produtos </p>
 	</div>
 
@@ -43,14 +44,16 @@
 
 		<label>Imagem de Topo</label>
 		<input type="file" name="topo" >
+		<img src="<?php echo ($action=='edit')? utf8_encode($detail[0]->getUrlImg()) : '' ; ?>">
 		<br/>
 
 		<label>Logo</label>
 		<input type="file" name="logo" >
+		<img src="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLogo()) : '' ; ?>">
 		<br/>
 
 		<label>Intro</label>
-		<input type="text" name="intro" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>">
+		<input type="text" name="intro" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getIntro()) : '' ; ?>">
 		<br/>
 
 		<label>Texto Longo</label>
@@ -59,6 +62,7 @@
 
 		<label>PDF</label>
 		<input type="file" name="pdf" >
+		<a href="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPdf()) : '' ; ?>"></a>
 		<br/>
 
 		<label>Video</label>
