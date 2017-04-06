@@ -1,60 +1,97 @@
 <?php
   include('../../../../config.php');
-  echo "OLA";
+
   $action=$_POST['action'];
 
   /* TEXTS */
   $id=$_POST['id_item'];
   $title=$_POST['title'];
   $intro=$_POST['intro'];
+  $color=$_POST['color'];
   $text=$_POST['text'];
   $url=$_POST['link1'];
   $fb=$_POST['link2'];
 
   $cat=$_POST['category'];
-  $act=$_POST['act'];
-  $order=$_POST['ordem'];
+
+  if(isset($_POST['act'])){
+      $act=1;
+  } else {
+    $act=0;
+
+  }
+
+  if(isset($_POST['order'])){
+      $order=$_POST['order'];
+  } else {
+    $order=1;
+
+  }
+
+  //$order=$_POST['ordem'];
 
   $slug=slugify($title);
 
   /* LOGO */
-  $destFolderLogo='../../../../media/content/';
-  $tempFileLogo=explode('.',$_FILES['logo']['name']);
-  $extLogo=$tempFileLogo[count($tempFileLogo)-1];
-  $fileLogo=clean($_POST['title']).'-'.uniqid().'.'.$extLogo;
-  $finalFileLogo=$destFolderLogo.$fileLogo;
-  move_uploaded_file($_FILES['logo']['tmp_name'], $finalFileLogo);
+
+  if(isset($_FILES['logo']['name']) && $_FILES['logo']['name']!='' ){
+    $destFolderLogo='../../../../media/images/';
+    $tempFileLogo=explode('.',$_FILES['logo']['name']);
+    $extLogo=$tempFileLogo[count($tempFileLogo)-1];
+    $fileLogo=clean($_POST['title']).'-'.uniqid().'.'.$extLogo;
+    $finalFileLogo=$destFolderLogo.$fileLogo;
+    move_uploaded_file($_FILES['logo']['tmp_name'], $finalFileLogo);
+  } else {
+    $fileLogo='';
+  }
 
   /* FILES VIDEO */
-  $destFolderVideo='../../../../media/video/';
-  $tempFileVideo=explode('.',$_FILES['video']['name']);
-  $extVideo=$tempFileVideo[count($tempFileVideo)-1];
-  $fileVideo=clean($_POST['title']).'-'.uniqid().'.'.$extVideo;
-  $finalFileVideo=$destFolderVideo.$fileVideo;
-  move_uploaded_file($_FILES['video']['tmp_name'], $fileVideo);
+
+  if(isset($_FILES['video']['name']) && $_FILES['video']['name']!=''){
+    $destFolderVideo='../../../../media/video/';
+    $tempFileVideo=explode('.',$_FILES['video']['name']);
+    $extVideo=$tempFileVideo[count($tempFileVideo)-1];
+    $fileVideo=clean($_POST['title']).'-'.uniqid().'.'.$extVideo;
+    $finalFileVideo=$destFolderVideo.$fileVideo;
+    move_uploaded_file($_FILES['video']['tmp_name'], $fileVideo);
+  } else {
+    $fileVideo='';
+  }
 
   /* PDF */
-  $destFolderPDF='../../../../media/pdf/';
-  $tempFilePDF=explode('.',$_FILES['pdf']['name']);
-  $extPDF=$tempFilePDF[count($tempFilePDF)-1];
-  $filePDF=clean($_POST['title']).'-'.uniqid().'.'.$extPDF;
-  $finalFilePDF=$destFolderPDF.$filePDF;
-  move_uploaded_file($_FILES['pdf']['tmp_name'], $finalFilePDF);
+
+  if(isset($_FILES['pdf']['name']) && $_FILES['pdf']['name']!=''){
+    $destFolderPDF='../../../../media/pdf/';
+    $tempFilePDF=explode('.',$_FILES['pdf']['name']);
+    $extPDF=$tempFilePDF[count($tempFilePDF)-1];
+    $filePDF=clean($_POST['title']).'-'.uniqid().'.'.$extPDF;
+    $finalFilePDF=$destFolderPDF.$filePDF;
+    move_uploaded_file($_FILES['pdf']['tmp_name'], $finalFilePDF);
+  } else{
+      $filePDF='';
+  }
 
   /* IMAGEM DE TOPO */
-  $destFolderIMG='../../../../media/pdf/';
-  $tempFileIMG=explode('.',$_FILES['topo']['name']);
-  $extIMG=$tempFileIMG[count($tempFileIMG)-1];
-  $fileIMG=clean($_POST['title']).'-'.uniqid().'.'.$extIMG;
-  $finalFileIMG=$destFolderIMG.$fileIMG;
-  move_uploaded_file($_FILES['topo']['tmp_name'], $finalFileIMG);
+
+  if(isset($_FILES['topo']['name']) && $_FILES['topo']['name']!=''){
+    $destFolderTopo='../../../../media/images/';
+    $tempFiletopo=explode('.',$_FILES['topo']['name']);
+    $extTopo=$tempFiletopo[count($tempFiletopo)-1];
+    $fileTopo=clean($_POST['title']).'-'.uniqid().'.'.$extTopo;
+    $finalFileTopo=$destFolderTopo.$fileTopo;
+    move_uploaded_file($_FILES['topo']['tmp_name'], $finalFileTopo);
+  } else {
+      $fileTopo='';
+  }
 
 
 
 
   /* CRIAR OBJECTO*/
 
-  $product = new Product(null, $cat,$title,$slug,$intro,$text,$fileIMG,$filePDF,$fileVideo, $url, $fb,$order, $act, null,null );
+  $product = new Product(null, $cat,$title,$slug,$fileLogo,$color,$intro,$text,$fileTopo,$filePDF,$fileVideo, $url, $fb,$order, $act, null,null );
   $product->save($pdo);
 
 ?>
+
+<script>window.localhost='<?php echo BASE_URL."/backoffice/home.php?area=newproduct" ?>'</script>

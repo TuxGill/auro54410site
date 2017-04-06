@@ -34,6 +34,13 @@
 		<input type="text" name="title" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>">
 		<br/>
 
+
+		<label>Cor</label>
+		<input type="text" name="color" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getColor()) : '' ; ?>">
+		<br/>
+
+
+
 		<label>Imagem de Topo</label>
 		<input type="file" name="topo" >
 		<br/>
@@ -67,7 +74,7 @@
 		<br/>
 
 		<?php
-			$catContents=getAllContentCategories($pdo);
+			$catContents=getAllProductCategories($pdo);
 
 		?>
 		<label>Categoria</label>
