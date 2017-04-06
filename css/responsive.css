@@ -267,6 +267,19 @@
 @media (max-width: 576px) {
   .menu .form-control {
     display: inline-block; }
+  .menu .overlay nav {
+    top: 36%; }
+  .menu .overlay ul li {
+    height: calc(40% / 5); }
+    .menu .overlay ul li a {
+      font-size: 30px; }
+  .menu .form-responsive input[type=text] {
+    font-size: 30px; }
+  .menu .fa-search {
+    font-size: 25px; }
+  .menu .overlay-close {
+    width: 40px;
+    height: 40px; }
 
   .slider .subtitle {
     height: 120px; }

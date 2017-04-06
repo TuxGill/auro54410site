@@ -409,6 +409,28 @@ $font-aws: 'FontAwesome';
 		.form-control{
 			display: inline-block;
 		}
+		.overlay nav{
+			top: 36%;
+		}
+		.overlay ul li {
+			height: calc(40% / 5);
+			a {
+    			font-size: 30px;
+			}
+    	}
+
+    	.form-responsive input[type=text] {
+    		font-size: 30px;
+		}
+
+		.fa-search{
+			font-size: 25px;
+		}
+
+		.overlay-close{
+		    width: 40px;
+		    height: 40px;
+		}
 	}
 
 	.slider{
@@ -484,6 +506,7 @@ $font-aws: 'FontAwesome';
 }
 
 @media (max-width: 400px){
+
 	.navbar-brand img {
     	margin-left: 5px;
     	width: 80px;
@@ -524,4 +547,8 @@ $font-aws: 'FontAwesome';
 		height: 820px;
 		background-position-x: -1136px;
 	}
+}
+
+@media(max-width: 320px){
+
 }
