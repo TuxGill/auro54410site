@@ -1,4 +1,7 @@
 <?php
+
+ 	include('../../../../config.php');
+
 	$morada = $_POST['address'];
 	$email = $_POST['email'];
 	$telefone = $_POST['telephone'];
@@ -12,16 +15,16 @@
 
 	/* CRIAR OBJECTO */
 
-	$contact=getContactById($pdo,$id);
+	$contact=getContactById($pdo,1);
 	
 
-	$contact[0]->setMorada($morada);
+	$contact[0]->setAddress($morada);
 	$contact[0]->setEmail ($email);
-	$contact[0]->setTelefone ($telefone);
+	$contact[0]->setTel ($telefone);
 	$contact[0]->setFax ($fax);
-	$contact[0]->setLinkedin ($linkedin);
-	$contact[0]->setApoiocliente ($apoioCliente);
-	$contact[0]->setFarmacovigilancia ($farmacovigilancia);
+	$contact[0]->setLink ($linkedin);
+	$contact[0]->setText1 ($apoioCliente);
+	$contact[0]->setText2 ($farmacovigilancia);
 
 
 	

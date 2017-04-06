@@ -30,16 +30,16 @@
     }
 
     function getId(){ return $this->id; }
-    function getAddress(){ return $this->id; }
-    function getEmail(){ return $this->id; }
-    function getTel(){ return $this->id; }
-    function getFax(){ return $this->id; }
-    function getLink(){ return $this->id; }
-    function getText1(){ return $this->id; }
-    function getText2(){ return $this->id; }
-    function getAct(){ return $this->id; }
-    function getDel(){ return $this->id; }
-    function getTs(){ return $this->id; }
+    function getAddress(){ return $this->address; }
+    function getEmail(){ return $this->email; }
+    function getTel(){ return $this->tel; }
+    function getFax(){ return $this->fax; }
+    function getLink(){ return $this->link; }
+    function getText1(){ return $this->text1; }
+    function getText2(){ return $this->text2; }
+    function getAct(){ return $this->act; }
+    function getDel(){ return $this->del; }
+    function getTs(){ return $this->ts; }
 
     function setId($val){ $this->id=$val; }
     function setAddress($val){ $this->address=$val; }
@@ -54,8 +54,8 @@
     function setTs($val){ $this->ts=$val; }
 
 
-    function updade($pdo){
-      $sql="update contacts set address_contact=''".$this->address."'',
+    function update($pdo){
+      $sql="update contacts set address_contact='".$this->address."',
       email_contact ='".$this->email."',
       tel_contact ='".$this->tel."',
       fax_contact ='".$this->fax."',
@@ -67,6 +67,7 @@
       ts_contact ='".$this->ts."'
       where id_contact=".$this->id;
 
+      echo $sql;
       $query = $pdo->prepare($sql);
           $query->execute();
     }
