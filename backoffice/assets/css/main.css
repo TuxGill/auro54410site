@@ -694,6 +694,21 @@ table a{
     color: white;
 }
 
+
+.noPhoto p{
+  text-align: center;
+  margin: 0px;
+  padding-top: 2px;
+  padding-bottom:6px;
+}
+
+.noPhoto .fa-camera{
+  color:#53565A;
+}
+
+.noPhoto .text-danger{
+  color:red;
+}
 /**************************************************
     SplashHome
 ****************************************************/

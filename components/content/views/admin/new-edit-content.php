@@ -9,9 +9,15 @@
 		$action ='edit';
 
 		$id=$_GET['id'];
-		$detailInfo= getContentById($pdo, $id);
+		$detailInfo= getContentByIdBO($pdo, $id);
 		//print_r($detailInfo);
 		$detail=$detailInfo[0];		//$detailInfo = $detail->fetch_assoc();
+	}
+
+	if (isset($_GET['idCat']) || $_GET['idCat'] !='') {
+		$idCat =$_GET['idCat'];
+
+		$catContents=getContentCategoriesById($pdo, $idCat);
 	}
 ?>
 
@@ -19,49 +25,55 @@
 <div class="topRight" id="areaDetalhe">
 	<!--Header-->
 	<div class="topRightHeader">
-		<a href="<?php echo BASE_URL."/backoffice/home.php?area=newcontent" ?>"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
-		<p>Gerir Conteúdo</p>
+		<a href="<?php echo BASE_URL."/backoffice/home.php?area=newcontent&idCat=".$idCat ?>"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+		<p>Gerir conteúdo da página "<?php echo $catContents[0]->getTitle(); ?>"</p>
 	</div>
+
+	<!-- Image preview -->
+	<?php
+		if ($action=='edit') { ?>
+			<div class="mainPreview">
+				<?php
+					if( $detail->getUrlImg() ){
+				?>
+						<p class="titlePreview">Imagem</p>
+						<div class="preview">
+							<a target="_blank" href="<?php echo BASE_URL.MEDIA_IMAGES.$detail->getUrlImg() ?>"><img src="<?php echo BASE_URL.MEDIA_IMAGES.$detail->getUrlImg() ?>"  alt="Imagem"/></a>
+						</div>
+						<br/>
+				<?php
+					}
+				?>
+			</div>
+	<?php
+		}
+	?>
+	<!-- End Image preview -->
 
 	<!--Inputs/Form-->
 	<form method="post" action="../components/content/views/admin/submit.content.php" class="formCont" enctype="multipart/form-data">
 		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
 		<input type="hidden" name="id_item" value="<?php echo $_GET['id'] ?>"/>
-		<!-- <input type="hidden" name="id" value="<?php echo $idCat['id_category'] ?>"/> -->
+		<input type="hidden" name="id_cat" value="<?php echo $idCat ?>"/>
 		<!-- <input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/> -->
 
-		<?php
-			$catContents=getAllContentCategories($pdo);
-		?>
-		<label>Categoria</label>
-
-		<select required name="linhaCaixa">
-			<option  class="placeholder" selected disabled value="">Escolha uma Categoria...</option>
-			<?php
-				for ($i=0;$i<count($catContents);$i++){ ?>
-
-					<option value="<?php echo $catContents[$i]->getId(); ?>"><?php  echo $catContents[$i]->getTitle(); ?></option>
-
-				<?php } ?>
-
-			?>
-		</select>
-		<br/>
-
 		<label>Título</label>
-		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? ($detail->getTitle()) : '' ; ?>" required>
+		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? ($detail->getTitle()) : '' ; ?>">
 		<br/>
 
 		<label>Intro</label>
-		<input type="text" name="introContent" value="<?php echo ($action=='edit')? ($detail->getIntro()) : '' ; ?>" required>
+		<input type="text" name="introContent" value="<?php echo ($action=='edit')? ($detail->getIntro()) : '' ; ?>" >
 		<br/>
 
 		<label>Texto</label>
-		<input type="text" name="textContent" value="<?php echo ($action=='edit')? ($detail->getText()) : '' ; ?>" required>
+		<textarea name="textContent" ><?php echo ($action=='edit')? ($detail->getText()) : '' ; ?></textarea>
+		<br/>
+		<label>Imagem</label>
+		<input type="file" name="imageContent" >
 		<br/>
 
-		<label>Imagem</label>
-		<input type="file" name="imageContent" required>
+		<label>Link</label>
+		<input type="text" name="link1" value="<?php echo ($action=='edit')? ($detail->getLink1()) : '' ; ?>" >
 		<br/>
 
 		<label>Ordem</label>
@@ -89,7 +101,7 @@
 	//$resPC=getAllContents($conn, $idCat['id_content_category']);
 
 
-		$collection = getAllContentsBO($pdo);
+		$collection = getContentByCategoryIdBO($pdo,$idCat );
 
 
 	?>
@@ -97,7 +109,8 @@
 		<thead>
 			<tr class="tableSubHeaderGeneral">
 				<th>Titulo</th>
-				<th>Texto 1</th>
+				<th>Intro</th>
+				<th>Imagem</th>
 				<th class="tableSubHeaderImg">Apagar</th>
 				<th class="tableSubHeaderImg">Editar</th>
 				<th class="tableSubHeaderImg">Publicado</th>
@@ -112,23 +125,42 @@
 					}
 				?>
 				<tr class="<?php echo $class; ?>">
-					<td><a href="home.php?area=<?php echo $slug; ?>&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle() ); ?></a></td>
-					<td><?php echo ($collection[$i]->getText()); ?></td>
+					<td><a href="home.php?area=newcontent&idCat=<?php echo $idCat ?>&id=<?php echo $collection[$i]->getId(); ?>"><?php echo ($collection[$i]->getTitle() ); ?></a></td>
+					<td><?php echo ($collection[$i]->getIntro()); ?></td>
+					<td>
+						<?php
+							if($collection[$i]->getUrlImg() !=""){
+						?>
+								<img src="<?php echo BASE_URL.MEDIA_IMAGES.$collection[$i]->getUrlImg(); ?>">
+						<?php
+							}else{
+						?>
+						<div class="noPhoto">
+							<span class="fa-stack fa-lg ">
+								<i class="fa fa-camera fa-stack-1x"></i>
+								<i class="fa fa-ban fa-stack-2x text-danger"></i>
+							</span>
+							<p>Sem foto</p>
+						</div>
+					<?php
+							}
+					?>
+					</td>
 					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContent(<?php echo "'".$slug."'";?>, <?php echo $collection[$i]->getId();?>)"></i></a></td>
-					<td><a href="home.php?area=<?php echo $slug; ?>&id=<?php echo $collection[$i]->getId(); ?>">
+					<td><a href="home.php?area=newcontent&idCat=<?php echo $idCat ?>&id=<?php echo $collection[$i]->getId(); ?>">
 							<span class="fa-stack fa-lg">
 							  <i class="fa fa-circle fa-stack-2x"></i>
 							  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-							</span> 
+							</span>
 						</a></td>
 					<td>
 						<a href="JavaScript:void(0);">
 						<?php if($collection[$i]->getAct()==1) { ?>
 									<i class="fa fa-check-circle fa-2x" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,0,<?php echo $collection[$i]->getId();?>)"></i>
-									
+
 							<?php } else { ?>
 									<i class="fa fa-times-circle fa-2x" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,1,<?php echo $collection[$i]->getId(); ?>)"></i>
-								
+
 							<?php } ?>
 						</a>
 					</td>
@@ -140,4 +172,3 @@
 
 	</table>
 </div>
-
