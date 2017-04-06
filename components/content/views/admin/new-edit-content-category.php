@@ -15,6 +15,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 	 	$detailInfo= getContentCategoriesById($pdo, $_GET['id']);
 		$detail=$detailInfo;
 
+
 	 }
 // .$slug
 
@@ -22,7 +23,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 <div class="topRight" id="areaDetalhe">
 	<!--Header-->
 	<div class="topRightHeader">
-		<a href="<?php echo BASE_URL."/backoffice/home.php?area=newcontentcategory" ?>"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+		<a href="<?php echo BASE_URL."/backoffice/home.php?area=editcontentcategory" ?>"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
 		<p>Gerir Categorias de Conteúdo</p>
 	</div>
 	<?php
@@ -34,7 +35,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 			?>
 				<p class="titlePreview">Thumb</p>
 				<div class="preview">
-					<a target="_blank" href="<?php echo LIVE_SITE.MEDIA_CONTENT_CATEGORY_FOLDER.$detail[0]->getUrlImg() ?>"><img src="<?php echo LIVE_SITE.MEDIA_CONTENT_CATEGORY_FOLDER.$detail[0]->getUrlImg() ?>"  alt="Imagem"/></a>
+					<a target="_blank" href="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getUrlImg() ?>"><img src="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getUrlImg() ?>"  alt="Imagem"/></a>
 				</div>
 				<br/>
 			<?php
@@ -42,7 +43,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 			?>
 		</div>
 	<?php
-		}
+}
 
 	$collection = getAllContentCategories($pdo);
 
@@ -50,43 +51,40 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 
 
 	<!--Inputs/Form-->
-	<form method="post" action="../modules/modContent/subContentCategory.php" class="formCont" enctype="multipart/form-data">
+	<form method="post" action="../components/content/views/admin/submit.contentCategory.php" class="formCont" enctype="multipart/form-data">
 		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
-		<input type="hidden" name="id" value="<?php echo $idCat['id_category'] ?>"/>
+		<!-- <input type="hidden" name="id" value="<?php echo $idCat['id_category'] ?>"/> -->
 		<input type="hidden" name="id_item" value="<?php echo $_GET['id'] ?>"/>
-		<input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/>
+		<!-- <input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/> -->
 
 
+		<br/>
+
+		<label>Nome</label>
+		<input type="text" name="titleContentCat" value="<?php echo ($action=='edit')? ($detail[0]->getTitle()) : '' ; ?>" required <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 		<br/>
 
 		<label>Título</label>
-		<input type="text" name="titleContentCat" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>" required>
+		<input type="text" name="text1" value="<?php echo ($action=='edit')? ($detail[0]->getIntro()) : '' ; ?>" required <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 		<br/>
 
-		<label>Texto 1</label>
-		<input type="text" name="text1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getIntro()) : '' ; ?>" required>
+		<label>Texto</label>
+		<textarea name="longText" required <?php echo ($action=='new')? 'disabled' : '' ; ?>><?php echo ($action=='edit')? ($detail[0]->getText()) : '' ; ?></textarea>
 		<br/>
 
-		<label>Texto Longo</label>
-		<textarea name="longText" required><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
-		<br/>
-
-		<label>Thumb</label>
-		<input type="file" name="imgThumb" accept="image/png, image/jpeg" required>
+		<label>Imagem Topo</label>
+		<input type="file" name="imgThumb" accept="image/png, image/jpeg"  <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 		<p class="caption">Formatos suportados: .png, .jpg</p>
 		<br/>
 
-		<label>Ordem</label>
-		<input type="number" name="orderCat" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getOrder()) : '' ; ?>" required>
-		<br/>
 
 		<!--Botões-->
 		<label>Publicar</label>
-		<input type="checkbox" name="actContentCat" <?php echo ($action=='edit' && $detail[0]->getAct()==1 )? 'checked':'' ?> >
+		<input type="checkbox" name="actContentCat" <?php echo ($action=='edit' && $detail[0]->getAct()==1 )? 'checked':'' ?>  <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 		<br/>
 
-		<input type="submit" name="save" class="btnSave" value="Gravar">
-		<input type="button" name="delete" class="btnDelete" value="Apagar" onclick="deleteContentCategory(<?php echo $id ?>)" >
+		<input type="submit" name="save" class="btnSave" value="Gravar" <?php echo ($action=='new')? 'disabled' : '' ; ?>>
+		<input type="button" name="delete" class="btnDelete" value="Apagar" onclick="deleteContentCategory(<?php echo $id ?>)" <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 	</form>
 </div>
 
@@ -116,14 +114,14 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 					}
 				?>
 					<tr class="<?php echo $class; ?>">
-						<td><a href="home.php?area=contentcategory&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle()); ?></a></td>
+						<td><a href="home.php?area=contentcategory&id=<?php echo $collection[$i]->getId(); ?>"><?php echo ($collection[$i]->getTitle()); ?></a></td>
 
 						<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContentCategory(<?php echo $collection[$i]->getId(); ?>)"></i></a></td>
 						<td><a href="home.php?area=contentcategory&id=<?php echo $collection[$i]->getId(); ?>">
 								<span class="fa-stack fa-lg">
 								  <i class="fa fa-circle fa-stack-2x"></i>
 								  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-								</span> 
+								</span>
 							</a></td>
 						<td>
 							<a href="JavaScript:void(0);">
