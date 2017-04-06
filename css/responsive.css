@@ -46,7 +46,8 @@
       width: 55% !important;
       font-size: 40px;
       color: #ffffff;
-      font-family: "gotham_light"; }
+      font-family: "gotham_light";
+      text-align: center; }
     .form-responsive input, .form-responsive textarea {
       color: #ffffff; }
 
@@ -264,6 +265,22 @@
   .slider .subtitle {
     height: 150px; } }
 @media (max-width: 576px) {
+  .menu .form-control {
+    display: inline-block; }
+  .menu .overlay nav {
+    top: 36%; }
+  .menu .overlay ul li {
+    height: calc(40% / 5); }
+    .menu .overlay ul li a {
+      font-size: 30px; }
+  .menu .form-responsive input[type=text] {
+    font-size: 30px; }
+  .menu .fa-search {
+    font-size: 25px; }
+  .menu .overlay-close {
+    width: 40px;
+    height: 40px; }
+
   .slider .subtitle {
     height: 120px; }
     .slider .subtitle p {
@@ -284,6 +301,9 @@
   footer h2 {
     margin-left: 43px; } }
 @media (max-width: 495px) {
+  .menu .form-responsive input[type=text] {
+    width: 78% !important; }
+
   .fa-bars {
     font-size: 1.2em; }
 
