@@ -352,9 +352,11 @@ form {
 
 .conteudo-grupo p, .conteudo-grupo li {
   font-family: "gotham_medium";
-  color: #787878; }
+  color: #787878;
+  margin-bottom: 30px; }
 .conteudo-grupo ul {
-  padding-left: 15px; }
+  padding-left: 15px;
+  margin-bottom: 60px; }
   .conteudo-grupo ul li {
     color: #009e94; }
     .conteudo-grupo ul li em {

@@ -479,9 +479,11 @@ form{
 	p, li{
 		font-family: $font-medium;
 		color: $grey;
+		margin-bottom: 30px;
 	}
 	ul{
 	    padding-left: 15px;
+        margin-bottom: 60px;
 		li{
 			color: $green;
 			em{
