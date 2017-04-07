@@ -210,11 +210,13 @@ form{
 			font-size: 2vw;
 			padding: 0;
 			color: $blue;
+			text-transform: uppercase;
 		}
 		.txt-destaque{
 			font-size: 2vw;
 			color: $blue;
 			font-family:$font-light!important;
+			text-transform: uppercase;
 		}
 	}
 
@@ -469,6 +471,7 @@ form{
 	p{
 		font-size: 40px;
 		margin-top: 90px;
+		text-transform: uppercase;
 	}
 }
 

@@ -168,11 +168,13 @@ form {
       font-family: "gotham_bold";
       font-size: 2vw;
       padding: 0;
-      color: #242f75; }
+      color: #242f75;
+      text-transform: uppercase; }
     .conteudo .texto .txt-destaque {
       font-size: 2vw;
       color: #242f75;
-      font-family: "gotham_light" !important; }
+      font-family: "gotham_light" !important;
+      text-transform: uppercase; }
   .conteudo .line {
     position: relative;
     padding-top: 0; }
@@ -345,7 +347,8 @@ form {
 /* O GRUPO */
 .subtitle p {
   font-size: 40px;
-  margin-top: 90px; }
+  margin-top: 90px;
+  text-transform: uppercase; }
 
 .conteudo-grupo p, .conteudo-grupo li {
   font-family: "gotham_medium";
