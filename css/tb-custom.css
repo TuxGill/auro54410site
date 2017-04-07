@@ -387,7 +387,8 @@ footer {
     margin: 20px 0px 40px 0; }
   footer li a {
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: "gotham_medium"; }
     footer li a:hover {
       color: #242f75;
       text-decoration: none; }
@@ -400,7 +401,9 @@ footer {
   font-size: 12px;
   margin: 0;
   padding-bottom: 15px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  position: fixed;
+  bottom: 0; }
   .rodape .copyDir {
     text-align: right; }
 
