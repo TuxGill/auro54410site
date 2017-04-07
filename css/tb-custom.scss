@@ -535,6 +535,7 @@ footer{
 		a{
 			color: #ffffff;
 			text-decoration: none;
+			font-family: $font-medium;
 			&:hover{
 				color:$blue;
 				text-decoration: none;
@@ -553,6 +554,8 @@ footer{
     margin: 0;
 	padding-bottom: 15px;
 	padding-top: 25px;
+	position: fixed;
+    bottom: 0;
     .copyDir{
 		text-align: right;
     }
