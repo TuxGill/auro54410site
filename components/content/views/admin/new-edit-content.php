@@ -80,6 +80,17 @@
 		<input type="number" name="orderContent" value="<?php echo ($action=='edit')? ($detail->getOrder()) : '' ; ?>" required>
 		<br/>
 
+		<?php
+			if ($idCat==1) {
+		?>
+				<label>Data Publicação</label>
+				<input type="datetime-local" name="dateContent" value="<?php echo ($action=='edit')? ( date('Y-m-d\TH:i:s',strtotime($detail->getTs()))) : '' ; ?>">
+				<br/>
+		<?php
+			}
+		?>
+
+
 		<!--Botões-->
 		<label>Publicar</label>
 		<input type="checkbox" name="actContent" <?php echo ($action=='edit' && $detail->getAct()==1 )? 'checked':'' ?> >
