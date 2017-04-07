@@ -84,7 +84,8 @@
         link1_content,
         link2_content,
         order_content,
-        act_content)
+        act_content,
+        ts_content)
       values(".$this->category.",
        '".$this->title."',
        '".$this->slug."',
@@ -96,9 +97,10 @@
        '".$this->link1."',
        '".$this->link2."',
        '".$this->order."',
-       '".$this->act."')";
+       '".$this->act."',
+       ".( $this->ts==null ? 'NULL' : $this->ts ).")";
 
-     //echo $sql;
+    //  echo $sql;
 
      $query = $pdo->prepare($sql);
      $query->execute();
@@ -119,10 +121,11 @@
             link1_content='".$this->link1."',
             link2_content='".$this->link2."',
             order_content='".$this->order."',
-            act_content='".$this->act."'
+            act_content='".$this->act."',
+            ts_content='".( $this->ts==null ? 'NULL' : $this->ts )."'
             WHERE id_content='".$id."'";
 
-      //echo $sql;
+      // echo $sql;
 
       $query = $pdo->prepare($sql);
       $query->execute();

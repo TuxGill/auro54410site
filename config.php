@@ -32,7 +32,7 @@
 
 
   if(!PRODUCTION){
-    define('DIRFOLDER','/auro54410site');
+    define('DIRFOLDER','/auro/auro54410site');
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );
     define('BASE_URL_BACKOFFICE', BASE_URL."/backoffice" );
 

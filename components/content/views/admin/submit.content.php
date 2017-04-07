@@ -17,6 +17,12 @@
   $text=$_POST['textContent'];
   $link1=$_POST['link1'];
 
+  if (isset($_POST['dateContent']) && $_POST['dateContent'] != '') {
+    $dateTs=date('Y-m-d H:i:s',strtotime($_POST['dateContent']));
+  }else{
+    $dateTs=null;
+  }
+
 
   $order=$_POST['orderContent'];
   // act
@@ -54,10 +60,11 @@
     $contentEdit[0]->setLink1($link1);
     $contentEdit[0]->setOrder($order);
     $contentEdit[0]->setAct($act);
+    $contentEdit[0]->setTs($dateTs);
   }
   //VERIFICAÇÃO SE NEW E FAZ SAVE OU SE É EDIT E FAZ UPDATE
   if ($action=='new') {
-    $content = new Content(null, $cat, $title, $slug ,$intro, $text, $fileImg, null, null, $link1, null ,$order, $act, null, null);
+    $content = new Content(null, $cat, $title, $slug ,$intro, $text, $fileImg, null, null, $link1, null ,$order, $act, null, $dateTs);
     //print_r($content);
     $content->save($pdo);
 
