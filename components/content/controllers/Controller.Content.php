@@ -195,7 +195,7 @@
   }
 
   function getContentByCategoryId($pdo, $id){
-    $sql= "select * from content inner join content_category on content.fk_id_content_category = content_category.id_content_category where id_content_category='".$id."' and act_content=1 and del_content=0";
+    $sql= "select * from content inner join content_category on content.fk_id_content_category = content_category.id_content_category where id_content_category='".$id."' and act_content=1 and del_content=0 order by order_content ASC";
 
     $query = $pdo->prepare($sql);
     $query->execute();

@@ -6,7 +6,7 @@
 
 <div class="col-sm-12 col-12 vermapa" id="info-contactos"><p>VER MAPA</p></div>
 <div class="row geral col-sm-12 col-12">
-    <div class="col-sm-1 col-1 separador"><p>CONTACTOS</p></div>
+    <div class="col-sm-1 col-1 separador"><p></p></div>
     <div class="col-sm-11 col-11 row clearfix">
       <ul class="col-md-6 col-12 clearfix">
           <li><h2>DADOS GERAIS</h2></li>
