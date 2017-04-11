@@ -1,3 +1,10 @@
+<?php
+  $productsCategory = getProductCategoriesById($pdo,4);
+  $products = getProductByCategoryId($pdo,1);
+  // echo "<pre>";
+  // print_r($conteudo);
+  // echo "</pre>";
+?>
 <div class="slider">
   <img src="images/produtos.jpg">
   <div class="subtitle">
@@ -119,4 +126,3 @@
 		</div>
 	</div>
 </div>
-
