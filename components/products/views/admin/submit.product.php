@@ -48,12 +48,12 @@
   /* FILES VIDEO */
 
   if(isset($_FILES['video']['name']) && $_FILES['video']['name']!=''){
-    $destFolderVideo='../../../../media/video/';
+    $destFolderVideo='../../../../media/videos/';
     $tempFileVideo=explode('.',$_FILES['video']['name']);
     $extVideo=$tempFileVideo[count($tempFileVideo)-1];
     $fileVideo=clean($_POST['title']).'-'.uniqid().'.'.$extVideo;
     $finalFileVideo=$destFolderVideo.$fileVideo;
-    move_uploaded_file($_FILES['video']['tmp_name'], $fileVideo);
+    move_uploaded_file($_FILES['video']['tmp_name'], $finalFileVideo);
   } else {
     $fileVideo='';
   }
@@ -85,12 +85,25 @@
   }
 
 
+  if($action=='edit'){
+    $p= getProductById($pdo, $id);
+    $p->setTitle();
+    $p->setIntro();
+    $p->setColor();
+    $p->setText();
+    $p->setLink1();
+    $p->setLink2();
+
+  } else {
+
+  }
+
 
 
   /* CRIAR OBJECTO*/
-
+/*
   $product = new Product(null, $cat,$title,$slug,$fileLogo,$color,$intro,$text,$fileTopo,$filePDF,$fileVideo, $url, $fb,$order, $act, null,null );
-  $product->save($pdo);
+  $product->save($pdo);*/
 
 ?>
 
