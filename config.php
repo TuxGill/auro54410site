@@ -13,7 +13,7 @@
 
   /*FACEBOOK*/
   define('OG_IMAGE','');
-  define('OG_TITLE','');
+  define('OG_TITLE','Titulo');
   define('OG_SITENAME','');
   define('OG_LINK','');
   define('OG_DESCRIPTION','');
