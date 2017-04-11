@@ -13,16 +13,17 @@
 
     foreach ($rows as $row) {
       $c= new ProductCategory($row['id_product_category'],
-                              $row['fk_id_product_category'],
-                              $row['title_product_category'],
-                              $row['slug_product_category'],
-                              $row['intro_product_category'],
-                              $row['text_product_category'],
-                              $row['url_product_category'],
-                              $row['order_product_category'],
-                              $row['act_product_category'],
-                              $row['del_product_category'],
-                              $row['ts_product_category']);
+                            $row['fk_id_product_category'],
+                            $row['title_product_category'],
+                            $row['label_product_category'],
+                            $row['intro_product_category'],
+                            $row['slug_product_category'],
+                            $row['text_product_category'],
+                            $row['url_product_category'],
+                            $row['order_product_category'],
+                            $row['act_product_category'],
+                            $row['del_product_category'],
+                            $row['ts_product_category']);
 
 
 
@@ -48,8 +49,9 @@
         $c= new ProductCategory($row['id_product_category'],
                               $row['fk_id_product_category'],
                               $row['title_product_category'],
-                              $row['slug_product_category'],
+                              $row['label_product_category'],
                               $row['intro_product_category'],
+                              $row['slug_product_category'],
                               $row['text_product_category'],
                               $row['url_product_category'],
                               $row['order_product_category'],

@@ -1,14 +1,15 @@
 <?php
-  $productsCategory = getProductCategoriesById($pdo,4);
-  $products = getProductByCategoryId($pdo,1);
-  // echo "<pre>";
-  // print_r($conteudo);
-  // echo "</pre>";
+  $productsCategory = getProductCategoryById($pdo,4);
+  $products = getProductByCategoryId($pdo,4);
+
+  echo "<pre>";
+  print_r($products);
+  echo "</pre>";
 ?>
 <div class="slider">
-  <img src="images/produtos.jpg">
+  <img src="<?php echo BASE_URL.MEDIA_IMAGES.$productsCategory[0]->getUrlImg(); ?>">
   <div class="subtitle">
-    <p class="col-sm-6 offset-sm-1">OS NOSSOS <br>PRODUTOS</p>
+    <p class="col-sm-6 offset-sm-1"><?php echo $productsCategory[0]->getIntro();  ?></p>
   </div>
 </div>
 
@@ -16,7 +17,8 @@
 	<div class="separador col-sm-1"><p>PRODUTOS</p></div>
 
 	<div class="row col-sm-9 offset-sm-1 txt-intro">
-		<p>
+    <?php echo $productsCategory[0]->getText();  ?>
+		<!-- <p>
 			A Aurovitas comercializa medicamentos genéricos, medicamentos de marca e medicamentos
 			não sujeitos a receita médica, abrangendo cerca de 22 áreas terapêuticas.
 			<br>Temos um portefólio de mais de 120 produtos, a que correspondem cerca de 400 formas
@@ -38,7 +40,7 @@
 				<li><img src="images/antialergenicos.png"></li>
 				<li><img src="images/sangue_e_orgaos.png"></li>
 			</ul>
-		</div>
+		</div> -->
 
 		<div class="header2">
 			<h2>MEDICAMENTOS NÃO SUJEITOS A RECEITA MÉDICA (MNSRM)</h2>
