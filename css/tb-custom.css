@@ -289,16 +289,16 @@ form {
 .conteudo-news .seta {
   margin-top: 258px; }
 .conteudo-news .imagens {
-  padding-top: 140px; }
+  padding-top: 140px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .conteudo-news .imagens:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
   .conteudo-news .imagens img {
-    max-width: 100%;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s; }
-    .conteudo-news .imagens img:hover {
-      -moz-transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1); }
+    max-width: 100%; }
 .conteudo-news .textos {
   padding-top: 100px; }
   .conteudo-news .textos h2 {
@@ -333,7 +333,8 @@ form {
   color: #009e94;
   font-family: "gotham_bold";
   font-size: 20px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  text-transform: uppercase; }
 .conteudo h3 {
   font-family: "gotham_medium";
   color: #009e94;
@@ -408,7 +409,8 @@ footer {
   padding-bottom: 15px;
   padding-top: 25px;
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  z-index: 50; }
   .rodape .copyDir {
     text-align: right; }
 
