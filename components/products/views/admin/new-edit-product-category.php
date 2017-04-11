@@ -9,9 +9,13 @@
 		$action ='edit';
 
 		//$id=$conn->real_escape_string($_GET['id']);
-		$detailInfo= getContentById($pdo, $id);
-		$detail=$detailInfo[0];		//$detailInfo = $detail->fetch_assoc();
+		$detailInfo= getProductCategoryById($pdo, $_GET['id']);
+
 	}
+
+
+
+
 ?>
 
 
@@ -23,61 +27,54 @@
 	</div>
 
 	<!--Inputs/Form-->
-	<form method="post" action="../modules/modContent/subContent.php" class="formCont" enctype="multipart/form-data">
+	<form method="post" action="../components/products/views/admin/submit.productCategory.php" class="formCont" enctype="multipart/form-data">
 		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
-		<input type="hidden" name="id" value="<?php echo $idCat['id_category'] ?>"/>
+
 		<input type="hidden" name="id_item" value="<?php echo $_GET['id'] ?>"/>
 		<input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/>
 
 		<label>Título</label>
-		<input type="text" name="titleContent" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>" required>
+		<input <?php echo ($action=='new')? 'disabled' : '' ; ?> type="text" name="title" value="<?php echo ($action=='edit')? $detailInfo[0]->getTitle() : '' ; ?>" required>
 		<br/>
 
+		<!-- Image preview -->
+		<?php
+			if ($action=='edit') { ?>
+				<div class="mainPreview">
+
+					<?php
+						if( $detailInfo[0]->getUrlImg() ){
+					?>
+							<p class="titlePreview">Imagem</p>
+							<div class="preview">
+								<a target="_blank" href="<?php echo BASE_URL.MEDIA_IMAGES.$detailInfo[0]->getUrlImg() ?>"><img src="<?php echo BASE_URL.MEDIA_IMAGES.$detailInfo[0]->getUrlImg() ?>"  alt="Imagem"/></a>
+							</div>
+							<br/>
+					<?php
+						}
+					?>
+				</div>
+		<?php
+			}
+		?>
+		<!-- End Image preview -->
+
 		<label>Imagem de Cabeçalho</label>
-		<input type="file" name="img_head" required>
+		<input <?php echo ($action=='new')? 'disabled required' : '' ; ?> type="file" name="topo" >
 		<br/>
 
 		<label>Intro</label>
-		<input type="text" name="textContent1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPretext1()) : '' ; ?>" required>
+		<input <?php echo ($action=='new')? 'disabled' : '' ; ?> type="text" name="intro" value="<?php echo ($action=='edit')? $detailInfo[0]->getIntro() : '' ; ?>" required>
 		<br/>
 
 		<label>Texto Longo</label>
-		<textarea name="longTextContent"  id="conteudo" required><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
+		<textarea <?php echo ($action=='new')? 'disabled' : '' ; ?> name="text"  id="conteudo" required> <?php echo ($action=='edit')? $detailInfo[0]->getText() : '' ; ?></textarea>
 		<br/>
 
-		<label>Video</label>
-		<input type="file" name="video" >
-		<br/>
-
-		<label>URL</label>
-		<input type="text" name="link1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLink1()) : '' ; ?>" required>
-		<br/>
-
-		<label>FB</label>
-		<input type="text" name="link2" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLink2()) : '' ; ?>" required>
-		<br/>
-
-		<?php
-			$catContents=getAllContentCategories($pdo);
-
-		?>
-		<label>Categoria</label>
-		<select required name="linhaCaixa">
-			<option class="placeholder" selected disabled value="">Escolha uma Categoria...</option>
-			<?php
-				for ($i=0;$i<count($catContents);$i++){ ?>
-
-					<option value="<?php echo $catContents[$i]->getId(); ?>" required><?php  echo $catContents[$i]->getTitle(); ?></option>
-
-				<?php } ?>
-
-			?>
-		</select>
-		<br/>
 
 		<!--Botões-->
 		<label>Publicar</label>
-		<input type="checkbox" name="actContent" <?php echo ($action=='edit' && $detail[0]->getAct()==1 )? 'checked':'' ?> >
+		<input type="checkbox" name="act" <?php echo ($action=='edit' && $detailInfo[0]->getAct()==1 )? 'checked':'' ?> >
 		<br/>
 
 		<input type="submit" name="save" class="btnSave" value="Gravar">
@@ -96,14 +93,14 @@
 	//$resPC=getAllContents($conn, $idCat['id_content_category']);
 
 
-		$collection = getAllContents($pdo);
+		$collection = getAllProductCategories($pdo);
 
 
 	?>
 	<table cellpadding="0" cellspacing="0" border="0" class="display" id="tbStatic">
 		<thead>
 			<tr class="tableSubHeaderGeneral">
-				<th>Titulo</th>
+				<th width="200">Titulo</th>
 				<th>Texto 1</th>
 				<th class="tableSubHeaderImg">Apagar</th>
 				<th class="tableSubHeaderImg">Editar</th>
@@ -119,14 +116,16 @@
 					}
 				?>
 				<tr class="<?php echo $class; ?>">
-					<td><a href="home.php?area=<?php echo $slug; ?>&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle() ); ?></a></td>
-					<td><?php echo utf8_encode($collection[$i]->getPretext1()); ?></td>
-					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContent(<?php echo "'".$slug."'";?>, <?php echo $collection[$i]->getId();?>)"></i></a></td>
-					<td><a href="home.php?area=<?php echo $slug; ?>&id=<?php echo $collection[$i]->getId(); ?>">
+					<td><a href="home.php?area=editproductcategory&id=<?php echo $collection[$i]->getId(); ?>"><?php echo $collection[$i]->getTitle() ; ?></a></td>
+					<td><?php echo $collection[$i]->getText(); ?></td>
+					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContent(<?php echo $collection[$i]->getId();?>)"></i></a></td>
+					<td><a href="home.php?area=editproductcategory&id=<?php echo $collection[$i]->getId(); ?>">
+
+
 							<span class="fa-stack fa-lg">
 							  <i class="fa fa-circle fa-stack-2x"></i>
 							  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-							</span> 
+							</span>
 						</a></td>
 
 					<td>

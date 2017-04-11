@@ -120,15 +120,15 @@
 	//$resPC=getAllContents($conn, $idCat['id_content_category']);
 
 
-		$collection = getAllContents($pdo);
+		$collection = getProductByCategoryId($pdo,$_GET['idCat']);
 
 
 	?>
 	<table cellpadding="0" cellspacing="0" border="0" class="display" id="tbStatic">
 		<thead>
 			<tr class="tableSubHeaderGeneral">
-				<th>Titulo</th>
-				<th>Texto 1</th>
+				<th>Nome Produto</th>
+				<th>Texto</th>
 				<th class="tableSubHeaderImg">Apagar</th>
 				<th class="tableSubHeaderImg">Editar</th>
 				<th class="tableSubHeaderImg">Publicado</th>
@@ -143,14 +143,16 @@
 					}
 				?>
 				<tr class="<?php echo $class; ?>">
-					<td><a href="home.php?area=<?php echo $slug; ?>&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle() ); ?></a></td>
-					<td><?php echo utf8_encode($collection[$i]->getPretext1()); ?></td>
+					<td><a href="home.php?area=newproduct&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle() ); ?></a></td>
+					<td><?php echo $collection[$i]->getText() ?></td>
 					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContent(<?php echo "'".$slug."'";?>, <?php echo $collection[$i]->getId();?>)"></i></a></td>
-					<td><a href="home.php?area=<?php echo $slug; ?>&id=<?php echo $collection[$i]->getId(); ?>">
+					<td><a href="home.php?area=newproduct&id=<?php echo $collection[$i]->getId(); ?>">
+
+
 							<span class="fa-stack fa-lg">
 								<i class="fa fa-circle fa-stack-2x"></i>
 								<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-							</span> 
+							</span>
 						</a></td>
 					<td>
 						<a href="JavaScript:void(0);">

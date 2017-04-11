@@ -3,6 +3,7 @@
   include($_SERVER['DOCUMENT_ROOT'].DIRFOLDER.'/components/products/models/Class.Product.php');
 
   function getAllproducts($pdo){
+
       $sql= "select * from products where act_product=1 and del_product=0";
 
       $query = $pdo->prepare($sql);
@@ -34,8 +35,6 @@
       }
 
       return $products;
-
-
   }
 
   function getProductBySlug($pdo, $slug){
@@ -72,6 +71,7 @@
       return $products;
   }
 
+
   function getProductById($pdo, $id){
       $sql= "select * from product where  id_product=".$id." and act_product=1 and del_product=0";
       echo $sql;
@@ -107,6 +107,7 @@
   }
 
   function getProductByCategorySlug($pdo, $slug){
+
       $sql= "select * from products inner join product_category on id_product_category = fk_id_product_category where and slug_product_category='".$slug."'act_product=1 and del_product=0";
 
       $query = $pdo->prepare($sql);
@@ -141,9 +142,9 @@
   }
 
 
-  function getProductByCategoryId($pdo, $id){
 
-      $sql= "select * from product inner join product_category on product.fk_id_product_category = product_category.id_product_category where id_product_category='".$id."' and act_product=1 and del_product=0 order by order_product ASC";
+  function getProductByCategoryId($pdo, $id){
+      $sql= "select * from product  where  fk_id_product_category=".$id." and act_product=1 and del_product=0 order by order_product ASC";
 
       echo $sql;
       $query = $pdo->prepare($sql);
