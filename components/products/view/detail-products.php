@@ -1,3 +1,19 @@
+<?php
+//O get diz id mas é o slug
+ $slugProduto = $_GET['id'];
+
+ //echo $slugProduto;
+ $productContent = getProductDetailBySlug($pdo, $slugProduto);
+
+ //se esivermos em ferlidona DESENHA OS FILHOS DA MM
+ // if($productContent[0]->getId() == 5){
+ //      print_r(getProductByCategoryId($pdo, $productContent[0]->getId()));
+ //  }
+ echo "<pre>";
+ print_r($productContent);
+ echo "</pre>";
+
+ ?>
 <div class="slider">
   <div class="videoWrapper">
     <!-- TODO: BACKOFFICE - SE FOR YOUTUBE -->

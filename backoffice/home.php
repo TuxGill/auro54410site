@@ -45,6 +45,7 @@
             <!-- Css -->
             <link rel="stylesheet" href="assets/css/normalize.css">
             <link rel="stylesheet" href="assets/css/main.css">
+            <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/fonts.css">
             <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/font-awesome.css">
 
             <!-- JQuery and Js Files -->
@@ -114,7 +115,7 @@
                     case ('contentcategory') : include ('../components/content/views/admin/new-edit-content-category.php'); break;
                     case ('newcontent') : include ('../components/content/views/admin/new-edit-content.php'); break;
                     case ('content') : include ('../components/content/views/admin/new-edit-content.php'); break;
-                    case ('newproductcategory') : include ('../components/products/views/admin/new-edit-product-category.php'); break;
+                    case ('editproductcategory') : include ('../components/products/views/admin/new-edit-product-category.php'); break;
                     case ('newproduct') : include ('../components/products/views/admin/new-edit-product.php'); break;
                     case ('contact') : include ('../components/contacts/views/admin/new-edit-contact.php'); break;
 

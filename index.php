@@ -135,7 +135,7 @@
         // init the FB JS SDK
         FB.init({
           appId      : '118351202043790',                        // App ID from the app dashboard
-          channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel file for x-domain comms
+          channelUrl : '<?php echo  BASE_URL;  ?>', // Channel file for x-domain comms
           status     : true,                                 // Check Facebook Login status
           xfbml      : true                                  // Look for social plugins on the page
         });
