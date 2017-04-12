@@ -13,9 +13,8 @@
 
 <!-- FERLIDONA -->
 <div class="row conteudo conteudoQuemSomos col-sm-12">
-  <div class="separador col-sm-1"><p></p></div>
 
-	<div class="col-sm-9 col-lg-9 col-xl-9 offset-sm-1 txt-intro">
+	<div class="col-10 offset-1 col-sm-10 offset-sm-1 txt-intro">
     <p>
       <?php echo $conteudo[0]->getText(); ?>
 		</p>
@@ -26,12 +25,15 @@
       <?php echo $conteudo[1]->getText(); ?>
     </p>
 
+
     <div class="col-sm-12 col-lg-12 col-xl-11 valores">
     <!-- valor -->
+
     <?php 
 
       for ($i = 2; $i <= (count($conteudo)-1); $i++) {
       ?>
+      <h2 class="col-sm-12 h2Aurovitas"><?php echo $conteudo[$i]->getTitle(); ?></h2>
         <div class="row col-sm-12 marginValores">
           <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 imagens">
             <img src="<?php echo BASE_URL.MEDIA_IMAGES.$conteudo[$i]->getUrlImg(); ?>">

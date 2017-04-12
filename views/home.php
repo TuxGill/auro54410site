@@ -17,8 +17,7 @@
 
 <div class="row conteudo col-sm-12 col-12">
 
-  <div class="separador col-sm-1"><p></p></div>
-     <div class="row col-sm-11 col-lg-11 offset-sm-1 col-xl-10">
+     <div class="row col-10 offset-1 col-sm-10 col-lg-10 offset-sm-1 col-xl-10">
       <div class="col-12 col-sm-5 col-md-4 col-lg-4 col-xl-4 destaque">
         <img src="<?php echo BASE_URL.MEDIA_IMAGES.$destaque[0]->getUrlImg(); ?>">
       </div>
