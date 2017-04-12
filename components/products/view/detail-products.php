@@ -17,9 +17,8 @@
 </div>
 <!-- PRODUTO -->
 <div class="row conteudo conteudoProd col-sm-12">
-  <div class="separador col-sm-1"><p> </p></div>
-
-	<div class="col-sm-12 col-lg-12 col-xl-11 txt-intro">
+ 
+	<div class="col-10 offset-1 col-sm-10 offset-sm-1 txt-intro">
     <img class="logoProd" src="<?php echo BASE_URL.MEDIA_IMAGES.$productContent[0]->getLogo(); ?>" alt="">
 
     <div>
@@ -84,7 +83,7 @@
     //Decubal - id 5
     if ($productContent[0]->getId() == 5) {
   ?>
-      <div class="col-sm-12 col-lg-12 col-xl-11 offset-xl-1  linksprod">
+      <div class="col-10 offset-1 col-sm-10 offset-sm-1 linksprod">
           <p>ENTRE NO MUNDO DECUBAL</p>
           <div >
             <a target="_blank" href="<?php echo $productContent[0]->getLink1(); ?>">
@@ -102,7 +101,7 @@
     //Beacita - id 6
     }else if($productContent[0]->getId() == 6){
   ?>
-      <div class="col-sm-12 col-lg-12 col-xl-11 offset-xl-1 rcmprod">
+      <div class="col-10 offset-1 col-sm-10 offset-sm-1 rcmprod">
         <a target="_blank" href="<?php echo BASE_URL.MEDIA_PDF.$productContent[0]->getPdf(); ?>">
           <i class="fa fa-file-text" aria-hidden="true"></i>
           RCM

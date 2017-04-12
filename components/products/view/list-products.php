@@ -14,9 +14,8 @@
 </div>
 
 <div class="row conteudo col-sm-12">
-	<div class="separador col-sm-1"><p>PRODUTOS</p></div>
 
-	<div class="row col-sm-9 offset-sm-1 txt-intro">
+	<div class="row col-10 offset-1 col-sm-10 offset-sm-1 txt-intro">
     <?php echo $productsCategory[0]->getText();  ?>
 
 		<div class="header2">
