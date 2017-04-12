@@ -12,8 +12,7 @@
 </div>
 
 <div class="row conteudo conteudo-grupo col-sm-12">
-	<div class="separador col-sm-1"></div>
-	<div class="col-sm-9 col-lg-9 col-xl-9 offset-sm-1">
+	<div class="col-10 offset-1 col-sm-10 offset-sm-1">
 		<p><?php echo $conteudo[0]->getIntro(); ?></p>
 		
 		<div class="col-sm-11 col-lg-11 col-xl-11 "> 

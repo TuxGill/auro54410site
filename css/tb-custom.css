@@ -192,14 +192,14 @@ form {
     .conteudo .seta span {
       border: 1px solid #009e94;
       border-radius: 100px;
-      width: 68px;
-      height: 68px; }
+      width: 60px;
+      height: 60px; }
       .conteudo .seta span:hover {
         background-color: #009e94; }
       .conteudo .seta span i {
         color: #009e94;
-        bottom: 3px;
-        left: 2px !important; }
+        bottom: 7px;
+        left: 3px !important; }
         .conteudo .seta span i:hover {
           color: #ffffff; }
   .conteudo .icon-stack {
@@ -220,13 +220,13 @@ form {
       width: 100%;
       text-align: center; }
     .conteudo .icon-stack .icon-stack-1x {
-      font-size: 4em; }
+      font-size: 3em; }
 
 /*   PRODUTOS  */
 .txt-intro p {
   color: #787878;
   font-family: "gotham_medium" !important;
-  font-size: 16px; }
+  font-size: 13px; }
 
 .icons {
   margin-bottom: 100px;
@@ -304,14 +304,15 @@ form {
   .conteudo-news .textos h2 {
     color: #009e94;
     font-family: "gotham_bold";
-    font-size: 20px; }
+    font-size: 16px; }
   .conteudo-news .textos h3 {
     font-family: "gotham_medium";
     color: #009e94;
-    font-size: 20px; }
+    font-size: 16px; }
   .conteudo-news .textos p {
-    font-family: "gotham_light";
-    color: #787878; }
+    font-family: "gotham_medium";
+    color: #787878;
+    font-size: 13px; }
 
 .conteudo .btn {
   width: 70px;
@@ -338,11 +339,12 @@ form {
 .conteudo h3 {
   font-family: "gotham_medium";
   color: #009e94;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 40px; }
 .conteudo p {
-  font-family: "gotham_light";
-  color: #787878; }
+  font-family: "gotham_medium";
+  color: #787878;
+  font-size: 13px; }
 
 /*  FIM NOTICIAS - DETALHE  */
 /* O GRUPO */
@@ -354,7 +356,8 @@ form {
 .conteudo-grupo p, .conteudo-grupo li {
   font-family: "gotham_medium";
   color: #787878;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-size: 13px; }
 .conteudo-grupo ul {
   padding-left: 15px;
   margin-bottom: 60px; }
@@ -365,6 +368,11 @@ form {
       font-style: normal; }
 
 /* FIM O GRUPO */
+/* AUROVITAS */
+.h2Aurovitas {
+  display: none; }
+
+/* FIM AUROVITAS */
 /* FOOTER */
 .separador {
   font-size: 16px;
@@ -380,11 +388,14 @@ footer {
   footer .vermapa {
     padding-top: 10px;
     text-align: right; }
+    footer .vermapa a {
+      color: #ffffff;
+      text-decoration: none; }
   footer .organizer .icon {
     /*margin-right: 5px;*/ }
   footer .geral {
     /*margin-top: 40px;*/
-    margin: 40px 0 0 0; }
+    margin: 35px 0 0 0; }
   footer h2 {
     margin-left: 56px; }
   footer .linha-separador {
