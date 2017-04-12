@@ -41,10 +41,7 @@
     $fileLogo=clean($_POST['title']).'-'.uniqid().'.'.$extLogo;
     $finalFileLogo=$destFolderLogo.$fileLogo;
     move_uploaded_file($_FILES['logo']['tmp_name'], $finalFileLogo);
-  } else {
-    $fileLogo='';
   }
-
   /* FILES VIDEO */
 
   if(isset($_FILES['video']['name']) && $_FILES['video']['name']!=''){
@@ -54,8 +51,6 @@
     $fileVideo=clean($_POST['title']).'-'.uniqid().'.'.$extVideo;
     $finalFileVideo=$destFolderVideo.$fileVideo;
     move_uploaded_file($_FILES['video']['tmp_name'], $finalFileVideo);
-  } else {
-    $fileVideo='';
   }
 
   /* PDF */
@@ -67,8 +62,6 @@
     $filePDF=clean($_POST['title']).'-'.uniqid().'.'.$extPDF;
     $finalFilePDF=$destFolderPDF.$filePDF;
     move_uploaded_file($_FILES['pdf']['tmp_name'], $finalFilePDF);
-  } else{
-      $filePDF='';
   }
 
   /* IMAGEM DE TOPO */
@@ -80,22 +73,30 @@
     $fileTopo=clean($_POST['title']).'-'.uniqid().'.'.$extTopo;
     $finalFileTopo=$destFolderTopo.$fileTopo;
     move_uploaded_file($_FILES['topo']['tmp_name'], $finalFileTopo);
-  } else {
-      $fileTopo='';
   }
-
 
   if($action=='edit'){
     $p= getProductById($pdo, $id);
-    $p->setTitle();
-    $p->setIntro();
-    $p->setColor();
-    $p->setText();
-    $p->setLink1();
-    $p->setLink2();
+
+    $p[0]->setTitle($title);
+    $p[0]->setIntro($intro);
+    $p[0]->setColor($color);
+    $p[0]->setText($text);
+    $p[0]->setLink1($url);
+    $p[0]->setLink2($fb);
+    if(isset($fileVideo)) { $p[0]->setVideo($fileVideo); }
+    if(isset($fileLogo)) { $p[0]->setLogo($fileLogo); }
+    $p[0]->setLogo();
+
 
   } else {
 
+  }
+
+  if($action=='edit'){
+      $p[0]->update($pdo);
+  } else {
+    $p[0]->save($pdo);
   }
 
 
