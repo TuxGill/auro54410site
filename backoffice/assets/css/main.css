@@ -1102,3 +1102,26 @@ thead th:last-child{
         page-break-after: avoid;
     }
 }
+
+/**************************************************
+    CK EDITOR
+****************************************************/
+
+#cke_editor{
+    margin-left: 134px;
+}
+
+.cke_bottom, .cke_reset_all{
+    display: none;
+}
+#cke_1_bottom{
+    display: none;
+}
+
+#cke_19, #cke_20, #cke_21, #cke_22, #cke_23, #cke_24, #cke_32, #cke_37, #cke_51, #cke_52, #cke_70, #cke_74, #cke_87, #cke_90, #cke_54, #cke_59, #cke_60, #cke_61, #cke_62, #cke_67, #cke_68, #cke_69, #cke_13, #cke_14, #cke_15{
+    display: none;
+}
+
+.cke_toolbar_separator{
+    display: none;
+}

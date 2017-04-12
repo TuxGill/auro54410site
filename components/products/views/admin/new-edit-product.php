@@ -92,7 +92,7 @@
 		<br/>
 
 		<label>Texto Longo</label>
-		<textarea name="text" ><?php echo ($action=='edit')? $detail[0]->getText() : '' ; ?></textarea>
+		<textarea name="text" id="editor"><?php echo ($action=='edit')? $detail[0]->getText() : '' ; ?></textarea>
 		<br/>
 
 		<label>PDF</label>

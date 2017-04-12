@@ -42,6 +42,12 @@
 
 
     <script src="<?php echo BASE_URL; ?>/js/modernizr.custom.js"></script>
+    
+    <!-- CK EDITOR -->
+    <script src="../ckeditor.js"></script>
+    <script src="js/sample.js"></script>
+    <link rel="stylesheet" href="css/samples.css">
+    <link rel="stylesheet" href="toolbarconfigurator/lib/codemirror/neo.css">
 
 
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -152,7 +158,10 @@
        }(document, 'script', 'facebook-jssdk'));
     </script>
     <script src="<?php echo BASE_URL; ?>/js/main.js"></script>
-
+    <!-- CK EDITOR -->
+    <script>
+      initSample();
+    </script>
 
    </body>
  </html>

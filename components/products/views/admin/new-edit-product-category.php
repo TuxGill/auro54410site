@@ -68,7 +68,7 @@
 		<br/>
 
 		<label>Texto Longo</label>
-		<textarea <?php echo ($action=='new')? 'disabled' : '' ; ?> name="text"  id="conteudo" required> <?php echo ($action=='edit')? $detailInfo[0]->getText() : '' ; ?></textarea>
+		<textarea <?php echo ($action=='new')? 'disabled' : '' ; ?> name="text"  id="editor" required> <?php echo ($action=='edit')? $detailInfo[0]->getText() : '' ; ?></textarea>
 		<br/>
 
 

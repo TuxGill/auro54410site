@@ -66,7 +66,7 @@
 		<br/>
 
 		<label>Texto</label>
-		<textarea name="textContent" ><?php echo ($action=='edit')? ($detail->getText()) : '' ; ?></textarea>
+		<textarea name="textContent" id="editor"><?php echo ($action=='edit')? ($detail->getText()) : '' ; ?></textarea>
 		<br/>
 		<label>Imagem</label>
 		<input type="file" name="imageContent" >

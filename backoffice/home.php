@@ -66,7 +66,7 @@
             <script src="assets/js/jquery-validation-1.11.1/dist/jquery.validate.js"></script>
             <script src="assets/js/jquery-validation-1.11.1/dist/additional-methods.js"></script>
             <script src="assets/js/jquery-validation-1.11.1/localization/messages_pt_PT.js"></script>
-           <script src="assets/js/jquery-validation-1.11.1/validation_rules.js"></script>
+            <script src="assets/js/jquery-validation-1.11.1/validation_rules.js"></script>
 
             <!-- Table Order -->
             <script src="assets/js/jquery.tablednd.js"></script>
@@ -79,6 +79,12 @@
 
 
             <script type="text/javascript" language="javascript" src="assets/datatables/js/jquery.dataTables.js"></script>
+
+            <!-- CK EDITOR -->
+            <script src="assets/js/ckeditor/ckeditor.js"></script>
+            <script src="assets/js/ckeditor/samples/js/sample.js"></script>
+            <!-- <link rel="stylesheet" href="assets/js/ckeditor/samples/css/samples.css"> -->
+            <!-- <link rel="stylesheet" href="assets/js/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css"> -->
 
         </head>
         <body>
@@ -129,7 +135,10 @@
                 <p><?php echo CPY_RGHT; ?></p>
             </footer>
 
-
+            <!-- CK EDITOR -->
+            <script>
+                initSample();
+            </script>
 
 
             <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.

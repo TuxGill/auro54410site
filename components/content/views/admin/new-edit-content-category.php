@@ -69,7 +69,7 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 		<br/>
 
 		<label>Texto</label>
-		<textarea name="longText" required <?php echo ($action=='new')? 'disabled' : '' ; ?>><?php echo ($action=='edit')? ($detail[0]->getText()) : '' ; ?></textarea>
+		<textarea name="longText" id="editor" required <?php echo ($action=='new')? 'disabled' : '' ; ?>><?php echo ($action=='edit')? ($detail[0]->getText()) : '' ; ?></textarea>
 		<br/>
 
 		<label>Imagem Topo</label>
