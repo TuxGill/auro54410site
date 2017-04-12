@@ -30,68 +30,122 @@
 	<form method="post" action="../components/products/views/admin/submit.product.php" class="formCont" enctype="multipart/form-data">
 		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
 		<input type="hidden" name="id_item" value="<?php echo $id; ?>"/>
+		<input type="hidden" name="category" value="<?php echo $_GET['idCat'] ?>"/>
 
 		<label>Título</label>
-		<input type="text" name="title" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getTitle()) : '' ; ?>">
+		<input type="text" name="title" value="<?php echo ($action=='edit')? $detail[0]->getTitle() : '' ; ?>">
 		<br/>
 
 
 		<label>Cor</label>
-		<input type="text" name="color" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getColor()) : '' ; ?>">
+		<input type="text" name="color" value="<?php echo ($action=='edit')? $detail[0]->getColor() : '' ; ?>">
 		<br/>
 
 
 
-		<label>Imagem de Topo</label>
+		<label>Imagem</label>
 		<input type="file" name="topo" >
-		<img src="<?php echo ($action=='edit')? utf8_encode($detail[0]->getUrlImg()) : '' ; ?>">
+		<?php if ($action=='edit') { ?>
+			<div class="mainPreview">
+				<?php
+				if( $detail[0]->getUrlImg() ){
+				?>
+					<p class="titlePreview">Imagem</p>
+					<div class="preview">
+						<a target="_blank" href="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getUrlImg() ?>"><img src="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getUrlImg() ?>"  alt="Imagem"/></a>
+					</div>
+					<br/>
+				<?php
+				}
+				?>
+			</div>
+		<?php
+	} ?>
 		<br/>
 
 		<label>Logo</label>
 		<input type="file" name="logo" >
-		<img src="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLogo()) : '' ; ?>">
+		<?php if ($action=='edit') { ?>
+			<div class="mainPreview">
+				<?php
+				if( $detail[0]->getLogo() ){
+				?>
+					<p class="titlePreview"><?php echo $detail[0]->getLogo(); ?></p>
+					<div class="preview">
+						<a target="_blank" href="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getLogo() ?>"><img src="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getLogo() ?>"  alt="Imagem"/></a>
+					</div>
+					<br/>
+				<?php
+				}
+				?>
+			</div>
+		<?php
+	} ?>
 		<br/>
 
 		<label>Intro</label>
-		<input type="text" name="intro" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getIntro()) : '' ; ?>">
+		<input type="text" name="intro" value="<?php echo ($action=='edit')? $detail[0]->getIntro() : '' ; ?>">
 		<br/>
 
 		<label>Texto Longo</label>
-		<textarea name="text" ><?php echo ($action=='edit')? utf8_encode($detail[0]->getText()) : '' ; ?></textarea>
+		<textarea name="text" ><?php echo ($action=='edit')? $detail[0]->getText() : '' ; ?></textarea>
 		<br/>
 
 		<label>PDF</label>
 		<input type="file" name="pdf" >
-		<a href="<?php echo ($action=='edit')? utf8_encode($detail[0]->getPdf()) : '' ; ?>"></a>
+		<?php if ($action=='edit') { ?>
+			<div class="mainPreview">
+				<?php
+				if( $detail[0]->getPdf() ){
+				?>
+					<p class="titlePreview">PDF</p>
+					<div class="preview">
+						<a target="_blank" href="<?php echo BASE_URL.MEDIA_PDF.$detail[0]->getPdf() ?>">PDF</a>
+					</div>
+					<br/>
+				<?php
+				}
+				?>
+			</div>
+		<?php
+	} ?>
 		<br/>
 
 		<label>Video</label>
 		<input type="file" name="video" >
+		<?php if ($action=='edit') { ?>
+			<div class="mainPreview">
+				<?php
+				if( $detail[0]->getVideo() ){
+				?>
+					<p class="titlePreview">Video</p>
+					<div class="preview">
+						<video controls width="200">
+							<source src="<?php echo BASE_URL.MEDIA_VIDEOS.$detail[0]->getVideo();?>" type="video/mp4"/>
+						</video>
+					</div>
+					<br/>
+				<?php
+				}
+				?>
+			</div>
+		<?php
+	} ?>
 		<br/>
 
 		<label>URL</label>
-		<input type="text" name="link1" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLink1()) : '' ; ?>">
+		<input type="text" name="link1" value="<?php echo ($action=='edit')? $detail[0]->getLink1() : '' ; ?>">
 		<br/>
 
 		<label>FB</label>
-		<input type="text" name="link2" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getLink2()) : '' ; ?>">
+		<input type="text" name="link2" value="<?php echo ($action=='edit')? $detail[0]->getLink2() : '' ; ?>">
 		<br/>
 
 		<?php
 			$catContents=getAllProductCategories($pdo);
 
 		?>
-		<label>Categoria</label>
-		<select name="category">
-			<option selected disabled>Escolha uma Categoria...</option>
-			<?php
-				for ($i=0;$i<count($catContents);$i++){ ?>
 
-					<option value="<?php echo $catContents[$i]->getId(); ?>"><?php  echo $catContents[$i]->getTitle(); ?></option>
-
-				<?php } ?>
-
-			?>
 		</select>
 		<br/>
 
@@ -143,10 +197,10 @@
 					}
 				?>
 				<tr class="<?php echo $class; ?>">
-					<td><a href="home.php?area=newproduct&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle() ); ?></a></td>
+					<td><a href="home.php?area=newproduct&idCat=<?php echo $_GET['idCat'] ?>&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle() ); ?></a></td>
 					<td><?php echo $collection[$i]->getText() ?></td>
 					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContent(<?php echo "'".$slug."'";?>, <?php echo $collection[$i]->getId();?>)"></i></a></td>
-					<td><a href="home.php?area=newproduct&id=<?php echo $collection[$i]->getId(); ?>">
+					<td><a href="home.php?area=newproduct&idCat=<?php echo $_GET['idCat'] ?>&id=<?php echo $collection[$i]->getId(); ?>">
 
 
 							<span class="fa-stack fa-lg">
