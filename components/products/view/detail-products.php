@@ -1,18 +1,7 @@
 <?php
-//O get diz id mas é o slug
+//O get diz id mas corresponde ao slug
  $slugProduto = $_GET['id'];
-
- //echo $slugProduto;
  $productContent = getProductDetailBySlug($pdo, $slugProduto);
-
- //se esivermos em ferlidona DESENHA OS FILHOS DA MM
- // if($productContent[0]->getId() == 5){
- //      print_r(getProductByCategoryId($pdo, $productContent[0]->getId()));
- //  }
- echo "<pre>";
- print_r($productContent);
- echo "</pre>";
-
  ?>
 <div class="slider">
   <div class="videoWrapper">
@@ -22,52 +11,105 @@
     frameborder="0"></iframe> -->
 
     <!-- TODO: BACKOFFICE - SE FOR MEDIA -->
-    <video src="media/videos/decubalWeb.mp4" autoplay loop poster="media/images/poster_video_decubal.jpg">
+    <video src="<?php echo BASE_URL.MEDIA_VIDEOS.$productContent[0]->getVideo(); ?>" autoplay loop poster="media/images/poster_video_decubal.jpg">
     </video>
   </div>
 </div>
-
-<!-- DECUBAL -->
+<!-- PRODUTO -->
 <div class="row conteudo conteudoProd col-sm-12">
-  <div class="separador col-sm-1"><p>DECUBAL</p></div>
+  <div class="separador col-sm-1"><p> </p></div>
 
 	<div class="col-sm-12 col-lg-12 col-xl-11 txt-intro">
-    <img class="logoProd" src="media/images/logo_decubal.png" alt="">
+    <img class="logoProd" src="<?php echo BASE_URL.MEDIA_IMAGES.$productContent[0]->getLogo(); ?>" alt="">
 
-    <p>
-			De origem nórdica, todos os produtos Decubal são desenvolvidos em estreita parceria
-      com Dermatologistas e Enfermeiros e sujeitos a testes num painel de voluntários saudáveis,
-      garantindo uma produção segundo os mais altos padrões de exigência da indústria farmacêutica.
-      Os produtos Decubal são altamente eficazes e bem tolerados, mas simultaneamente agradáveis,
-      suaves, fáceis de utilizar e proporcionam conforto e proteção à pele.
-      <br><br>
-      A opção pela marca Decubal, é uma opção por produtos dermatológicos resultantes de uma
-      dedicação especializada de mais de 35 anos.
-      <br><br>
-      Assim, os produtos Decubal existem em Farmácias e Hospitais Portugueses há mais de 30 anos.
-      Os produtos Decubal não têm perfume nem parabenos, diminuindo assim os riscos de alergias
-      e outras intolerâncias.
-      <br><br>
-      Estas características permitem que sejam utilizados por toda a família (bebés, crianças, adultos
-      e idosos) e também em cuidados profissionais em instituições de saúde.
-		</p>
+    <div>
+      <?php echo $productContent[0]->getText(); ?>
+		</div>
+    <?php
+        //SE FOR FERLIDONA - ID 7
+        if ($productContent[0]->getId() == 7) {
 
-    <div class="gamaProd">
-      <img class="" src="media/images/decubal_gama_detail_products.png" alt="">
-    </div>
+          $produtosFerlidona = getProductByCategoryId($pdo, 5);
+    ?>
+          <div class="gamaProd gamaFerlidona">
+          <?php
+            for ($i=0; $i <= (count($produtosFerlidona)-1); $i++) {
+          ?>
+                <!-- Produto ferlidona -->
+                <div class="row col-sm-12 prodFer">
+                  <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 imagens">
+                    <img src="<?php echo BASE_URL.MEDIA_IMAGES.$produtosFerlidona[$i]->getUrlImg(); ?>">
+                  </div>
+                  <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
+                      <img src="../images/line.svg">
+                  </div>
+                  <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 textos">
+                    <h2 style="color:<?php echo $produtosFerlidona[$i]->getColor(); ?>">
+                      <?php echo $produtosFerlidona[$i]->getTitle(); ?>
+                    </h2>
+                    <h3>
+                      <?php echo $produtosFerlidona[$i]->getIntro(); ?>
+                    </h3>
+                    <p>
+                        <?php echo $produtosFerlidona[$i]->getText(); ?>
+                    </p>
+                  </div>
+                   <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
+                      <img src="../images/line.svg">
+                  </div>
+                  <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 docIcon row-eq-height">
+                      <a target="_blank" href="<?php echo BASE_URL.MEDIA_PDF.$produtosFerlidona[$i]->getPdf(); ?>">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                      </a>
+                  </div>
+                </div>
+                <!-- Fim Produto ferlidona -->
+          <?php
+            }
+           ?>
+          </div>
+    <?php
+        //SE FOR BEACITA E DECUBAL
+        }else{
+    ?>
+          <div class="gamaProd">
+            <img class="" src="<?php echo BASE_URL.MEDIA_IMAGES.$productContent[0]->getUrlImg(); ?>" alt="<?php echo $productContent[0]->getTitle(); ?>">
+          </div>
+    <?php
+        }
+     ?>
 	</div>
-  <div class="col-sm-12 col-lg-12 col-xl-11 offset-xl-1  linksprod">
-      <p>ENTRE NO MUNDO DECUBAL</p>
-      <div >
-        <a target="_blank" href="http://decubal.pt/">
-          <i class="fa fa-desktop" aria-hidden="true"></i>
-          DECUBAL.PT
-        </a>
+  <!-- LINKS / RCM - BEACITA E DECUBAL-->
+  <?php
+    //Decubal - id 5
+    if ($productContent[0]->getId() == 5) {
+  ?>
+      <div class="col-sm-12 col-lg-12 col-xl-11 offset-xl-1  linksprod">
+          <p>ENTRE NO MUNDO DECUBAL</p>
+          <div >
+            <a target="_blank" href="<?php echo $productContent[0]->getLink1(); ?>">
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              DECUBAL.PT
+            </a>
 
-        <a target="_blank"  href="https://www.facebook.com/decubalportugal">
-          <i class="fa fa-facebook-official" aria-hidden="true"></i>
-          DECUBALPORTUGAL
+            <a target="_blank"  href="<?php echo $productContent[0]->getLink2(); ?>">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              DECUBALPORTUGAL
+            </a>
+          </div>
+      </div>
+  <?php
+    //Beacita - id 6
+    }else if($productContent[0]->getId() == 6){
+  ?>
+      <div class="col-sm-12 col-lg-12 col-xl-11 offset-xl-1 rcmprod">
+        <a target="_blank" href="<?php echo BASE_URL.MEDIA_PDF.$productContent[0]->getPdf(); ?>">
+          <i class="fa fa-file-text" aria-hidden="true"></i>
+          RCM
         </a>
       </div>
-  </div>
+  <?php
+    }
+  ?>
 </div>
+<!-- FIM PRODUTO -->

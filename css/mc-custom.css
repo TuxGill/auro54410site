@@ -101,6 +101,11 @@
       font-size: 35px;
       color: #009e94; }
 
+.conteudo .decubal .texto {
+  align-items: center;
+  display: flex;
+  position: relative; }
+
 /*****************************************************
                   QuemSomos
 *****************************************************/
