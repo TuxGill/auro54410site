@@ -26,6 +26,26 @@
 		<p>Gerir Produtos </p>
 	</div>
 
+	<!-- Image preview -->
+		<?php if ($action=='edit') { ?>
+			<div class="mainPreview">
+				<?php
+				if( $detail[0]->getUrlImg() ){
+				?>
+					<p class="titlePreview">Imagem</p>
+					<div class="preview">
+						<a target="_blank" href="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getUrlImg() ?>"><img src="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getUrlImg() ?>"  alt="Imagem"/></a>
+					</div>
+					<br/>
+				<?php
+				}
+				?>
+			</div>
+		<?php
+	} ?>
+	<!-- End Image preview -->
+
+
 	<!--Inputs/Form-->
 	<form method="post" action="../components/products/views/admin/submit.product.php" class="formCont" enctype="multipart/form-data">
 		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
@@ -45,22 +65,6 @@
 
 		<label>Imagem</label>
 		<input type="file" name="topo" >
-		<?php if ($action=='edit') { ?>
-			<div class="mainPreview">
-				<?php
-				if( $detail[0]->getUrlImg() ){
-				?>
-					<p class="titlePreview">Imagem</p>
-					<div class="preview">
-						<a target="_blank" href="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getUrlImg() ?>"><img src="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getUrlImg() ?>"  alt="Imagem"/></a>
-					</div>
-					<br/>
-				<?php
-				}
-				?>
-			</div>
-		<?php
-	} ?>
 		<br/>
 
 		<label>Logo</label>
@@ -100,7 +104,7 @@
 				?>
 					<p class="titlePreview">PDF</p>
 					<div class="preview">
-						<a target="_blank" href="<?php echo BASE_URL.MEDIA_PDF.$detail[0]->getPdf() ?>">PDF</a>
+						<a target="_blank" href="<?php echo BASE_URL.MEDIA_PDF.$detail[0]->getPdf() ?>"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i></a>
 					</div>
 					<br/>
 				<?php

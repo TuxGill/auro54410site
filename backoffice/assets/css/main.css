@@ -448,9 +448,9 @@ select{
 }
 
 div.mainPreview{
-    width: 240px;
+    width: 250px;
     float: right;
-    margin-right: 10px;
+    margin-right: 26px;
 
 }
 
@@ -470,7 +470,7 @@ div.preview{
 
 div.preview img{
     max-width: 220px;
-    max-height: 180px;
+    max-height: 95px;
     position: relative;
 }
 
