@@ -2,9 +2,9 @@
   $productsCategory = getProductCategoryById($pdo,4);
   $products = getProductByCategoryId($pdo,4);
 
-  echo "<pre>";
-  print_r($productsCategory);
-  echo "</pre>";
+  // echo "<pre>";
+  // print_r($products);
+  // echo "</pre>";
 ?>
 <div class="slider">
   <img src="<?php echo BASE_URL.MEDIA_IMAGES.$productsCategory[0]->getUrlImg(); ?>">
@@ -59,7 +59,7 @@
         ?>
 <!--  RETIRAR ESTES PRODUTOS QUE HAO DE VIR PELO CICLO!!! FALTA FAZER O DETAIL DO PRODUTO E PERCEBER PK NAO MOSTRA O ID. VAMOS FAZER SE FOR FILHO DE FERLIDONA DESENHA TODOS OS PRODUTOS FILHOS DE FERLIDONA. -->
     <!-- prod2 -->
-		<div class="row beacita">
+		<!-- <div class="row beacita">
 			 <div class="col-sm-5 imagem">
 			    <img src="images/beacita.png">
 			  </div>
@@ -79,17 +79,17 @@
 			  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 seta row-eq-height">
 	        <a href="<?php echo BASE_URL; ?>/detalhe-produto-beacita">
 
-		          <span class="icon-stack">
+		          <span class="icon-stack">-->
 		           <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
-		            <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
+		            <!-- <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
 		          </span>
 		        </a>
 			  </div>
-		</div>
+		</div> -->
     <!-- fim prod2 -->
 
     <!-- prod3 -->
-		<div class="row ferlidona">
+		<!-- <div class="row ferlidona">
 			 <div class="col-sm-5 imagem">
 			    <img src="images/ferlidona.png">
 			  </div>
@@ -107,15 +107,15 @@
 			  </div>
 
 			  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 seta row-eq-height">
-	        <a href="<?php echo BASE_URL; ?>/detalhe-produto-ferlidona">
+	        <a href="<?php //echo BASE_URL; ?>/detalhe-produto-ferlidona">
 
-		          <span class="icon-stack">
+		          <span class="icon-stack">-->
 		           <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
-		            <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
+		           <!-- <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
 		          </span>
 		        </a>
 			  </div>
-		</div>
+		</div> -->
     <!-- fim prod3 -->
 	</div>
 </div>

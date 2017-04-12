@@ -4,6 +4,7 @@
 
   function getAllproducts($pdo){
 
+
       $sql= "select * from products where act_product=1 and del_product=0";
 
       $query = $pdo->prepare($sql);
@@ -146,7 +147,8 @@
   function getProductByCategoryId($pdo, $id){
       $sql= "select * from product  where  fk_id_product_category=".$id." and act_product=1 and del_product=0 order by order_product ASC";
 
-      echo $sql;
+//      echo $sql;
+
       $query = $pdo->prepare($sql);
       $query->execute();
 
@@ -213,5 +215,7 @@
 
       return $products;
   }
+
+
 
 ?>
