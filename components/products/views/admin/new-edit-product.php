@@ -186,7 +186,8 @@
 		<thead>
 			<tr class="tableSubHeaderGeneral">
 				<th>Nome Produto</th>
-				<th>Texto</th>
+				<th>Intro</th>
+				<th>Imagem</th>
 				<th class="tableSubHeaderImg">Apagar</th>
 				<th class="tableSubHeaderImg">Editar</th>
 				<th class="tableSubHeaderImg">Publicado</th>
@@ -202,7 +203,26 @@
 				?>
 				<tr class="<?php echo $class; ?>">
 					<td><a href="home.php?area=newproduct&idCat=<?php echo $_GET['idCat'] ?>&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle() ); ?></a></td>
-					<td><?php echo $collection[$i]->getText() ?></td>
+					<td><?php echo $collection[$i]->getIntro() ?></td>
+					<td>
+						<?php
+							if($collection[$i]->getUrlImg() !=""){
+						?>
+								<img src="<?php echo BASE_URL.MEDIA_IMAGES.$collection[$i]->getUrlImg(); ?>">
+						<?php
+							}else{
+						?>
+						<div class="noPhoto">
+							<span class="fa-stack fa-lg ">
+								<i class="fa fa-camera fa-stack-1x"></i>
+								<i class="fa fa-ban fa-stack-2x text-danger"></i>
+							</span>
+							<p>Sem foto</p>
+						</div>
+					<?php
+							}
+					?>
+					</td>
 					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContent(<?php echo "'".$slug."'";?>, <?php echo $collection[$i]->getId();?>)"></i></a></td>
 					<td><a href="home.php?area=newproduct&idCat=<?php echo $_GET['idCat'] ?>&id=<?php echo $collection[$i]->getId(); ?>">
 
