@@ -2,12 +2,12 @@ footer {
   background: url("../images/bg-footer.png") no-repeat top center;
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 450px;
   color: #fff;
-  font-size: 15px; }
+  font-size: 13px; }
   footer h2 {
     text-transform: capitalize;
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'gotham_bold'; }
   footer ul {
     margin: 0;

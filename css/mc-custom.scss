@@ -44,13 +44,13 @@ $dark_gray:#4a4a49;
     text-align: center;
 
     img{
-      max-width: 90%;
+      max-width: 50%;
     }
   }//gamaProd
 
   /****** Decubal ******/
   .linksprod{
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     letter-spacing: 1.5px;
     color:$grey;
@@ -74,7 +74,7 @@ $dark_gray:#4a4a49;
 
       i{
         float: none;
-        font-size: 35px;
+        font-size: 25px;
         color:$green;
         padding-right:20px;
       }
@@ -95,7 +95,7 @@ $dark_gray:#4a4a49;
 
     i{
       float: none;
-      font-size: 35px;
+      font-size: 25px;
       color:$green;
       padding-right:20px;
     }
@@ -109,7 +109,8 @@ $dark_gray:#4a4a49;
     }
     .textos{
       h2{
-        font-size: 34px;
+        font-size: 24px;
+        margin-bottom: 30px;
         text-transform: uppercase;
         text-align:left;
         font-family: $font-bold;
@@ -117,7 +118,7 @@ $dark_gray:#4a4a49;
       }
 
       h3{
-        font-size: 20px;
+        font-size: 16px;
         font-family: $font-book;
         letter-spacing: 1.5px;
         text-transform: uppercase;
@@ -128,7 +129,7 @@ $dark_gray:#4a4a49;
 
       p{
         text-align: left;
-        font-size: 16px;
+        font-size: 13px;
         font-family: $font-book;
         letter-spacing: 1.5px;
         line-height: 30px;
@@ -152,7 +153,7 @@ $dark_gray:#4a4a49;
       i{
         float: none;
         vertical-align: middle;
-        font-size: 55px;
+        font-size: 35px;
         color:$green;
 
       }
@@ -173,7 +174,7 @@ $dark_gray:#4a4a49;
       h2{
         text-transform: uppercase;
         margin-top: 100px;
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 30px;
       }
     }//txt-intro
@@ -190,13 +191,13 @@ $dark_gray:#4a4a49;
         h2{
           text-transform: uppercase;
           margin-top: 0;
-          font-size: 30px;
+          font-size: 25px;
           position: absolute;
           top:30px;
         }
 
         h3{
-          font-size: 34px;
+          font-size: 25px;
           text-transform: uppercase;
           text-align:left;
           font-family: $font-bold;
@@ -238,7 +239,7 @@ $dark_gray:#4a4a49;
         i{
           float: none;
           vertical-align: middle;
-          font-size: 55px;
+          font-size: 50px;
           color:$green;
 
         }
@@ -348,10 +349,10 @@ $dark_gray:#4a4a49;
     }
     i{
       color: #009e94;
-      bottom: 6px;
-      left: 14px !important;
+      bottom: 15px;
+      left: 21px !important;
       position: absolute;
-      font-size: 3em;
+      font-size: 2em;
       &:hover{
         color: #ffffff;
       }
@@ -372,6 +373,13 @@ $dark_gray:#4a4a49;
 ***********         MEDIA QUERIES               *******
 *******************************************************
 ******************************************************/
+@media (max-width: 1590px){
+  .conteudoQuemSomos .valores .textos{
+    h2{
+      top:0;
+    }
+  }
+}
 @media (max-width: 1500px){
   .row.conteudoProd{
     margin-right: 0;
@@ -388,10 +396,26 @@ $dark_gray:#4a4a49;
 
 }//media 1500
 
-@media (max-width: 1240px){
+@media (max-width: 1400px){
   .conteudoQuemSomos .valores .textos{
     h2{
       top:0;
+    }
+  }
+}
+
+@media (max-width: 1370px){
+  .conteudoQuemSomos .valores .textos{
+    h2{
+      top:-30px;
+    }
+  }
+}
+
+@media (max-width: 1291px){
+  .conteudoQuemSomos .valores .textos{
+    h2{
+      top:-65px;
     }
   }
 }//media 1240
@@ -399,7 +423,7 @@ $dark_gray:#4a4a49;
 @media (max-width: 1025px){
   .conteudoQuemSomos .valores .textos{
     h2{
-      top:-25px;
+      /*top:-25px;*/
     }
   }
 }//media 1025
