@@ -17,9 +17,8 @@
 </div>
 
 <div class="row conteudo conteudo-news col-sm-12">
-	<div class="separador col-sm-1 "><p></p></div>
 
-    <div class="mainNot col-sm-12 col-lg-12 col-xl-11 noticias">
+    <div class="mainNot col-10 offset-1 col-sm-10 offset-sm-1 noticias">
       <?php
 
         for ($i = 0; $i <= (count($conteudo)-1); $i++) {

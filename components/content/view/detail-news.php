@@ -18,18 +18,18 @@
       <i class="fa fa-share-alt fa-lg"></i>
     </a>
   </div>
-	<h2 class="col-sm-8 offset-sm-2">
+	<h2 class="col-10 offset-1 col-sm-10 offset-sm-1">
     <?php
         setlocale(LC_ALL, 'pt_PT');
         echo strftime("%B %d, %Y", strtotime($noticiaContent[0]->getTs()) );
       ?>
 	</h2>
 
-		<h3 class="col-sm-8 offset-sm-2">
+		<h3 class="col-10 offset-1 col-sm-10 offset-sm-1">
 			<?php echo $noticiaContent[0]->getIntro(); ?>
 		</h3>
 
-		<p class="col-sm-8 offset-sm-2">
+		<p class="col-10 offset-1 col-sm-10 offset-sm-1">
 			  <?php echo $noticiaContent[0]->getText(); ?>
 		</p>
 </div>
