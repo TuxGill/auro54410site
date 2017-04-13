@@ -68,15 +68,14 @@ if (!isset($_GET['id']) || $_GET['id']=='') {
 		<input type="text" name="text1" value="<?php echo ($action=='edit')? ($detail[0]->getIntro()) : '' ; ?>" required <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 		<br/>
 
-		<label>Texto</label>
-		<textarea name="longText" id="editor" required <?php echo ($action=='new')? 'disabled' : '' ; ?>><?php echo ($action=='edit')? ($detail[0]->getText()) : '' ; ?></textarea>
-		<br/>
-
 		<label>Imagem Topo</label>
 		<input type="file" name="imgThumb" accept="image/png, image/jpeg"  <?php echo ($action=='new')? 'disabled' : '' ; ?>>
 		<p class="caption">Formatos suportados: .png, .jpg</p>
 		<br/>
 
+		<label>Texto</label>
+		<textarea name="longText" id="editor" required <?php echo ($action=='new')? 'disabled' : '' ; ?>><?php echo ($action=='edit')? ($detail[0]->getText()) : '' ; ?></textarea>
+		<br/>
 
 		<!--Botões-->
 		<label>Publicar</label>

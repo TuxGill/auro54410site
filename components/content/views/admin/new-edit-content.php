@@ -65,9 +65,6 @@
 		<input type="text" name="introContent" value="<?php echo ($action=='edit')? ($detail->getIntro()) : '' ; ?>" >
 		<br/>
 
-		<label>Texto</label>
-		<textarea name="textContent" id="editor"><?php echo ($action=='edit')? ($detail->getText()) : '' ; ?></textarea>
-		<br/>
 		<label>Imagem</label>
 		<input type="file" name="imageContent" >
 		<br/>
@@ -90,6 +87,9 @@
 			}
 		?>
 
+		<label>Texto</label>
+		<textarea name="textContent" id="editor"><?php echo ($action=='edit')? ($detail->getText()) : '' ; ?></textarea>
+		<br/>
 
 		<!--Botões-->
 		<label>Publicar</label>

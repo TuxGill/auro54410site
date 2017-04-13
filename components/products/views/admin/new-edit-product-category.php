@@ -26,6 +26,28 @@
 		<p>Gerir Artigos </p>
 	</div>
 
+	<!-- Image preview -->
+	<?php
+		if ($action=='edit') { ?>
+			<div class="mainPreview">
+
+				<?php
+					if( $detailInfo[0]->getUrlImg() ){
+				?>
+						<p class="titlePreview">Imagem</p>
+						<div class="preview">
+							<a target="_blank" href="<?php echo BASE_URL.MEDIA_IMAGES.$detailInfo[0]->getUrlImg() ?>"><img src="<?php echo BASE_URL.MEDIA_IMAGES.$detailInfo[0]->getUrlImg() ?>"  alt="Imagem"/></a>
+						</div>
+						<br/>
+				<?php
+					}
+				?>
+			</div>
+	<?php
+		}
+	?>
+	<!-- End Image preview -->
+
 	<!--Inputs/Form-->
 	<form method="post" action="../components/products/views/admin/submit.productCategory.php" class="formCont" enctype="multipart/form-data">
 		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
@@ -36,28 +58,6 @@
 		<label>Título</label>
 		<input <?php echo ($action=='new')? 'disabled' : '' ; ?> type="text" name="title" value="<?php echo ($action=='edit')? $detailInfo[0]->getTitle() : '' ; ?>" required>
 		<br/>
-
-		<!-- Image preview -->
-		<?php
-			if ($action=='edit') { ?>
-				<div class="mainPreview">
-
-					<?php
-						if( $detailInfo[0]->getUrlImg() ){
-					?>
-							<p class="titlePreview">Imagem</p>
-							<div class="preview">
-								<a target="_blank" href="<?php echo BASE_URL.MEDIA_IMAGES.$detailInfo[0]->getUrlImg() ?>"><img src="<?php echo BASE_URL.MEDIA_IMAGES.$detailInfo[0]->getUrlImg() ?>"  alt="Imagem"/></a>
-							</div>
-							<br/>
-					<?php
-						}
-					?>
-				</div>
-		<?php
-			}
-		?>
-		<!-- End Image preview -->
 
 		<label>Imagem de Cabeçalho</label>
 		<input <?php echo ($action=='new')? 'disabled required' : '' ; ?> type="file" name="topo" >

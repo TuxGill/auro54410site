@@ -75,7 +75,7 @@
 				if( $detail[0]->getLogo() ){
 				?>
 					<p class="titlePreview"><?php echo $detail[0]->getLogo(); ?></p>
-					<div class="preview">
+					<div class="preview logoProdutos">
 						<a target="_blank" href="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getLogo() ?>"><img src="<?php echo BASE_URL.MEDIA_IMAGES.$detail[0]->getLogo() ?>"  alt="Imagem"/></a>
 					</div>
 					<br/>
@@ -91,9 +91,6 @@
 		<input type="text" name="intro" value="<?php echo ($action=='edit')? $detail[0]->getIntro() : '' ; ?>">
 		<br/>
 
-		<label>Texto Longo</label>
-		<textarea name="text" id="editor"><?php echo ($action=='edit')? $detail[0]->getText() : '' ; ?></textarea>
-		<br/>
 
 		<label>PDF</label>
 		<input type="file" name="pdf" >
@@ -155,6 +152,10 @@
 
 		<label>Ordem</label>
 		<input type="text" name="order" value="<?php echo ($action=='edit')? utf8_encode($detail[0]->getOrder()) : '' ; ?>">
+		<br/>
+
+		<label>Texto Longo</label>
+		<textarea name="text" id="editor"><?php echo ($action=='edit')? $detail[0]->getText() : '' ; ?></textarea>
 		<br/>
 
 		<!--Botões-->

@@ -474,6 +474,10 @@ div.preview img{
     position: relative;
 }
 
+div .logoProdutos img{
+    max-height: 45px;
+}
+
 #editMainPreview img{
     max-width: 150px;
     max-height: 230px;
