@@ -1,17 +1,20 @@
-<div class="col-sm-12 col-12 vermapa" id="info-contactos"><p>VER MAPA</p></div>
+<?php 
+
+  $contact = getContactById($pdo,1);
+
+?>
+
+<div class="col-sm-12 col-12 vermapa" id="info-contactos"><a target="_blank" href="https://goo.gl/maps/HZBEGMkgKe82"><p>VER MAPA</p></a></div>
 <div class="row geral col-sm-12 col-12">
-    <div class="col-sm-1 col-1 separador"><p>CONTACTOS</p></div>
-    <div class="col-sm-11 col-11 row clearfix">
+
+    <div class="col-sm-10 col-10 offset-1 offset-sm-1 row clearfix">
       <ul class="col-md-6 col-12 clearfix">
           <li><h2>DADOS GERAIS</h2></li>
           <li class="info-item">
               <div class="icon"><i class="fa fa-home fa-2x" aria-hidden="true"></i></div>
               <div class="info">
                 <ul>
-                    <li>Avenida do Forte</li>
-                    <li>Parque Suécia, Ed4, 2º piso</li>
-                    <li>2764-038 Carnaxide</li>
-                    <li>Portugal</li>
+                    <li><?php echo $contact[0]->getAddress(); ?></li>
                 </ul>
               </div>
           </li>
@@ -22,28 +25,28 @@
               <div class="icon"><a href="geral@aurovitas.pt"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></div>
               <div class="info">
                 <ul>
-                    <li>Email Geral</li>
-                    <li><a href="geral@aurovitas.pt">geral@aurovitas.pt</a></li>
+                    <!-- <li>Email Geral</li> -->
+                    <li><?php echo $contact[0]->getEmail(); ?></li>
                 </ul>
               </div>
           </li>
 
           <li class="info-item">
 
-              <div class="icon"><a href="tel:+351 217 220 650"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></a></div>
+              <div class="icon"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></div>
               <div class="info">
                 <ul>
-                    <li><a href="tel:+351 217 220 650">+351 217 220 650</a></li>
+                    <li><?php echo $contact[0]->getTel(); ?></li>
                 </ul>
               </div>
           </li>
 
           <li class="info-item">
 
-              <div class="icon"><a href="tel:+351 217 272 744"><i class="fa fa-fax fa-2x" aria-hidden="true"></i></a></div>
+              <div class="icon"><i class="fa fa-fax fa-2x" aria-hidden="true"></i></div>
               <div class="info">
                 <ul>
-                    <li><a href="tel:+351 217 272 744"">+351 217 272 744</a></li>
+                    <li><?php echo $contact[0]->getFax(); ?></li>
                 </ul>
               </div>
           </li>
@@ -53,7 +56,7 @@
               <div class="icon"><a href="https://www.linkedin.com/company/aurovitas-portugal"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></div>
               <div class="info">
                 <ul>
-                    <li><a href="https://www.linkedin.com/company/aurovitas-portugal">Aurovitas Portugal</a></li>
+                    <li><?php echo $contact[0]->getLink(); ?></li>
                 </ul>
               </div>
           </li>
@@ -67,9 +70,8 @@
           <div class="icon"><a href="mailto:apoiocliente@aurovitas.pt"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></div>
           <div class="info">
             <ul>
-                <li>Email Apoio a cliente Farmácias e Armazenistas
-
-                  <a href="mailto:apoiocliente@aurovitas.pt">apoiocliente@aurovitas.pt</a>
+                <li>
+                   <?php echo $contact[0]->getText1(); ?>
                 </li>
             </ul>
           </div>

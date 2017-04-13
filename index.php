@@ -14,7 +14,7 @@
 
      <meta property="og:url" content="<?php echo OG_LINK; ?>">
      <meta property="og:title" content="<?php echo OG_TITLE; ?>">
-     <meta property="og:site_name" content="<?php echo OG_TITLE; ?>">
+     <meta property="og:site_name" content="<?php echo OG_SITENAME; ?>">
      <meta property="og:description" content="<?php echo OG_DESCRIPTION; ?>">
      <meta property="og:image" content="<?php echo OG_IMAGE; ?>">
      <meta property="og:image:type" content="image/jpeg">
@@ -42,6 +42,12 @@
 
 
     <script src="<?php echo BASE_URL; ?>/js/modernizr.custom.js"></script>
+    
+    <!-- CK EDITOR -->
+    <script src="../ckeditor.js"></script>
+    <script src="js/sample.js"></script>
+    <link rel="stylesheet" href="css/samples.css">
+    <link rel="stylesheet" href="toolbarconfigurator/lib/codemirror/neo.css">
 
 
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -116,7 +122,7 @@
         }
 
          ?>
-       
+
         <footer>
             <?php include('views/footer.php'); ?>
         </footer>
@@ -130,6 +136,32 @@
      <!-- include menu responsive -->
     <script src="<?php echo BASE_URL; ?>/js/classie.js"></script>
     <script src="<?php echo BASE_URL; ?>/js/demo7.js"></script>
+    <script>
+      window.fbAsyncInit = function() {
+        // init the FB JS SDK
+        FB.init({
+          appId      : '118351202043790',                        // App ID from the app dashboard
+          channelUrl : '<?php echo  BASE_URL;  ?>', // Channel file for x-domain comms
+          status     : true,                                 // Check Facebook Login status
+          xfbml      : true                                  // Look for social plugins on the page
+        });
+
+        // Additional initialization code such as adding Event Listeners goes here
+      };
+      // Load the SDK asynchronously
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="<?php echo BASE_URL; ?>/js/main.js"></script>
+    <!-- CK EDITOR -->
+    <script>
+      initSample();
+    </script>
 
    </body>
  </html>

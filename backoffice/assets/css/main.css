@@ -19,7 +19,7 @@ COR DECOMED:
 html,
 button,
 input,
-select,
+seleinpuct,
 textarea {
     color: #222;
 }
@@ -141,6 +141,13 @@ label.error{
     width: 385px;
 }
 
+input:disabled, textarea:disabled {
+    background-color: #f1f1f1;
+}
+input:disabled {
+    color: #ababab;
+}
+
 /**************************************************
     Page Header
 ****************************************************/
@@ -189,7 +196,7 @@ header div p.logout a{
 
 header div p span{
     color:#7fbbb7;
-    font-weight: bold;  
+    font-weight: bold;
 
 }
 
@@ -222,7 +229,7 @@ nav a:active{
 /* Items Principais do Menu */
 ul.navMenu div.tableHeader{
     margin: 0;
-    padding: 8px; 
+    padding: 8px;
     background-color: #999999;
     color: white;
     font-size: 12px;
@@ -232,91 +239,91 @@ ul.navMenu div.tableHeader{
     border-bottom-style: groove;
 }
 
-ul.navMenu > li > div.tableHeader > .label { 
-    background: no-repeat; 
+ul.navMenu > li > div.tableHeader > .label {
+    background: no-repeat;
 }
 
-ul.navMenu > li > a > div.tableHeader > .label { 
+ul.navMenu > li > a > div.tableHeader > .label {
     color:white;
 }
 
 ul.navMenu > li > div.tableHeader > .arrow {
-     display: block; 
-     width: 16px; 
-     height: 16px; 
-     background: no-repeat center; 
-     float: right; 
+     display: block;
+     width: 16px;
+     height: 16px;
+     background: no-repeat center;
+     float: right;
  }
 
 ul.navMenu > li > div.tableHeader > .arrow.up {
-    background-image: url(../img/arrowUp.png); 
+    background-image: url(../img/arrowUp.png);
 }
 
 ul.navMenu > li > div.tableHeader > .arrow.down {
-     background-image: url(../img/arrowDown.png); 
+     background-image: url(../img/arrowDown.png);
  }
 
 
 /* SubMenu */
-ul.navMenu .subMenu{ 
+ul.navMenu .subMenu{
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-ul.navMenu .subMenu li { 
-    background-color: #ececec; 
-    padding: 8px; 
-    padding-left: 10px; 
-    border-bottom: 1px solid #dcdcdc; 
-    border-top: 1px solid #fff; 
-    color: #727272; 
+ul.navMenu .subMenu li {
+    background-color: #ececec;
+    padding: 8px;
+    padding-left: 10px;
+    border-bottom: 1px solid #dcdcdc;
+    border-top: 1px solid #fff;
+    color: #727272;
 }
 
-ul.navMenu > li ul li:last-child { 
-    border-bottom: none; 
+ul.navMenu > li ul li:last-child {
+    border-bottom: none;
 }
 
 ul.navMenu > li ul li:hover
 {
-    background: #e7e7e7; 
+    background: #e7e7e7;
     cursor: pointer;
 }
 ul.navMenu > li ul li:active
 {
-    background: #7fbbb7; 
+    background: #7fbbb7;
     color: white;
     cursor: pointer;
 }
 
 /* Sub Sub Menu*/
 ul.navMenu > li> ul > li.sub1 > div > .arrow , ul.navMenu > li> ul > li.sub2 > div > .arrow, ul.navMenu > li> ul > li.sub4 > div > .arrow, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub3 > div > .arrow, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub5 > div > .arrow, ul.navMenu > li> ul > li.sub6 > div > .arrow, ul.navMenu > li> ul > li.sub7 > div > .arrow, ul.navMenu > li> ul > li.sub8 > div > .arrow{
-     display: block; 
-     width: 16px; 
-     height: 16px; 
-     background: no-repeat center; 
-     float: right; 
+     display: block;
+     width: 16px;
+     height: 16px;
+     background: no-repeat center;
+     float: right;
  }
 
 ul.navMenu > li> ul > li.sub1 > div> .arrow.up, ul.navMenu > li> ul > li.sub2 > div> .arrow.up, ul.navMenu > li> ul > li.sub4 > div> .arrow.up, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub3 > div > .arrow.up, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub5 > div > .arrow.up, ul.navMenu > li> ul > li.sub6 > div> .arrow.up, ul.navMenu > li> ul > li.sub7 > div> .arrow.up, ul.navMenu > li> ul > li.sub8 > div> .arrow.up {
-    background-image: url(../img/arrowUpDark.png); 
+    background-image: url(../img/arrowUpDark.png);
 }
 ul.navMenu > li> ul > li.sub1 > div> .arrow.down, ul.navMenu > li> ul > li.sub2 > div> .arrow.down, ul.navMenu > li> ul > li.sub4 > div> .arrow.down, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub3 > div > .arrow.down, ul.navMenu > li> ul.subMenu > ul.extraSub4> li.sub5 > div > .arrow.down, ul.navMenu > li> ul > li.sub6 > div> .arrow.down, ul.navMenu > li> ul > li.sub7 > div> .arrow.down, ul.navMenu > li> ul > li.sub8 > div> .arrow.down{
-     background-image: url(../img/arrowDownDark.png); 
+     background-image: url(../img/arrowDownDark.png);
  }
 
-ul.navMenu li > ul.subMenu > ul.extraSub1 > a >li , ul.navMenu li > ul.subMenu > ul.extraSub2 > a > li,ul.navMenu li > ul.subMenu > ul.extraSub4 > a > li, ul.navMenu > li> ul.subMenu > ul.extraSub4> ul.extraSub3 > a > li, ul.navMenu > li> ul.subMenu > ul.extraSub4> ul.extraSub5 > a > li, ul.navMenu li > ul.subMenu > ul.extraSub6 > a > li, ul.navMenu li > ul.subMenu > ul.extraSub7 > a > li, ul.navMenu li > ul.subMenu > ul.extraSub8 > a > li  { 
-    padding-left: 25px; 
-    color: #727272; 
+ul.navMenu li > ul.subMenu > ul.extraSub1 > a >li , ul.navMenu li > ul.subMenu > ul.extraSub2 > a > li,ul.navMenu li > ul.subMenu > ul.extraSub4 > a > li, ul.navMenu > li> ul.subMenu > ul.extraSub4> ul.extraSub3 > a > li, ul.navMenu > li> ul.subMenu > ul.extraSub4> ul.extraSub5 > a > li, ul.navMenu li > ul.subMenu > ul.extraSub6 > a > li, ul.navMenu li > ul.subMenu > ul.extraSub7 > a > li, ul.navMenu li > ul.subMenu > ul.extraSub8 > a > li  {
+    padding-left: 25px;
+    color: #727272;
 }
 
 .subSubLabel{
     margin: 0;
-    padding-left:15px; 
+    padding-left:15px;
 }
 
 .teste{
-    padding-left:35px; 
+    padding-left:35px;
 }
 
 /**************************************************
@@ -365,11 +372,24 @@ ul.navMenu li > ul.subMenu > ul.extraSub1 > a >li , ul.navMenu li > ul.subMenu >
 }
 input{
     border: thin solid #E6E6E6;
-    height: 20px; 
+    height: 20px;
     width:250px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #53565A; 
+    color: #53565A;
+}
+
+.formContact .btn{
+    float: right;
+    height: 25px;
+    width: 90px !important;
+    background-color: #CCCCCC;
+    /*padding-left: 20px;*/
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 input[type=file]{
@@ -378,7 +398,7 @@ input[type=file]{
 }
 
 input[type=checkbox]{
-    height: 15px; 
+    height: 15px;
     width:15px;
 }
 label{
@@ -428,9 +448,9 @@ select{
 }
 
 div.mainPreview{
-    width: 240px;
+    width: 250px;
     float: right;
-    margin-right: 10px;
+    margin-right: 26px;
 
 }
 
@@ -450,7 +470,7 @@ div.preview{
 
 div.preview img{
     max-width: 220px;
-    max-height: 180px;
+    max-height: 89px;
     position: relative;
 }
 
@@ -503,7 +523,7 @@ fieldset{
 }
 
 .medals{
-    width: 500px; 
+    width: 500px;
 
 }
 
@@ -515,7 +535,7 @@ fieldset.medals{
 
 .medals label{
     width: 120px !important;
-    padding: 5px;    
+    padding: 5px;
     vertical-align: middle;
 }
 
@@ -532,7 +552,7 @@ fieldset.medals{
 }
 
 .prodEdit{
-     width: 400px; 
+     width: 400px;
      float: left;"
 }
 
@@ -575,7 +595,7 @@ div.bottomRight > ul{
 table td{
     padding-left: 10px;
     height: 25px;
-    border-right: 1px solid white; 
+    border-right: 1px solid white;
 }
 
 
@@ -601,7 +621,7 @@ table td:last-child{
 
 .tableSubHeaderGeneral td{
     padding-left: 10px;
-    border-right: 1px solid white; 
+    border-right: 1px solid white;
 }
 
 .tableSubHeaderGeneral td:last-child{
@@ -646,6 +666,49 @@ table a{
     color: white;
 }
 
+.fa-times-circle, .fa-check-circle, .fa-stack{
+    display: block !important;
+    max-height: 100px;
+    padding: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fa-times-circle{
+    color: red;
+}
+.fa-check-circle{
+    color: green;
+}
+.fa-stack{
+    font-size: 12px!important;
+    color: #F3AE10;
+}
+
+.fa-plus-circle{
+    position: relative;
+    float: right;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    color: white;
+}
+
+
+.noPhoto p{
+  text-align: center;
+  margin: 0px;
+  padding-top: 2px;
+  padding-bottom:6px;
+}
+
+.noPhoto .fa-camera{
+  color:#53565A;
+}
+
+.noPhoto .text-danger{
+  color:red;
+}
 /**************************************************
     SplashHome
 ****************************************************/
@@ -838,7 +901,7 @@ thead th{
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-right: 1px solid white; 
+    border-right: 1px solid white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: normal;
@@ -849,7 +912,11 @@ thead th:last-child{
 }
 
 
-
+/* CKEDITOR */
+    .cke_editor_editor{
+      /*  width: 680px !important;*/
+    }
+/* FIM CKEDITOR */
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1040,4 +1107,25 @@ thead th:last-child{
     }
 }
 
+/**************************************************
+    CK EDITOR
+****************************************************/
 
+#cke_editor{
+    margin-left: 134px;
+}
+
+.cke_bottom, .cke_reset_all{
+    display: none;
+}
+#cke_1_bottom{
+    display: none;
+}
+
+#cke_19, #cke_20, #cke_21, #cke_22, #cke_23, #cke_24, #cke_32, #cke_37, #cke_51, #cke_52, #cke_70, #cke_74, #cke_87, #cke_90, #cke_54, #cke_59, #cke_60, #cke_61, #cke_62, #cke_67, #cke_68, #cke_69, #cke_13, #cke_14, #cke_15{
+    display: none;
+}
+
+.cke_toolbar_separator{
+    display: none;
+}

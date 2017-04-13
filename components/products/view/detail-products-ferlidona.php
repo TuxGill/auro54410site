@@ -15,7 +15,6 @@
 
 <!-- FERLIDONA -->
 <div class="row conteudo conteudoProd col-sm-12">
-  <div class="separador col-sm-1"><p>FERLIDONA</p></div>
 
 	<div class="col-sm-12 col-lg-12 col-xl-11 txt-intro">
     <img class="logoProd" src="media/images/logo_ferlidona.png" alt="">

@@ -1,5 +1,5 @@
 <?php
-
+  include('util.php');
   /* CONSTANS */
   /*TESTE MARIA*/
 
@@ -13,7 +13,7 @@
 
   /*FACEBOOK*/
   define('OG_IMAGE','');
-  define('OG_TITLE','');
+  define('OG_TITLE','Titulo');
   define('OG_SITENAME','');
   define('OG_LINK','');
   define('OG_DESCRIPTION','');
@@ -25,10 +25,17 @@
   define('CPY_RGHT','2017 Aurovitas. Todos os direitos reservados');
 
   /* OLA */
+  /* FOLDERS WITH CONTENT*/
+  define('MEDIA_IMAGES','/media/images/');
+  define('MEDIA_PDF','/media/pdf/');
+  define('MEDIA_VIDEOS','/media/videos/');
+
 
   if(!PRODUCTION){
     define('DIRFOLDER','/auro54410site');
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );
+    define('BASE_URL_BACKOFFICE', BASE_URL."/backoffice" );
+
     error_reporting(1);
 	  ini_set('error_reporting', E_ALL);
 
@@ -39,6 +46,7 @@
   } else {
     define('DIRFOLDER','/aurovitas/auro54410site');
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].  define('DIRFOLDER','/aurovitas/auro54410site'));
+    define('BASE_URL_BACKOFFICE', BASE_URL."/backoffice" );
     error_reporting(1);
 	  ini_set('error_reporting', E_ALL);
 
@@ -54,6 +62,7 @@
   include('components/products/controllers/Controller.Product.php');
   include('components/products/controllers/Controller.ProductCategory.php');
   include('components/images/controllers/Controller.Image.php');
+  include('components/contacts/controllers/Controller.Contact.php');
 
 
 

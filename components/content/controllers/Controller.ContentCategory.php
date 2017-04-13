@@ -11,7 +11,16 @@
     $content_categories=[];
 
     foreach ($rows as $row) {
-      $c= new ContentCategory($row['id_content_category'], $row['fk_id_content_category'],  $row['title_content_category'],$row['slug_content_category'],  $row['intro_content_category'],$row['text_content_category'],$row['url_img_content_category'], $row['act_content_category'],  $row['del_content_category'],$row['ts_content_category']);
+      $c= new ContentCategory($row['id_content_category'],
+                              $row['fk_id_content_category'],
+                              $row['title_content_category'],
+                              $row['slug_content_category'],
+                              $row['intro_content_category'],
+                              $row['text_content_category'],
+                              $row['url_img_content_category'],
+                              $row['act_content_category'],
+                              $row['del_content_category'],
+                              $row['ts_content_category']);
 
       array_push($content_categories, $c);
     }
@@ -29,7 +38,16 @@
     $content_categories=[];
 
     foreach ($rows as $row) {
-      $c= new ContentCategory($row['id_content_category'], $row['fk_id_content_category'],  $row['title_content_category'],$row['slug_content_category'],  $row['intro_content_category'],$row['text_content_category'],$row['url_img_content_category'], $row['act_content_category'],  $row['del_content_category'],$row['ts_content_category']);
+      $c= new ContentCategory($row['id_content_category'],
+                              $row['fk_id_content_category'],
+                              $row['title_content_category'],
+                              $row['slug_content_category'],
+                              $row['intro_content_category'],
+                              $row['text_content_category'],
+                              $row['url_img_content_category'],
+                              $row['act_content_category'],
+                              $row['del_content_category'],
+                              $row['ts_content_category']);
 
       array_push($content_categories, $c);
     }

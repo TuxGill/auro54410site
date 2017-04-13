@@ -121,7 +121,7 @@ form{
 	input, textarea{
 		color: #ffffff;
 	}
-	
+
 }
 
 .navbar-toggler{
@@ -210,11 +210,13 @@ form{
 			font-size: 2vw;
 			padding: 0;
 			color: $blue;
+			text-transform: uppercase;
 		}
 		.txt-destaque{
 			font-size: 2vw;
 			color: $blue;
 			font-family:$font-light!important;
+			text-transform: uppercase;
 		}
 	}
 
@@ -240,15 +242,15 @@ form{
 	    span{
 	    	border: 1px solid $green;
 	    	border-radius: 100px;
-	    	width: 68px;
-	    	height: 68px;
+	    	width: 60px;
+	    	height: 60px;
 	    	&:hover{
 	    		background-color: $green;
 	    	}
 	    	i{
 	    		color: $green;
-    		    bottom: 3px;
-    			left: 2px!important;
+    		    bottom: 7px;
+    			left: 3px!important;
     			&:hover{
 				    color: #ffffff;
     			}
@@ -285,7 +287,7 @@ form{
 		  text-align: center;
 		}
 		.icon-stack-1x {
-		  font-size: 4em;
+		  font-size: 3em;
 		}
 		/*.icon-stack-3x {
 		  font-size: 3em;
@@ -300,7 +302,7 @@ form{
 	p{
 		color: $grey;
 		font-family: $font-medium!important;
-		font-size: 16px;
+		font-size: 13px;
 	}
 }
 
@@ -389,16 +391,17 @@ form{
 
 	.imagens{
 		padding-top: 140px;
+		-moz-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+		&:hover{
+			-moz-transform: scale(1.1);
+						-webkit-transform: scale(1.1);
+						transform: scale(1.1);
+		}
 		img{
 			max-width: 100%;
-		    -moz-transition: all 0.3s;
-		    -webkit-transition: all 0.3s;
-		    transition: all 0.3s;
-		    &:hover{
-		    	-moz-transform: scale(1.1);
-                -webkit-transform: scale(1.1);
-                transform: scale(1.1);
-		    }
+
 		}
 	}
 
@@ -407,16 +410,17 @@ form{
 		h2{
 			color: $green;
 			font-family: $font-bold;
-			font-size: 20px;
+			font-size: 16px;
 		}
 		h3{
 			font-family: $font-medium;
 			color: $green;
-			font-size: 20px;
+			font-size: 16px;
 		}
 		p{
-			font-family: $font-light;
+			font-family: $font-medium;
 			color: $grey;
+			font-size: 13px;
 		}
 	}
 }
@@ -450,16 +454,18 @@ form{
 			font-family: $font-bold;
 			font-size: 20px;
 		    margin-bottom: 60px;
+				text-transform: uppercase;
 	}
 	h3{
 		font-family: $font-medium;
 		color: $green;
-		font-size: 20px;
+		font-size: 16px;
 	    margin-bottom: 40px;
 	}
 	p{
-		font-family: $font-light;
+		font-family: $font-medium;
 		color: $grey;
+		font-size: 13px;
 	}
 }
 /*  FIM NOTICIAS - DETALHE  */
@@ -469,6 +475,7 @@ form{
 	p{
 		font-size: 40px;
 		margin-top: 90px;
+		text-transform: uppercase;
 	}
 }
 
@@ -476,9 +483,12 @@ form{
 	p, li{
 		font-family: $font-medium;
 		color: $grey;
+		margin-bottom: 30px;
+		font-size: 13px;
 	}
 	ul{
 	    padding-left: 15px;
+        margin-bottom: 60px;
 		li{
 			color: $green;
 			em{
@@ -490,6 +500,14 @@ form{
 }
 
 /* FIM O GRUPO */
+
+/* AUROVITAS */
+
+.h2Aurovitas{
+	display: none;
+}
+
+/* FIM AUROVITAS */
 
 /* FOOTER */
 
@@ -508,6 +526,10 @@ footer{
 	.vermapa{
 		padding-top: 10px;
 		text-align: right;
+		a{
+			color: #ffffff;
+   			text-decoration: none;
+		}
 	}
 
 	.organizer{
@@ -518,7 +540,7 @@ footer{
 	position: relative;
 	.geral{
     	/*margin-top: 40px;*/
-    	margin: 40px 0 0 0;
+    	margin: 35px 0 0 0;
 	}
 
 	h2{
@@ -535,6 +557,7 @@ footer{
 		a{
 			color: #ffffff;
 			text-decoration: none;
+			font-family: $font-medium;
 			&:hover{
 				color:$blue;
 				text-decoration: none;
@@ -553,12 +576,24 @@ footer{
     margin: 0;
 	padding-bottom: 15px;
 	padding-top: 25px;
+	position: fixed;
+    bottom: 0;
+		z-index: 50;
     .copyDir{
 		text-align: right;
     }
 }
 
 /*   FIM FOOTER   */
+
+/* BACKOFFICE */
+
+.placeholder{
+	display: none;
+}
+
+
+/* FIM BACKOFFICE */
 
 @media (min-width: 768px){
 	.navbar-header{

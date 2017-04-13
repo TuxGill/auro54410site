@@ -58,7 +58,7 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
     	<i class='fa fa-search'></i>
-      	<input class="form-control mr-sm-2" type="text" placeholder="PROCURAR" style="color: #ffffff;">
+      	<input class="form-control mr-sm-2" type="text" placeholder="PROCURAR" style="color: #242f75;">
     </form>
   </div>
 </nav>
@@ -67,14 +67,14 @@
   <button type="button" class="overlay-close">Close</button>
   <nav>
     <ul>
-      <li><a href="#">A AUROVITAS</a></li>
-      <li><a href="#">O GRUPO</a></li>
-      <li><a href="#">PRODUTOS</a></li>
-      <li><a href="#">NOTÍCIAS</a></li>
-      <li><a href="#">CONTACTOS</a></li>
+      <li><a href="<?php echo BASE_URL; ?>/content/a-aurovitas">A AUROVITAS</a></li>
+      <li><a href="<?php echo BASE_URL; ?>/content/grupo">O GRUPO</a></li>
+      <li><a href="<?php echo BASE_URL; ?>/produtos">PRODUTOS</a></li>
+      <li><a href="<?php echo BASE_URL; ?>/lista-noticias#">NOTÍCIAS</a></li>
+      <li><a href="#info-contactos">CONTACTOS</a></li>
       <form class="form-responsive form-inline my-2 my-lg-0">
       <i class='fa fa-search fa-2x'></i>
-        <input class="form-control mr-sm-2" type="text" placeholder="PROCURAR" style="color: #ffffff;">
+        <input class="form-control" type="text" placeholder="PROCURAR" style="color: #ffffff;">
     </form>
     </ul>
 
