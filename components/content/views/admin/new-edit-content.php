@@ -158,7 +158,7 @@
 							}
 					?>
 					</td>
-					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContent(<?php echo "'".$slug."'";?>, <?php echo $collection[$i]->getId();?>)"></i></a></td>
+					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContent(<?php echo $collection[$i]->getId();?>)"></i></a></td>
 					<td><a href="home.php?area=newcontent&idCat=<?php echo $idCat ?>&id=<?php echo $collection[$i]->getId(); ?>">
 							<span class="fa-stack fa-lg">
 							  <i class="fa fa-circle fa-stack-2x"></i>
@@ -168,10 +168,10 @@
 					<td>
 						<a href="JavaScript:void(0);">
 						<?php if($collection[$i]->getAct()==1) { ?>
-									<i class="fa fa-check-circle fa-2x" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,0,<?php echo $collection[$i]->getId();?>)"></i>
+									<i class="fa fa-check-circle fa-2x" aria-hidden="true" onClick="unpubContent(<?php echo $collection[$i]->getId();?>)"></i>
 
 							<?php } else { ?>
-									<i class="fa fa-times-circle fa-2x" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,1,<?php echo $collection[$i]->getId(); ?>)"></i>
+									<i class="fa fa-times-circle fa-2x" aria-hidden="true" onClick="pubContent(<?php echo $collection[$i]->getId(); ?>)"></i>
 
 							<?php } ?>
 						</a>

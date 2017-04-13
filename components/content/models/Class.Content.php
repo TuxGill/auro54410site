@@ -130,6 +130,36 @@
       $query = $pdo->prepare($sql);
       $query->execute();
    }
+
+    function delete($pdo){
+        $sql="update content set del_content=1 where id_content=".$this->id;
+
+
+        $query = $pdo->prepare($sql);
+        $query->execute();
+
+
+      }
+
+    function unpublish($pdo){
+        $sql="update content set act_content=0 where id_content=".$this->id;
+
+
+        $query = $pdo->prepare($sql);
+        $query->execute();
+
+
+      }
+
+     function publish($pdo){
+        $sql="update content set act_content=1 where id_content=".$this->id;
+
+
+        $query = $pdo->prepare($sql);
+        $query->execute();
+
+
+      }
 }
 
 ?>

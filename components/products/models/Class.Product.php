@@ -130,9 +130,39 @@
         where id_product=".$this->id."
         ";
 
-echo $sql;
+
         $query = $pdo->prepare($sql);
             $query->execute();
+
+
+      }
+
+      function delete($pdo){
+        $sql="update product set del_product=1 where id_product=".$this->id;
+
+
+        $query = $pdo->prepare($sql);
+        $query->execute();
+
+
+      }
+
+      function unpublish($pdo){
+        $sql="update product set act_product=0 where id_product=".$this->id;
+
+
+        $query = $pdo->prepare($sql);
+        $query->execute();
+
+
+      }
+
+      function publish($pdo){
+        $sql="update product set act_product=1 where id_product=".$this->id;
+
+
+        $query = $pdo->prepare($sql);
+        $query->execute();
 
 
       }

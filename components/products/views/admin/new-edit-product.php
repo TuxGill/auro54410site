@@ -225,7 +225,7 @@
 					?>
 					</td>
 
-					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContent(<?php echo "'".$slug."'";?>, <?php echo $collection[$i]->getId();?>)"></i></a></td>
+					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteProduct(<?php echo $collection[$i]->getId();?>)"></i></a></td>
 					<td><a href="home.php?area=newproduct&idCat=<?php echo $_GET['idCat'] ?>&id=<?php echo $collection[$i]->getId(); ?>">
 
 
@@ -235,11 +235,13 @@
 							</span>
 						</a></td>
 					<td>
+
 						<a href="JavaScript:void(0);">
+
 						<?php if($collection[$i]->getAct()==1) { ?>
-								<i class="fa fa-check-circle fa-2x" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,0,<?php echo $collection[$i]->getId();?>)"></i>
+								<i class="fa fa-check-circle fa-2x" aria-hidden="true" onClick="unpubProduct(<?php echo $collection[$i]->getId(); ?>,0)"></i>
 							<?php } else { ?>
-									<i class="fa fa-times-circle fa-2x" aria-hidden="true" onClick="pubContent(<?php echo "'".$slug."'";?>,1,<?php echo $collection[$i]->getId(); ?>)"></i>
+									<i class="fa fa-times-circle fa-2x" aria-hidden="true" onClick="pubProduct(<?php echo $collection[$i]->getId(); ?>,1)"></i>
 							<?php } ?>
 						</a>
 					</td>

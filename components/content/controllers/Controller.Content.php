@@ -67,8 +67,8 @@
   }
 
   function getContentById($pdo, $id){
-    $sql= "select * from content where id_content='".$id."' and act_content=1 and del_content=0";
-
+    $sql= "select * from content where id_content='".$id."'  and del_content=0";
+echo $sql;
     $query = $pdo->prepare($sql);
     $query->execute();
 

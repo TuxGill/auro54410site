@@ -74,7 +74,7 @@
 
 
   function getProductById($pdo, $id){
-      $sql= "select * from product where  id_product=".$id." and act_product=1 and del_product=0";
+      $sql= "select * from product where  id_product=".$id."  and del_product=0";
       
       $query = $pdo->prepare($sql);
       $query->execute();
@@ -145,7 +145,7 @@
 
 
   function getProductByCategoryId($pdo, $id){
-      $sql= "select * from product  where  fk_id_product_category=".$id." and act_product=1 and del_product=0 order by order_product ASC";
+      $sql= "select * from product  where  fk_id_product_category=".$id." and  del_product=0 order by order_product ASC";
 
 //      echo $sql;
 
