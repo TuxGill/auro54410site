@@ -45,9 +45,7 @@
                <?php } ?>
 
 
-            <a href="home.php?area=newproduct">
-               <li>Gerir Produtos</li>
-            </a>
+
             </ul>
 
       </li>

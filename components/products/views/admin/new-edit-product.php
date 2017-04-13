@@ -13,7 +13,7 @@
 
 		//$id=$conn->real_escape_string($_GET['id']);
 		$detail= getProductById($pdo, $id);
-		print_r($detail);
+	//	print_r($detail);
 		//$detail=$detailInfo[0];		//$detailInfo = $detail->fetch_assoc();
 	}
 ?>
@@ -202,6 +202,7 @@
 					}
 				?>
 				<tr class="<?php echo $class; ?>">
+
 					<td><a href="home.php?area=newproduct&idCat=<?php echo $_GET['idCat'] ?>&id=<?php echo $collection[$i]->getId(); ?>"><?php echo utf8_encode($collection[$i]->getTitle() ); ?></a></td>
 					<td><?php echo $collection[$i]->getIntro() ?></td>
 					<td>
@@ -223,6 +224,7 @@
 							}
 					?>
 					</td>
+
 					<td><a href="JavaScript:void(0);"><i class="fa fa-times-circle fa-2x" aria-hidden="true" onclick="deleteContent(<?php echo "'".$slug."'";?>, <?php echo $collection[$i]->getId();?>)"></i></a></td>
 					<td><a href="home.php?area=newproduct&idCat=<?php echo $_GET['idCat'] ?>&id=<?php echo $collection[$i]->getId(); ?>">
 

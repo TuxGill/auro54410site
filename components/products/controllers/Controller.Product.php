@@ -75,7 +75,7 @@
 
   function getProductById($pdo, $id){
       $sql= "select * from product where  id_product=".$id." and act_product=1 and del_product=0";
-      echo $sql;
+      
       $query = $pdo->prepare($sql);
       $query->execute();
 

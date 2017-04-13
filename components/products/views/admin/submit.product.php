@@ -13,7 +13,7 @@
   $fb=$_POST['link2'];
 
   $cat=$_POST['category'];
-
+echo $_POST['act'];
   if(isset($_POST['act'])){
       $act=1;
   } else {
@@ -79,33 +79,44 @@
     $p= getProductById($pdo, $id);
 
     $p[0]->setTitle($title);
+    $p[0]->setCategory($cat);
     $p[0]->setIntro($intro);
     $p[0]->setColor($color);
     $p[0]->setText($text);
     $p[0]->setLink1($url);
     $p[0]->setLink2($fb);
+    $p[0]->setAct($act);
     if(isset($fileVideo)) { $p[0]->setVideo($fileVideo); }
     if(isset($fileLogo)) { $p[0]->setLogo($fileLogo); }
-    $p[0]->setLogo();
+    if(isset($filePDF)) { $p[0]->setVideo($filePDF); }
+    if(isset($fileTopo)) { $p[0]->setLogo($fileTopo); }
+
+    echo "<pre>";
+    print_r($p[0]);
+    echo "</pre>";
 
 
   } else {
 
+   if(!isset($fileVideo)) {$fileVideo=''; } 
+    if(!isset($fileLogo)) { $fileLogo=''; }
+    if(!isset($filePDF)) { $filePDF=''; }
+    if(!isset($fileTopo)) { $fileTopo=''; }
+
+  $p = new Product(null, $cat,$title,$slug,$fileLogo,$color,$intro,$text,$fileTopo,$filePDF,$fileVideo, $url, $fb,$order, $act, null,null );
+
   }
+
+
 
   if($action=='edit'){
       $p[0]->update($pdo);
   } else {
-    $p[0]->save($pdo);
+    $p->save($pdo);
   }
 
 
 
-  /* CRIAR OBJECTO*/
-/*
-  $product = new Product(null, $cat,$title,$slug,$fileLogo,$color,$intro,$text,$fileTopo,$filePDF,$fileVideo, $url, $fb,$order, $act, null,null );
-  $product->save($pdo);*/
-
 ?>
 
-<script>window.localhost='<?php echo BASE_URL."/backoffice/home.php?area=newproduct" ?>'</script>
+<script>window.localhost='<?php echo BASE_URL."/backoffice/home.php?area=newproduct&idCat=<?php echo $cat?>" ?>'</script>

@@ -112,7 +112,7 @@
       }
 
       function update($pdo){
-        $sql="update products set fk_id_product_category =".$this->category.",
+        $sql="update product set fk_id_product_category =".$this->category.",
         title_product = '".$this->title."',
         slug_product = '".$this->slug."',
         logo_product='".$this->logo."',
@@ -130,6 +130,7 @@
         where id_product=".$this->id."
         ";
 
+echo $sql;
         $query = $pdo->prepare($sql);
             $query->execute();
 
