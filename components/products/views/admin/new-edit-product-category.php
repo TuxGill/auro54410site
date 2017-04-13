@@ -26,18 +26,7 @@
 		<p>Gerir Artigos </p>
 	</div>
 
-	<!--Inputs/Form-->
-	<form method="post" action="../components/products/views/admin/submit.productCategory.php" class="formCont" enctype="multipart/form-data">
-		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
-
-		<input type="hidden" name="id_item" value="<?php echo $_GET['id'] ?>"/>
-		<input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/>
-
-		<label>Título</label>
-		<input <?php echo ($action=='new')? 'disabled' : '' ; ?> type="text" name="title" value="<?php echo ($action=='edit')? $detailInfo[0]->getTitle() : '' ; ?>" required>
-		<br/>
-
-		<!-- Image preview -->
+	<!-- Image preview -->
 		<?php
 			if ($action=='edit') { ?>
 				<div class="mainPreview">
@@ -58,6 +47,17 @@
 			}
 		?>
 		<!-- End Image preview -->
+
+	<!--Inputs/Form-->
+	<form method="post" action="../components/products/views/admin/submit.productCategory.php" class="formCont" enctype="multipart/form-data">
+		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
+
+		<input type="hidden" name="id_item" value="<?php echo $_GET['id'] ?>"/>
+		<input type="hidden" name="slugCont" value="<?php echo $_GET['area'] ?>"/>
+
+		<label>Título</label>
+		<input <?php echo ($action=='new')? 'disabled' : '' ; ?> type="text" name="title" value="<?php echo ($action=='edit')? $detailInfo[0]->getTitle() : '' ; ?>" required>
+		<br/>
 
 		<label>Imagem de Cabeçalho</label>
 		<input <?php echo ($action=='new')? 'disabled required' : '' ; ?> type="file" name="topo" >
