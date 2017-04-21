@@ -15,7 +15,8 @@ body {
   height: 110px; }
 
 .bg-faded {
-  background-color: transparent; }
+  background-color: transparent;
+  z-index: 10; }
 
 .navbar-brand img {
   margin-left: 20px;
@@ -91,7 +92,7 @@ form {
 /* FIM MENU*/
 .slider {
   position: relative;
-  z-index: -1;
+  /*z-index: -1;*/
   top: -110px; }
   .slider img {
     width: 100%; }
@@ -165,12 +166,17 @@ form {
     padding-left: 40px;
     padding-top: 20px; }
     .conteudo .texto .title-destaque {
-      font-family: "gotham_bold";
+      font-family: "gotham_bold" !important;
       font-size: 2vw;
       padding: 0;
       color: #242f75;
       text-transform: uppercase; }
     .conteudo .texto .txt-destaque {
+      font-size: 2vw;
+      color: #242f75;
+      font-family: "gotham_light" !important;
+      text-transform: uppercase; }
+    .conteudo .texto p {
       font-size: 2vw;
       color: #242f75;
       font-family: "gotham_light" !important;
