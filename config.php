@@ -3,7 +3,7 @@
   /* CONSTANS */
   /*TESTE MARIA*/
 
-  define('PRODUCTION',false);
+  define('PRODUCTION',true);
   define('SITE_TITLE','Aurovitas');
   define('SITE_TITLE_BACKOFFICE','Backoffice Aurovitas');
 
@@ -32,7 +32,11 @@
 
 
   if(!PRODUCTION){
-    define('DIRFOLDER','/auro54410site');
+
+
+    define('DIRFOLDER','/aurovitas/auro54410site');
+
+
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );
     define('BASE_URL_BACKOFFICE', BASE_URL."/backoffice" );
 
@@ -44,15 +48,19 @@
 		$pdo = new PDO('mysql:host=192.168.1.122;dbname=aurovitas;charset=utf8', $user, $pass);
 
   } else {
-    define('DIRFOLDER','/aurovitas/auro54410site');
-    define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].  define('DIRFOLDER','/aurovitas/auro54410site'));
+
+
+     define('DIRFOLDER','/clientes/aurovitas/auro54110site_v3');
+
+
+    define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );
     define('BASE_URL_BACKOFFICE', BASE_URL."/backoffice" );
+
     error_reporting(1);
 	  ini_set('error_reporting', E_ALL);
-
-    $user='root';
-    $pass='';
-    $pdo = new PDO('mysql:host=192.168.1.122;dbname=aurovitas;charset=utf8', $user, $pass);
+   $user='tuxdigit_newav';
+    $pass='TuxGill#2017';
+    $pdo = new PDO('mysql:host=localhost;dbname=tuxdigit_newav;charset=utf8', $user, $pass);
 
   }
 
