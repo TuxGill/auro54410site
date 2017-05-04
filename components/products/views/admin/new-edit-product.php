@@ -47,7 +47,7 @@
 
 
 	<!--Inputs/Form-->
-	<form method="post" action="../components/products/views/admin/submit.product.php" class="formCont" enctype="multipart/form-data">
+	<form method="post" action="<?php echo BASE_URL?>/components/products/views/admin/submit.product.php" class="formCont" enctype="multipart/form-data">
 		<input type="hidden" name="action" value="<?php echo $action; ?>"/>
 		<input type="hidden" name="id_item" value="<?php echo $id; ?>"/>
 		<input type="hidden" name="category" value="<?php echo $_GET['idCat'] ?>"/>

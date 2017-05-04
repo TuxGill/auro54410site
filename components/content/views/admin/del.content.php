@@ -8,5 +8,5 @@
 ?>
 
 <script type="text/javascript">
-  window.location.href = "<?php echo BASE_URL_BACKOFFICE.'//home.php?area=newcontent&idCat='.$c[0]->getCategory(); ?>"
+  window.location.href = "<?php echo BASE_URL_BACKOFFICE.'/home.php?area=newcontent&idCat='.$c[0]->getCategory(); ?>"
 </script>
