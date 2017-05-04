@@ -89,6 +89,11 @@ form {
 .content-scale {
   display: none; }
 
+.form-inline a {
+  color: #242f75; }
+  .form-inline a:hover {
+    border-bottom: 2px solid #009e94; }
+
 /* FIM MENU*/
 .slider {
   position: relative;
@@ -380,6 +385,32 @@ form {
   display: none; }
 
 /* FIM AUROVITAS */
+/* SEARCH */
+.noResults h2, .Results h2 {
+  font-size: 40px;
+  margin-top: 90px;
+  text-transform: uppercase;
+  font-family: "gotham_bold";
+  color: #242f75; }
+.noResults .row, .Results .row {
+  margin-top: 90px; }
+  .noResults .row p, .Results .row p {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "gotham_bold";
+    color: #009e94;
+    text-align: center; }
+  .noResults .row .search, .Results .row .search {
+    padding-bottom: 10px;
+    margin-left: 40px;
+    display: block; }
+.noResults .linha-separador, .Results .linha-separador {
+  border-bottom: 1px solid #009e94;
+  width: 20%;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+/* FIM SEARCH */
 /* FOOTER */
 .separador {
   font-size: 16px;

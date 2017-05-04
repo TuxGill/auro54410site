@@ -40,6 +40,10 @@
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/equal-height-columns.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/responsive.css">
 
+    <!--[if IE]><!-->
+      <link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+
+
 
     <script src="<?php echo BASE_URL; ?>/js/modernizr.custom.js"></script>
     
@@ -118,7 +122,7 @@
           case 'detalhe-produto-ferlidona' : { include('components/products/view/detail-products-ferlidona.php'); }break;
           case 'lista-noticias': { include('components/content/view/list-news.php'); } break;
           case 'detalhe-noticia': { include('components/content/view/detail-news.php'); } break;
-
+          case 'pesquisa' : { include('views/search.php'); } break;
         }
 
          ?>

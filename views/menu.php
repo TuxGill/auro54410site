@@ -57,8 +57,10 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-    	<i class='fa fa-search'></i>
-      	<input class="form-control mr-sm-2" type="text" placeholder="PROCURAR" style="color: #242f75;">
+    	
+      <input class="form-control mr-sm-2" type="text" placeholder="PROCURAR" style="color: #242f75;">
+      <a href=""><i class='fa fa-search'></i></a>
+
     </form>
   </div>
 </nav>

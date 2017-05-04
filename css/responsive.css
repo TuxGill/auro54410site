@@ -166,6 +166,9 @@
 
   .overlay ul li {
     min-height: 34px; } }
+@media (max-width: 1200px) {
+  .noResults .row .search {
+    margin-left: 0px; } }
 @media (max-width: 1150px) {
   .subtitle {
     height: 250px; }

@@ -224,6 +224,14 @@ $font-aws: 'FontAwesome';
 			min-height: 34px;
 		}
 	}
+
+	.noResults{
+		.row{
+			.search{
+				margin-left: 0px;
+			}
+		}
+	}
 }
 
 @media (max-width: 1150px){
@@ -248,7 +256,6 @@ $font-aws: 'FontAwesome';
 }
 
 @media (max-width: 1135px){
-
 
 	footer{
 		h2{

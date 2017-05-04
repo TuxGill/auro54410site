@@ -133,6 +133,16 @@ form{
 	display: none;
 }
 
+.form-inline{
+	a{
+		color: $blue;
+		&:hover{
+			border-bottom: 2px solid $green;
+		}
+	}
+
+}
+
 /* FIM MENU*/
 
 .slider{
@@ -517,6 +527,40 @@ form{
 }
 
 /* FIM AUROVITAS */
+
+/* SEARCH */
+.noResults, .Results{
+	h2{
+		font-size: 40px;
+	    margin-top: 90px;
+	    text-transform: uppercase;
+	    font-family: $font-bold;
+   		color: $blue;
+	}
+	.row{
+		margin-top: 90px;
+
+		p{
+			font-size: 18px;
+		    text-transform: uppercase;
+		    font-family: $font-bold;
+	   		color: $green;
+	   		text-align: center;
+		}
+		.search{
+			    padding-bottom: 10px;
+    			margin-left: 40px;
+    			display: block;
+		}
+	}
+	.linha-separador{
+		border-bottom: 1px solid $green;
+		width: 20%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+/* FIM SEARCH */
 
 /* FOOTER */
 
