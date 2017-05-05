@@ -41,6 +41,9 @@
                         echo strftime("%B %d, %Y", strtotime($conteudo[$i]->getTs()) );
                       ?>
                   </h2>
+                  <h2>
+                    <?php echo $conteudo[$i]->getTitle(); ?>
+                  </h2>
                   <h3>
                     <?php echo $conteudo[$i]->getIntro(); ?>
                   </h3>
