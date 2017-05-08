@@ -294,6 +294,12 @@ $font-aws: 'FontAwesome';
 	}
 }
 
+@media screen and (max-width: 1021px){
+	footer{
+		height: 500px;
+	}
+}
+
 @media (max-width: 970px){
 	.slider{
 		.subtitle{
@@ -306,7 +312,7 @@ $font-aws: 'FontAwesome';
 	}
 
 	footer{
-		// height: 500px;
+		height: 450px;
 		.geral{
 			font-size: 12px;
 		}
@@ -315,12 +321,12 @@ $font-aws: 'FontAwesome';
 
 @media  (max-width: 885px){
 	footer{
-		height: 500px;
+		height: 550px;
 		h2{
 			margin-left: 27px;
 		}
 		.rodape{
-			padding-top: 30px;
+			/*padding-top: 30px;*/
 
 			.copyDir{
 				right: 20px;
@@ -341,7 +347,7 @@ $font-aws: 'FontAwesome';
 
 	footer{
 		background-position-x: -592px!important;
-		height: 800px !important;
+		height: 500px !important;
 		h2{
 			margin-left: 29px!important;
 		}
@@ -408,7 +414,7 @@ $font-aws: 'FontAwesome';
 
 	footer{
 		background-position-x:-825px;
-		height: 800px;
+		height: 750px;
 		.organizer{
 			.icon{
 				margin-right: 0px;
@@ -500,7 +506,7 @@ $font-aws: 'FontAwesome';
 	}
 
 	footer{
-		height:850px;
+		height:800px;
 		background-position-x: -1035px;
 		h2 {
 		    margin-left: 43px;
@@ -544,7 +550,7 @@ $font-aws: 'FontAwesome';
 @media (max-width: 450px){
 	footer{
 		background-position-x: -1202px;
-		height:900px;
+		height:850px;
 	}
 }
 
@@ -569,7 +575,7 @@ $font-aws: 'FontAwesome';
 	}
 
 	footer{
-		height: 950px;
+		height: 850px;
 		background-position-x: -1322px;
 	    h2 {
 		    margin-left: 27px;
@@ -587,11 +593,13 @@ $font-aws: 'FontAwesome';
 
 @media (max-width: 357px){
 	footer{
-		height: 995px;
+		height: 900px;
 		background-position-x: -1445px;
 	}
 }
 
 @media(max-width: 320px){
-
+	footer{
+	height: 950px;
+	}
 }

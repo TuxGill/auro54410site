@@ -23,7 +23,7 @@
       </div>
 
       <div class="col-0 col-sm-1 col-lg-1 col-xl-1 first line row-eq-height">
-        <img src="<?php echo BASE_URL; ?>/images/line.svg">
+        <img src="<?php echo BASE_URL; ?>/images/line.svg" onerror="this.onerror=null; this.src='line.png'">
       </div>
 
       <div class="col-12 col-sm-5 col-lg-4 col-xl-4 texto">
@@ -33,7 +33,7 @@
 
 
       <div class="col-0 col-sm-1 col-lg-1 col-xl-1 second line row-eq-height">
-        <img src="<?php echo BASE_URL; ?>/images/line.svg">
+        <img src="<?php echo BASE_URL; ?>/images/line.svg" onerror="this.onerror=null; this.src='line.png'">
       </div>
 
       <div class="col-0 col-sm-1 col-lg-1 col-xl-1 seta row-eq-height">

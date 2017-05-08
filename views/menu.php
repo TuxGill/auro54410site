@@ -59,7 +59,7 @@
     <form class="form-inline my-2 my-lg-0">
     	
       <input class="form-control mr-sm-2" type="text" placeholder="PROCURAR" style="color: #242f75;">
-      <a href=""><i class='fa fa-search'></i></a>
+      <i class='fa fa-search'></i>
 
     </form>
   </div>
@@ -75,8 +75,8 @@
       <li><a href="<?php echo BASE_URL; ?>/lista-noticias#">NOTÍCIAS</a></li>
       <li><a href="#info-contactos">CONTACTOS</a></li>
       <form class="form-responsive form-inline my-2 my-lg-0">
-      <i class='fa fa-search fa-2x'></i>
         <input class="form-control" type="text" placeholder="PROCURAR" style="color: #ffffff;">
+        <i class='fa fa-search fa-2x'></i>
     </form>
     </ul>
 

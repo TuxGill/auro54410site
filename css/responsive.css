@@ -203,6 +203,9 @@
 
   footer .vermapa {
     padding-left: 0; } }
+@media screen and (max-width: 1021px) {
+  footer {
+    height: 500px; } }
 @media (max-width: 970px) {
   .slider .subtitle {
     height: 200px; }
@@ -210,15 +213,17 @@
       font-size: 3.0vw;
       margin-top: 50px; }
 
-  footer .geral {
-    font-size: 12px; } }
+  footer {
+    height: 450px; }
+    footer .geral {
+      font-size: 12px; } }
 @media (max-width: 885px) {
   footer {
-    height: 500px; }
+    height: 550px; }
     footer h2 {
       margin-left: 27px; }
     footer .rodape {
-      padding-top: 30px; }
+      /*padding-top: 30px;*/ }
       footer .rodape .copyDir {
         right: 20px; }
     footer .organizer .icon {
@@ -229,7 +234,7 @@
 @media (width: 768px) {
   footer {
     background-position-x: -592px !important;
-    height: 800px !important; }
+    height: 500px !important; }
     footer h2 {
       margin-left: 29px !important; } }
 @media (max-width: 768px) {
@@ -271,7 +276,7 @@
 
   footer {
     background-position-x: -825px;
-    height: 800px; }
+    height: 750px; }
     footer .organizer .icon {
       margin-right: 0px; }
     footer h2 {
@@ -321,7 +326,7 @@
     font-size: 14px; }
 
   footer {
-    height: 850px;
+    height: 800px;
     background-position-x: -1035px; }
     footer h2 {
       margin-left: 43px; } }
@@ -349,7 +354,7 @@
 @media (max-width: 450px) {
   footer {
     background-position-x: -1202px;
-    height: 900px; } }
+    height: 850px; } }
 @media (max-width: 400px) {
   .navbar-brand img {
     margin-left: 5px;
@@ -362,7 +367,7 @@
     width: 70%; }
 
   footer {
-    height: 950px;
+    height: 850px;
     background-position-x: -1322px; }
     footer h2 {
       margin-left: 27px; } }
@@ -371,7 +376,10 @@
     font-size: 1.2em; } }
 @media (max-width: 357px) {
   footer {
-    height: 995px;
+    height: 900px;
     background-position-x: -1445px; } }
+@media (max-width: 320px) {
+  footer {
+    height: 950px; } }
 
 /*# sourceMappingURL=responsive.css.map */
