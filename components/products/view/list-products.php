@@ -30,7 +30,7 @@
         			    <img src="<?php echo BASE_URL.MEDIA_IMAGES.$products[$i]->getUrlImg(); ?>">
         			  </div>
         			  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 first line row-eq-height">
-        			    <img src="images/line.svg">
+        			    <img src="images/line.svg" onerror="this.onerror=null; this.src='line.png'">
         			  </div>
 
         			  <div class="col-sm-4 texto">
@@ -41,7 +41,7 @@
         			  </div>
 
         			  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 second line row-eq-height">
-        			    <img src="images/line.svg">
+        			    <img src="images/line.svg" onerror="this.onerror=null; this.src='line.png'">
         			  </div>
 
         			  <div class="col-0 col-sm-1 col-lg-1 col-xl-1 seta row-eq-height">

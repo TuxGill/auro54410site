@@ -3,7 +3,7 @@
   /* CONSTANS */
   /*TESTE MARIA*/
 
-  define('PRODUCTION',true);
+  define('PRODUCTION',false);
   define('SITE_TITLE','Aurovitas');
   define('SITE_TITLE_BACKOFFICE','Backoffice Aurovitas');
 
@@ -34,7 +34,7 @@
   if(!PRODUCTION){
 
 
-    define('DIRFOLDER','/aurovitas/auro54410site');
+    define('DIRFOLDER','/auro54410site');
 
 
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );
@@ -59,7 +59,7 @@
     error_reporting(1);
 	  ini_set('error_reporting', E_ALL);
    $user='tuxdigit_newav';
-    $pass='TuxGill#2017';
+  $pass='TuxGill#2017';
     $pdo = new PDO('mysql:host=localhost;dbname=tuxdigit_newav;charset=utf8', $user, $pass);
 
   }

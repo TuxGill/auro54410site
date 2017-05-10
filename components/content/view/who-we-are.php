@@ -39,7 +39,7 @@
             <img src="<?php echo BASE_URL.MEDIA_IMAGES.$conteudo[$i]->getUrlImg(); ?>">
           </div>
           <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
-              <img src="<?php echo BASE_URL; ?>/images/line.svg">
+              <img src="<?php echo BASE_URL; ?>/images/line.svg" onerror="this.onerror=null; this.src='line.png'">
           </div>
           <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5 textos">
             <h2><?php echo $conteudo[$i]->getTitle(); ?></h2>
@@ -51,7 +51,7 @@
             </div>
           </div>
            <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
-              <img src="<?php echo BASE_URL; ?>/images/line.svg">
+              <img src="<?php echo BASE_URL; ?>/images/line.svg" onerror="this.onerror=null; this.src='line.png'">
           </div>
           <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 docIcon row-eq-height">
               <i class="fa fa-check" aria-hidden="true"></i>

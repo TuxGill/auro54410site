@@ -40,7 +40,7 @@
                     <img src="<?php echo BASE_URL.MEDIA_IMAGES.$produtosFerlidona[$i]->getUrlImg(); ?>">
                   </div>
                   <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
-                      <img src="../images/line.svg">
+                      <img src="../images/line.svg" onerror="this.onerror=null; this.src='line.png'">
                   </div>
                   <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 textos">
                     <h2 style="color:<?php echo $produtosFerlidona[$i]->getColor(); ?>">
@@ -54,7 +54,7 @@
                     </p>
                   </div>
                    <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
-                      <img src="../images/line.svg">
+                      <img src="../images/line.svg" onerror="this.onerror=null; this.src='line.png'">
                   </div>
                   <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 docIcon row-eq-height">
                       <a target="_blank" href="<?php echo BASE_URL.MEDIA_PDF.$produtosFerlidona[$i]->getPdf(); ?>">

@@ -31,7 +31,7 @@
                 </div>
               </div>
               <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line row-eq-height">
-                  <img src="images/line.svg">
+                  <img src="images/line.svg" onerror="this.onerror=null; this.src='line.png'">
               </div>
               <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5 textos row-eq-height">
                 <div>
@@ -50,7 +50,7 @@
                 </div>
               </div>
                <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1 line  row-eq-height">
-                  <img src="images/line.svg">
+                  <img src="images/line.svg" onerror="this.onerror=null; this.src='line.png'">
               </div>
               <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 seta row-eq-height">
                 <a href="<?php echo BASE_URL."/detalhe-noticia/".$conteudo[$i]->getSlug();?>">
