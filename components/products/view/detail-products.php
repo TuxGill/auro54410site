@@ -3,6 +3,8 @@
  $slugProduto = $_GET['id'];
  $productContent = getProductDetailBySlug($pdo, $slugProduto);
  ?>
+
+ <?php if(isset($productContent[0]->getVideo()) && $productContent[0]->getVideo()!='' ) { ?>
 <div class="slider">
   <div class="videoWrapper">
     <!-- TODO: BACKOFFICE - SE FOR YOUTUBE -->
@@ -15,6 +17,7 @@
     </video>
   </div>
 </div>
+<?php } ?>
 <!-- PRODUTO -->
 <div class="row conteudo conteudoProd col-sm-12">
  

@@ -5,10 +5,13 @@
  $noticiaContent = getContentByCategorySlug($pdo, $slugNoticia);
 
  ?>
+
+ <?php if(isset($noticiaContent[0]->getUrlImg()) && $noticiaContent[0]->getUrlImg()!='') { ?>
 <div class="slider">
   <img src="<?php echo BASE_URL.MEDIA_IMAGES.$noticiaContent[0]->getUrlImg(); ?>">
 
 </div>
+<?php } ?>
 <div class="col-sm-12 conteudo">
 	<div class="col-sm-1 offset-sm-9 icon-news-link">
     <!-- fb_share(title, url, photo, desc) -->

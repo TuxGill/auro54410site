@@ -1,4 +1,17 @@
+
+<!-- SEM RESULTADOS -->
+<?php
+  $term=$_POST['termo'];
+//echo $term;
+  $contents= searchAllContents($pdo, $term);
+  $products= searchAllProducts($pdo, $term);
+
+
+  if(count($contents)==0 && count($products)==0)  {
+    ?>
+
 <div class="row conteudo noResults">
+
 
 	<div class="col-10 offset-1 col-sm-10 offset-sm-1">
 
@@ -11,47 +24,72 @@
 		    </form>
 	    </div>
 	</div>
+
+
 	
 </div>
 
-<div class="row conteudo Results">
-	<div class="col-10 offset-1 col-sm-10 offset-sm-1">
-		<h2>PALAVRA</h2>
-		<div class="col-10 offset-lg-1">
-            <div>
-              <h3>AGOSTO 27, 2016</h3>
-              <h3>
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Morbi rutrum diam vitae
-                nibh eleifend, et dictum est venenatis.
-                Proin dignissim eu mauris nec egestas.
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Morbi rutrum diam vitae nibh eleifend, et dictum
-                est venenatis. Proin dignissim eu mauris nec egestas.
-                Sed imperdiet eget lectus quis interdum
-              </p>
-              <p class="linha-separador"> </p>
-            </div>
+  <!-- FIM EM RESULTADOS-->
 
-             <div>
-              <h3>AGOSTO 27, 2016</h3>
-              <h3>
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Morbi rutrum diam vitae
-                nibh eleifend, et dictum est venenatis.
-                Proin dignissim eu mauris nec egestas.
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Morbi rutrum diam vitae nibh eleifend, et dictum
-                est venenatis. Proin dignissim eu mauris nec egestas.
-                Sed imperdiet eget lectus quis interdum
-              </p>
-              <p class="linha-separador"> </p>
-            </div>
-            
-		</div>
-	</div>
-</div>
+  <?php } else { 
+      if(count($contents)>0){
+    ?>
+          
+              <div class="row conteudo Results">
+              	<div class="col-10 offset-1 col-sm-10 offset-sm-1">
+              		<h2><?php echo $term; ?></h2>
+
+                  <?php
+                    for ($i = 0; $i <= (count($contents)-1); $i++) {
+                  ?>
+              		<div class="col-10 offset-lg-1">
+                    <a href="detalhe-noticia/<?php echo $contents[$i]->getSlug();?>">
+                          <div>
+                            <h3><?php echo strftime("%B %d, %Y", strtotime($contents[$i]->getTs()) ); ?></h3>
+                            <h3><?php echo $contents[$i]->getTitle(); ?></h3>
+                            <!-- <h3>
+                              <?php echo $contents[$i]->getIntro(); ?>
+                            </h3>-->
+                            <p>
+                             <?php echo $contents[$i]->getText(); ?>
+                            </p>
+                            <p class="linha-separador"> </p>
+                          </div>
+                      </a>     
+              		</div>
+                  <?php } ?>
+              	</div>
+              </div>
+           
+    <?php } ?> 
+
+    <?php if(count($products)>0){
+    ?>
+
+              <div class="row conteudo Results">
+                <div class="col-10 offset-1 col-sm-10 offset-sm-1">
+                  <h2><?php echo $term; ?></h2>
+
+                  <?php
+                    for ($i = 0; $i <= (count($products)-1); $i++) {
+                  ?>
+                  <a href="detalhe-produto/<?php echo $products[$i]->getSlug();?>">
+                  <div class="col-10 offset-lg-1">
+                          <div>
+                
+                            <h3><?php echo $products[$i]->getTitle(); ?></h3>
+                            <h3>
+                              <?php echo $products[$i]->getIntro(); ?>
+                            </h3>
+                            <p>
+                             <?php echo $products[$i]->getText(); ?>
+                            </p>
+                            <p class="linha-separador"> </p>
+                          </div>     
+                  </div>
+                  <?php } ?>
+                </div>
+              </div>
+    <?php } ?>           
+
+<?php } ?>
