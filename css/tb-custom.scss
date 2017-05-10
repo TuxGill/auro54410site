@@ -123,6 +123,14 @@ form{
 		color: #ffffff;
 	}
 
+	button{
+	    background-color: rgba(255,0,0,0);
+    	border: none;
+    	i{
+    		color: $blue;
+    	}
+	}
+
 }
 
 .navbar-toggler{

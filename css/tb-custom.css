@@ -82,6 +82,11 @@ form {
       color: #242f75; }
   form input, form textarea {
     color: #ffffff; }
+  form button {
+    background-color: rgba(255, 0, 0, 0);
+    border: none; }
+    form button i {
+      color: #242f75; }
 
 .navbar-toggler {
   margin: 50px; }
