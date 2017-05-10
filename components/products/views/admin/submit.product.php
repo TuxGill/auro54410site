@@ -13,7 +13,7 @@
   $fb=$_POST['link2'];
 
   $cat=$_POST['category'];
-echo $_POST['act'];
+
   if(isset($_POST['act'])){
       $act=1;
   } else {
@@ -91,10 +91,6 @@ echo $_POST['act'];
     if(isset($filePDF)) { $p[0]->setVideo($filePDF); }
     if(isset($fileTopo)) { $p[0]->setLogo($fileTopo); }
 
-    echo "<pre>";
-    print_r($p[0]);
-    echo "</pre>";
-
 
   } else {
 
@@ -119,4 +115,4 @@ echo $_POST['act'];
 
 ?>
 
-<script>window.localhost='<?php echo BASE_URL."/backoffice/home.php?area=newproduct&idCat=<?php echo $cat?>" ?>'</script>
+<script>window.location='<?php echo BASE_URL."/backoffice/home.php?area=newproduct&idCat=".$cat.""?>'</script>

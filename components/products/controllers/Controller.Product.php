@@ -216,6 +216,42 @@
       return $products;
   }
 
+  function searchAllproducts($pdo,$term){
+
+
+      $sql= "select * from product where text_product like '%".$term."%' or  title_product like '%".$term."%' and (act_product=1 and del_product=0)";
+
+      $query = $pdo->prepare($sql);
+      $query->execute();
+
+      $rows = $query->fetchAll(PDO::FETCH_ASSOC);
+      $products=[];
+
+      foreach ($rows as $row) {
+        $c= new Product($row['id_product'],
+                        $row['fk_id_product_category'],
+                        $row['title_product'],
+                        $row['slug_product'],
+                        $row['logo_product'],
+                        $row['color_product'],
+                        $row['intro_product'],
+                        $row['text_product'],
+                        $row['url_img_product'],
+                        $row['pdf_product'],
+                        $row['url_video_product'],
+                        $row['link1_product'],
+                        $row['link2_product'],
+                        $row['order_product'],
+                        $row['act_product'],
+                        $row['del_product'],
+                        $row['ts_product']);
+
+        array_push($products, $c);
+      }
+
+      return $products;
+  }
+
 
 
 ?>

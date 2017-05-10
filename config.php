@@ -50,7 +50,7 @@
   } else {
 
 
-     define('DIRFOLDER','/clientes/aurovitas/auro54110site_v3');
+     define('DIRFOLDER','/clientes/aurovitas/auro54110site_v3_2');
 
 
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );

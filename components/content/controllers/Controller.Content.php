@@ -290,4 +290,38 @@ echo $sql;
 
     return $contents;
   }
+
+   function searchAllContents($pdo,$term){
+    $sql= "select * from content where text_content like '%".$term."%' and act_content=1 and del_content=0";
+
+    //echo $sql;
+
+    $query = $pdo->prepare($sql);
+    $query->execute();
+
+    $rows = $query->fetchAll(PDO::FETCH_ASSOC);
+    $contents=[];
+
+    foreach ($rows as $row) {
+      $c= new Content($row['id_content'],
+                      $row['fk_id_content_category'],
+                      $row['title_content'],
+                      $row['slug_content'],
+                      $row['intro_content'],
+                      $row['text_content'],
+                      $row['url_img_content'],
+                      $row['url_yt_content'],
+                      $row['url_video_content'],
+                      $row['link1_content'],
+                      $row['link2_content'],
+                      $row['order_content'],
+                      $row['act_content'],
+                      $row['del_content'],
+                      $row['ts_content']);
+
+      array_push($contents, $c);
+    }
+
+    return $contents;
+  }
 ?>

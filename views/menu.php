@@ -56,10 +56,13 @@
         <a class="nav-link" href="#info-contactos">CONTACTOS</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0"  method="post" action="<?php echo BASE_URL."/"?>index.php?area=pesquisa">
     	
-      <input class="form-control mr-sm-2" type="text" placeholder="PROCURAR" style="color: #242f75;">
-      <i class='fa fa-search'></i>
+
+      <input class="form-control mr-sm-2" type="text" name="termo" placeholder="PROCURAR" style="color: #242f75;">
+    
+      <button><i class='fa fa-search'></i></button>
+
 
     </form>
   </div>
@@ -74,9 +77,10 @@
       <li><a href="<?php echo BASE_URL; ?>/produtos">PRODUTOS</a></li>
       <li><a href="<?php echo BASE_URL; ?>/lista-noticias#">NOTÍCIAS</a></li>
       <li><a href="#info-contactos">CONTACTOS</a></li>
-      <form class="form-responsive form-inline my-2 my-lg-0">
-        <input class="form-control" type="text" placeholder="PROCURAR" style="color: #ffffff;">
-        <i class='fa fa-search fa-2x'></i>
+
+      <form class="form-responsive form-inline my-2 my-lg-0" action="<?php echo BASE_URL."/"?>index.php?area=search">
+      <i class='fa fa-search fa-2x'></i>
+        <input class="form-control" type="text" placeholder="PROCURARteste" style="color: #ffffff;">
     </form>
     </ul>
 

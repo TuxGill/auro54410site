@@ -5,12 +5,13 @@
  $noticiaContent = getContentByCategorySlug($pdo, $slugNoticia);
 
  ?>
+
+ <?php if(isset($noticiaContent[0]->getUrlImg()) && $noticiaContent[0]->getUrlImg()!='') { ?>
 <div class="slider">
   <img src="<?php echo BASE_URL.MEDIA_IMAGES.$noticiaContent[0]->getUrlImg(); ?>">
-  <div class="subtitle">
-    <p class="col-sm-6 offset-sm-1"><?php echo $noticiaContent[0]->getTitle(); ?></p>
-  </div>
+
 </div>
+<?php } ?>
 <div class="col-sm-12 conteudo">
 	<div class="col-sm-1 offset-sm-9 icon-news-link">
     <!-- fb_share(title, url, photo, desc) -->
@@ -24,6 +25,9 @@
         echo strftime("%B %d, %Y", strtotime($noticiaContent[0]->getTs()) );
       ?>
 	</h2>
+  <h2 class="col-10 offset-1 col-sm-10 offset-sm-1">    
+    <?php echo $noticiaContent[0]->getTitle() ?>
+  </h2>
 
 		<h3 class="col-10 offset-1 col-sm-10 offset-sm-1">
 			<?php echo $noticiaContent[0]->getIntro(); ?>
