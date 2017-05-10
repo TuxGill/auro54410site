@@ -246,9 +246,12 @@ form {
   font-size: 13px; }
 
 .icons {
+  width: 100%;
   margin-bottom: 100px;
   margin-top: 50px; }
   .icons ul {
+    padding: 0;
+    width: 33%;
     list-style-type: none;
     float: left; }
 
