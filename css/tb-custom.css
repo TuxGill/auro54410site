@@ -44,6 +44,8 @@ body {
       border-bottom: 2px solid #009e94; }
     .navbar-light .navbar-nav li .nav-link:active {
       border-bottom: 2px solid #009e94; }
+  .navbar-light .navbar-nav li .aurovitas {
+    width: 155px; }
 
 /*.mr-auto {
     margin-right: 80px!important;
@@ -54,7 +56,7 @@ body {
     background-color: transparent; }
 
 form {
-  width: 220px;
+  width: 235px;
   /* margin-right: 100px;*/ }
   form .form-control {
     width: 80%; }
