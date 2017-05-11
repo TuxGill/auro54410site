@@ -28,24 +28,24 @@ body {
 
 .navbar-light .navbar-nav li {
   float: none;
-  width: 150px;
+  /*width: 150px;*/
   display: inline-block; }
   .navbar-light .navbar-nav li .nav-link {
     display: block;
     color: #242f75;
     text-align: center;
-    width: 150px;
+    width: 110px;
     padding: 14px 16px;
     text-decoration: none;
     font-family: "gotham_medium";
-    font-size: 14px; }
+    font-size: 12px; }
     .navbar-light .navbar-nav li .nav-link:hover {
       text-decoration: none;
       border-bottom: 2px solid #009e94; }
     .navbar-light .navbar-nav li .nav-link:active {
       border-bottom: 2px solid #009e94; }
   .navbar-light .navbar-nav li .aurovitas {
-    width: 155px; }
+    width: 140px; }
 
 /*.mr-auto {
     margin-right: 80px!important;
@@ -63,7 +63,7 @@ form {
   form input[type=text] {
     width: 80% !important;
     font-family: "gotham_medium";
-    font-size: 14px;
+    font-size: 12px;
     color: #ffffff;
     box-shadow: none;
     border: none;

@@ -42,6 +42,24 @@ $font-aws: 'FontAwesome';
 }
 
 @media (max-width: 1200px){
+	.slider{
+		z-index: 0;
+		p{
+			margin-top: 70px;
+		}
+	}
+
+	.noResults{
+		.row{
+			.search{
+				margin-left: 0px;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 1024px){
 	.navbar-toggleable-md .navbar-toggler {
     	display: block;
 	    margin: 20px;
@@ -92,14 +110,7 @@ $font-aws: 'FontAwesome';
 			}
 		}
 	}
-
-	.slider{
-		z-index: 0;
-		p{
-			margin-top: 70px;
-		}
-	}
-
+	
 	.bg-faded{
 		z-index: 10;
 	}
@@ -225,13 +236,6 @@ $font-aws: 'FontAwesome';
 		}
 	}
 
-	.noResults{
-		.row{
-			.search{
-				margin-left: 0px;
-			}
-		}
-	}
 }
 
 @media (max-width: 1150px){
@@ -242,7 +246,7 @@ $font-aws: 'FontAwesome';
 		}
 	}
 	form{
-    width: 200px;
+    	/*width: 200px;*/
 	}
 
 	.conteudo{
@@ -295,6 +299,8 @@ $font-aws: 'FontAwesome';
 }
 
 @media screen and (max-width: 1021px){
+
+
 	footer{
 		height: 500px;
 	}

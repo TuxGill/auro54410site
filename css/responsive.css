@@ -15,6 +15,14 @@
     padding-top: 25px;
     margin-top: 50px; } }
 @media (max-width: 1200px) {
+  .slider {
+    z-index: 0; }
+    .slider p {
+      margin-top: 70px; }
+
+  .noResults .row .search {
+    margin-left: 0px; } }
+@media (max-width: 1024px) {
   .navbar-toggleable-md .navbar-toggler {
     display: block;
     margin: 20px; }
@@ -55,11 +63,6 @@
     background-size: 0% 0%; }
     .navbar span i, .navbar .navbar-toggler-icon i {
       color: #242f75; }
-
-  .slider {
-    z-index: 0; }
-    .slider p {
-      margin-top: 70px; }
 
   .bg-faded {
     z-index: 10; }
@@ -159,16 +162,13 @@
 
   .content-scale {
     display: block; } }
-@media screen and (max-width: 1200px) and (max-height: 30.5em) {
+@media screen and (max-width: 1024px) and (max-height: 30.5em) {
   .overlay nav {
     height: 70%;
     font-size: 34px; }
 
   .overlay ul li {
     min-height: 34px; } }
-@media (max-width: 1200px) {
-  .noResults .row .search {
-    margin-left: 0px; } }
 @media (max-width: 1150px) {
   .subtitle {
     height: 250px; }
@@ -176,7 +176,7 @@
       padding-top: 0; }
 
   form {
-    width: 200px; }
+    /*width: 200px;*/ }
 
   .conteudo {
     /*.seta{
