@@ -302,7 +302,7 @@ $font-aws: 'FontAwesome';
 
 
 	footer{
-		height: 500px;
+		height: 420px;
 	}
 }
 
@@ -327,7 +327,7 @@ $font-aws: 'FontAwesome';
 
 @media  (max-width: 885px){
 	footer{
-		height: 550px;
+		/*height: 550px;*/
 		h2{
 			margin-left: 27px;
 		}
@@ -420,7 +420,7 @@ $font-aws: 'FontAwesome';
 
 	footer{
 		background-position-x:-825px;
-		height: 750px;
+		height: 720px;
 		.organizer{
 			.icon{
 				margin-right: 0px;
@@ -512,7 +512,7 @@ $font-aws: 'FontAwesome';
 	}
 
 	footer{
-		height:800px;
+		height:720px;
 		background-position-x: -1035px;
 		h2 {
 		    margin-left: 43px;
@@ -547,6 +547,7 @@ $font-aws: 'FontAwesome';
 	}
 
 	footer{
+		height:800px;
 		h2 {
 		    margin-left: 36px;
 		}
@@ -556,7 +557,7 @@ $font-aws: 'FontAwesome';
 @media (max-width: 450px){
 	footer{
 		background-position-x: -1202px;
-		height:850px;
+		height:800px;
 	}
 }
 
@@ -599,7 +600,7 @@ $font-aws: 'FontAwesome';
 
 @media (max-width: 357px){
 	footer{
-		height: 900px;
+		height: 850px;
 		background-position-x: -1445px;
 	}
 }
