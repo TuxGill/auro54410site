@@ -123,6 +123,9 @@
           case 'lista-noticias': { include('components/content/view/list-news.php'); } break;
           case 'detalhe-noticia': { include('components/content/view/detail-news.php'); } break;
           case 'pesquisa' : { include('views/search.php'); } break;
+          case 'sitemap': { include('views/sitemap.php'); } break;
+            # code...
+            break;
         }
 
          ?>

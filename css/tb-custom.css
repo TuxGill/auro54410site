@@ -476,6 +476,27 @@ footer {
     text-align: right; }
 
 /*   FIM FOOTER   */
+/*  MAPA SITE */
+.mapInfo {
+  margin-top: 200px;
+  height: 500px; }
+  .mapInfo h2 {
+    font-family: "gotham_bold";
+    font-color: #242f75; }
+  .mapInfo p {
+    border-bottom: 2px solid #009e94;
+    width: 50%; }
+  .mapInfo ul {
+    list-style-type: none;
+    margin-top: 50px; }
+    .mapInfo ul li {
+      padding: 20px 0px; }
+      .mapInfo ul li a {
+        color: #242f75;
+        font-family: "gotham_medium";
+        float: left; }
+
+/*  FIM MAPA SITE */
 /* BACKOFFICE */
 .placeholder {
   display: none; }
