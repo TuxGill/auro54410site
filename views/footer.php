@@ -115,8 +115,28 @@
     <p>©Copyright 2016 Aurovitas</p>
   </div>
   <div class="copyDir col-sm-6">
-    <p>
-      Site map | Termos do Site | Política de privacidade
-    </p>
+    <p><a class="politicaPrivacidade" href="#privacidade_content">&nbsp;Política de privacidade</a></p>
+    <p><a class="termos" href="#termos_content">&nbsp;Termos do Site |&nbsp;</a></p>
+    <p>Site map |&nbsp;</p>
+  </div>
+</div>
+
+<div style='display:none'>
+  <div id='privacidade_content'>
+        <h2>POLÍTICA DE PRIVACIDADE</h2><br>
+
+        A Aurovitas, Unipessoal Ldª. respeita a privacidade dos utilizadores deste site. 
+        As informações recolhidas pela Aurovitas, Unipessoal Ldª. durante a navegação no site só serão utilizadas para os fins indicados e de acordo com a legislação aplicável. A Aurovitas, Unipessoal Ldª. não irá fornecer qualquer informação a terceiros sem a autorização expressa do utilizador.A Aurovitas, Unipessoal Ldª fará ainda todos os esforços para impedir o acesso de terceiros às informações dos utilizadores. mbora todos os esforços sejam efectuados no sentido de evitar o acesso de terceiros, a Aurovitas, Unipessoal Ldª. não poderá ser responsabilizado se as informações forem obtidas de forma ilegal.
+
+  </div>
+</div>
+
+<div style='display:none'>
+  <div id='termos_content'>
+        <h2>TERMOS DO SITE</h2><br>
+
+        Ao ter acesso e utilizar este site, enquanto utilizador, estará a concordar com as seguintes condições: 
+        A Aurovitas, Unipessoal Ldª. fará todos os esforços para garantir que as informações aqui fornecidas serão sempre o mais precisas e completas possível. No entanto a Aurovitas, Unipessoal Ldª. não pode garantir a exactidão da informação. A Aurovitas, Unipessoal Ldª. não pode ser responsabilizado por quaisquer danos sofridos por um utilizador deste site e / ou por terceiros, como resultado da sua utilização e das informações aqui fornecidas.
+
   </div>
 </div>

@@ -474,6 +474,20 @@ footer {
   z-index: 50; }
   .rodape .copyDir {
     text-align: right; }
+    .rodape .copyDir p {
+      float: right; }
+      .rodape .copyDir p a {
+        text-decoration: none;
+        color: #ffffff; }
+
+#privacidade_content, #termos_content {
+  color: #787878;
+  font-family: "gotham_medium";
+  font-size: 13px; }
+  #privacidade_content h2, #termos_content h2 {
+    color: #242f75;
+    text-transform: uppercase;
+    font-family: "gotham_bold"; }
 
 /*   FIM FOOTER   */
 /*  MAPA SITE */

@@ -1,8 +1,7 @@
 <?php
  include('config.php');
  ?>
-
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html lang="en">
    <head>
      <meta charset="utf-8">
@@ -39,6 +38,7 @@
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/fonts.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/equal-height-columns.css">
      <link rel="stylesheet" href="<?php echo BASE_URL; ?>/css/responsive.css">
+     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/js/colorbox-master/example4/colorbox.css">
 
     <!--[if IE]><!-->
       <link rel="stylesheet" type="text/css" href="all-ie-only.css" />
@@ -46,6 +46,7 @@
 
 
     <script src="<?php echo BASE_URL; ?>/js/modernizr.custom.js"></script>
+ 
     
     <!-- CK EDITOR -->
     <script src="../ckeditor.js"></script>
@@ -140,9 +141,11 @@
      <script src="<?php echo BASE_URL; ?>/js/jquery-3.2.0.min.js"></script>
      <!-- Include all compiled plugins (below), or include individual files as needed -->
      <script src="<?php echo BASE_URL; ?>/js/bootstrap.min.js"></script>
+     <script src="<?php echo BASE_URL; ?>/js/colorbox-master/jquery.colorbox.js"></script>
      <!-- include menu responsive -->
     <script src="<?php echo BASE_URL; ?>/js/classie.js"></script>
     <script src="<?php echo BASE_URL; ?>/js/demo7.js"></script>
+
     <script>
       window.fbAsyncInit = function() {
         // init the FB JS SDK
@@ -169,6 +172,8 @@
     <script>
       initSample();
     </script>
+
+
 
    </body>
  </html>

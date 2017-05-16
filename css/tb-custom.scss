@@ -652,7 +652,25 @@ footer{
 		z-index: 50;
     .copyDir{
 		text-align: right;
+		p{
+			float: right;
+			a{
+				text-decoration:none;
+				color: #ffffff;
+			}
+		}
     }
+}
+
+#privacidade_content, #termos_content{
+	h2{
+		color: $blue;
+		text-transform: uppercase;
+		font-family: $font-bold;
+	}
+	color: $grey;
+	font-family: $font-medium;
+	font-size: 13px;
 }
 
 /*   FIM FOOTER   */

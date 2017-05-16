@@ -1,7 +1,9 @@
-// $( document ).ready(function() {
-//     console.log( "ready!" );
-//
-// });
+$( document ).ready(function() {
+    // console.log( "ready!" );
+    $(".termos").colorbox({inline:true, innerWidth:680, innerHeight:300});
+    $(".politicaPrivacidade").colorbox({inline:true, innerWidth:680, innerHeight:300});
+
+});
 
 function fb_share(title, url, photo, desc, cap) {
     title = cleanHtmlTags(title);
