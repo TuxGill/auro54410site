@@ -24,6 +24,7 @@
         for ($i = 0; $i <= (count($conteudo)-1); $i++) {
       ?>
           <!-- Noticias -->
+          <a class="linkNoticias" href="<?php echo BASE_URL."/detalhe-noticia/".$conteudo[$i]->getSlug();?>">
           <div class="row">
               <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 imagens ">
                 <div>
@@ -56,14 +57,15 @@
                   <img src="images/line.svg" onerror="this.onerror=null; this.src='line.png'">
               </div>
               <div class="col-sm-12 col-md-1 col-lg-1 col-xl-1 seta row-eq-height">
-                <a href="<?php echo BASE_URL."/detalhe-noticia/".$conteudo[$i]->getSlug();?>">
+                
                   <span class="icon-stack">
                    <!--  <i class="fa fa-circle-thin icon-stack-3x fa-4x" aria-hidden="true"></i> -->
                     <i class="fa fa-angle-right icon-stack-1x fa-2x" aria-hidden="true"></i>
                   </span>
-                </a>
+                
               </div>
            </div>
+           </a>
           <!-- Fim Noticias -->
       <?php
       }

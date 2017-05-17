@@ -175,6 +175,8 @@ form {
       -moz-transform: scale(1.1);
       -webkit-transform: scale(1.1);
       transform: scale(1.1); }
+  .conteudo .linkProdutos:hover {
+    text-decoration: none; }
   .conteudo .texto {
     padding-left: 40px;
     padding-top: 20px; }
@@ -193,7 +195,8 @@ form {
       font-size: 2vw;
       color: #242f75;
       font-family: "gotham_light" !important;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-decoration: none; }
   .conteudo .line {
     position: relative;
     padding-top: 0; }
@@ -255,6 +258,7 @@ form {
     /*width: 80%;*/ }
   .icons ul {
     padding: 0;
+    padding-left: 20px;
     width: 33%;
     list-style-type: none;
     float: left; }
@@ -323,6 +327,8 @@ form {
     transform: scale(1.1); }
   .conteudo-news .imagens img {
     max-width: 100%; }
+.conteudo-news .linkNoticias:hover {
+  text-decoration: none; }
 .conteudo-news .textos {
   padding-top: 100px; }
   .conteudo-news .textos h2 {

@@ -20,6 +20,11 @@ $font-aws: 'FontAwesome';
 				width: 100%;
 			}
 		}
+		.icons {
+			img {
+		    	height: 60px;
+		    }
+		}
 
 	}
 
@@ -54,6 +59,13 @@ $font-aws: 'FontAwesome';
 			.search{
 				margin-left: 0px;
 			}
+		}
+	}
+	.conteudo{
+		.icons {
+			img {
+		    	height: 50px;
+		    }
 		}
 	}
 
@@ -226,6 +238,7 @@ $font-aws: 'FontAwesome';
 		display: block;
 	}
 
+
 	@media screen and (max-height: 30.5em) {
 		.overlay nav {
 			height: 70%;
@@ -288,6 +301,11 @@ $font-aws: 'FontAwesome';
 		/*.seta{
 			margin-top: 64px;
 		}*/
+		.icons {
+			img {
+		    	height: 45px;
+		    }
+		}
 	}
 
 	footer{
@@ -314,6 +332,14 @@ $font-aws: 'FontAwesome';
 				font-size: 3.0vw;
 			    margin-top: 50px;
 			}
+		}
+	}
+
+	.conteudo{
+		.icons {
+			img {
+		    	height: 40px;
+		    }
 		}
 	}
 
@@ -349,6 +375,17 @@ $font-aws: 'FontAwesome';
 		width: 80%;
 	}
 }
+
+@media(max-width: 790px){
+	.conteudo{
+		.icons {
+			img {
+		    	height: 38px;
+		    }
+		}
+	}
+}
+
 @media (width:768px){
 
 	footer{
@@ -503,6 +540,8 @@ $font-aws: 'FontAwesome';
 				font-size: 20px!important;
 			}
 		}
+
+		
 	}
 
 	.conteudo-grupo{
@@ -576,7 +615,7 @@ $font-aws: 'FontAwesome';
 	.conteudo{
 		.icons{
 			img{
-				width: 70%;
+				/*width: 70%;*/
 			}
 		}
 	}
