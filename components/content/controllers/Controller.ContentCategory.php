@@ -8,7 +8,7 @@
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $content_categories=[];
+    $content_categories=array();
 
     foreach ($rows as $row) {
       $c= new ContentCategory($row['id_content_category'],
@@ -35,7 +35,7 @@
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $content_categories=[];
+    $content_categories=array();
 
     foreach ($rows as $row) {
       $c= new ContentCategory($row['id_content_category'],

@@ -11,7 +11,7 @@
       $query->execute();
 
       $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-      $products=[];
+      $products=array();
 
       foreach ($rows as $row) {
         $c= new Product($row['id_product'],
@@ -45,7 +45,7 @@
       $query->execute();
 
       $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-      $products=[];
+      $products=array();
 
       foreach ($rows as $row) {
         $c= new Product($row['id_product'],
@@ -80,7 +80,7 @@
       $query->execute();
 
       $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-      $products=[];
+      $products=array();
 
       foreach ($rows as $row) {
         $c= new Product($row['id_product'],
@@ -115,7 +115,7 @@
       $query->execute();
 
       $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-      $contents=[];
+      $contents=array();
 
       foreach ($rows as $row) {
         $c= new Product($row['id_product'],
@@ -153,7 +153,7 @@
       $query->execute();
 
       $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-      $products=[];
+      $products=array();
 
       foreach ($rows as $row) {
         $c= new Product($row['id_product'],
@@ -189,7 +189,7 @@
       $query->execute();
 
       $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-      $products=[];
+      $products=array();
 
       foreach ($rows as $row) {
         $c= new Product($row['id_product'],
@@ -225,7 +225,7 @@
       $query->execute();
 
       $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-      $products=[];
+      $products=array();
 
       foreach ($rows as $row) {
         $c= new Product($row['id_product'],

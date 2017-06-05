@@ -8,7 +8,7 @@
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $contents=[];
+    $contents=array();
 
     foreach ($rows as $row) {
       $c= new Content($row['id_content'],
@@ -22,6 +22,7 @@
                       $row['url_video_content'],
                       $row['link1_content'],
                       $row['link2_content'],
+                      $row['pdf_content'],
                       $row['order_content'],
                       $row['act_content'],
                       $row['del_content'],
@@ -41,7 +42,7 @@
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $contents=[];
+    $contents=array();
 
     foreach ($rows as $row) {
       $c= new Content($row['id_content'],
@@ -55,6 +56,7 @@
                       $row['url_video_content'],
                       $row['link1_content'],
                       $row['link2_content'],
+                      $row['pdf_content'],
                       $row['order_content'],
                       $row['act_content'],
                       $row['del_content'],
@@ -73,7 +75,7 @@ echo $sql;
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $contents=[];
+    $contents=array();
 
     foreach ($rows as $row) {
       $c= new Content($row['id_content'],
@@ -87,6 +89,7 @@ echo $sql;
                       $row['url_video_content'],
                       $row['link1_content'],
                       $row['link2_content'],
+                      $row['pdf_content'],
                       $row['order_content'],
                       $row['act_content'],
                       $row['del_content'],
@@ -105,7 +108,7 @@ echo $sql;
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $contents=[];
+    $contents=array();
 
     foreach ($rows as $row) {
       $c= new Content($row['id_content'],
@@ -119,6 +122,7 @@ echo $sql;
                       $row['url_video_content'],
                       $row['link1_content'],
                       $row['link2_content'],
+                      $row['pdf_content'],
                       $row['order_content'],
                       $row['act_content'],
                       $row['del_content'],
@@ -137,7 +141,7 @@ echo $sql;
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $contents=[];
+    $contents=array();
 
     foreach ($rows as $row) {
       $c= new Content($row['id_content'],
@@ -151,6 +155,7 @@ echo $sql;
                       $row['url_video_content'],
                       $row['link1_content'],
                       $row['link2_content'],
+                      $row['pdf_content'],
                       $row['order_content'],
                       $row['act_content'],
                       $row['del_content'],
@@ -169,7 +174,7 @@ echo $sql;
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $contents=[];
+    $contents=array();
 
     foreach ($rows as $row) {
       $c= new Content($row['id_content'],
@@ -183,6 +188,7 @@ echo $sql;
                       $row['url_video_content'],
                       $row['link1_content'],
                       $row['link2_content'],
+                      $row['pdf_content'],
                       $row['order_content'],
                       $row['act_content'],
                       $row['del_content'],
@@ -201,7 +207,7 @@ echo $sql;
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $contents=[];
+    $contents=array();
 
     foreach ($rows as $row) {
       $c= new Content($row['id_content'],
@@ -215,6 +221,7 @@ echo $sql;
                       $row['url_video_content'],
                       $row['link1_content'],
                       $row['link2_content'],
+                      $row['pdf_content'],
                       $row['order_content'],
                       $row['act_content'],
                       $row['del_content'],
@@ -234,7 +241,7 @@ echo $sql;
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $contents=[];
+    $contents=array();
 
     foreach ($rows as $row) {
       $c= new Content($row['id_content'],
@@ -248,6 +255,7 @@ echo $sql;
                       $row['url_video_content'],
                       $row['link1_content'],
                       $row['link2_content'],
+                      $row['pdf_content'],
                       $row['order_content'],
                       $row['act_content'],
                       $row['del_content'],
@@ -266,7 +274,7 @@ echo $sql;
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $contents=[];
+    $contents=array();
 
     foreach ($rows as $row) {
       $c= new Content($row['id_content'],
@@ -280,6 +288,7 @@ echo $sql;
                       $row['url_video_content'],
                       $row['link1_content'],
                       $row['link2_content'],
+                      $row['pdf_content'],
                       $row['order_content'],
                       $row['act_content'],
                       $row['del_content'],
@@ -300,7 +309,7 @@ echo $sql;
     $query->execute();
 
     $rows = $query->fetchAll(PDO::FETCH_ASSOC);
-    $contents=[];
+    $contents=array();
 
     foreach ($rows as $row) {
       $c= new Content($row['id_content'],
@@ -314,6 +323,7 @@ echo $sql;
                       $row['url_video_content'],
                       $row['link1_content'],
                       $row['link2_content'],
+                      $row['pdf_content'],
                       $row['order_content'],
                       $row['act_content'],
                       $row['del_content'],

@@ -34,7 +34,7 @@
   if(!PRODUCTION){
 
 
-    define('DIRFOLDER','/auro54410site');
+    define('DIRFOLDER','/aurovitas/auro54410site');
 
 
     define('BASE_URL', "http://" . $_SERVER['SERVER_NAME'].DIRFOLDER );

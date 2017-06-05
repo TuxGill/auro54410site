@@ -4,7 +4,9 @@
  $productContent = getProductDetailBySlug($pdo, $slugProduto);
  ?>
 
- <?php if(isset($productContent[0]->getVideo()) && $productContent[0]->getVideo()!='' ) { ?>
+ <?php 
+  $v= $productContent[0]->getVideo();
+  if($v && $v!='' ) { ?>
 <div class="slider">
   <div class="videoWrapper">
     <!-- TODO: BACKOFFICE - SE FOR YOUTUBE -->
@@ -22,7 +24,10 @@
 <div class="row conteudo conteudoProd col-sm-12">
  
 	<div class="col-10 offset-1 col-sm-10 offset-sm-1 txt-intro">
+
+  <?php if($productContent[0]->getLogo()!=''){ ?>
     <img class="logoProd" src="<?php echo BASE_URL.MEDIA_IMAGES.$productContent[0]->getLogo(); ?>" alt="">
+    <?php } ?>
 
     <div>
       <?php echo $productContent[0]->getText(); ?>

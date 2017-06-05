@@ -64,7 +64,9 @@
        
    
     <!-- Fim -->
-
+    <div>
+      A Aurovitas é uma associada da <a href="http://www.apogen.pt/" target="_blank">APOGEN</a> 
+    </div>
      
     </div>
 	</div>
